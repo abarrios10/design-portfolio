@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Send, Mail, Github, Linkedin } from "lucide-react";
+import { Send, Mail, Linkedin } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -63,7 +63,7 @@ export default function ContactSection() {
             Let's Connect
           </h2>
           <p className="text-lg text-muted-foreground">
-            Ready to collaborate on innovative engineering solutions? I'd love to hear from you.
+            Have any questions or just want to reach out? I'd love to hear from you.
           </p>
         </div>
 
@@ -150,7 +150,7 @@ export default function ContactSection() {
                 </h3>
                 <div className="space-y-4">
                   <a
-                    href="mailto:andres.barrios@utexas.edu"
+                    href="mailto:abarrios10@utexas.edu"
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary transition-colors group"
                     data-testid="link-email"
                   >
@@ -159,12 +159,12 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium text-card-foreground">Email</p>
-                      <p className="text-muted-foreground text-sm">andres.barrios@utexas.edu</p>
+                      <p className="text-muted-foreground text-sm">abarrios10@utexas.edu</p>
                     </div>
                   </a>
                   
                   <a
-                    href="https://linkedin.com/in/andresbarrios"
+                    href="https://www.linkedin.com/in/andresbarrios10"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary transition-colors group"
@@ -179,39 +179,10 @@ export default function ContactSection() {
                     </div>
                   </a>
                   
-                  <a
-                    href="https://github.com/andresbarrios"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary transition-colors group"
-                    data-testid="link-github"
-                  >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Github className="text-primary h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-card-foreground">GitHub</p>
-                      <p className="text-muted-foreground text-sm">View my code repositories</p>
-                    </div>
-                  </a>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-card rounded-2xl shadow-lg p-8">
-              <CardContent className="p-0">
-                <h3 className="text-xl font-semibold text-card-foreground mb-4">
-                  Currently Available
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  I'm actively seeking internship opportunities and exciting engineering projects to collaborate on.
-                </p>
-                <div className="flex items-center space-x-2 text-green-600" data-testid="status-available">
-                  <div className="w-2 h-2 bg-green-600 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium">Open to opportunities</span>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

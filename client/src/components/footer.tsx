@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a
-              href="https://linkedin.com/in/andresbarrios"
+              href="https://www.linkedin.com/in/andresbarrios10"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -22,16 +22,7 @@ export default function Footer() {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="https://github.com/andresbarrios"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              data-testid="link-footer-github"
-            >
-              <Github className="h-6 w-6" />
-            </a>
-            <a
-              href="mailto:andres.barrios@utexas.edu"
+              href="mailto:abarrios10@utexas.edu"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="link-footer-email"
             >

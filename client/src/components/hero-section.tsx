@@ -36,9 +36,6 @@ export default function HeroSection() {
           <h2 className="text-2xl md:text-3xl font-light text-muted-foreground mb-8">
             Mechanical Engineering Student at UT Austin
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Crafting innovative solutions through precision engineering and elegant design
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={() => scrollToSection("projects")}
