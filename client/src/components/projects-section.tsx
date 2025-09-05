@@ -67,12 +67,12 @@ export default function ProjectsSection() {
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of engineering projects showcasing innovation, precision, and creative problem-solving
+            A selection of engineering projects I have worked on throughout my time at college
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.slice(0, 3).map((project) => (
             <Card
               key={project.id}
               className="project-card bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl"
