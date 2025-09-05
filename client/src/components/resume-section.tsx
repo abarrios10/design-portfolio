@@ -1,6 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Download } from "lucide-react";
+import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
+
+const skills = [
+  { name: "SolidWorks", icon: "🔧" },
+  { name: "Autodesk Inventor", icon: "📐" },
+  { name: "GD&T", icon: "📏" },
+  { name: "DFMA", icon: "⚙️" },
+  { name: "3D Printing", icon: "🖨️" },
+  { name: "Python", icon: "🐍" },
+];
 
 export default function ResumeSection() {
   const downloadResume = () => {
@@ -11,24 +20,26 @@ Mechanical Engineering Student at UT Austin
 Email: abarrios10@utexas.edu
 
 EDUCATION
-Bachelor of Science in Mechanical Engineering
-University of Texas at Austin
-2022 - 2026 (Expected)
-Focus on Design Engineering, Thermodynamics, and Manufacturing Processes
+Bachelor of Science, Mechanical Engineering
+The University of Texas at Austin
+December 2026
+Concentration: Robotics/Mechatronics | Certificate: Programming and Computation
 
 EXPERIENCE
-Research Assistant | UT Austin Robotics Lab | 2023 - Present
-- Developing autonomous navigation systems for mobile robots
-- Contributing to published research on sensor fusion algorithms
+Undergraduate Robotics Research Assistant | Oden Institute of Computational Engineers - Center of Autonomy | September 2025 - Present
+- General-Purpose Robotics Development
 
-Amazon Robotics Intern | Amazon | Summer 2024
-- Worked on warehouse automation systems and robotic fulfillment center optimization projects
+Mechanical Design Engineer Intern | Samsung | May 2025 - August 2025
+- Tooling Equipment Solutions
 
-Engineering Intern | Samsung | Summer 2023
-- Contributed to product development and manufacturing process optimization for consumer electronics
+Hardware Development Engineer Co-op | Amazon Robotics | January 2025 - May 2025
+- Autonomous Drive-Unit Robots
 
-Engineering Intern | BP | Summer 2022
-- Assisted with energy infrastructure projects and sustainable engineering solutions
+Mechanical Reliability Engineer Intern | BP | May 2024 - August 2024
+- Maintenance Equipment Design
+
+TECHNICAL SKILLS
+SolidWorks, Autodesk Inventor, GD&T, DFMA, 3D Printing, Python
     `.trim();
 
     const blob = new Blob([resumeContent], { type: 'text/plain' });
@@ -65,16 +76,16 @@ Engineering Intern | BP | Summer 2022
               <div className="space-y-6">
                 <div className="border-l-2 border-primary pl-6">
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-education-degree">
-                    Bachelor of Science in Mechanical Engineering
+                    Bachelor of Science, Mechanical Engineering
                   </h4>
                   <p className="text-primary font-medium" data-testid="text-education-university">
-                    University of Texas at Austin
+                    The University of Texas at Austin
                   </p>
                   <p className="text-sm text-muted-foreground" data-testid="text-education-timeline">
-                    2022 - 2026 (Expected)
+                    December 2026
                   </p>
                   <p className="text-muted-foreground mt-2" data-testid="text-education-details">
-                    Focus on Design Engineering, Thermodynamics, and Manufacturing Processes
+                    Concentration: Robotics/Mechatronics | Certificate: Programming and Computation
                   </p>
                 </div>
               </div>
@@ -89,63 +100,85 @@ Engineering Intern | BP | Summer 2022
               <div className="space-y-6">
                 <div className="border-l-2 border-primary pl-6">
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
-                    Research Assistant
+                    Undergraduate Robotics Research Assistant
                   </h4>
                   <p className="text-primary font-medium" data-testid="text-experience-company-1">
-                    UT Austin Robotics Lab
+                    Oden Institute of Computational Engineers - Center of Autonomy
                   </p>
                   <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">
-                    2023 - Present
+                    September 2025 - Present
                   </p>
                   <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">
-                    Developing autonomous navigation systems for mobile robots and contributing to published research on sensor fusion algorithms.
+                    General-Purpose Robotics Development
                   </p>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6">
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-2">
-                    Amazon Robotics Intern
+                    Mechanical Design Engineer Intern
                   </h4>
                   <p className="text-primary font-medium" data-testid="text-experience-company-2">
-                    Amazon
+                    Samsung
                   </p>
                   <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-2">
-                    Summer 2024
+                    May 2025 - August 2025
                   </p>
                   <p className="text-muted-foreground mt-2" data-testid="text-experience-description-2">
-                    Worked on warehouse automation systems and robotic fulfillment center optimization projects.
+                    Tooling Equipment Solutions
                   </p>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6">
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-3">
-                    Engineering Intern
+                    Hardware Development Engineer Co-op
                   </h4>
                   <p className="text-primary font-medium" data-testid="text-experience-company-3">
-                    Samsung
+                    Amazon Robotics
                   </p>
                   <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-3">
-                    Summer 2023
+                    January 2025 - May 2025
                   </p>
                   <p className="text-muted-foreground mt-2" data-testid="text-experience-description-3">
-                    Contributed to product development and manufacturing process optimization for consumer electronics.
+                    Autonomous Drive-Unit Robots
                   </p>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6">
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-4">
-                    Engineering Intern
+                    Mechanical Reliability Engineer Intern
                   </h4>
                   <p className="text-primary font-medium" data-testid="text-experience-company-4">
                     BP
                   </p>
                   <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-4">
-                    Summer 2022
+                    May 2024 - August 2024
                   </p>
                   <p className="text-muted-foreground mt-2" data-testid="text-experience-description-4">
-                    Assisted with energy infrastructure projects and sustainable engineering solutions.
+                    Maintenance Equipment Design
                   </p>
                 </div>
               </div>
             </div>
 
+            {/* Skills Section */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
+                <Wrench className="text-primary mr-3 h-6 w-6" />
+                Technical Skills
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {skills.map((skill, index) => (
+                  <Card
+                    key={index}
+                    className="bg-secondary rounded-lg p-4 text-center hover:bg-secondary/80 transition-colors"
+                  >
+                    <CardContent className="p-0">
+                      <div className="text-2xl mb-2">{skill.icon}</div>
+                      <p className="font-medium text-secondary-foreground" data-testid={`text-skill-${index}`}>
+                        {skill.name}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
 
             {/* Download Resume Button */}
             <div className="text-center">

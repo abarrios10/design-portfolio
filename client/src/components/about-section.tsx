@@ -24,7 +24,7 @@ export default function AboutSection() {
               Engineering with Purpose
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-paragraph">
-              I'm a Mechanical Engineering student at UT Austin with hands-on experience from internships at leading companies including Amazon Robotics, Samsung, and BP. Through these experiences and my research work, I've developed a passion for applying engineering principles to solve real-world challenges and drive innovation in technology.
+              I'm a Mechanical Engineering student at UT Austin with hands-on experience from internships at leading companies including Amazon Robotics, Samsung, and BP. Through these experiences and my research work, I've developed a deep understanding of how thoughtful engineering design can transform complex problems into elegant, practical solutions that shape the future of technology.
             </p>
             
             <div className="flex flex-wrap gap-4 mt-8">
