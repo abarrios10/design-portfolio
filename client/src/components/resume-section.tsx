@@ -147,7 +147,7 @@ export default function ResumeSection() {
                   </div>
                   <div className="flex-shrink-0 ml-6">
                     <img 
-                      src="/images/bp-logo.webp" 
+                      src="/images/bp-logo.png" 
                       alt="BP Logo" 
                       className="h-12 w-auto logo-filter" 
                       data-testid="logo-bp" 
