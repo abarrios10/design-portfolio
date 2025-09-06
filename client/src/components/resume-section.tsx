@@ -93,7 +93,7 @@ export default function ResumeSection() {
                       <img 
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin Longhorn Logo" 
-                        className="h-12 w-12 object-contain hidden dark:block" 
+                        className="h-12 w-12 object-contain hidden dark:block bg-card rounded" 
                       />
                     </div>
                   </div>
