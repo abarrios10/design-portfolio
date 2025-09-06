@@ -21,7 +21,7 @@ export default function AboutSection() {
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground" data-testid="text-about-title">
-              Just Building Cool Stuff
+              Soy yo
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-paragraph">
               Hey there! I'm a Venezuelan who absolutely loves designing things. I'm the type of person who gets genuinely excited about turning cool ideas into real, functional designs that actually work and make people's lives better.
