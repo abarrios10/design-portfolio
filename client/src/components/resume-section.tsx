@@ -87,8 +87,7 @@ export default function ResumeSection() {
                     <img 
                       src="/images/ut-logo.png" 
                       alt="UT Austin Logo" 
-                      className="h-12 w-auto opacity-30 brightness-0 saturate-0" 
-                      style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)' }}
+                      className="h-12 w-auto opacity-30 brightness-0 dark:invert" 
                       data-testid="logo-ut-austin" 
                     />
                   </div>
@@ -131,8 +130,7 @@ export default function ResumeSection() {
                     <img 
                       src="/images/amazon-robotics-logo.png" 
                       alt="Amazon Robotics Logo" 
-                      className="h-12 w-auto opacity-30 brightness-0 saturate-0" 
-                      style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)' }}
+                      className="h-12 w-auto opacity-30 brightness-0 dark:invert" 
                       data-testid="logo-amazon" 
                     />
                   </div>
@@ -156,8 +154,7 @@ export default function ResumeSection() {
                     <img 
                       src="/images/bp-logo.webp" 
                       alt="BP Logo" 
-                      className="h-12 w-auto opacity-30 brightness-0 saturate-0" 
-                      style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)' }}
+                      className="h-12 w-auto opacity-30 brightness-0 dark:invert" 
                       data-testid="logo-bp" 
                     />
                   </div>
