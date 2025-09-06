@@ -158,7 +158,7 @@ export default function ResumeSection() {
                   <div className="flex-shrink-0 ml-6">
                     <div className="flex flex-col items-center">
                       <div 
-                        className="h-12 w-12 flex items-center justify-center text-primary/30 font-bold text-xl border-2 border-primary/30 rounded-full" 
+                        className="h-12 w-12 flex items-center justify-center text-primary/30 font-bold text-xl" 
                         style={{ fontFamily: 'var(--font-univers)' }}
                         data-testid="logo-bp"
                       >
