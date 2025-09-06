@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Wrench, Download, University } from "lucide-react";
-import { SiAmazon, SiSamsung } from "react-icons/si";
-import { FaIndustry } from "react-icons/fa";
+import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
+import { SiSamsung } from "react-icons/si";
+import { TbBrandAmazon } from "react-icons/tb";
+import { GiTexas } from "react-icons/gi";
 
 const skills = [
   { name: "SolidWorks", icon: "🔧" },
