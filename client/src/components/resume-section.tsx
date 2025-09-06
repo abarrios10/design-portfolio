@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
 import { SiSamsung, SiAmazon } from "react-icons/si";
-import { GiBull } from "react-icons/gi";
 
 const skills = [
   { name: "SolidWorks", icon: "🔧" },
@@ -85,7 +84,13 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <GiBull className="h-12 w-12 text-primary/30" data-testid="logo-ut-austin" />
+                    <div 
+                      className="h-12 w-12 flex items-center justify-center text-primary/30 font-bold text-lg border-2 border-primary/30" 
+                      style={{ fontFamily: 'var(--font-univers)', backgroundColor: 'transparent' }}
+                      data-testid="logo-ut-austin"
+                    >
+                      UT
+                    </div>
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
