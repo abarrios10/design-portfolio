@@ -160,12 +160,12 @@ export default function ResumeSection() {
                       <img 
                         src="/images/bp-logo-official.png" 
                         alt="BP Logo" 
-                        className="h-12 w-12 object-contain block dark:hidden opacity-30" 
+                        className="h-12 w-12 object-contain block dark:hidden" 
                       />
                       <img 
                         src="/images/bp-logo-official.png" 
                         alt="BP Logo" 
-                        className="h-12 w-12 object-contain hidden dark:block opacity-30" 
+                        className="h-12 w-12 object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
                       />
                     </div>
