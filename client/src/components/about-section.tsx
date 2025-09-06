@@ -21,10 +21,12 @@ export default function AboutSection() {
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground" data-testid="text-about-title">
-              Engineering with Purpose
+              Designing the Future, One Project at a Time
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-paragraph">
-              I'm a Mechanical Engineering student at UT Austin with hands-on experience from internships at leading companies including Amazon Robotics, Samsung, and BP. Through these experiences and my research work, I've developed a deep understanding of how thoughtful engineering design can transform complex problems into elegant, practical solutions that shape the future of technology.
+              Hey there! I'm a Venezuelan-American Mechanical Engineering student at UT Austin who absolutely loves designing things. Whether it's working on autonomous robots at Amazon, developing tooling solutions at Samsung, or tackling maintenance equipment at BP, I get genuinely excited about turning ideas into real, functional designs that make a difference.
+              <br /><br />
+              When I'm not deep in CAD models or tinkering with prototypes, you'll probably find me on the padel court, dancing at music festivals, or cheering way too loudly at Texas football games (Hook 'em! 🤘). There's something about the creative problem-solving in engineering that connects with everything I do – it's all about finding elegant solutions, whether that's in a design challenge or figuring out the perfect paddle shot.
             </p>
             
             <div className="flex flex-wrap gap-4 mt-8">
