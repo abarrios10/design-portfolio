@@ -33,7 +33,9 @@ export default function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 120;
+      // Calculate offset to center section better on screen
+      const viewportHeight = window.innerHeight;
+      const headerOffset = Math.max(200, viewportHeight * 0.15); // At least 200px or 15% of viewport height
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
