@@ -146,12 +146,12 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <img 
-                      src="/images/bp-logo.webp" 
-                      alt="BP Logo" 
-                      className="h-12 w-auto logo-filter" 
-                      data-testid="logo-bp" 
-                    />
+                    <div 
+                      className="h-12 w-12 flex items-center justify-center text-primary/30 font-bold text-xl border-2 border-primary/30 rounded-full" 
+                      data-testid="logo-bp"
+                    >
+                      BP
+                    </div>
                   </div>
                 </div>
               </div>
