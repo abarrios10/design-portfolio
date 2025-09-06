@@ -84,16 +84,16 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <div className="relative h-12 w-12" data-testid="logo-ut-austin">
+                    <div className="relative h-16 w-16" data-testid="logo-ut-austin">
                       <img 
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin Longhorn Logo" 
-                        className="h-12 w-12 object-contain block dark:hidden" 
+                        className="h-16 w-16 object-contain block dark:hidden" 
                       />
                       <img 
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin Longhorn Logo" 
-                        className="h-12 w-12 object-contain hidden dark:block" 
+                        className="h-16 w-16 object-contain hidden dark:block" 
                         style={{ 
                           filter: 'brightness(1.2) contrast(1.5)',
                           mixBlendMode: 'screen'
@@ -118,7 +118,7 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <SiSamsung className="h-12 w-12 text-primary/30" data-testid="logo-samsung" />
+                    <SiSamsung className="h-16 w-16 text-primary/30" data-testid="logo-samsung" />
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
@@ -168,16 +168,16 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <div className="relative h-12 w-12" data-testid="logo-bp">
+                    <div className="relative h-16 w-16" data-testid="logo-bp">
                       <img 
                         src="/images/bp-logo-official.png" 
                         alt="BP Logo" 
-                        className="h-12 w-12 object-contain block dark:hidden" 
+                        className="h-16 w-16 object-contain block dark:hidden" 
                       />
                       <img 
                         src="/images/bp-logo-official.png" 
                         alt="BP Logo" 
-                        className="h-12 w-12 object-contain hidden dark:block" 
+                        className="h-16 w-16 object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
                       />
                     </div>
