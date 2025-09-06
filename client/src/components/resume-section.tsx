@@ -87,7 +87,7 @@ export default function ResumeSection() {
                     <img 
                       src="/images/ut-logo.png" 
                       alt="UT Austin Logo" 
-                      className="h-12 w-auto opacity-30 brightness-0 dark:brightness-100 dark:invert" 
+                      className="h-12 w-auto opacity-30 brightness-0 dark:invert" 
                       data-testid="logo-ut-austin" 
                     />
                   </div>
@@ -130,7 +130,7 @@ export default function ResumeSection() {
                     <img 
                       src="/images/amazon-robotics-logo.png" 
                       alt="Amazon Robotics Logo" 
-                      className="h-12 w-auto opacity-30 brightness-0 dark:brightness-100 dark:invert" 
+                      className="h-12 w-auto opacity-30 brightness-0 dark:invert" 
                       data-testid="logo-amazon" 
                     />
                   </div>
@@ -154,7 +154,7 @@ export default function ResumeSection() {
                     <img 
                       src="/images/bp-logo.webp" 
                       alt="BP Logo" 
-                      className="h-12 w-auto opacity-30 brightness-0 dark:brightness-100 dark:invert" 
+                      className="h-12 w-auto opacity-30 brightness-0 dark:invert" 
                       data-testid="logo-bp" 
                     />
                   </div>
