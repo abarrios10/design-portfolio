@@ -21,10 +21,10 @@ export default function AboutSection() {
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground" data-testid="text-about-title">
-              Soy yo
+              Hey There!
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-paragraph">
-              Hey there! I'm a Venezuelan who absolutely loves designing things. I'm the type of person who gets genuinely excited about turning cool ideas into real, functional designs that actually work and make people's lives better.
+              I'm a Venezuelan who absolutely loves designing things. I'm the type of person who gets genuinely excited about turning cool ideas into real, functional designs that actually work and make people's lives better.
               <br /><br />
               When I'm not deep in CAD models or tinkering with prototypes, you'll probably find me on the padel court, dancing at music festivals, or cheering way too loudly at Texas football games (Hook 'em! 🤘). Life's too short not to have fun while making cool stuff!
             </p>
@@ -33,14 +33,6 @@ export default function AboutSection() {
               <div className="flex items-center space-x-2" data-testid="info-location">
                 <MapPin className="text-primary h-5 w-5" />
                 <span className="text-muted-foreground">Austin, Texas</span>
-              </div>
-              <div className="flex items-center space-x-2" data-testid="info-passion">
-                <Heart className="text-primary h-5 w-5" />
-                <span className="text-muted-foreground">Design & Innovation</span>
-              </div>
-              <div className="flex items-center space-x-2" data-testid="info-energy">
-                <Coffee className="text-primary h-5 w-5" />
-                <span className="text-muted-foreground">Powered by Caffeine</span>
               </div>
             </div>
           </div>
