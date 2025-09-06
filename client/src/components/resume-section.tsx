@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Wrench, Download, Fuel } from "lucide-react";
-import { SiSamsung, SiAmazon } from "react-icons/si";
-import { GiTexas } from "react-icons/gi";
+import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
+import { SiSamsung } from "react-icons/si";
 
 const skills = [
   { name: "SolidWorks", icon: "🔧" },
@@ -85,7 +84,13 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <GiTexas className="h-12 w-12 text-primary/30" data-testid="logo-ut-austin" />
+                    <img 
+                      src="/images/ut-logo.png" 
+                      alt="UT Austin Logo" 
+                      className="h-12 w-auto opacity-30 brightness-0 saturate-0" 
+                      style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)' }}
+                      data-testid="logo-ut-austin" 
+                    />
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
@@ -123,7 +128,13 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <SiAmazon className="h-12 w-12 text-primary/30" data-testid="logo-amazon" />
+                    <img 
+                      src="/images/amazon-robotics-logo.png" 
+                      alt="Amazon Robotics Logo" 
+                      className="h-12 w-auto opacity-30 brightness-0 saturate-0" 
+                      style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)' }}
+                      data-testid="logo-amazon" 
+                    />
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
@@ -142,7 +153,13 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <Fuel className="h-12 w-12 text-primary/30" data-testid="logo-bp" />
+                    <img 
+                      src="/images/bp-logo.webp" 
+                      alt="BP Logo" 
+                      className="h-12 w-auto opacity-30 brightness-0 saturate-0" 
+                      style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)' }}
+                      data-testid="logo-bp" 
+                    />
                   </div>
                 </div>
               </div>
