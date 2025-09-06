@@ -137,7 +137,19 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <SiAmazon className="h-12 w-12 text-primary/30" data-testid="logo-amazon" />
+                    <div className="relative h-12 w-12" data-testid="logo-amazon">
+                      <img 
+                        src="/images/amazon-robotics-logo.webp" 
+                        alt="Amazon Robotics Logo" 
+                        className="h-12 w-auto object-contain block dark:hidden" 
+                      />
+                      <img 
+                        src="/images/amazon-robotics-logo.webp" 
+                        alt="Amazon Robotics Logo" 
+                        className="h-12 w-auto object-contain hidden dark:block" 
+                        style={{ filter: 'invert(1)' }}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
