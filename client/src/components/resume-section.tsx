@@ -84,12 +84,17 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <div 
-                      className="h-12 w-12 flex items-center justify-center text-primary/30 font-bold text-lg border-2 border-primary/30" 
-                      style={{ fontFamily: 'var(--font-univers)', backgroundColor: 'transparent' }}
-                      data-testid="logo-ut-austin"
-                    >
-                      UT
+                    <div className="relative h-12 w-12" data-testid="logo-ut-austin">
+                      <img 
+                        src="/images/ut-longhorn-black.png" 
+                        alt="UT Austin Longhorn Logo" 
+                        className="h-12 w-12 object-contain block dark:hidden" 
+                      />
+                      <img 
+                        src="/images/ut-longhorn-white.jpg" 
+                        alt="UT Austin Longhorn Logo" 
+                        className="h-12 w-12 object-contain hidden dark:block" 
+                      />
                     </div>
                   </div>
                 </div>
