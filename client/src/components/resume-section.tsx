@@ -13,44 +13,13 @@ const skills = [
 
 export default function ResumeSection() {
   const downloadResume = () => {
-    // Create a simple text-based resume for download
-    const resumeContent = `
-ANDRES BARRIOS
-Mechanical Engineering Student at UT Austin
-Email: abarrios10@utexas.edu
-
-EDUCATION
-Bachelor of Science, Mechanical Engineering
-The University of Texas at Austin
-December 2026
-Concentration: Robotics/Mechatronics | Certificate: Programming and Computation
-
-EXPERIENCE
-Undergraduate Robotics Research Assistant | Oden Institute of Computational Engineers - Center of Autonomy | September 2025 - Present
-- General-Purpose Robotics Development
-
-Mechanical Design Engineer Intern | Samsung | May 2025 - August 2025
-- Tooling Equipment Solutions
-
-Hardware Development Engineer Co-op | Amazon Robotics | January 2025 - May 2025
-- Autonomous Drive-Unit Robots
-
-Mechanical Reliability Engineer Intern | BP | May 2024 - August 2024
-- Maintenance Equipment Design
-
-TECHNICAL SKILLS
-SolidWorks, Autodesk Inventor, GD&T, DFMA, 3D Printing, Python
-    `.trim();
-
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
+    // Download the actual PDF resume
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Andres_Barrios_Resume.txt';
+    link.href = '/resume.pdf';
+    link.download = 'Andres_Barrios_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -103,7 +72,7 @@ SolidWorks, Autodesk Inventor, GD&T, DFMA, 3D Printing, Python
                     Undergraduate Robotics Research Assistant
                   </h4>
                   <p className="text-primary font-medium" data-testid="text-experience-company-1">
-                    Oden Institute of Computational Engineers - Center of Autonomy
+                    Oden Institute of Computational Engineering - Center of Autonomy
                   </p>
                   <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">
                     September 2025 - Present
@@ -188,7 +157,7 @@ SolidWorks, Autodesk Inventor, GD&T, DFMA, 3D Printing, Python
                 data-testid="button-download-resume"
               >
                 <Download className="mr-2 h-4 w-4" />
-                Download Resume PDF
+                Download Resume
               </Button>
             </div>
           </CardContent>

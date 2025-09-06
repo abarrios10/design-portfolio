@@ -13,7 +13,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="/attached_assets/Professional Head Shot_1757025526514.JPG"
+              src="/images/profile.jpg"
               alt="Andres Barrios Professional Headshot"
               className="rounded-2xl shadow-lg w-full h-auto"
               data-testid="img-about-profile"
