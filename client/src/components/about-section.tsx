@@ -1,4 +1,4 @@
-import { MapPin, University, Calendar } from "lucide-react";
+import { MapPin, Heart, Coffee } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -21,12 +21,12 @@ export default function AboutSection() {
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground" data-testid="text-about-title">
-              Designing the Future, One Project at a Time
+              Just Building Cool Stuff
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-paragraph">
-              Hey there! I'm a Venezuelan-American Mechanical Engineering student at UT Austin who absolutely loves designing things. Whether it's working on autonomous robots at Amazon, developing tooling solutions at Samsung, or tackling maintenance equipment at BP, I get genuinely excited about turning ideas into real, functional designs that make a difference.
+              Hey there! I'm Venezuelan and absolutely love designing things. I'm the type of person who gets genuinely excited about turning wild ideas into real, functional designs that actually work and make people's lives better.
               <br /><br />
-              When I'm not deep in CAD models or tinkering with prototypes, you'll probably find me on the padel court, dancing at music festivals, or cheering way too loudly at Texas football games (Hook 'em! 🤘). There's something about the creative problem-solving in engineering that connects with everything I do – it's all about finding elegant solutions, whether that's in a design challenge or figuring out the perfect paddle shot.
+              When I'm not deep in CAD models or tinkering with prototypes, you'll probably find me on the padel court, dancing at music festivals, or cheering way too loudly at Texas football games (Hook 'em! 🤘). Life's too short not to have fun while making cool stuff!
             </p>
             
             <div className="flex flex-wrap gap-4 mt-8">
@@ -34,13 +34,13 @@ export default function AboutSection() {
                 <MapPin className="text-primary h-5 w-5" />
                 <span className="text-muted-foreground">Austin, Texas</span>
               </div>
-              <div className="flex items-center space-x-2" data-testid="info-university">
-                <University className="text-primary h-5 w-5" />
-                <span className="text-muted-foreground">UT Austin</span>
+              <div className="flex items-center space-x-2" data-testid="info-passion">
+                <Heart className="text-primary h-5 w-5" />
+                <span className="text-muted-foreground">Design & Innovation</span>
               </div>
-              <div className="flex items-center space-x-2" data-testid="info-graduation">
-                <Calendar className="text-primary h-5 w-5" />
-                <span className="text-muted-foreground">Class of 2026</span>
+              <div className="flex items-center space-x-2" data-testid="info-energy">
+                <Coffee className="text-primary h-5 w-5" />
+                <span className="text-muted-foreground">Powered by Caffeine</span>
               </div>
             </div>
           </div>
