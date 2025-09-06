@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Wrench, Download, Fuel } from "lucide-react";
+import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
 import { SiSamsung, SiAmazon } from "react-icons/si";
 
 const skills = [
@@ -146,7 +146,12 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <Fuel className="h-12 w-12 text-primary/30" data-testid="logo-bp" />
+                    <img 
+                      src="/images/bp-logo.webp" 
+                      alt="BP Logo" 
+                      className="h-12 w-auto logo-filter" 
+                      data-testid="logo-bp" 
+                    />
                   </div>
                 </div>
               </div>
