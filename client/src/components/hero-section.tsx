@@ -5,7 +5,7 @@ export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80;
+      const headerOffset = 120;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -24,7 +24,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&h=1380')`,
+          backgroundImage: `url('/images/mechanical-bg.png')`,
         }}
       />
 

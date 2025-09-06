@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div className="border-t border-border pt-8">
             <p className="text-sm text-muted-foreground" data-testid="text-footer-copyright">
-              © 2024 Andres Barrios. Designed with passion for engineering excellence.
+              © 2025 Andres Barrios. All rights reserved.
             </p>
           </div>
         </div>

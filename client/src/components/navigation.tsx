@@ -33,7 +33,7 @@ export default function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80;
+      const headerOffset = 120;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

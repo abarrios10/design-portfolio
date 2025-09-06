@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
+import { GraduationCap, Briefcase, Wrench, Download, University } from "lucide-react";
+import { SiAmazon, SiSamsung } from "react-icons/si";
+import { FaIndustry } from "react-icons/fa";
 
 const skills = [
   { name: "SolidWorks", icon: "🔧" },
@@ -67,61 +69,81 @@ export default function ResumeSection() {
                 Experience
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 border-primary pl-6">
-                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
-                    Undergraduate Robotics Research Assistant
-                  </h4>
-                  <p className="text-primary font-medium" data-testid="text-experience-company-1">
-                    Oden Institute of Computational Engineering - Center of Autonomy
-                  </p>
-                  <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">
-                    September 2025 - Present
-                  </p>
-                  <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">
-                    General-Purpose Robotics Development
-                  </p>
+                <div className="border-l-2 border-primary pl-6 flex items-start justify-between">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
+                      Undergraduate Robotics Research Assistant
+                    </h4>
+                    <p className="text-primary font-medium" data-testid="text-experience-company-1">
+                      Oden Institute of Computational Engineering - Center of Autonomy
+                    </p>
+                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">
+                      September 2025 - Present
+                    </p>
+                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">
+                      General-Purpose Robotics Development
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0 ml-6">
+                    <University className="h-12 w-12 text-primary/30" data-testid="logo-ut-austin" />
+                  </div>
                 </div>
-                <div className="border-l-2 border-muted-foreground pl-6">
-                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-2">
-                    Mechanical Design Engineer Intern
-                  </h4>
-                  <p className="text-primary font-medium" data-testid="text-experience-company-2">
-                    Samsung
-                  </p>
-                  <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-2">
-                    May 2025 - August 2025
-                  </p>
-                  <p className="text-muted-foreground mt-2" data-testid="text-experience-description-2">
-                    Tooling Equipment Solutions
-                  </p>
+                <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-2">
+                      Mechanical Design Engineer Intern
+                    </h4>
+                    <p className="text-primary font-medium" data-testid="text-experience-company-2">
+                      Samsung
+                    </p>
+                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-2">
+                      May 2025 - August 2025
+                    </p>
+                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-2">
+                      Tooling Equipment Solutions
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0 ml-6">
+                    <SiSamsung className="h-12 w-12 text-primary/30" data-testid="logo-samsung" />
+                  </div>
                 </div>
-                <div className="border-l-2 border-muted-foreground pl-6">
-                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-3">
-                    Hardware Development Engineer Co-op
-                  </h4>
-                  <p className="text-primary font-medium" data-testid="text-experience-company-3">
-                    Amazon Robotics
-                  </p>
-                  <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-3">
-                    January 2025 - May 2025
-                  </p>
-                  <p className="text-muted-foreground mt-2" data-testid="text-experience-description-3">
-                    Autonomous Drive-Unit Robots
-                  </p>
+                <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-3">
+                      Hardware Development Engineer Co-op
+                    </h4>
+                    <p className="text-primary font-medium" data-testid="text-experience-company-3">
+                      Amazon Robotics
+                    </p>
+                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-3">
+                      January 2025 - May 2025
+                    </p>
+                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-3">
+                      Autonomous Drive-Unit Robots
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0 ml-6">
+                    <SiAmazon className="h-12 w-12 text-primary/30" data-testid="logo-amazon" />
+                  </div>
                 </div>
-                <div className="border-l-2 border-muted-foreground pl-6">
-                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-4">
-                    Mechanical Reliability Engineer Intern
-                  </h4>
-                  <p className="text-primary font-medium" data-testid="text-experience-company-4">
-                    BP
-                  </p>
-                  <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-4">
-                    May 2024 - August 2024
-                  </p>
-                  <p className="text-muted-foreground mt-2" data-testid="text-experience-description-4">
-                    Maintenance Equipment Design
-                  </p>
+                <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-4">
+                      Mechanical Reliability Engineer Intern
+                    </h4>
+                    <p className="text-primary font-medium" data-testid="text-experience-company-4">
+                      BP
+                    </p>
+                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-4">
+                      May 2024 - August 2024
+                    </p>
+                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-4">
+                      Maintenance Equipment Design
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0 ml-6">
+                    <FaIndustry className="h-12 w-12 text-primary/30" data-testid="logo-bp" />
+                  </div>
                 </div>
               </div>
             </div>
