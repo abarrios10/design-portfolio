@@ -94,7 +94,10 @@ export default function ResumeSection() {
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin Longhorn Logo" 
                         className="h-12 w-12 object-contain hidden dark:block" 
-                        style={{ mixBlendMode: 'screen' }}
+                        style={{ 
+                          filter: 'brightness(1.2) contrast(1.5)',
+                          mixBlendMode: 'screen'
+                        }}
                       />
                     </div>
                   </div>
