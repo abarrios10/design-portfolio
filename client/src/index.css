@@ -71,6 +71,17 @@
   --sidebar-border: hsl(240 4% 16%);
 }
 
+/* Logo filter styles */
+.logo-filter {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+  opacity: 0.3;
+}
+
+.dark .logo-filter {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  opacity: 0.3;
+}
+
 @layer base {
   * {
     @apply border-border;
