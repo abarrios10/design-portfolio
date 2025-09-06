@@ -156,27 +156,18 @@ export default function ResumeSection() {
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <div className="flex flex-col items-center">
-                      <div 
-                        className="h-12 w-12 flex items-center justify-center text-primary/30 font-bold text-xl" 
-                        style={{ fontFamily: 'var(--font-univers)' }}
-                        data-testid="logo-bp"
-                      >
-                        bp
-                      </div>
-                      <div className="mt-1 w-8 h-8 flex items-center justify-center">
-                        <div className="relative w-6 h-6">
-                          <div className="absolute inset-0 bg-primary/30 rounded-full"></div>
-                          <div className="absolute top-0 left-1/2 w-0.5 h-2 bg-primary/30 transform -translate-x-1/2 -translate-y-1"></div>
-                          <div className="absolute bottom-0 left-1/2 w-0.5 h-2 bg-primary/30 transform -translate-x-1/2 translate-y-1"></div>
-                          <div className="absolute left-0 top-1/2 w-2 h-0.5 bg-primary/30 transform -translate-y-1/2 -translate-x-1"></div>
-                          <div className="absolute right-0 top-1/2 w-2 h-0.5 bg-primary/30 transform -translate-y-1/2 translate-x-1"></div>
-                          <div className="absolute top-0 right-0 w-1.5 h-1.5 bg-primary/30 transform rotate-45 translate-x-0.5 -translate-y-0.5"></div>
-                          <div className="absolute bottom-0 right-0 w-1.5 h-1.5 bg-primary/30 transform rotate-45 translate-x-0.5 translate-y-0.5"></div>
-                          <div className="absolute top-0 left-0 w-1.5 h-1.5 bg-primary/30 transform rotate-45 -translate-x-0.5 -translate-y-0.5"></div>
-                          <div className="absolute bottom-0 left-0 w-1.5 h-1.5 bg-primary/30 transform rotate-45 -translate-x-0.5 translate-y-0.5"></div>
-                        </div>
-                      </div>
+                    <div className="relative h-12 w-12" data-testid="logo-bp">
+                      <img 
+                        src="/images/bp-logo-official.png" 
+                        alt="BP Logo" 
+                        className="h-12 w-12 object-contain block dark:hidden opacity-30" 
+                      />
+                      <img 
+                        src="/images/bp-logo-official.png" 
+                        alt="BP Logo" 
+                        className="h-12 w-12 object-contain hidden dark:block opacity-30" 
+                        style={{ filter: 'invert(1)' }}
+                      />
                     </div>
                   </div>
                 </div>
