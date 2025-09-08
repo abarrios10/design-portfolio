@@ -24,9 +24,9 @@ export default function AboutSection() {
               Hey There!
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-paragraph">
-              Born in Venezuela and now living in Austin, I absolutely love designing things. I'm the type of person who gets genuinely excited about turning cool ideas into real, functional designs that actually work and make people's lives better.
+              Born in Venezuela and now living in Austin, I love designing things. I'm a person who gets excited about turning cool ideas into real, functional designs that work.
               <br /><br />
-              When I'm not deep in CAD models or tinkering with prototypes, you'll probably find me on the padel court, dancing at music festivals, or cheering way too loudly at Texas football games (Hook 'em! 🤘).
+              When I'm not working, you'll probably find me on the padel court, dancing at music festivals, or cheering way too loudly at Texas football games (Hook 'em! 🤘).
             </p>
             
             <div className="flex flex-wrap gap-4 mt-8">
