@@ -74,7 +74,7 @@ export default function ResumeSection() {
                       Undergraduate Robotics Research Assistant
                     </h4>
                     <p className="text-primary font-medium" data-testid="text-experience-company-1">
-                      Oden Institute of Computational Engineering - Center of Autonomy
+                      Oden Institute for Computational Engineering - Center of Autonomy
                     </p>
                     <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">
                       September 2025 - Present
