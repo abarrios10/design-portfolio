@@ -8,11 +8,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 const projects = [
   {
     id: 1,
-    title: "Precision Robotic Arm",
-    description: "Six-axis robotic arm designed for precision assembly applications with custom servo control system.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    technologies: ["SolidWorks", "Arduino", "3D Printing"],
-    details: "Developed a six-axis robotic arm capable of precision movements for assembly line applications. The project involved extensive CAD modeling, servo motor selection, and custom control algorithms for smooth operation."
+    title: "Fidget Spinner Prototyping",
+    description: "Complete product development from CAD design through multiple manufacturing processes including 3D printing, laser cutting, and injection molding.",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    technologies: ["SolidWorks", "3D Printing", "Injection Molding", "Laser Cutting", "FEA"],
+    details: "Executed a comprehensive design-to-manufacturing project developing a fidget spinner through iterative CAD modeling and multiple prototyping methods. Started with initial SolidWorks designs and progressed through 3D printing for concept validation, then advanced to laser cutting for precision manufacturing. During laser cutting implementation, identified structural issues with penny insertion forces causing edge cracking, leading to design modifications with enlarged edge geometry for improved durability. The project culminated in injection molding preparation, including complete mold design for both core and cavity components. Conducted finite element analysis to validate structural integrity and optimize material distribution. This project demonstrated the full product development cycle from conceptual design through manufacturing-ready tooling."
   },
   {
     id: 2,
