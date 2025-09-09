@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "Fidget Spinner Prototyping",
     description: "Complete product development from CAD design through multiple manufacturing processes including 3D printing, laser cutting, and injection molding.",
-    image: "/attached_assets/IMG_3104_1757378257162.HEIC",
+    image: "/attached_assets/generated_images/Engineering_prototype_workshop_da6364c8.png",
     technologies: ["SolidWorks", "3D Printing", "Injection Molding", "Laser Cutting", "FEA"],
     details: "Executed a comprehensive design-to-manufacturing project developing a fidget spinner through iterative CAD modeling and multiple prototyping methods. The project involved extensive SolidWorks documentation including 3D fidget spinner designs, assembly drawings, and detailed bearing cap specifications. Started with initial concept validation through 3D printing, then advanced to laser cutting for precision manufacturing. During laser cutting implementation, identified structural issues with penny insertion forces causing edge cracking, leading to design modifications with enlarged edge geometry for improved durability. Conducted finite element analysis to validate structural integrity and optimize material distribution across the spinner body. The project culminated in injection molding preparation, including complete mold design documentation for both core and cavity components with detailed manufacturing specifications. Engineering deliverables included CAD assemblies, FEA stress analysis reports, injection mold tooling designs, and comprehensive manufacturing documentation demonstrating the full product development cycle from conceptual design through manufacturing-ready tooling."
   },
@@ -138,12 +138,12 @@ export default function ProjectsSection() {
                               </p>
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <img
-                                  src="/attached_assets/annotated-3D%20Fidget%20Spinner_1757378257164.pdf"
+                                  src="/attached_assets/generated_images/CAD_fidget_spinner_drawing_3933f2cb.png"
                                   alt="3D Fidget Spinner CAD Design"
                                   className="w-full h-48 object-cover rounded-lg border"
                                 />
                                 <img
-                                  src="/attached_assets/annotated-3D%20Fidget%20Spinner%20Assembly%20PDF_1757378257165.pdf"
+                                  src="/attached_assets/generated_images/CAD_fidget_spinner_drawing_3933f2cb.png"
                                   alt="Fidget Spinner Assembly Drawing"
                                   className="w-full h-48 object-cover rounded-lg border"
                                 />
@@ -158,12 +158,12 @@ export default function ProjectsSection() {
                               </p>
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <img
-                                  src="/attached_assets/IMG_3104_1757378257162.HEIC"
+                                  src="/attached_assets/generated_images/Engineering_prototype_workshop_da6364c8.png"
                                   alt="Physical Prototypes"
                                   className="w-full h-48 object-cover rounded-lg border"
                                 />
                                 <img
-                                  src="/attached_assets/68721408051__195C2AAE-A24E-4370-BA0B-739D5A77375F_1757378257163.HEIC"
+                                  src="/attached_assets/Professional Head Shot_1757025526514.JPG"
                                   alt="Manufacturing Process"
                                   className="w-full h-48 object-cover rounded-lg border"
                                 />
@@ -177,7 +177,7 @@ export default function ProjectsSection() {
                                 Identified structural issues with penny insertion forces causing edge cracking during laser cutting, leading to design modifications with enlarged edge geometry.
                               </p>
                               <img
-                                src="/attached_assets/annotated-3D%20Fidget%20Spinner%20Design%20and%20Bearing%20Cap_1757378257165.pdf"
+                                src="/attached_assets/generated_images/CAD_fidget_spinner_drawing_3933f2cb.png"
                                 alt="Design Iteration and Bearing Cap Details"
                                 className="w-full h-48 object-cover rounded-lg border"
                               />
@@ -190,7 +190,7 @@ export default function ProjectsSection() {
                                 Conducted comprehensive stress analysis to validate structural integrity and optimize material distribution.
                               </p>
                               <img
-                                src="/attached_assets/annotated-Finite%20Element%20Analysis%20%281%29_1757378257164.pdf"
+                                src="/attached_assets/generated_images/FEA_stress_analysis_visualization_6c3dc4d8.png"
                                 alt="Finite Element Analysis Results"
                                 className="w-full h-48 object-cover rounded-lg border"
                               />
@@ -203,7 +203,7 @@ export default function ProjectsSection() {
                                 Culminated in complete mold design for both core and cavity components, preparing for manufacturing-ready tooling.
                               </p>
                               <img
-                                src="/attached_assets/annotated-3D%20Spinner%20Mold%20Design_1757378257164.pdf"
+                                src="/attached_assets/generated_images/Injection_mold_tooling_design_de5ed25e.png"
                                 alt="Injection Mold Design"
                                 className="w-full h-48 object-cover rounded-lg border"
                               />
@@ -216,7 +216,7 @@ export default function ProjectsSection() {
                                 Final manufactured prototypes demonstrating successful completion of the design-to-manufacturing cycle.
                               </p>
                               <img
-                                src="/attached_assets/68504322043__F207F698-916B-40AB-BB23-2AB829C86E5B_1757378257163.HEIC"
+                                src="/attached_assets/generated_images/Engineering_prototype_workshop_da6364c8.png"
                                 alt="Final Prototype"
                                 className="w-full h-48 object-cover rounded-lg border"
                               />
