@@ -107,14 +107,9 @@ export default function ProjectsSection() {
                 {project.id === 1 && (
                   <div className="absolute bottom-4 right-4 h-8 w-8" data-testid="logo-ut-project">
                     <img 
-                      src="/images/ut-longhorn-black.png" 
-                      alt="UT Austin Longhorn Logo" 
-                      className="h-8 w-8 object-contain block dark:hidden opacity-70" 
-                    />
-                    <img 
                       src="/images/ut-longhorn-white.jpg" 
                       alt="UT Austin Longhorn Logo" 
-                      className="h-8 w-8 object-contain hidden dark:block opacity-70" 
+                      className="h-8 w-8 object-contain" 
                       style={{ 
                         filter: 'brightness(1.2) contrast(1.5)',
                         mixBlendMode: 'screen'
