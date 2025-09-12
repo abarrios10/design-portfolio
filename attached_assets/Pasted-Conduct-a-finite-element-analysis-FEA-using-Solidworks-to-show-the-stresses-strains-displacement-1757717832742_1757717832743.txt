@@ -1,0 +1,23 @@
+Conduct a finite element analysis (FEA) using Solidworks to show the stresses, strains, displacements, and safety factor of your INDIVIDUAL fidget spinner assembly (including main body, bearing, and all weights) to see if it is likely to fail as it is currently designed.   Note you can suppress the bearing caps as these are unlikely to fail in compression.
+
+Make the following assumptions:
+
+1. Geometry:   Bearings are radial ball bearings with OD 22.00 mm, ID 8.00 mm, thickness 7.00 mm.   Hole diameter in spinner for bearing is 21.95 mm and for penny weights are 19.00 as recommended by the American National Standard Preferred Shaft Basis Metric Transition and Interference fit.
+
+2. Chose Evaluate- Interference Detection, and verify the bearings/weights are in interference.  
+
+3. Open a new Design Study.
+
+4. Materials: bearings are alloy steel, main body is polypropylene (PP) copolymer, weights are either same as bearing or custom if you chose custom weights.
+
+5. Connections: Add contact sets, set type to shrink fit, hide the main body from view, choose all the cylindrical faces of bearings/weights, hide all the bearings/weights, chose all the cylindrical faces of the holes in the main body, .
+
+6. Fixtures: you need 2.  Fixture 1: hide the main body from view, choose all the cylindrical faces of bearings/weights, set axial translation to 0 mm.   Fixture 2: show the main body, hide all the bearings/weights, chose all the cylindrical faces of the holes in the main body, set axial translation to 0 mm and circumferential translation to 0 rad.
+
+7. External loads: you can skip since your loading is via the press fit interference connection (internal loading, not external loading).
+
+8. Mesh you can accept the default or increase the refinement if necessary.   Check if this is necessary (mesh refinement).
+
+9. Run the study and create plots for stresses, strains, displacements, and safety factor.  For safety factor change the scale so minimum is 1 and max is 10.   For any regions on your assembly where FOS<1 it is likely to fail.
+
+10. If your spinner does fail, make changes to your design where it failed (such as increasing thickness to thin features or adding fillets to sharp corners where stress is concentrated).  Then rerun your FEA with the improved design to show that the spinner will not fail.

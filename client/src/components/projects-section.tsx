@@ -12,7 +12,7 @@ const projects = [
     description: "Product development from CAD design to prototype through multiple manufacturing methods.",
     image: "/attached_assets/image_1757715664937.png",
     technologies: ["SolidWorks", "3D Printing", "Injection Molding", "Laser Cutting", "FEA"],
-    details: "Executed a comprehensive design-to-manufacturing project developing a fidget spinner through iterative CAD modeling and multiple prototyping methods. The project involved extensive SolidWorks documentation including 3D fidget spinner designs, assembly drawings, and detailed bearing cap specifications. Started with initial concept validation through 3D printing, then advanced to laser cutting for precision manufacturing. During laser cutting implementation, identified structural issues with penny insertion forces causing edge cracking, leading to design modifications with enlarged edge geometry for improved durability. Conducted finite element analysis to validate structural integrity and optimize material distribution across the spinner body. The project culminated in injection molding preparation, including complete mold design documentation for both core and cavity components with detailed manufacturing specifications. Engineering deliverables included CAD assemblies, FEA stress analysis reports, injection mold tooling designs, and comprehensive manufacturing documentation demonstrating the full product development cycle from conceptual design through manufacturing-ready tooling."
+    details: "School project completed for Introduction to Engineering Design and Graphics course, focusing on CAD modeling, basics of FEA, tolerancing, and prototyping using different manufacturing methods. The project involved creating a complete fidget spinner design from initial CAD through multiple manufacturing processes including 3D printing, laser cutting, and injection molding preparation. Applied geometric tolerances for the injection mold cavity design and conducted structural FEA analysis as part of coursework requirements."
   },
   {
     id: 2,
@@ -146,100 +146,86 @@ export default function ProjectsSection() {
                             <p className="text-muted-foreground">{project.details}</p>
                           </div>
                           
-                          {/* Design Process */}
+                          {/* CAD Design and Modeling */}
                           <div>
-                            <h4 className="text-lg font-semibold mb-4">Design Process</h4>
-                            
-                            {/* Initial CAD Design */}
-                            <div className="mb-6">
-                              <h5 className="font-medium mb-2">1. Initial CAD Design & Modeling</h5>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Started with comprehensive SolidWorks modeling to create the fidget spinner geometry, assembly, and bearing cap design.
-                              </p>
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <h4 className="text-lg font-semibold mb-4">CAD Design and Modeling</h4>
+                            <p className="text-sm text-muted-foreground mb-4">
+                              Created comprehensive SolidWorks models including fidget spinner geometry, assembly components, and injection mold design with geometric tolerances for manufacturing precision.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <img
+                                src="/attached_assets/image_1757718464736.png"
+                                alt="SolidWorks Assembly Design"
+                                className="w-full h-64 object-cover rounded-lg border"
+                              />
+                              <img
+                                src="/attached_assets/image_1757718554022.png"
+                                alt="3D Fidget Spinner Model"
+                                className="w-full h-64 object-cover rounded-lg border"
+                              />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                              <img
+                                src="/attached_assets/image_1757718627490.png"
+                                alt="Detailed Component Design"
+                                className="w-full h-64 object-cover rounded-lg border"
+                              />
+                              <img
+                                src="/attached_assets/image_1757718751128.png"
+                                alt="Injection Mold Cavity Design"
+                                className="w-full h-64 object-cover rounded-lg border"
+                              />
+                            </div>
+                          </div>
+
+                          {/* Prototypes */}
+                          <div>
+                            <h4 className="text-lg font-semibold mb-4">Prototypes</h4>
+                            <p className="text-sm text-muted-foreground mb-4">
+                              Manufactured prototypes using multiple methods including 3D printing and laser cutting, incorporating real pennies as weights to test functionality and structural integrity.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <img
+                                src="/attached_assets/image_1757715664937.png"
+                                alt="3D Printed Prototype with Pennies"
+                                className="w-full h-64 object-cover rounded-lg border"
+                              />
+                              <img
+                                src="/attached_assets/image_1757718142093.png"
+                                alt="Laser Cut Prototype"
+                                className="w-full h-64 object-cover rounded-lg border"
+                              />
+                            </div>
+                            <img
+                              src="/attached_assets/image_1757718285634.png"
+                              alt="Translucent Prototype"
+                              className="w-full h-64 object-cover rounded-lg border mt-4"
+                            />
+                          </div>
+
+                          {/* Finite Element Analysis */}
+                          <div>
+                            <h4 className="text-lg font-semibold mb-4">Finite Element Analysis</h4>
+                            <p className="text-sm text-muted-foreground mb-4">
+                              Conducted structural FEA analysis using SolidWorks to evaluate Von Mises stress distribution and Factor of Safety under penny insertion forces and operational loading conditions.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <div>
+                                <h6 className="text-sm font-medium mb-2">Von Mises Stress Analysis</h6>
                                 <img
-                                  src="/attached_assets/generated_images/CAD_fidget_spinner_drawing_3933f2cb.png"
-                                  alt="3D Fidget Spinner CAD Design"
-                                  className="w-full h-48 object-cover rounded-lg border"
-                                />
-                                <img
-                                  src="/attached_assets/generated_images/CAD_fidget_spinner_drawing_3933f2cb.png"
-                                  alt="Fidget Spinner Assembly Drawing"
-                                  className="w-full h-48 object-cover rounded-lg border"
+                                  src="/attached_assets/image_1757719949420.png"
+                                  alt="Von Mises Stress Distribution"
+                                  className="w-full h-64 object-cover rounded-lg border"
                                 />
                               </div>
-                            </div>
-
-                            {/* Prototyping */}
-                            <div className="mb-6">
-                              <h5 className="font-medium mb-2">2. Prototyping & Testing</h5>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Progressed through multiple manufacturing methods: 3D printing for concept validation, then laser cutting for precision manufacturing.
-                              </p>
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <div>
+                                <h6 className="text-sm font-medium mb-2">Factor of Safety Analysis</h6>
                                 <img
-                                  src="/attached_assets/generated_images/Engineering_prototype_workshop_da6364c8.png"
-                                  alt="Physical Prototypes"
-                                  className="w-full h-48 object-cover rounded-lg border"
-                                />
-                                <img
-                                  src="/attached_assets/Professional Head Shot_1757025526514.JPG"
-                                  alt="Manufacturing Process"
-                                  className="w-full h-48 object-cover rounded-lg border"
+                                  src="/attached_assets/image_1757720047656.png"
+                                  alt="Factor of Safety Distribution"
+                                  className="w-full h-64 object-cover rounded-lg border"
                                 />
                               </div>
-                            </div>
-
-                            {/* Design Iteration */}
-                            <div className="mb-6">
-                              <h5 className="font-medium mb-2">3. Design Iteration & Problem Solving</h5>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Identified structural issues with penny insertion forces causing edge cracking during laser cutting, leading to design modifications with enlarged edge geometry.
-                              </p>
-                              <img
-                                src="/attached_assets/generated_images/CAD_fidget_spinner_drawing_3933f2cb.png"
-                                alt="Design Iteration and Bearing Cap Details"
-                                className="w-full h-48 object-cover rounded-lg border"
-                              />
-                            </div>
-
-                            {/* FEA Analysis */}
-                            <div className="mb-6">
-                              <h5 className="font-medium mb-2">4. Finite Element Analysis</h5>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Conducted comprehensive stress analysis to validate structural integrity and optimize material distribution.
-                              </p>
-                              <img
-                                src="/attached_assets/generated_images/FEA_stress_analysis_visualization_6c3dc4d8.png"
-                                alt="Finite Element Analysis Results"
-                                className="w-full h-48 object-cover rounded-lg border"
-                              />
-                            </div>
-
-                            {/* Injection Molding */}
-                            <div className="mb-6">
-                              <h5 className="font-medium mb-2">5. Injection Mold Design</h5>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Culminated in complete mold design for both core and cavity components, preparing for manufacturing-ready tooling.
-                              </p>
-                              <img
-                                src="/attached_assets/generated_images/Injection_mold_tooling_design_de5ed25e.png"
-                                alt="Injection Mold Design"
-                                className="w-full h-48 object-cover rounded-lg border"
-                              />
-                            </div>
-
-                            {/* Final Prototype */}
-                            <div className="mb-6">
-                              <h5 className="font-medium mb-2">6. Final Prototype</h5>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Final manufactured prototypes demonstrating successful completion of the design-to-manufacturing cycle.
-                              </p>
-                              <img
-                                src="/attached_assets/generated_images/Engineering_prototype_workshop_da6364c8.png"
-                                alt="Final Prototype"
-                                className="w-full h-48 object-cover rounded-lg border"
-                              />
                             </div>
                           </div>
                           
