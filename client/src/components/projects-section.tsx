@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: "Fidget Spinner Prototyping",
-    description: "End-to-end product development from CAD design to injection-molded prototype.",
+    description: "Product development from CAD design to prototype through multiple manufacturing methods.",
     image: "/attached_assets/image_1757715664937.png",
     technologies: ["SolidWorks", "3D Printing", "Injection Molding", "Laser Cutting", "FEA"],
     details: "Executed a comprehensive design-to-manufacturing project developing a fidget spinner through iterative CAD modeling and multiple prototyping methods. The project involved extensive SolidWorks documentation including 3D fidget spinner designs, assembly drawings, and detailed bearing cap specifications. Started with initial concept validation through 3D printing, then advanced to laser cutting for precision manufacturing. During laser cutting implementation, identified structural issues with penny insertion forces causing edge cracking, leading to design modifications with enlarged edge geometry for improved durability. Conducted finite element analysis to validate structural integrity and optimize material distribution across the spinner body. The project culminated in injection molding preparation, including complete mold design documentation for both core and cavity components with detailed manufacturing specifications. Engineering deliverables included CAD assemblies, FEA stress analysis reports, injection mold tooling designs, and comprehensive manufacturing documentation demonstrating the full product development cycle from conceptual design through manufacturing-ready tooling."
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
                 style={{ objectPosition: '50% 80%' }}
                 data-testid={`img-project-${project.id}`}
               />
-              <CardContent className="p-6">
+              <CardContent className="p-6 relative">
                 <h3 className="text-xl font-semibold text-card-foreground mb-2" data-testid={`text-project-title-${project.id}`}>
                   {project.title}
                 </h3>
@@ -103,6 +103,25 @@ export default function ProjectsSection() {
                     </Badge>
                   ))}
                 </div>
+                {/* UT Logo for project 1 (fidget spinner) */}
+                {project.id === 1 && (
+                  <div className="absolute bottom-4 right-4 h-8 w-8" data-testid="logo-ut-project">
+                    <img 
+                      src="/images/ut-longhorn-black.png" 
+                      alt="UT Austin Longhorn Logo" 
+                      className="h-8 w-8 object-contain block dark:hidden opacity-70" 
+                    />
+                    <img 
+                      src="/images/ut-longhorn-white.jpg" 
+                      alt="UT Austin Longhorn Logo" 
+                      className="h-8 w-8 object-contain hidden dark:block opacity-70" 
+                      style={{ 
+                        filter: 'brightness(1.2) contrast(1.5)',
+                        mixBlendMode: 'screen'
+                      }}
+                    />
+                  </div>
+                )}
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
