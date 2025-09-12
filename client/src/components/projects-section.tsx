@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-64 object-cover"
-                style={{ objectPosition: '50% 70%' }}
+                style={{ objectPosition: '50% 80%' }}
                 data-testid={`img-project-${project.id}`}
               />
               <CardContent className="p-6">
