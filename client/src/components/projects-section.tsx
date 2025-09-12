@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: "Fidget Spinner Prototyping",
-    description: "Complete product development from CAD design through multiple manufacturing processes including 3D printing, laser cutting, and injection molding.",
+    description: "End-to-end product development from CAD design to injection-molded prototype.",
     image: "/attached_assets/image_1757715664937.png",
     technologies: ["SolidWorks", "3D Printing", "Injection Molding", "Laser Cutting", "FEA"],
     details: "Executed a comprehensive design-to-manufacturing project developing a fidget spinner through iterative CAD modeling and multiple prototyping methods. The project involved extensive SolidWorks documentation including 3D fidget spinner designs, assembly drawings, and detailed bearing cap specifications. Started with initial concept validation through 3D printing, then advanced to laser cutting for precision manufacturing. During laser cutting implementation, identified structural issues with penny insertion forces causing edge cracking, leading to design modifications with enlarged edge geometry for improved durability. Conducted finite element analysis to validate structural integrity and optimize material distribution across the spinner body. The project culminated in injection molding preparation, including complete mold design documentation for both core and cavity components with detailed manufacturing specifications. Engineering deliverables included CAD assemblies, FEA stress analysis reports, injection mold tooling designs, and comprehensive manufacturing documentation demonstrating the full product development cycle from conceptual design through manufacturing-ready tooling."
