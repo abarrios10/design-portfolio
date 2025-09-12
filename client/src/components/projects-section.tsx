@@ -80,7 +80,7 @@ export default function ProjectsSection() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
                 data-testid={`img-project-${project.id}`}
               />
               <CardContent className="p-6">
