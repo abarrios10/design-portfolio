@@ -135,7 +135,6 @@ export default function ProjectsSection() {
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
                     <DialogHeader>
-                      <DialogTitle>{project.title}</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-6">
                       {project.id === 1 ? (
@@ -153,28 +152,76 @@ export default function ProjectsSection() {
                               Created comprehensive SolidWorks models including fidget spinner geometry, assembly components, and injection mold design with geometric tolerances for manufacturing precision.
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                              <img
-                                src="/attached_assets/image_1757718464736.png"
-                                alt="SolidWorks Assembly Design"
-                                className="w-full h-64 object-cover rounded-lg border"
-                              />
-                              <img
-                                src="/attached_assets/image_1757718554022.png"
-                                alt="3D Fidget Spinner Model"
-                                className="w-full h-64 object-cover rounded-lg border"
-                              />
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <img
+                                    src="/attached_assets/image_1757718464736.png"
+                                    alt="SolidWorks Assembly Design"
+                                    className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                    style={{ objectPosition: '50% 40%' }}
+                                  />
+                                </DialogTrigger>
+                                <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <img
+                                    src="/attached_assets/image_1757718464736.png"
+                                    alt="SolidWorks Assembly Design"
+                                    className="w-full h-auto max-h-[90vh] object-contain"
+                                  />
+                                </DialogContent>
+                              </Dialog>
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <img
+                                    src="/attached_assets/image_1757718554022.png"
+                                    alt="3D Fidget Spinner Model"
+                                    className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                    style={{ objectPosition: '50% 40%' }}
+                                  />
+                                </DialogTrigger>
+                                <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <img
+                                    src="/attached_assets/image_1757718554022.png"
+                                    alt="3D Fidget Spinner Model"
+                                    className="w-full h-auto max-h-[90vh] object-contain"
+                                  />
+                                </DialogContent>
+                              </Dialog>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                              <img
-                                src="/attached_assets/image_1757718627490.png"
-                                alt="Detailed Component Design"
-                                className="w-full h-64 object-cover rounded-lg border"
-                              />
-                              <img
-                                src="/attached_assets/image_1757718751128.png"
-                                alt="Injection Mold Cavity Design"
-                                className="w-full h-64 object-cover rounded-lg border"
-                              />
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <img
+                                    src="/attached_assets/image_1757718627490.png"
+                                    alt="Detailed Component Design"
+                                    className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                    style={{ objectPosition: '50% 40%' }}
+                                  />
+                                </DialogTrigger>
+                                <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <img
+                                    src="/attached_assets/image_1757718627490.png"
+                                    alt="Detailed Component Design"
+                                    className="w-full h-auto max-h-[90vh] object-contain"
+                                  />
+                                </DialogContent>
+                              </Dialog>
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <img
+                                    src="/attached_assets/image_1757718751128.png"
+                                    alt="Injection Mold Cavity Design"
+                                    className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                    style={{ objectPosition: '50% 40%' }}
+                                  />
+                                </DialogTrigger>
+                                <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <img
+                                    src="/attached_assets/image_1757718751128.png"
+                                    alt="Injection Mold Cavity Design"
+                                    className="w-full h-auto max-h-[90vh] object-contain"
+                                  />
+                                </DialogContent>
+                              </Dialog>
                             </div>
                           </div>
 
@@ -185,22 +232,55 @@ export default function ProjectsSection() {
                               Manufactured prototypes using multiple methods including 3D printing and laser cutting, incorporating real pennies as weights to test functionality and structural integrity.
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                              <img
-                                src="/attached_assets/image_1757715664937.png"
-                                alt="3D Printed Prototype with Pennies"
-                                className="w-full h-64 object-cover rounded-lg border"
-                              />
-                              <img
-                                src="/attached_assets/image_1757718142093.png"
-                                alt="Laser Cut Prototype"
-                                className="w-full h-64 object-cover rounded-lg border"
-                              />
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <img
+                                    src="/attached_assets/image_1757715664937.png"
+                                    alt="3D Printed Prototype with Pennies"
+                                    className="w-full h-64 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                  />
+                                </DialogTrigger>
+                                <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <img
+                                    src="/attached_assets/image_1757715664937.png"
+                                    alt="3D Printed Prototype with Pennies"
+                                    className="w-full h-auto max-h-[90vh] object-contain"
+                                  />
+                                </DialogContent>
+                              </Dialog>
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <img
+                                    src="/attached_assets/image_1757718142093.png"
+                                    alt="Laser Cut Prototype"
+                                    className="w-full h-64 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                  />
+                                </DialogTrigger>
+                                <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <img
+                                    src="/attached_assets/image_1757718142093.png"
+                                    alt="Laser Cut Prototype"
+                                    className="w-full h-auto max-h-[90vh] object-contain"
+                                  />
+                                </DialogContent>
+                              </Dialog>
                             </div>
-                            <img
-                              src="/attached_assets/image_1757718285634.png"
-                              alt="Translucent Prototype"
-                              className="w-full h-64 object-cover rounded-lg border mt-4"
-                            />
+                            <Dialog>
+                              <DialogTrigger asChild>
+                                <img
+                                  src="/attached_assets/image_1757718285634.png"
+                                  alt="Translucent Prototype"
+                                  className="w-full h-64 object-contain rounded-lg border mt-4 cursor-pointer hover:opacity-90 transition-opacity"
+                                />
+                              </DialogTrigger>
+                              <DialogContent className="max-w-5xl max-h-[95vh]">
+                                <img
+                                  src="/attached_assets/image_1757718285634.png"
+                                  alt="Translucent Prototype"
+                                  className="w-full h-auto max-h-[90vh] object-contain"
+                                />
+                              </DialogContent>
+                            </Dialog>
                           </div>
 
                           {/* Finite Element Analysis */}
@@ -212,19 +292,43 @@ export default function ProjectsSection() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                               <div>
                                 <h6 className="text-sm font-medium mb-2">Von Mises Stress Analysis</h6>
-                                <img
-                                  src="/attached_assets/image_1757719949420.png"
-                                  alt="Von Mises Stress Distribution"
-                                  className="w-full h-64 object-cover rounded-lg border"
-                                />
+                                <Dialog>
+                                  <DialogTrigger asChild>
+                                    <img
+                                      src="/attached_assets/image_1757719949420.png"
+                                      alt="Von Mises Stress Distribution"
+                                      className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                      style={{ objectPosition: '50% 40%' }}
+                                    />
+                                  </DialogTrigger>
+                                  <DialogContent className="max-w-5xl max-h-[95vh]">
+                                    <img
+                                      src="/attached_assets/image_1757719949420.png"
+                                      alt="Von Mises Stress Distribution"
+                                      className="w-full h-auto max-h-[90vh] object-contain"
+                                    />
+                                  </DialogContent>
+                                </Dialog>
                               </div>
                               <div>
                                 <h6 className="text-sm font-medium mb-2">Factor of Safety Analysis</h6>
-                                <img
-                                  src="/attached_assets/image_1757720047656.png"
-                                  alt="Factor of Safety Distribution"
-                                  className="w-full h-64 object-cover rounded-lg border"
-                                />
+                                <Dialog>
+                                  <DialogTrigger asChild>
+                                    <img
+                                      src="/attached_assets/image_1757720047656.png"
+                                      alt="Factor of Safety Distribution"
+                                      className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                                      style={{ objectPosition: '50% 40%' }}
+                                    />
+                                  </DialogTrigger>
+                                  <DialogContent className="max-w-5xl max-h-[95vh]">
+                                    <img
+                                      src="/attached_assets/image_1757720047656.png"
+                                      alt="Factor of Safety Distribution"
+                                      className="w-full h-auto max-h-[90vh] object-contain"
+                                    />
+                                  </DialogContent>
+                                </Dialog>
                               </div>
                             </div>
                           </div>
