@@ -29,26 +29,47 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <Card key={project.id} className="project-card group overflow-hidden" data-testid={`card-project-${project.id}`}>
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="relative">
+        <div className="flex justify-center">
+          <div className="w-full max-w-md">
+            {projects.map((project) => (
+              <Card key={project.id} className="project-card group overflow-hidden relative" data-testid={`card-project-${project.id}`}>
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-contain rounded-xl mb-4"
+                    className="w-full h-64 object-contain rounded-2xl mb-4"
                     data-testid={`img-project-${project.id}`}
                   />
-                  <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full">
-                    <span className="text-sm font-light text-white">
-                      August 2023 - December 2023
-                    </span>
+                  
+                  {/* UT Longhorn Logo */}
+                  <div className="absolute bottom-20 right-4">
+                    <img 
+                      src="/images/ut-longhorn-black.png" 
+                      alt="UT Austin" 
+                      className="h-8 w-8 object-contain opacity-60 block dark:hidden" 
+                    />
+                    <img 
+                      src="/images/ut-longhorn-white.jpg" 
+                      alt="UT Austin" 
+                      className="h-8 w-8 object-contain opacity-60 hidden dark:block" 
+                      style={{ 
+                        filter: 'brightness(1.2) contrast(1.5)',
+                        mixBlendMode: 'screen'
+                      }}
+                    />
                   </div>
-                </div>
+                  
+                  {/* Date Badge */}
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20">
+                      <span className="text-sm font-semibold text-primary">
+                        August 2023 - December 2023
+                      </span>
+                    </div>
+                  </div>
 
                 <Dialog>
                   <DialogTrigger asChild>
@@ -279,8 +300,9 @@ export default function ProjectsSection() {
                   </DialogContent>
                 </Dialog>
               </CardContent>
-            </Card>
-          ))}
+              </Card>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">
