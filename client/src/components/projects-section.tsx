@@ -187,8 +187,7 @@ export default function ProjectsSection() {
           {/* Finite Element Analysis */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Finite Element Analysis</h4>
-            <p className="text-sm text-muted-foreground mb-4">Performed a complete structural FEA in SolidWorks on the finalized fidget spinner assembly—including the polypropylene body, alloy steel bearing, and penny weights—to assess stress, strain, displacement, and factor of safety under both penny insertion forces and spinning loads. The simulation confirmed that the design easily exceeded strength requirements, with all critical regions showing factors of safety well above 1.
-
+            <p className="text-sm text-muted-foreground mb-4">Performed a complete structural FEA in SolidWorks on the finalized fidget spinner assembly—including the polypropylene body, alloy steel bearing, and penny weights—to assess stress, strain, displacement, and factor of safety under both penny insertion forces and spinning loads. The simulation confirmed that the design easily exceeded strength requirements, with all critical regions showing factors of safety well above 1. 
             The analysis validated that the material choices and geometry provided more than enough structural integrity for real-world use. No modifications—such as increasing thickness, adding fillets, or altering dimensions—were necessary, demonstrating that the initial design was already optimized for manufacturing and long-term durability. This successful verification gave confidence that the spinner would perform reliably through 3D printing, injection molding, and everyday operation.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
