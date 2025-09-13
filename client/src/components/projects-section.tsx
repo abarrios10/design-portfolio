@@ -123,9 +123,9 @@ export default function ProjectsSection() {
           {/* Prototypes */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Prototypes</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Manufactured prototypes using multiple methods including 3D printing and laser cutting, incorporating real pennies as weights to test functionality and structural integrity.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">Manufactured multiple fidget spinner prototypes using 3D printing and laser cutting, incorporating real pennies as counterweights to validate functionality and structural integrity. For the injection-molded version, I leveraged an existing mold and used colorful plastics to create an appealing, visually striking spinner while simulating the machining complexity of mold dies.
+
+            All prototypes demonstrated excellent balance and spin performance during testing. The 3D-printed spinner I selected for the class competition achieved a third-place finish out of eight entries, spinning continuously for approximately 1 minute and 20 seconds.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <Dialog>
                 <DialogTrigger asChild>
