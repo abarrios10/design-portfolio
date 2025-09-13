@@ -34,7 +34,7 @@ export default function ProjectsSection() {
             {projects.map((project) => (
               <Card key={project.id} className="project-card group overflow-hidden relative" data-testid={`card-project-${project.id}`}>
                 <CardHeader>
-                  <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
+                  <CardTitle className="text-xl font-semibold text-center">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="relative">
                   <img
@@ -45,16 +45,16 @@ export default function ProjectsSection() {
                   />
                   
                   {/* UT Longhorn Logo */}
-                  <div className="absolute bottom-20 right-4">
+                  <div className="absolute bottom-16 right-2">
                     <img 
                       src="/images/ut-longhorn-black.png" 
                       alt="UT Austin" 
-                      className="h-8 w-8 object-contain opacity-60 block dark:hidden" 
+                      className="h-6 w-6 object-contain opacity-70 block dark:hidden" 
                     />
                     <img 
                       src="/images/ut-longhorn-white.jpg" 
                       alt="UT Austin" 
-                      className="h-8 w-8 object-contain opacity-60 hidden dark:block" 
+                      className="h-6 w-6 object-contain opacity-70 hidden dark:block" 
                       style={{ 
                         filter: 'brightness(1.2) contrast(1.5)',
                         mixBlendMode: 'screen'
@@ -64,8 +64,8 @@ export default function ProjectsSection() {
                   
                   {/* Date Badge */}
                   <div className="flex justify-center mb-4">
-                    <div className="bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20">
-                      <span className="text-sm font-semibold text-primary">
+                    <div className="bg-foreground/90 px-4 py-2 rounded-full">
+                      <span className="text-sm font-semibold text-background">
                         August 2023 - December 2023
                       </span>
                     </div>
