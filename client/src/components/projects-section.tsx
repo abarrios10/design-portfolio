@@ -234,7 +234,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Circuit Design and Implementation</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              The wind turbine generates AC power by converting mechanical energy into electrical energy via the generator. This AC power is then converted to DC through a half-wave rectifier, which uses a diode to allow current to pass in only one direction. To smooth out the fluctuating DC output, a capacitor is added.
+              The wind turbine generates AC power which is then converted to smooth DC power using a rectifier circuit and capacitor for stable operation.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Dialog>
@@ -278,10 +278,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">LED Control System</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              The smoothed DC output is connected to a transistor and two comparators. When current flows into the transistor's base, it triggers a larger current from the collector to the emitter, amplifying the current to control the brightness of a gradual LED. This allows us to visually track voltage changes through the LED.
-            </p>
-            <p className="text-sm text-muted-foreground mb-4">
-              The high-speed LED is controlled by one of the comparators, which compares the DC output (reference voltage) to the 4V source set by the potentiometer (input voltage). When the reference voltage exceeds the voltage set by the potentiometer, the comparator outputs a low signal, allowing current to flow and lighting the LED.
+              The circuit uses transistors and comparators to control LED brightness based on voltage levels. This creates a visual indicator system where different LEDs activate depending on the turbine's speed and power output.
             </p>
           </div>
 
@@ -289,7 +286,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Complete System</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              The complete wind turbine LED circuit system demonstrates power conversion principles and provides real-time visual feedback of turbine performance through a reliable fan speed-based LED feedback system. High-speed LEDs activate at high fan speeds while low-speed LEDs respond to lower speeds, creating an intuitive visual indicator of the turbine's operational status.
+              The system converts wind power to electrical energy and provides visual feedback through speed-responsive LEDs. High-speed LEDs activate during fast rotation while low-speed LEDs indicate slower operation.
             </p>
             <div className="flex justify-center">
               <Dialog>
@@ -339,7 +336,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Lessons Learned</h4>
             <p className="text-sm text-muted-foreground">
-              Adding a higher capacitance further smoothens the AC voltage when converting to DC. This helps with the possible flickering of the gradual LED, allowing for a smooth transition as the fan speed differs. To adjust the sensitivity on the gradual LED, we can adjust the resistance in the circuit to allow for less current to pass through the base when the fan first begins to spin.
+              Using higher capacitance values improves voltage smoothing and reduces LED flickering. Adjusting circuit resistance allows fine-tuning of LED sensitivity for different fan speeds.
             </p>
           </div>
         </>
