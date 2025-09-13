@@ -5,6 +5,8 @@ import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
+import Screenshot_2025_09_13_135237 from "@assets/Screenshot 2025-09-13 135237.png";
+
 const projects = [
   {
     id: 1,
@@ -356,7 +358,7 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <img
-                    src="/attached_assets/image_1757737508023.png"
+                    src={Screenshot_2025_09_13_135237}
                     alt="Mars Rover Overall System Assembly"
                     className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
