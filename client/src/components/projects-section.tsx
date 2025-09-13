@@ -374,13 +374,10 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-
           {/* Camera Attachment */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Camera Attachment</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              The CacheCam attachment, similar to the Perseverance Rover design, captures high-resolution images of collected samples and materials during the collection process. Operating at TRL 9 from successful use in previous missions, the camera provides real-time monitoring to ensure NASA protocol compliance and enables comprehensive post-mission analysis of sample collection procedures.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">The CacheCam attachment, similar to the NASA Perseverance Rover design, captures high-resolution images of collected samples and materials during the collection process. Operating from successful use in previous missions, the camera provides real-time monitoring to ensure NASA protocol compliance and enables comprehensive post-mission analysis of sample collection procedures.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
@@ -401,9 +398,6 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-
-          
-
           {/* Preliminary Design Review */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Preliminary Design Review</h4>
