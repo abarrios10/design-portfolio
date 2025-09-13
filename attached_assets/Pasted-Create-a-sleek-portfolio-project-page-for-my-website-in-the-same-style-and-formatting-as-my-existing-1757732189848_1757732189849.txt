@@ -1,0 +1,30 @@
+Create a sleek portfolio project page for my website in the same style and formatting as my existing “Fidget Spinner Design & Manufacturing” project. The project is called:
+
+**Mars Rover Mechanical Subsystem Design**
+
+Front card (before clicking “View Details”):
+- Title: “Mars Rover Mechanical Subsystem Design”
+- Hero image: CAD render of rover highlighting robotic arm assembly
+- Date range: August 2023 – December 2023
+
+When clicking “View Details”, display the following:
+
+**Technologies Used**  
+SolidWorks | Project Coordination | Systems Engineering  
+
+**Project Overview**  
+Team-based Preliminary Design Review for NASA’s L’SPACE Academy, focusing on the rover’s mechanical subsystem. I collaborated with other student engineers to coordinate the design review, verify design constraints, and ensure our subsystem met mass, volume, and cost limits. My primary responsibility was designing and modeling the robotic arm, drill system, and camera attachment for sample collection and real-time monitoring. I worked closely with teammates to evaluate trade-offs, confirm that materials were suitable for the Martian atmosphere, and confirm the design stayed below budget while still satisfying mission requirements.
+
+**Robotic Arm and Drill**  
+Designed the robotic arm and its drill mechanism to extract ice samples from the Martian surface. Incorporated anti-jamming features into the drill design to ensure reliable operation in harsh regolith conditions. Conducted CAD modeling and analysis to validate arm movement and drilling functionality, while verifying that materials selected could withstand Martian temperatures and dust exposure.
+
+**Camera Attachment**  
+Developed mounting and attachment for a CacheCam that provided visual feedback during drilling and sampling operations. This allowed real-time inspection of samples and ensured compliance with NASA’s science protocols. Collaborated with teammates to integrate the camera system with the rover’s data and power subsystems.
+
+**Images to Display**  
+(For now just have empty space and I will show you what pictures to input)
+
+**Footer Logo**  
+Add the NASA logo on the bottom right corner where the UT logo is located on the other projects.
+
+Match the visual style of the fidget spinner project page: rounded cards, dark theme, large preview image, and clickable “View Details” expansion.

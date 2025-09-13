@@ -23,6 +23,15 @@ const projects = [
     technologies: ["Circuit Design", "Half-Wave Rectifier", "Comparators", "Transistors", "Breadboard Prototyping"],
     details: "Final Project for Mechatronics Lab class focusing on power conversion and circuit design. Built a wind turbine monitoring system with LED visual feedback that responds to turbine speed variations.",
     date: "November 2024"
+  },
+  {
+    id: 3,
+    title: "Mars Rover Mechanical Subsystem Design",
+    description: "Team-based mechanical subsystem design for NASA's L'SPACE Academy Mars rover mission",
+    image: "/attached_assets/placeholder-rover.png",
+    technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
+    details: "Team-based Preliminary Design Review for NASA's L'SPACE Academy, focusing on the rover's mechanical subsystem. Collaborated with student engineers to coordinate design review, verify constraints, and ensure subsystem met mass, volume, and cost limits.",
+    date: "August 2023 - December 2023"
   }
 ];
 
@@ -341,6 +350,45 @@ export default function ProjectsSection() {
           </div>
         </>
       );
+    } else if (project.id === 3) {
+      // Mars Rover Project Details
+      return (
+        <>
+          {/* Robotic Arm and Drill */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Robotic Arm and Drill</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Designed the robotic arm and its drill mechanism to extract ice samples from the Martian surface. Incorporated anti-jamming features into the drill design to ensure reliable operation in harsh regolith conditions. Conducted CAD modeling and analysis to validate arm movement and drilling functionality, while verifying that materials selected could withstand Martian temperatures and dust exposure.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Placeholder for future images */}
+              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
+                <span className="text-sm text-muted-foreground">Image placeholder</span>
+              </div>
+              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
+                <span className="text-sm text-muted-foreground">Image placeholder</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Camera Attachment */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Camera Attachment</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Developed mounting and attachment for a CacheCam that provided visual feedback during drilling and sampling operations. This allowed real-time inspection of samples and ensured compliance with NASA's science protocols. Collaborated with teammates to integrate the camera system with the rover's data and power subsystems.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Placeholder for future images */}
+              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
+                <span className="text-sm text-muted-foreground">Image placeholder</span>
+              </div>
+              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
+                <span className="text-sm text-muted-foreground">Image placeholder</span>
+              </div>
+            </div>
+          </div>
+        </>
+      );
     }
   };
 
@@ -368,22 +416,39 @@ export default function ProjectsSection() {
                   data-testid={`img-project-${project.id}`}
                 />
                 
-                {/* UT Longhorn Logo */}
+                {/* Logo - UT for projects 1&2, NASA for project 3 */}
                 <div className="absolute bottom-4 right-4">
-                  <img 
-                    src="/images/ut-longhorn-black.png" 
-                    alt="UT Austin" 
-                    className="h-10 w-10 object-contain block dark:hidden" 
-                  />
-                  <img 
-                    src="/images/ut-longhorn-white.jpg" 
-                    alt="UT Austin" 
-                    className="h-10 w-10 object-contain hidden dark:block" 
-                    style={{ 
-                      filter: 'brightness(1.2) contrast(1.5)',
-                      mixBlendMode: 'screen'
-                    }}
-                  />
+                  {project.id === 3 ? (
+                    <>
+                      <img 
+                        src="/images/nasa-logo-black.png" 
+                        alt="NASA" 
+                        className="h-10 w-10 object-contain block dark:hidden" 
+                      />
+                      <img 
+                        src="/images/nasa-logo-white.png" 
+                        alt="NASA" 
+                        className="h-10 w-10 object-contain hidden dark:block" 
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <img 
+                        src="/images/ut-longhorn-black.png" 
+                        alt="UT Austin" 
+                        className="h-10 w-10 object-contain block dark:hidden" 
+                      />
+                      <img 
+                        src="/images/ut-longhorn-white.jpg" 
+                        alt="UT Austin" 
+                        className="h-10 w-10 object-contain hidden dark:block" 
+                        style={{ 
+                          filter: 'brightness(1.2) contrast(1.5)',
+                          mixBlendMode: 'screen'
+                        }}
+                      />
+                    </>
+                  )}
                 </div>
                 
                 {/* Date Badge */}
