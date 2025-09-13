@@ -40,7 +40,7 @@ export default function ProjectsSection() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-contain rounded-2xl mb-4"
+                    className="w-full h-64 object-contain rounded-3xl mb-4"
                     data-testid={`img-project-${project.id}`}
                   />
                   
