@@ -46,9 +46,9 @@ export default function ProjectsSection() {
           {/* CAD Design and Modeling */}
           <div>
             <h4 className="text-lg font-semibold mb-4">CAD Design and Modeling</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Created detailed SolidWorks models including fidget spinner geometry, assembly components, and injection mold design.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4 font-normal">Created detailed SolidWorks models for the fidget spinner geometry, assembly components, and injection mold design. After fabricating and testing an initial laser-cut prototype, I identified that the spacing between the spinner arms and weight holes was too small and prone to breaking when inserting pennies. In response, I redesigned the spinner with a continuous circular rim around the edge, improving structural strength, ease of spinning, and overall visual appeal.  A photo of the laser-cut prototype illustrating the original spacing issue can be found in the Prototypes section.
+
+            The images below showcase the finalized CAD models, including the injection-mold cavity design, developed following SolidWorks tutorials. These models formed the basis for 3D printing and injection molding prototypes, for which I completed machine shop training and certification.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Dialog>
                 <DialogTrigger asChild>
@@ -120,7 +120,6 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-
           {/* Prototypes */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Prototypes</h4>
@@ -185,7 +184,6 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-
           {/* Finite Element Analysis */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Finite Element Analysis</h4>
