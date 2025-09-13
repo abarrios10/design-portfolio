@@ -402,13 +402,7 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          {/* Overall System */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Overall System</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              The complete mechanical subsystem integrates the robotic arm, drilling mechanism, and camera system for Mars exploration and sample collection. This design supports the characterization of water feedstock and identification of potential sites for future human Mars exploration in accordance with NASA's Mars Exploration program objectives.
-            </p>
-          </div>
+          
 
           {/* Preliminary Design Review */}
           <div>
