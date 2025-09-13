@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center modern-hero-bg relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center hero-bg-premium relative overflow-hidden"
     >
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="animate-slide-up">

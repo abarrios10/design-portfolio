@@ -70,6 +70,11 @@
   --sidebar-accent: hsl(240 4% 16%);
   --sidebar-accent-foreground: hsl(0 0% 95%);
   --sidebar-border: hsl(240 4% 16%);
+
+  /* Premium accent colors for backgrounds */
+  --accent-cyan: 190 95% 45%;
+  --accent-teal: 168 85% 38%;
+  --ut-orange: 24 100% 38%;
 }
 
 /* Logo filter styles - simple black and white */
@@ -98,25 +103,43 @@
 }
 
 @layer components {
-  .modern-hero-bg {
-    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 50%, hsl(var(--background)) 100%);
+  .hero-bg-premium {
+    background: 
+      linear-gradient(135deg, hsl(220 20% 97%) 0%, hsl(220 15% 92%) 50%, hsl(220 20% 97%) 100%),
+      radial-gradient(1200px 800px at 15% 20%, hsla(var(--accent-cyan), 0.08) 0%, transparent 60%),
+      radial-gradient(1200px 800px at 85% 80%, hsla(var(--accent-teal), 0.07) 0%, transparent 60%),
+      radial-gradient(1000px 700px at 50% 110%, hsla(var(--ut-orange), 0.05) 0%, transparent 70%);
     position: relative;
   }
   
-  .modern-hero-bg::before {
+  .hero-bg-premium::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 20%, hsla(var(--primary), 0.08) 0%, transparent 60%),
-                radial-gradient(circle at 70% 80%, hsla(var(--accent), 0.06) 0%, transparent 60%);
+    inset: 0;
     pointer-events: none;
+    background: 
+      repeating-linear-gradient(to right, hsla(var(--foreground), 0.03) 0 1px, transparent 1px 24px),
+      repeating-linear-gradient(to bottom, hsla(var(--foreground), 0.03) 0 1px, transparent 1px 24px);
+    mix-blend-mode: normal;
   }
   
-  .dark .modern-hero-bg {
-    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted) / 0.3) 50%, hsl(var(--background)) 100%);
+  .dark .hero-bg-premium {
+    background: 
+      linear-gradient(135deg, hsl(226 45% 14%) 0%, hsl(226 40% 16%) 50%, hsl(226 45% 14%) 100%),
+      radial-gradient(1200px 800px at 20% 15%, hsla(var(--accent-cyan), 0.10) 0%, transparent 60%),
+      radial-gradient(1200px 800px at 80% 85%, hsla(var(--accent-teal), 0.09) 0%, transparent 60%),
+      radial-gradient(1000px 700px at 50% 110%, hsla(var(--ut-orange), 0.06) 0%, transparent 70%);
+  }
+
+  @media (prefers-contrast: more) {
+    .hero-bg-premium::before { opacity: 0.02; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bg-premium {
+      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 60%, hsl(var(--background)) 100%);
+    }
+    .hero-bg-premium::before { display: none; }
   }
 
   .project-card {
