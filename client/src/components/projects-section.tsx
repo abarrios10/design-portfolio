@@ -134,7 +134,7 @@ export default function ProjectsSection() {
                     src="/attached_assets/image_1757715664937.png"
                     alt="3D Printed Prototype with Pennies"
                     className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    style={{ objectPosition: 'center 60%' }}
+                    style={{ objectPosition: 'center 70%' }}
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -152,7 +152,7 @@ export default function ProjectsSection() {
                     src="/attached_assets/image_1757718285634.png"
                     alt="Translucent Prototype"
                     className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    style={{ objectPosition: 'center 60%' }}
+                    style={{ objectPosition: 'center 70%' }}
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
