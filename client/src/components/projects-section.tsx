@@ -32,7 +32,7 @@ const projects = [
     id: 3,
     title: "Proteus 'Skateboard' Drive Redesign",
     description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f3f4f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23e5e7eb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad1)' /%3E%3C/svg%3E",
+    image: "/attached_assets/image_1757801406789.png",
     technologies: ["System Redesign", "Performance Enhancement", "Manufacturing Optimization", "Platform Integration"],
     details: "Amazon Robotics project involving the comprehensive redesign of the Proteus skateboard drive platform. Focused on improving performance characteristics, optimizing manufacturing processes, and enhancing integration capabilities for next-generation autonomous warehouse robots.",
     date: "April 2025 - May 2025",
