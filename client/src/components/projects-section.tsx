@@ -294,19 +294,33 @@ export default function ProjectsSection() {
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757726811693.png"
-                    alt="Complete Wind Turbine LED System"
+                  <video
+                    poster="/attached_assets/image_1757726811693.png"
+                    preload="metadata"
                     className="w-full max-w-2xl h-64 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
+                    data-testid="video-complete-system-preview"
+                  >
+                    <source src="/attached_assets/IMG_6206_1757728190318.MOV" type="video/quicktime" />
+                    Your browser does not support the video element.
+                  </video>
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">Complete Wind Turbine LED System - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757726811693.png"
-                    alt="Complete Wind Turbine LED System"
+                  <DialogTitle className="sr-only">Complete Wind Turbine LED System - Video</DialogTitle>
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
                     className="w-full h-auto max-h-[90vh] object-contain"
-                  />
+                    data-testid="video-complete-system-modal"
+                  >
+                    <source src="/attached_assets/IMG_6206_1757728190318.MOV" type="video/quicktime" />
+                    <p>
+                      Your browser does not support the video element.{" "}
+                      <a href="/attached_assets/IMG_6206_1757728190318.MOV" download className="text-primary hover:underline">
+                        Download the video
+                      </a>
+                    </p>
+                  </video>
                 </DialogContent>
               </Dialog>
             </div>
