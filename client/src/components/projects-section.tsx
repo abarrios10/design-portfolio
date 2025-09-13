@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Proteus Bring-up Drive Prototype",
     description: "Drive system prototype development and testing for Amazon's Proteus autonomous mobile robot platform",
-    image: "/images/amazon-robotics-logo.webp",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f3f4f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23e5e7eb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad1)' /%3E%3C/svg%3E",
     technologies: ["Mechanical Design", "Prototype Development", "Testing & Validation", "Drive Systems"],
     details: "Amazon Robotics internship project focusing on the development and testing of drive system prototypes for the Proteus autonomous mobile robot. Worked on mechanical design improvements, prototype fabrication, and comprehensive testing protocols to validate performance specifications and reliability requirements.",
     date: "January 2025 - February 2025",
@@ -22,7 +22,7 @@ const projects = [
     id: 2,
     title: "Autonomous Drive Unit Locomotor Wheel Design",
     description: "Advanced wheel design and locomotion system development for autonomous drive units",
-    image: "/images/amazon-robotics-logo.webp",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f3f4f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23e5e7eb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad1)' /%3E%3C/svg%3E",
     technologies: ["CAD Design", "Locomotion Systems", "Performance Optimization", "Autonomous Systems"],
     details: "Amazon Robotics project focused on designing advanced wheel systems for autonomous drive units. Developed innovative locomotor designs to improve maneuverability, efficiency, and reliability of autonomous mobile robots operating in warehouse environments.",
     date: "March 2025 - May 2025",
@@ -32,7 +32,7 @@ const projects = [
     id: 3,
     title: "Proteus 'Skateboard' Drive Redesign",
     description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
-    image: "/images/amazon-robotics-logo.webp",
+    image: "data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f3f4f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23e5e7eb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad1)' /%3E%3C/svg%3E",
     technologies: ["System Redesign", "Performance Enhancement", "Manufacturing Optimization", "Platform Integration"],
     details: "Amazon Robotics project involving the comprehensive redesign of the Proteus skateboard drive platform. Focused on improving performance characteristics, optimizing manufacturing processes, and enhancing integration capabilities for next-generation autonomous warehouse robots.",
     date: "April 2025 - May 2025",
@@ -514,12 +514,12 @@ export default function ProjectsSection() {
                       <img 
                         src="/images/amazon-robotics-logo.webp" 
                         alt="Amazon Robotics" 
-                        className="h-10 w-auto object-contain block dark:hidden" 
+                        className="h-16 w-auto object-contain block dark:hidden" 
                       />
                       <img 
                         src="/images/amazon-robotics-logo.webp" 
                         alt="Amazon Robotics" 
-                        className="h-10 w-auto object-contain hidden dark:block" 
+                        className="h-16 w-auto object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
                       />
                     </>
@@ -529,7 +529,7 @@ export default function ProjectsSection() {
                       <img 
                         src="/attached_assets/image_1757732632620.png" 
                         alt="NASA" 
-                        className="h-10 w-10 object-contain block dark:hidden" 
+                        className="h-16 w-16 object-contain block dark:hidden" 
                         style={{
                           filter: 'invert(1)'
                         }}
@@ -537,7 +537,7 @@ export default function ProjectsSection() {
                       <img 
                         src="/attached_assets/image_1757732632620.png" 
                         alt="NASA" 
-                        className="h-10 w-10 object-contain hidden dark:block" 
+                        className="h-16 w-16 object-contain hidden dark:block" 
                       />
                     </>
                   ) : (
@@ -546,12 +546,12 @@ export default function ProjectsSection() {
                       <img 
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin" 
-                        className="h-10 w-10 object-contain block dark:hidden" 
+                        className="h-16 w-16 object-contain block dark:hidden" 
                       />
                       <img 
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin" 
-                        className="h-10 w-10 object-contain hidden dark:block" 
+                        className="h-16 w-16 object-contain hidden dark:block" 
                         style={{ 
                           filter: 'brightness(1.2) contrast(1.5)',
                           mixBlendMode: 'screen'
