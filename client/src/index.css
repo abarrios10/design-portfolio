@@ -132,46 +132,83 @@
   .parallax {
     transition: transform 0.1s ease-out;
   }
-  
-  /* Route transition container */
-  .route-container {
-    position: relative;
-    will-change: opacity, filter, transform;
+}
+
+/* Apple-inspired page transitions */
+.route-container {
+  --tx-exit: 260ms;
+  --tx-enter: 560ms;
+  --tx-gap: 60ms;
+  --ease-exit: cubic-bezier(0.36, 0, 1, 1);
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --blur-exit: 8px;
+  --blur-enter: 10px;
+  position: relative;
+  will-change: opacity, filter, transform;
+}
+
+.transition-root {
+  will-change: opacity, filter, transform;
+}
+
+/* Disable pointer events during transitions */
+.page-exit .route-container,
+.page-enter .route-container {
+  pointer-events: none;
+}
+
+/* Apple-style page transition animations */
+.page-exit .transition-root {
+  animation: appleBlurOut var(--tx-exit) var(--ease-exit) forwards;
+}
+
+.page-enter .transition-root {
+  animation: appleFadeIn var(--tx-enter) var(--ease-enter) forwards;
+}
+@keyframes appleBlurOut {
+  from {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px) scale(1);
+  }
+  to {
+    opacity: 0;
+    filter: blur(var(--blur-exit));
+    transform: translateY(6px) scale(0.992);
+  }
+}
+
+@keyframes appleFadeIn {
+  from {
+    opacity: 0;
+    filter: blur(var(--blur-enter));
+    transform: translateY(14px) scale(0.996);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .page-exit .transition-root {
+    animation: reduceMotionExit 180ms ease-out forwards;
   }
   
-  /* Page transition animations */
-  .page-exit .min-h-screen {
-    animation: blurOut 320ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  .page-enter .transition-root {
+    animation: reduceMotionEnter 200ms ease-out forwards;
   }
   
-  .page-enter .min-h-screen {
-    animation: fadeInUp 480ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  @keyframes reduceMotionExit {
+    from { opacity: 1; }
+    to { opacity: 0; }
   }
   
-  @keyframes blurOut {
-    from {
-      opacity: 1;
-      filter: blur(0px);
-      transform: translateY(0px) scale(1);
-    }
-    to {
-      opacity: 0;
-      filter: blur(12px);
-      transform: translateY(10px) scale(0.985);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      filter: blur(8px);
-      transform: translateY(12px) scale(0.995);
-    }
-    to {
-      opacity: 1;
-      filter: blur(0px);
-      transform: translateY(0px) scale(1);
-    }
+  @keyframes reduceMotionEnter {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 }
 

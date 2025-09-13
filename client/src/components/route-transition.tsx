@@ -37,6 +37,7 @@ export function PageTransitionProvider({ children }: PageTransitionProviderProps
     setPhase('exiting');
 
     // After blur-out completes, switch route and fade-in
+    // Apple-style timing: exit 260ms + gap 60ms + enter 560ms
     setTimeout(() => {
       setLocation(path);
       setPhase('entering');
@@ -45,8 +46,8 @@ export function PageTransitionProvider({ children }: PageTransitionProviderProps
       setTimeout(() => {
         setPhase('idle');
         setNextPath(null);
-      }, 480); // Enter animation duration
-    }, 320); // Exit animation duration
+      }, 560); // Enter animation duration
+    }, 260); // Exit animation duration
   }, [phase, location, setLocation]);
 
   const getPhaseClass = () => {
@@ -60,7 +61,9 @@ export function PageTransitionProvider({ children }: PageTransitionProviderProps
   return (
     <TransitionContext.Provider value={{ phase, navigate }}>
       <div className={`route-container ${getPhaseClass()}`}>
-        {children}
+        <div className="transition-root">
+          {children}
+        </div>
       </div>
     </TransitionContext.Provider>
   );

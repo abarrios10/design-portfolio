@@ -28,28 +28,21 @@ export default function HeroSection() {
             Passionate about product design engineering and robotics innovation
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="inline-block">
-              <TransitionLink href="/projects">
-                <Button
-                  className="btn-primary px-8 py-3 rounded-full text-sm font-medium"
-                  data-testid="button-view-work"
-                >
-                  View My Work
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </TransitionLink>
-            </div>
-            <div className="inline-block">
-              <TransitionLink href="/contact">
-                <Button
-                  variant="outline"
-                  className="px-8 py-3 rounded-full text-sm font-medium border border-border bg-background text-foreground hover:bg-secondary transition-all"
-                  data-testid="button-get-in-touch"
-                >
-                  Get In Touch
-                </Button>
-              </TransitionLink>
-            </div>
+            <TransitionLink
+              href="/projects"
+              className="btn-primary px-8 py-3 rounded-full text-sm font-medium inline-flex items-center"
+              data-testid="button-view-work"
+            >
+              View My Work
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </TransitionLink>
+            <TransitionLink
+              href="/contact"
+              className="px-8 py-3 rounded-full text-sm font-medium border border-border bg-background text-foreground hover:bg-secondary transition-all inline-flex items-center"
+              data-testid="button-get-in-touch"
+            >
+              Get In Touch
+            </TransitionLink>
           </div>
         </div>
       </div>
