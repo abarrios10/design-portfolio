@@ -376,7 +376,9 @@ export default function ProjectsSection() {
           {/* Camera Attachment */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Camera Attachment</h4>
-            <p className="text-sm text-muted-foreground mb-4">The MasterCam attachment, similar to the NASA Perseverance Rover design, captures high-resolution images of collected samples and materials during the collection process. Operating from successful use in previous missions, the camera provides real-time monitoring to ensure NASA protocol compliance and enables comprehensive post-mission analysis of sample collection procedures.</p>
+            <p className="text-sm text-muted-foreground mb-4">Designed the MasterCam attachment, modeled after the NASA Perseverance Rover, to capture high-resolution images of collected samples and surrounding materials during the collection process. I positioned the camera at a height that allows it to detect obstacles ahead and provide data to the sensor suite for navigation, ensuring real-time monitoring and compliance with NASA sampling protocols while supporting detailed post-mission analysis.
+
+            Because external Martian conditions can create vibrations or deflections that might shift the camera out of place, I selected aluminum for the support base due to its high strength-to-weight ratio and proven reliability on previous Mars missions. I also minimized the attachment height and designed the base to be thick enough to resist bending and maintain precise alignment. These decisions resulted in the finalized, robust design shown below.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
