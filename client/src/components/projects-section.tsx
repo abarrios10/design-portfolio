@@ -12,7 +12,7 @@ const projects = [
     description: "Complete engineering project from CAD design through prototype manufacturing",
     image: "/attached_assets/image_1757715664937.png",
     technologies: ["SolidWorks", "3D Printing", "Laser Cutting", "FEA Analysis", "Injection Molding"],
-    details: "Designed and manufactured functional fidget spinners using multiple engineering approaches including CAD modeling, finite element analysis, and various manufacturing methods. The project involved creating detailed SolidWorks models, performing structural analysis, and producing prototypes through 3D printing, laser cutting, and injection molding processes. Real pennies were incorporated as weights to test functionality and structural integrity across different manufacturing methods."
+    details: "School project for Introduction to Engineering Design and Graphics course focusing on complete product development cycle from initial concept through manufacturing. Designed and manufactured functional fidget spinners using multiple engineering approaches including CAD modeling, finite element analysis, and various manufacturing methods including 3D printing, laser cutting, and injection molding. Real pennies were incorporated as weights to test functionality and structural integrity."
   }
 ];
 
@@ -40,20 +40,11 @@ export default function ProjectsSection() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  className="w-full h-64 object-contain rounded-lg mb-4"
                   data-testid={`img-project-${project.id}`}
                 />
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.slice(0, 3).map((tech, index) => (
-                    <Badge key={index} variant="outline" className="text-xs">
-                      {tech}
-                    </Badge>
-                  ))}
-                  {project.technologies.length > 3 && (
-                    <Badge variant="outline" className="text-xs">
-                      +{project.technologies.length - 3} more
-                    </Badge>
-                  )}
+                <div className="text-sm text-muted-foreground mb-4">
+                  August 2023 - December 2023
                 </div>
 
                 <Dialog>
@@ -69,9 +60,19 @@ export default function ProjectsSection() {
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
                     <DialogHeader>
-                      <DialogTitle>{project.title}</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-6">
+                      {/* Technologies Used */}
+                      <div>
+                        <h4 className="text-lg font-semibold mb-3">Technologies Used</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {project.technologies.map((tech, index) => (
+                            <Badge key={index} variant="secondary">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
                       <div className="space-y-8">
                         {/* Project Overview */}
                         <div>
@@ -83,7 +84,7 @@ export default function ProjectsSection() {
                         <div>
                           <h4 className="text-lg font-semibold mb-4">CAD Design and Modeling</h4>
                           <p className="text-sm text-muted-foreground mb-4">
-                            Created comprehensive SolidWorks models including fidget spinner geometry, assembly components, and injection mold design with geometric tolerances for manufacturing precision.
+                            Created detailed SolidWorks models including fidget spinner geometry, assembly components, and injection mold design.
                           </p>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <Dialog>
@@ -169,7 +170,7 @@ export default function ProjectsSection() {
                                 <img
                                   src="/attached_assets/image_1757715664937.png"
                                   alt="3D Printed Prototype with Pennies"
-                                  className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity "
+                                  className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                                 />
                               </DialogTrigger>
                               <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -186,7 +187,7 @@ export default function ProjectsSection() {
                                 <img
                                   src="/attached_assets/image_1757718142093.png"
                                   alt="Laser Cut Prototype"
-                                  className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity "
+                                  className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                                 />
                               </DialogTrigger>
                               <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -205,7 +206,7 @@ export default function ProjectsSection() {
                                 <img
                                   src="/attached_assets/image_1757718285634.png"
                                   alt="Translucent Prototype"
-                                  className="w-full max-w-md h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity "
+                                  className="w-full max-w-md h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                                 />
                               </DialogTrigger>
                               <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -270,17 +271,6 @@ export default function ProjectsSection() {
                           </div>
                         </div>
 
-                        {/* Technologies Used */}
-                        <div>
-                          <h4 className="text-lg font-semibold mb-3">Technologies Used</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {project.technologies.map((tech, index) => (
-                              <Badge key={index} variant="secondary">
-                                {tech}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </DialogContent>
