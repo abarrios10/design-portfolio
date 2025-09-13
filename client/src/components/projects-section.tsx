@@ -21,7 +21,7 @@ const projects = [
     description: "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
     image: "/attached_assets/image_1757726811693.png",
     technologies: ["Circuit Design", "Half-Wave Rectifier", "Comparators", "Transistors", "Breadboard Prototyping"],
-    details: "Laboratory project focusing on power conversion and electronic circuit design. Built a complete wind turbine monitoring system that converts mechanical energy to electrical energy, processes AC to DC conversion, and provides visual feedback through LED indicators based on turbine speed variations.",
+    details: "Final Project for Mechatronics Lab class focusing on power conversion and electronic circuit design. Built a complete wind turbine monitoring system that converts mechanical energy to electrical energy, processes AC to DC conversion, and provides visual feedback through LED indicators based on turbine speed variations.",
     date: "November 2024"
   }
 ];
@@ -242,7 +242,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757727012496.png"
                     alt="Circuit Schematic Diagram"
-                    className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -259,7 +259,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/Screenshot 2025-09-12 202801_1757726906050.png"
                     alt="Breadboard Circuit Implementation"
-                    className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
