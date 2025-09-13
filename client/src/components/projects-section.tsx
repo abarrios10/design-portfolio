@@ -25,26 +25,29 @@ export default function ProjectsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light text-foreground mb-4">Featured Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mechanical engineering projects showcasing design, analysis, and manufacturing skills
+            A selection of engineering projects I have worked on throughout my time at college
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="project-card group" data-testid={`card-project-${project.id}`}>
+            <Card key={project.id} className="project-card group overflow-hidden" data-testid={`card-project-${project.id}`}>
               <CardHeader>
                 <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-contain rounded-lg mb-4"
-                  data-testid={`img-project-${project.id}`}
-                />
-                <div className="text-sm text-muted-foreground mb-4">
-                  August 2023 - December 2023
+                <div className="relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 object-contain rounded-xl mb-4"
+                    data-testid={`img-project-${project.id}`}
+                  />
+                  <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full">
+                    <span className="text-sm font-light text-white">
+                      August 2023 - December 2023
+                    </span>
+                  </div>
                 </div>
 
                 <Dialog>
