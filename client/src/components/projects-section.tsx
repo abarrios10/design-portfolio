@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Wind Turbine LED Circuit",
     description: "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
-    image: "/attached_assets/image_1757726811693.png",
+    image: "/attached_assets/image_1757727946979.png",
     technologies: ["Circuit Design", "Half-Wave Rectifier", "Comparators", "Transistors", "Breadboard Prototyping"],
     details: "Final Project for Mechatronics Lab class focusing on power conversion and electronic circuit design. Built a complete wind turbine monitoring system that converts mechanical energy to electrical energy, processes AC to DC conversion, and provides visual feedback through LED indicators based on turbine speed variations.",
     date: "November 2024"
