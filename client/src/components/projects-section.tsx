@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Play } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const projects = [
@@ -37,6 +37,39 @@ const projects = [
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
+  const leftImageRef = useRef<HTMLImageElement>(null);
+  const [rightImageHeight, setRightImageHeight] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (leftImageRef.current) {
+        const isDesktop = window.innerWidth >= 768; // md breakpoint
+        if (isDesktop) {
+          setRightImageHeight(leftImageRef.current.clientHeight);
+        } else {
+          setRightImageHeight(undefined);
+        }
+      }
+    };
+
+    let resizeObserver: ResizeObserver | null = null;
+    
+    if (leftImageRef.current) {
+      resizeObserver = new ResizeObserver(updateHeight);
+      resizeObserver.observe(leftImageRef.current);
+      updateHeight(); // Initial measurement
+    }
+
+    const handleResize = () => updateHeight();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      if (resizeObserver) {
+        resizeObserver.disconnect();
+      }
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const renderProjectDetails = (project: any) => {
     if (project.id === 1) {
@@ -249,9 +282,10 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <img
+                    ref={leftImageRef}
                     src="/attached_assets/image_1757727012496.png"
                     alt="Circuit Schematic Diagram"
-                    className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -268,7 +302,8 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/Screenshot 2025-09-12 202801_1757726906050.png"
                     alt="Breadboard Circuit Implementation"
-                    className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    style={rightImageHeight ? { height: rightImageHeight } : { height: 'auto' }}
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
