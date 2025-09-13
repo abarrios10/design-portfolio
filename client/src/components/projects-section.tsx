@@ -29,7 +29,7 @@ const projects = [
   {
     id: 3,
     title: "Mars Rover Mechanical Subsystem Design",
-    description: "Team-based mechanical subsystem design for NASA's L'SPACE Academy Mars rover mission",
+    description: "Team-based mechanical subsystem design for NASA's L'SPACE Mission Concept Academy Mars rover mission",
     image: "/attached_assets/image_1757737312259.png",
     technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
     details: "Team-based Mars rover design for NASA's L'SPACE Mission Concept Academy to traverse Martian terrain and collect soil and ice samples for analysis. Collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, all designed in SolidWorks in collaboration with one other engineer on the team.",
@@ -366,7 +366,7 @@ export default function ProjectsSection() {
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Mars Rover Overall System Assembly - Full Size</DialogTitle>
                   <img
-                    src="/attached_assets/image_1757737508023.png"
+                    src={Screenshot_2025_09_13_135237}
                     alt="Mars Rover Overall System Assembly"
                     className="w-full h-auto max-h-[90vh] object-contain"
                   />
