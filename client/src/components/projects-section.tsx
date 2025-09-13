@@ -300,6 +300,7 @@ export default function ProjectsSection() {
                     className="w-full max-w-2xl h-64 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                     data-testid="video-complete-system-preview"
                   >
+                    <source src="/attached_assets/IMG_6206_1757728190318.mp4" type="video/mp4" />
                     <source src="/attached_assets/IMG_6206_1757728190318.MOV" type="video/quicktime" />
                     Your browser does not support the video element.
                   </video>
@@ -313,6 +314,7 @@ export default function ProjectsSection() {
                     className="w-full h-auto max-h-[90vh] object-contain"
                     data-testid="video-complete-system-modal"
                   >
+                    <source src="/attached_assets/IMG_6206_1757728190318.mp4" type="video/mp4" />
                     <source src="/attached_assets/IMG_6206_1757728190318.MOV" type="video/quicktime" />
                     <p>
                       Your browser does not support the video element.{" "}
