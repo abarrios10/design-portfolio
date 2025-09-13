@@ -1,12 +1,12 @@
 import Navigation from "@/components/navigation";
-import HeroSection from "@/components/hero-section";
+import ResumeSection from "@/components/resume-section";
 import Footer from "@/components/footer";
 
-export default function Home() {
+export default function Resume() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
+      <ResumeSection />
       <Footer />
     </div>
   );

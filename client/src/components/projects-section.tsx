@@ -162,6 +162,7 @@ export default function ProjectsSection() {
                                   />
                                 </DialogTrigger>
                                 <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <DialogTitle className="sr-only">SolidWorks Assembly Design - Full Size</DialogTitle>
                                   <img
                                     src="/attached_assets/image_1757718464736.png"
                                     alt="SolidWorks Assembly Design"
@@ -179,6 +180,7 @@ export default function ProjectsSection() {
                                   />
                                 </DialogTrigger>
                                 <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <DialogTitle className="sr-only">3D Fidget Spinner Model - Full Size</DialogTitle>
                                   <img
                                     src="/attached_assets/image_1757718554022.png"
                                     alt="3D Fidget Spinner Model"
@@ -198,6 +200,7 @@ export default function ProjectsSection() {
                                   />
                                 </DialogTrigger>
                                 <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <DialogTitle className="sr-only">Detailed Component Design - Full Size</DialogTitle>
                                   <img
                                     src="/attached_assets/image_1757718627490.png"
                                     alt="Detailed Component Design"
@@ -215,6 +218,7 @@ export default function ProjectsSection() {
                                   />
                                 </DialogTrigger>
                                 <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <DialogTitle className="sr-only">Injection Mold Cavity Design - Full Size</DialogTitle>
                                   <img
                                     src="/attached_assets/image_1757718751128.png"
                                     alt="Injection Mold Cavity Design"
@@ -238,10 +242,11 @@ export default function ProjectsSection() {
                                     src="/attached_assets/image_1757715664937.png"
                                     alt="3D Printed Prototype with Pennies"
                                     className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                                    style={{ objectPosition: '50% 50%' }}
+                                    style={{ objectFit: 'fill' }}
                                   />
                                 </DialogTrigger>
                                 <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <DialogTitle className="sr-only">3D Printed Prototype with Pennies - Full Size</DialogTitle>
                                   <img
                                     src="/attached_assets/image_1757715664937.png"
                                     alt="3D Printed Prototype with Pennies"
@@ -255,10 +260,11 @@ export default function ProjectsSection() {
                                     src="/attached_assets/image_1757718142093.png"
                                     alt="Laser Cut Prototype"
                                     className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                                    style={{ objectPosition: '50% 60%' }}
+                                    style={{ objectFit: 'fill' }}
                                   />
                                 </DialogTrigger>
                                 <DialogContent className="max-w-5xl max-h-[95vh]">
+                                  <DialogTitle className="sr-only">Laser Cut Prototype - Full Size</DialogTitle>
                                   <img
                                     src="/attached_assets/image_1757718142093.png"
                                     alt="Laser Cut Prototype"
@@ -273,10 +279,11 @@ export default function ProjectsSection() {
                                   src="/attached_assets/image_1757718285634.png"
                                   alt="Translucent Prototype"
                                   className="w-full h-64 object-cover rounded-lg border mt-4 cursor-pointer hover:opacity-90 transition-opacity"
-                                  style={{ objectPosition: '50% 50%' }}
+                                  style={{ objectFit: 'fill' }}
                                 />
                               </DialogTrigger>
                               <DialogContent className="max-w-5xl max-h-[95vh]">
+                                <DialogTitle className="sr-only">Translucent Prototype - Full Size</DialogTitle>
                                 <img
                                   src="/attached_assets/image_1757718285634.png"
                                   alt="Translucent Prototype"
@@ -305,6 +312,7 @@ export default function ProjectsSection() {
                                     />
                                   </DialogTrigger>
                                   <DialogContent className="max-w-5xl max-h-[95vh]">
+                                    <DialogTitle className="sr-only">Von Mises Stress Analysis - Full Size</DialogTitle>
                                     <img
                                       src="/attached_assets/image_1757719949420.png"
                                       alt="Von Mises Stress Distribution"
@@ -325,6 +333,7 @@ export default function ProjectsSection() {
                                     />
                                   </DialogTrigger>
                                   <DialogContent className="max-w-5xl max-h-[95vh]">
+                                    <DialogTitle className="sr-only">Factor of Safety Analysis - Full Size</DialogTitle>
                                     <img
                                       src="/attached_assets/image_1757720047656.png"
                                       alt="Factor of Safety Distribution"

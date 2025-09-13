@@ -1,48 +1,11 @@
-import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
+import { Link, useLocation } from "wouter";
 
 export default function Navigation() {
-  const [activeSection, setActiveSection] = useState("home");
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["home", "projects", "resume", "about", "contact"];
-      const scrollPosition = window.scrollY + 200;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const offsetTop = element.offsetTop;
-          const offsetBottom = offsetTop + element.offsetHeight;
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 20; // Much smaller offset to show more section content
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
+  const [location] = useLocation();
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -53,34 +16,35 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
-              data-testid="logo-home"
-            >
-              AB
-            </button>
+            <Link href="/">
+              <button
+                className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
+                data-testid="logo-home"
+              >
+                AB
+              </button>
+            </Link>
           </div>
           <div className="hidden md:flex space-x-8">
             {[
-              { id: "home", label: "Home" },
-              { id: "projects", label: "Projects" },
-              { id: "resume", label: "Resume" },
-              { id: "about", label: "About" },
-              { id: "contact", label: "Contact" },
+              { path: "/", label: "Home" },
+              { path: "/projects", label: "Projects" },
+              { path: "/resume", label: "Resume" },
+              { path: "/about", label: "About" },
+              { path: "/contact", label: "Contact" },
             ].map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`nav-link text-sm font-medium transition-colors ${
-                  activeSection === item.id
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-primary"
-                }`}
-                data-testid={`nav-${item.id}`}
-              >
-                {item.label}
-              </button>
+              <Link key={item.path} href={item.path}>
+                <button
+                  className={`nav-link text-sm font-medium transition-colors ${
+                    location === item.path
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-primary"
+                  }`}
+                  data-testid={`nav-${item.path.slice(1) || 'home'}`}
+                >
+                  {item.label}
+                </button>
+              </Link>
             ))}
           </div>
           <Button
