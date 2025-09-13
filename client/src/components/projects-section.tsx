@@ -30,7 +30,7 @@ const projects = [
     description: "Team-based mechanical subsystem design for NASA's L'SPACE Academy Mars rover mission",
     image: "/attached_assets/image_1757737312259.png",
     technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
-    details: "Team-based Preliminary Design Review for NASA's L'SPACE Academy, focusing on the rover's mechanical subsystem. Collaborated with student engineers to coordinate design review, verify constraints, and ensure subsystem met mass, volume, and cost limits.",
+    details: "Team-based Mars rover design for NASA's L'SPACE Academy to traverse Martian terrain and collect soil and ice samples for analysis to determine whether humans could live on Mars and fertilize the ground by 2050. I collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, which enabled the rover to collect subsurface ice samples and capture visual data for mission analysis.",
     date: "January 2024 - April 2024"
   }
 ];
@@ -287,15 +287,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">LED Control System</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              The circuit uses transistors and comparators to control LED brightness based on voltage levels. This creates a visual indicator system where different LEDs activate depending on the turbine's speed and power output.
-            </p>
-          </div>
-
-          {/* Complete System */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Complete System</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              The system converts wind power to electrical energy and provides visual feedback through speed-responsive LEDs. High-speed LEDs activate during fast rotation while low-speed LEDs indicate slower operation.
+              The circuit uses transistors and comparators to control LED brightness based on voltage levels, creating a visual indicator system where different LEDs activate depending on the turbine's speed and power output. The system converts wind power to electrical energy and provides visual feedback through speed-responsive LEDs - high-speed LEDs activate during fast rotation while low-speed LEDs indicate slower operation. The orange base for the wind turbine was custom designed and prototyped using 3D printing technology.
             </p>
             <div className="flex justify-center">
               <Dialog>
@@ -415,6 +407,33 @@ export default function ProjectsSection() {
               The complete mechanical subsystem integrates the robotic arm, drilling mechanism, and camera system for Mars exploration and sample collection. This design supports the characterization of water feedstock and identification of potential sites for future human Mars exploration in accordance with NASA's Mars Exploration program objectives.
             </p>
           </div>
+
+          {/* Preliminary Design Review */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Preliminary Design Review</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Collaborated with 15 other student engineers to coordinate and write the Preliminary Design Review as the final deliverable for NASA's L'SPACE Academy program. The comprehensive document detailed the rover's integration of mechanical, GNC, electrical, thermal, and other subsystems, verified that each subsystem fell within NASA's required budget, mass, volume, and operational constraints, and outlined the procurement strategy for manufacturing the rover's components.
+            </p>
+            <div className="flex justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757779449042.png"
+                    alt="Preliminary Design Review Document"
+                    className="w-full max-w-md h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Preliminary Design Review Document - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757779449042.png"
+                    alt="Preliminary Design Review Document"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+          </div>
         </>
       );
     }
@@ -440,8 +459,9 @@ export default function ProjectsSection() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-contain mb-4"
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                   data-testid={`img-project-${project.id}`}
+                  style={{ aspectRatio: 'auto' }}
                 />
                 
                 {/* Logo - UT for projects 1&2, NASA for project 3 */}
@@ -504,6 +524,7 @@ export default function ProjectsSection() {
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
                     <DialogHeader>
+                      <DialogTitle className="sr-only">{selectedProject?.title}</DialogTitle>
                     </DialogHeader>
                     <div className="space-y-6">
                       {/* Technologies Used */}
