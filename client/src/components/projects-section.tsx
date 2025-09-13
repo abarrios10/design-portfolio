@@ -374,7 +374,7 @@ export default function ProjectsSection() {
           {/* Camera Attachment */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Camera Attachment</h4>
-            <p className="text-sm text-muted-foreground mb-4">The CacheCam attachment, similar to the NASA Perseverance Rover design, captures high-resolution images of collected samples and materials during the collection process. Operating from successful use in previous missions, the camera provides real-time monitoring to ensure NASA protocol compliance and enables comprehensive post-mission analysis of sample collection procedures.</p>
+            <p className="text-sm text-muted-foreground mb-4">The MasterCam attachment, similar to the NASA Perseverance Rover design, captures high-resolution images of collected samples and materials during the collection process. Operating from successful use in previous missions, the camera provides real-time monitoring to ensure NASA protocol compliance and enables comprehensive post-mission analysis of sample collection procedures.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
