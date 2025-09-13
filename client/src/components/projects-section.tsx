@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "Fidget Spinner Design & Manufacturing",
     description: "Complete engineering project from CAD design through prototype manufacturing",
-    image: "/attached_assets/image_1757715664937.png",
+    image: "/attached_assets/image_1757725873170.png",
     technologies: ["SolidWorks", "3D Printing", "Laser Cutting", "FEA Analysis", "Injection Molding"],
     details: "School project for Introduction to Engineering Design and Graphics course focusing on complete product development cycle from initial concept through manufacturing. Designed and manufactured functional fidget spinners using multiple engineering approaches including CAD modeling, finite element analysis, and various manufacturing methods including 3D printing, laser cutting, and injection molding. Real pennies were incorporated as weights to test functionality and structural integrity."
   }
@@ -42,7 +42,6 @@ export default function ProjectsSection() {
                     alt={project.title}
                     className="w-full h-64 object-contain mb-4"
                     data-testid={`img-project-${project.id}`}
-                    style={{borderRadius: '40px'}}
                   />
                   
                   {/* UT Longhorn Logo */}
@@ -50,12 +49,12 @@ export default function ProjectsSection() {
                     <img 
                       src="/images/ut-longhorn-black.png" 
                       alt="UT Austin" 
-                      className="h-6 w-6 object-contain block dark:hidden" 
+                      className="h-10 w-10 object-contain block dark:hidden" 
                     />
                     <img 
                       src="/images/ut-longhorn-white.jpg" 
                       alt="UT Austin" 
-                      className="h-6 w-6 object-contain hidden dark:block" 
+                      className="h-10 w-10 object-contain hidden dark:block" 
                       style={{ 
                         filter: 'brightness(1.2) contrast(1.5)',
                         mixBlendMode: 'screen'
@@ -65,8 +64,8 @@ export default function ProjectsSection() {
                   
                   {/* Date Badge */}
                   <div className="flex justify-center mb-4">
-                    <div className="bg-foreground/90 px-4 py-2 rounded-full">
-                      <span className="text-sm font-normal text-black dark:text-white">
+                    <div className="bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700">
+                      <span className="text-sm font-normal text-gray-800 dark:text-gray-200">
                         August 2023 - December 2023
                       </span>
                     </div>
