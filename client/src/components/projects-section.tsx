@@ -376,7 +376,8 @@ export default function ProjectsSection() {
           {/* Camera Attachment */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Camera Attachment</h4>
-            <p className="text-sm text-muted-foreground mb-4">Designed the MasterCam attachment, modeled after the NASA Perseverance Rover, to capture high-resolution images of collected samples and surrounding materials during the collection process. I positioned the camera at a height that allows it to detect obstacles ahead and provide data to the sensor suite for navigation, ensuring real-time monitoring and compliance with NASA sampling protocols while supporting detailed post-mission analysis. 
+            <p className="text-sm text-muted-foreground mb-4">Designed the MasterCam attachment, modeled after the NASA Perseverance Rover, to capture high-resolution images of collected samples and surrounding materials during the collection process. I positioned the camera at a height that allows it to detect obstacles ahead and provide data to the sensor suite for navigation, ensuring real-time monitoring and compliance with NASA sampling protocols while supporting detailed post-mission analysis.
+            <br /><br />
             Because external Martian conditions can create vibrations or deflections that might shift the camera out of place, I selected aluminum for the support base due to its high strength-to-weight ratio and proven reliability on previous Mars missions. I also minimized the attachment height and designed the base to be thick enough to resist bending and maintain precise alignment. These decisions resulted in the finalized, robust design shown below.</p>
             <div className="flex justify-center">
               <Dialog>
@@ -402,6 +403,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Preliminary Design Review</h4>
             <p className="text-sm text-muted-foreground mb-4 text-left">Collaborated with 15 other student engineers to coordinate and author a 199-page Preliminary Design Review (PDR) as the final deliverable for NASA’s L’SPACE Academy. The document detailed the full integration of the rover’s mechanical, GNC, electrical, and thermal subsystems, verifying that each design met NASA’s strict budget, mass, volume, and operational constraints while outlining procurement strategies for manufacturing all components.
+            <br /><br />
             The PDR was formally reviewed by NASA engineers to evaluate its feasibility as an actionable engineering plan and earned an 81/100, placing the team in the 75th percentile of all program cohorts. To conclude the project, we delivered a 1-hour formal presentation of the design, which strengthened technical communication and presentation skills for our mission-ready proposal.</p>
             <div className="flex justify-center">
               <Dialog>
