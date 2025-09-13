@@ -351,7 +351,7 @@ export default function ProjectsSection() {
           {/* Robotic Arm and Drill */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Robotic Arm and Drill</h4>
-            <p className="text-sm text-muted-foreground mb-4">The robotic arm serves as the primary driver for gathering samples from the terrain, hosting a drill for collecting ice samples and a CacheCam for visual monitoring. The ice drill is designed to maintain functionality for continuous sample collection. The drill has been validated in simulated environments to ensure reliable operation in the Martian environment.</p>
+            <p className="text-sm text-muted-foreground mb-4">The robotic arm serves as the primary driver for gathering samples from the terrain, hosting a drill for collecting ice samples and a CacheCam for visual monitoring. The ice drill is designed to maintain functionality for continuous sample collection and has been validated in simulated environments to ensure reliable operation in the Martian environment.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
