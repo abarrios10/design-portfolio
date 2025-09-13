@@ -350,7 +350,9 @@ export default function ProjectsSection() {
           {/* Robotic Arm and Drill */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Robotic Arm and Drill</h4>
-            <p className="text-sm text-muted-foreground mb-4">The robotic arm serves as the primary driver for gathering samples from the terrain, hosting a drill for collecting ice samples and a CacheCam for visual monitoring. The ice drill is designed to maintain functionality for continuous sample collection and has been validated in simulated environments to ensure reliable operation in the Martian environment.</p>
+            <p className="text-sm text-muted-foreground mb-4">Designed the rover’s robotic arm to serve as the primary mechanism for collecting samples from the Martian surface, integrating a drill for ice extraction and a CacheCam for real-time visual monitoring. I focused on how to securely attach the arm to the rover body while meeting strict space and weight constraints, carefully selecting the location and attachment method to fit within the overall vehicle layout.
+
+            I configured the arm with four motors to provide a wide range of motion that allows both translation and rotation without surpassing the mass limit. I positioned the drill and CacheCam at the arm’s end to enable precise sample collection and immediate visual confirmation.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
