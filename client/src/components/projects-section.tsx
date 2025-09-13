@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: "Mars Rover Mechanical Subsystem Design",
     description: "Team-based mechanical subsystem design for NASA's L'SPACE Academy Mars rover mission",
-    image: "/attached_assets/placeholder-rover.png",
+    image: "/attached_assets/image_1757737312259.png",
     technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
     details: "Team-based Preliminary Design Review for NASA's L'SPACE Academy, focusing on the rover's mechanical subsystem. Collaborated with student engineers to coordinate design review, verify constraints, and ensure subsystem met mass, volume, and cost limits.",
     date: "January 2024 - April 2024"
