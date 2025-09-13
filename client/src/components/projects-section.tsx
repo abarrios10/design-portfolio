@@ -295,9 +295,8 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <video
-                    poster="/attached_assets/image_1757726811693.png"
                     preload="metadata"
-                    className="w-full max-w-2xl h-64 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-md h-48 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                     data-testid="video-complete-system-preview"
                   >
                     <source src="/attached_assets/IMG_6206_1757728503731.mp4" type="video/mp4" />
