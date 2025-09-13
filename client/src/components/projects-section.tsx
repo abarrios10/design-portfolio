@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
@@ -294,15 +294,23 @@ export default function ProjectsSection() {
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
-                  <video
-                    preload="metadata"
-                    className="w-full max-w-md h-48 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    data-testid="video-complete-system-preview"
-                  >
-                    <source src="/attached_assets/IMG_6206_1757728503731.mp4" type="video/mp4" />
-                    <source src="/attached_assets/IMG_6206_1757728190318.MOV" type="video/quicktime" />
-                    Your browser does not support the video element.
-                  </video>
+                  <div className="relative max-w-md">
+                    <video
+                      preload="metadata"
+                      className="w-full h-48 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      data-testid="video-complete-system-preview"
+                    >
+                      <source src="/attached_assets/IMG_6206_1757728503731.mp4" type="video/mp4" />
+                      <source src="/attached_assets/IMG_6206_1757728190318.MOV" type="video/quicktime" />
+                      Your browser does not support the video element.
+                    </video>
+                    {/* Play button overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      <div className="bg-black bg-opacity-50 rounded-full p-3 hover:bg-opacity-60 transition-all duration-200">
+                        <Play className="w-6 h-6 text-white fill-white" />
+                      </div>
+                    </div>
+                  </div>
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Complete Wind Turbine LED System - Video</DialogTitle>
