@@ -31,7 +31,7 @@ const projects = [
     image: "/attached_assets/placeholder-rover.png",
     technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
     details: "Team-based Preliminary Design Review for NASA's L'SPACE Academy, focusing on the rover's mechanical subsystem. Collaborated with student engineers to coordinate design review, verify constraints, and ensure subsystem met mass, volume, and cost limits.",
-    date: "August 2023 - December 2023"
+    date: "January 2024 - April 2024"
   }
 ];
 
@@ -421,14 +421,9 @@ export default function ProjectsSection() {
                   {project.id === 3 ? (
                     <>
                       <img 
-                        src="/images/nasa-logo-black.png" 
+                        src="/attached_assets/image_1757732520488.png" 
                         alt="NASA" 
-                        className="h-10 w-10 object-contain block dark:hidden" 
-                      />
-                      <img 
-                        src="/images/nasa-logo-white.png" 
-                        alt="NASA" 
-                        className="h-10 w-10 object-contain hidden dark:block" 
+                        className="h-10 w-10 object-contain" 
                       />
                     </>
                   ) : (
