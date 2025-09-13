@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
+import { PageTransitionProvider } from "@/components/route-transition";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Projects from "@/pages/projects";
@@ -30,7 +31,9 @@ function App() {
       <ThemeProvider>
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <PageTransitionProvider>
+            <Router />
+          </PageTransitionProvider>
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>

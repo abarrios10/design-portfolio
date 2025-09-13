@@ -133,17 +133,44 @@
     transition: transform 0.1s ease-out;
   }
   
-  /* Page transition animations */
-  .page-transition {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInPage 0.6s ease-out forwards;
+  /* Route transition container */
+  .route-container {
+    position: relative;
+    will-change: opacity, filter, transform;
   }
   
-  @keyframes fadeInPage {
+  /* Page transition animations */
+  .page-exit .min-h-screen {
+    animation: blurOut 320ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  }
+  
+  .page-enter .min-h-screen {
+    animation: fadeInUp 480ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  }
+  
+  @keyframes blurOut {
+    from {
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateY(0px) scale(1);
+    }
+    to {
+      opacity: 0;
+      filter: blur(12px);
+      transform: translateY(10px) scale(0.985);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateY(12px) scale(0.995);
+    }
     to {
       opacity: 1;
-      transform: translateY(0);
+      filter: blur(0px);
+      transform: translateY(0px) scale(1);
     }
   }
 }

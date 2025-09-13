@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen page-transition">
+    <div className="min-h-screen">
       <Navigation />
       <HeroSection />
       <Footer />

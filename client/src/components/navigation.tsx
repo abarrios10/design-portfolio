@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
+import { TransitionLink } from "@/components/route-transition";
 
 export default function Navigation() {
   const { theme, setTheme } = useTheme();
@@ -16,14 +17,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/">
-              <button
-                className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
-                data-testid="logo-home"
-              >
-                AB
-              </button>
-            </Link>
+            <TransitionLink
+              href="/"
+              className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
+              data-testid="logo-home"
+            >
+              AB
+            </TransitionLink>
           </div>
           <div className="hidden md:flex space-x-8">
             {[
@@ -33,18 +33,18 @@ export default function Navigation() {
               { path: "/about", label: "About" },
               { path: "/contact", label: "Contact" },
             ].map((item) => (
-              <Link key={item.path} href={item.path}>
-                <button
-                  className={`nav-link text-sm font-medium transition-colors ${
-                    location === item.path
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-primary"
-                  }`}
-                  data-testid={`nav-${item.path.slice(1) || 'home'}`}
-                >
-                  {item.label}
-                </button>
-              </Link>
+              <TransitionLink
+                key={item.path}
+                href={item.path}
+                className={`nav-link text-sm font-medium transition-colors ${
+                  location === item.path
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-primary"
+                }`}
+                data-testid={`nav-${item.path.slice(1) || 'home'}`}
+              >
+                {item.label}
+              </TransitionLink>
             ))}
           </div>
           <Button
