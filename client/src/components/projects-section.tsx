@@ -423,7 +423,15 @@ export default function ProjectsSection() {
                       <img 
                         src="/attached_assets/image_1757732520488.png" 
                         alt="NASA" 
-                        className="h-10 w-10 object-contain" 
+                        className="h-10 w-10 object-contain block dark:hidden" 
+                        style={{
+                          filter: 'invert(1)'
+                        }}
+                      />
+                      <img 
+                        src="/attached_assets/image_1757732632620.png" 
+                        alt="NASA" 
+                        className="h-10 w-10 object-contain hidden dark:block" 
                       />
                     </>
                   ) : (
