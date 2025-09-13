@@ -1,20 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function HeroSection() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 120;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <section
@@ -40,35 +28,28 @@ export default function HeroSection() {
             Passionate about product design engineering and robotics innovation
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={() => scrollToSection("projects")}
-              className="btn-primary px-8 py-3 rounded-full text-sm font-medium"
-              data-testid="button-view-work"
-            >
-              View My Work
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() => scrollToSection("contact")}
-              className="px-8 py-3 rounded-full text-sm font-medium border border-border bg-background text-foreground hover:bg-secondary transition-all"
-              data-testid="button-get-in-touch"
-            >
-              Get In Touch
-            </Button>
+            <Link href="/projects">
+              <Button
+                className="btn-primary px-8 py-3 rounded-full text-sm font-medium"
+                data-testid="button-view-work"
+              >
+                View My Work
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button
+                variant="outline"
+                className="px-8 py-3 rounded-full text-sm font-medium border border-border bg-background text-foreground hover:bg-secondary transition-all"
+                data-testid="button-get-in-touch"
+              >
+                Get In Touch
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button
-          onClick={() => scrollToSection("projects")}
-          className="text-muted-foreground hover:text-primary transition-colors"
-          data-testid="button-scroll-down"
-        >
-          <ChevronDown className="h-8 w-8" />
-        </button>
-      </div>
     </section>
   );
 }
