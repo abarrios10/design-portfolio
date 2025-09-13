@@ -55,7 +55,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757718464736.png"
                     alt="SolidWorks Assembly Design"
-                    className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757718554022.png"
                     alt="3D Fidget Spinner Model"
-                    className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -89,7 +89,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757718627490.png"
                     alt="Detailed Component Design"
-                    className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -106,7 +106,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757718751128.png"
                     alt="Injection Mold Cavity Design"
-                    className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -133,7 +133,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757715664937.png"
                     alt="3D Printed Prototype with Pennies"
-                    className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -150,7 +150,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757718142093.png"
                     alt="Laser Cut Prototype"
-                    className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -198,7 +198,7 @@ export default function ProjectsSection() {
                     <img
                       src="/attached_assets/image_1757719949420.png"
                       alt="Von Mises Stress Distribution"
-                      className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                     />
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -218,7 +218,7 @@ export default function ProjectsSection() {
                     <img
                       src="/attached_assets/image_1757720047656.png"
                       alt="Factor of Safety Distribution"
-                      className="w-full h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                     />
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -251,7 +251,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757727012496.png"
                     alt="Circuit Schematic Diagram"
-                    className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -268,7 +268,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/Screenshot 2025-09-12 202801_1757726906050.png"
                     alt="Breadboard Circuit Implementation"
-                    className="w-full h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -358,7 +358,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757737508023.png"
                     alt="Mars Rover Overall System Assembly"
-                    className="w-full max-w-md h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -385,7 +385,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757737624664.png"
                     alt="Camera Attachment System"
-                    className="w-full max-w-md h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -459,9 +459,8 @@ export default function ProjectsSection() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-64 object-contain mb-4"
                   data-testid={`img-project-${project.id}`}
-                  style={{ aspectRatio: 'auto' }}
                 />
                 
                 {/* Logo - UT for projects 1&2, NASA for project 3 */}
