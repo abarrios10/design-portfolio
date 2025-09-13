@@ -10,6 +10,36 @@ import Screenshot_2025_09_13_135237 from "@assets/Screenshot 2025-09-13 135237.p
 const projects = [
   {
     id: 1,
+    title: "Proteus Bring-up Drive Prototype",
+    description: "Drive system prototype development and testing for Amazon's Proteus autonomous mobile robot platform",
+    image: "/images/amazon-robotics-logo.webp",
+    technologies: ["Mechanical Design", "Prototype Development", "Testing & Validation", "Drive Systems"],
+    details: "Amazon Robotics internship project focusing on the development and testing of drive system prototypes for the Proteus autonomous mobile robot. Worked on mechanical design improvements, prototype fabrication, and comprehensive testing protocols to validate performance specifications and reliability requirements.",
+    date: "January 2025 - February 2025",
+    company: "Amazon Robotics"
+  },
+  {
+    id: 2,
+    title: "Autonomous Drive Unit Locomotor Wheel Design",
+    description: "Advanced wheel design and locomotion system development for autonomous drive units",
+    image: "/images/amazon-robotics-logo.webp",
+    technologies: ["CAD Design", "Locomotion Systems", "Performance Optimization", "Autonomous Systems"],
+    details: "Amazon Robotics project focused on designing advanced wheel systems for autonomous drive units. Developed innovative locomotor designs to improve maneuverability, efficiency, and reliability of autonomous mobile robots operating in warehouse environments.",
+    date: "March 2025 - May 2025",
+    company: "Amazon Robotics"
+  },
+  {
+    id: 3,
+    title: "Proteus 'Skateboard' Drive Redesign",
+    description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
+    image: "/images/amazon-robotics-logo.webp",
+    technologies: ["System Redesign", "Performance Enhancement", "Manufacturing Optimization", "Platform Integration"],
+    details: "Amazon Robotics project involving the comprehensive redesign of the Proteus skateboard drive platform. Focused on improving performance characteristics, optimizing manufacturing processes, and enhancing integration capabilities for next-generation autonomous warehouse robots.",
+    date: "April 2025 - May 2025",
+    company: "Amazon Robotics"
+  },
+  {
+    id: 4,
     title: "Fidget Spinner Design & Manufacturing",
     description: "Complete engineering project from CAD design through prototype manufacturing",
     image: "/attached_assets/image_1757725873170.png",
@@ -18,7 +48,7 @@ const projects = [
     date: "August 2023 - December 2023"
   },
   {
-    id: 2,
+    id: 5,
     title: "Wind Turbine LED Circuit",
     description: "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
     image: "/attached_assets/image_1757727946979.png",
@@ -27,7 +57,7 @@ const projects = [
     date: "November 2024"
   },
   {
-    id: 3,
+    id: 6,
     title: "Mars Rover Mechanical Subsystem Design",
     description: "Team-based mechanical subsystem design for NASA's L'SPACE Mission Concept Academy Mars rover mission",
     image: "/attached_assets/image_1757737312259.png",
@@ -41,7 +71,28 @@ export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const renderProjectDetails = (project: any) => {
-    if (project.id === 1) {
+    if (project.id === 1 || project.id === 2 || project.id === 3) {
+      // Amazon Robotics Projects - Placeholder content
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Project Overview</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              This Amazon Robotics project involved advanced mechanical engineering design and development work on autonomous robotic systems. Detailed project information and technical specifications are proprietary and cannot be shared publicly.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Key Contributions</h4>
+            <p className="text-sm text-muted-foreground">
+              • Mechanical design and system optimization<br />
+              • Prototype development and testing<br />
+              • Performance analysis and validation<br />
+              • Cross-functional team collaboration
+            </p>
+          </div>
+        </>
+      );
+    } else if (project.id === 4) {
       // Fidget Spinner Project Details
       return (
         <>
@@ -235,7 +286,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 2) {
+    } else if (project.id === 5) {
       // Wind Turbine Project Details
       return (
         <>
@@ -344,7 +395,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 3) {
+    } else if (project.id === 6) {
       // Mars Rover Project Details
       return (
         <>
@@ -455,9 +506,25 @@ export default function ProjectsSection() {
                   data-testid={`img-project-${project.id}`}
                 />
                 
-                {/* Logo - UT for projects 1&2, NASA for project 3 */}
+                {/* Logo - Amazon for projects 1-3, UT for projects 4-5, NASA for project 6 */}
                 <div className="absolute bottom-4 right-4">
-                  {project.id === 3 ? (
+                  {project.id === 1 || project.id === 2 || project.id === 3 ? (
+                    // Amazon Robotics Logo
+                    <>
+                      <img 
+                        src="/images/amazon-robotics-logo.webp" 
+                        alt="Amazon Robotics" 
+                        className="h-10 w-auto object-contain block dark:hidden" 
+                      />
+                      <img 
+                        src="/images/amazon-robotics-logo.webp" 
+                        alt="Amazon Robotics" 
+                        className="h-10 w-auto object-contain hidden dark:block" 
+                        style={{ filter: 'invert(1)' }}
+                      />
+                    </>
+                  ) : project.id === 6 ? (
+                    // NASA Logo
                     <>
                       <img 
                         src="/attached_assets/image_1757732632620.png" 
@@ -474,6 +541,7 @@ export default function ProjectsSection() {
                       />
                     </>
                   ) : (
+                    // UT Austin Logo
                     <>
                       <img 
                         src="/images/ut-longhorn-black.png" 
