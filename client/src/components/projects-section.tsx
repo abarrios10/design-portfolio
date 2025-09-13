@@ -22,7 +22,7 @@ const projects = [
     id: 2,
     title: "Drive Unit Robot Locomotor Wheel Design",
     description: "Advanced wheel design and locomotion system development for autonomous drive units",
-    image: "data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f3f4f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23e5e7eb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad1)' /%3E%3C/svg%3E",
+    image: "/attached_assets/image_1757800832044.png",
     technologies: ["CAD Design", "Locomotion Systems", "Performance Optimization", "Autonomous Systems"],
     details: "Amazon Robotics project focused on designing advanced wheel systems for autonomous drive units. Developed innovative locomotor designs to improve maneuverability, efficiency, and reliability of autonomous mobile robots operating in warehouse environments.",
     date: "March 2025 - May 2025",
