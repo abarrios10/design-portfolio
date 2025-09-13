@@ -20,11 +20,11 @@ export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-light text-foreground mb-4">Featured Projects</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6">Featured Projects</h2>
+          <p className="text-lg text-muted-foreground">
             A selection of engineering projects I have worked on throughout my time at college
           </p>
         </div>
