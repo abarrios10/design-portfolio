@@ -421,7 +421,7 @@ export default function ProjectsSection() {
                   {project.id === 3 ? (
                     <>
                       <img 
-                        src="/attached_assets/image_1757732520488.png" 
+                        src="/attached_assets/image_1757732632620.png" 
                         alt="NASA" 
                         className="h-10 w-10 object-contain block dark:hidden" 
                         style={{
