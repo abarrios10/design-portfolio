@@ -289,7 +289,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Complete System</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              The complete wind turbine LED circuit system demonstrates power conversion principles and provides real-time visual feedback of turbine performance through strategically placed LED indicators.
+              The complete wind turbine LED circuit system demonstrates power conversion principles and provides real-time visual feedback of turbine performance through a reliable fan speed-based LED feedback system. High-speed LEDs activate at high fan speeds while low-speed LEDs respond to lower speeds, creating an intuitive visual indicator of the turbine's operational status.
             </p>
             <div className="flex justify-center">
               <Dialog>
