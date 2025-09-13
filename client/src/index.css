@@ -105,11 +105,13 @@
 @layer components {
   .hero-bg-premium {
     background: 
-      linear-gradient(135deg, hsl(220 20% 97%) 0%, hsl(220 15% 92%) 50%, hsl(220 20% 97%) 100%),
-      radial-gradient(1200px 800px at 15% 20%, hsla(var(--accent-cyan), 0.08) 0%, transparent 60%),
-      radial-gradient(1200px 800px at 85% 80%, hsla(var(--accent-teal), 0.07) 0%, transparent 60%),
-      radial-gradient(1000px 700px at 50% 110%, hsla(var(--ut-orange), 0.05) 0%, transparent 70%);
+      linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%),
+      radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 119, 48, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(79, 172, 254, 0.2) 0%, transparent 50%);
     position: relative;
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
   }
   
   .hero-bg-premium::before {
@@ -118,28 +120,45 @@
     inset: 0;
     pointer-events: none;
     background: 
-      repeating-linear-gradient(to right, hsla(var(--foreground), 0.03) 0 1px, transparent 1px 24px),
-      repeating-linear-gradient(to bottom, hsla(var(--foreground), 0.03) 0 1px, transparent 1px 24px);
-    mix-blend-mode: normal;
+      linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1) 50%, transparent 60%);
+    background-size: 60px 60px;
+    animation: shimmer 3s linear infinite;
   }
   
   .dark .hero-bg-premium {
     background: 
-      linear-gradient(135deg, hsl(226 45% 14%) 0%, hsl(226 40% 16%) 50%, hsl(226 45% 14%) 100%),
-      radial-gradient(1200px 800px at 20% 15%, hsla(var(--accent-cyan), 0.10) 0%, transparent 60%),
-      radial-gradient(1200px 800px at 80% 85%, hsla(var(--accent-teal), 0.09) 0%, transparent 60%),
-      radial-gradient(1000px 700px at 50% 110%, hsla(var(--ut-orange), 0.06) 0%, transparent 70%);
+      linear-gradient(135deg, #2d1b69 0%, #11998e 25%, #38ef7d 50%, #0f4c75 75%, #3282b8 100%),
+      radial-gradient(circle at 20% 50%, rgba(45, 27, 105, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(17, 153, 142, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(56, 239, 125, 0.2) 0%, transparent 50%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
   }
 
-  @media (prefers-contrast: more) {
-    .hero-bg-premium::before { opacity: 0.02; }
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .hero-bg-premium {
-      background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 60%, hsl(var(--background)) 100%);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      animation: none;
     }
-    .hero-bg-premium::before { display: none; }
+    .hero-bg-premium::before { 
+      animation: none;
+      background: none;
+    }
+    .dark .hero-bg-premium {
+      background: linear-gradient(135deg, #2d1b69 0%, #11998e 50%, #38ef7d 100%);
+      animation: none;
+    }
   }
 
   .project-card {
