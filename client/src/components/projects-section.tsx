@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Bring-up Drive Prototype",
     description: "Drive system prototype development and testing for Amazon's Proteus autonomous mobile robot platform",
-    image: "/attached_assets/image_1757800238572.png",
+    image: "/attached_assets/image_1757800703491.png",
     technologies: ["Mechanical Design", "Prototype Development", "Testing & Validation", "Drive Systems"],
     details: "Amazon Robotics internship project focusing on the development and testing of drive system prototypes for the Proteus autonomous mobile robot. Worked on mechanical design improvements, prototype fabrication, and comprehensive testing protocols to validate performance specifications and reliability requirements.",
     date: "January 2025 - February 2025",
