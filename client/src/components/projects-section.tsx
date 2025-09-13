@@ -40,21 +40,22 @@ export default function ProjectsSection() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-contain rounded-3xl mb-4"
+                    className="w-full h-64 object-contain mb-4"
                     data-testid={`img-project-${project.id}`}
+                    style={{borderRadius: '40px'}}
                   />
                   
                   {/* UT Longhorn Logo */}
-                  <div className="absolute bottom-16 right-2">
+                  <div className="absolute bottom-4 right-4">
                     <img 
                       src="/images/ut-longhorn-black.png" 
                       alt="UT Austin" 
-                      className="h-6 w-6 object-contain opacity-70 block dark:hidden" 
+                      className="h-6 w-6 object-contain block dark:hidden" 
                     />
                     <img 
                       src="/images/ut-longhorn-white.jpg" 
                       alt="UT Austin" 
-                      className="h-6 w-6 object-contain opacity-70 hidden dark:block" 
+                      className="h-6 w-6 object-contain hidden dark:block" 
                       style={{ 
                         filter: 'brightness(1.2) contrast(1.5)',
                         mixBlendMode: 'screen'
@@ -65,7 +66,7 @@ export default function ProjectsSection() {
                   {/* Date Badge */}
                   <div className="flex justify-center mb-4">
                     <div className="bg-foreground/90 px-4 py-2 rounded-full">
-                      <span className="text-sm font-semibold text-background">
+                      <span className="text-sm font-normal text-black dark:text-white">
                         August 2023 - December 2023
                       </span>
                     </div>
