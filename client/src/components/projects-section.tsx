@@ -127,7 +127,7 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">
               Manufactured prototypes using multiple methods including 3D printing and laser cutting, incorporating real pennies as weights to test functionality and structural integrity.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <Dialog>
                 <DialogTrigger asChild>
                   <img
@@ -148,28 +148,9 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <img
-                    src="/attached_assets/image_1757718142093.png"
-                    alt="Laser Cut Prototype"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">Laser Cut Prototype - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757718142093.png"
-                    alt="Laser Cut Prototype"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-            </div>
-            <div className="flex justify-center mt-6">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
                     src="/attached_assets/image_1757718285634.png"
                     alt="Translucent Prototype"
-                    className="w-full max-w-md h-56 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -177,6 +158,25 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757718285634.png"
                     alt="Translucent Prototype"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+            <div className="flex justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757718142093.png"
+                    alt="Laser Cut Prototype"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Laser Cut Prototype - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757718142093.png"
+                    alt="Laser Cut Prototype"
                     className="w-full h-auto max-h-[90vh] object-contain"
                   />
                 </DialogContent>
