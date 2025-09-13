@@ -335,13 +335,10 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-
           {/* LED Control System */}
           <div>
             <h4 className="text-lg font-semibold mb-4">LED Control System</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              The circuit uses transistors and comparators to control LED brightness based on voltage levels, creating a visual indicator system where different LEDs activate depending on the turbine's speed and power output. The system converts wind power to electrical energy and provides visual feedback through speed-responsive LEDs - high-speed LEDs activate during fast rotation while low-speed LEDs indicate slower operation. The orange base for the wind turbine was custom designed and prototyped using 3D printing technology.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">The circuit uses transistors and comparators to control LED brightness based on voltage levels, creating a visual indicator system where different LEDs activate depending on the turbine's speed and power output. The system converts wind power to electrical energy and provides visual feedback through speed-responsive LEDs - high-speed LEDs activate during fast rotation while low-speed LEDs indicate slower operation. The orange base for the wind turbine was custom designed and prototyped using 3D printing.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
@@ -385,7 +382,6 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-
           {/* Lessons Learned */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Lessons Learned</h4>
@@ -510,7 +506,7 @@ export default function ProjectsSection() {
                 <div className="absolute bottom-4 right-4">
                   {project.id === 1 || project.id === 2 || project.id === 3 ? (
                     // Amazon Robotics Logo
-                    <>
+                    (<>
                       <img 
                         src="/images/amazon-robotics-logo.webp" 
                         alt="Amazon Robotics" 
@@ -522,10 +518,10 @@ export default function ProjectsSection() {
                         className="h-16 w-auto object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
                       />
-                    </>
+                    </>)
                   ) : project.id === 6 ? (
                     // NASA Logo
-                    <>
+                    (<>
                       <img 
                         src="/attached_assets/image_1757732632620.png" 
                         alt="NASA" 
@@ -539,10 +535,10 @@ export default function ProjectsSection() {
                         alt="NASA" 
                         className="h-16 w-16 object-contain hidden dark:block" 
                       />
-                    </>
+                    </>)
                   ) : (
                     // UT Austin Logo
-                    <>
+                    (<>
                       <img 
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin" 
@@ -557,7 +553,7 @@ export default function ProjectsSection() {
                           mixBlendMode: 'screen'
                         }}
                       />
-                    </>
+                    </>)
                   )}
                 </div>
                 
