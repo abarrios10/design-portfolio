@@ -296,7 +296,7 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">
               The wind turbine generates three-phase AC power that varies with wind speed and requires conditioning for reliable LED operation. The core circuit implements a half-wave rectifier using a diode to convert the alternating current to pulsating DC, effectively removing the negative portions of the AC waveform. A large capacitor is placed after the rectifier to smooth the pulsating DC output, reducing voltage ripple and creating a more stable power supply for the LED indicators.
               <br /><br />
-              The circuit design incorporates voltage regulation through careful selection of resistor values to ensure proper current limiting for the LEDs, preventing burnout while maintaining adequate brightness. Additional filtering capacitors were tested to optimize the voltage smoothing characteristics, with the final configuration providing sufficient power stability across varying wind conditions. The breadboard implementation allows for easy modification and testing of different component values to fine-tune the system's response to different turbine speeds.
+              The circuit design incorporates voltage regulation through careful selection of resistor values to ensure proper current limiting for the LEDs, preventing burnout while maintaining adequate brightness. The breadboard implementation allows for easy modification and testing of different component values to fine-tune the system's response to different turbine speeds.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Dialog>
