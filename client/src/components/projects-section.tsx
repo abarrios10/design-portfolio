@@ -358,16 +358,26 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Robotic Arm and Drill</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              Designed the robotic arm and its drill mechanism to extract ice samples from the Martian surface. Incorporated anti-jamming features into the drill design to ensure reliable operation in harsh regolith conditions. Conducted CAD modeling and analysis to validate arm movement and drilling functionality, while verifying that materials selected could withstand Martian temperatures and dust exposure.
+              The robotic arm serves as the primary driver for gathering samples from the terrain, hosting a drill for collecting ice samples and a CacheCam for visual monitoring. The ice drill is designed with mechanisms to prevent jamming and maintain functionality for continuous sample collection. With a TRL of 5, the drill has been validated in simulated environments to ensure reliable operation on the Martian surface.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Placeholder for future images */}
-              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
-                <span className="text-sm text-muted-foreground">Image placeholder</span>
-              </div>
-              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
-                <span className="text-sm text-muted-foreground">Image placeholder</span>
-              </div>
+            <div className="flex justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757737508023.png"
+                    alt="Mars Rover Overall System Assembly"
+                    className="w-full max-w-md h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Mars Rover Overall System Assembly - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757737508023.png"
+                    alt="Mars Rover Overall System Assembly"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
 
@@ -375,17 +385,35 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Camera Attachment</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              Developed mounting and attachment for a CacheCam that provided visual feedback during drilling and sampling operations. This allowed real-time inspection of samples and ensured compliance with NASA's science protocols. Collaborated with teammates to integrate the camera system with the rover's data and power subsystems.
+              The CacheCam attachment, similar to the Perseverance Rover design, captures high-resolution images of collected samples and materials during the collection process. Operating at TRL 9 from successful use in previous missions, the camera provides real-time monitoring to ensure NASA protocol compliance and enables comprehensive post-mission analysis of sample collection procedures.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Placeholder for future images */}
-              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
-                <span className="text-sm text-muted-foreground">Image placeholder</span>
-              </div>
-              <div className="w-full h-56 bg-gray-100 dark:bg-gray-800 rounded-lg border flex items-center justify-center">
-                <span className="text-sm text-muted-foreground">Image placeholder</span>
-              </div>
+            <div className="flex justify-center">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757737624664.png"
+                    alt="Camera Attachment System"
+                    className="w-full max-w-md h-56 object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Camera Attachment System - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757737624664.png"
+                    alt="Camera Attachment System"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
+          </div>
+
+          {/* Overall System */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Overall System</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              The complete mechanical subsystem integrates the robotic arm, drilling mechanism, and camera system for Mars exploration and sample collection. This design supports the characterization of water feedstock and identification of potential sites for future human Mars exploration in accordance with NASA's Mars Exploration program objectives.
+            </p>
           </div>
         </>
       );
