@@ -396,9 +396,9 @@ export default function ProjectsSection() {
           {/* Preliminary Design Review */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Preliminary Design Review</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Collaborated with 15 other student engineers to coordinate and write the Preliminary Design Review as the final deliverable for NASA's L'SPACE Academy program. The comprehensive document detailed the rover's integration of mechanical, GNC, electrical, thermal, and other subsystems, verified that each subsystem fell within NASA's required budget, mass, volume, and operational constraints, and outlined the procurement strategy for manufacturing the rover's components.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4 text-left">Collaborated with 15 other student engineers to coordinate and author a 199-page Preliminary Design Review (PDR) as the final deliverable for NASA’s L’SPACE Academy. The document detailed the full integration of the rover’s mechanical, guidance/navigation/control, electrical, and thermal subsystems, verifying that each design met NASA’s strict budget, mass, volume, and operational constraints while outlining procurement strategies for manufacturing all components.
+
+            The PDR was formally reviewed by NASA engineers to evaluate its feasibility as an actionable engineering plan and earned an 81/100, placing the team in the 75th percentile of all program cohorts. To conclude the project, we delivered a 1-hour formal presentation of the design, which strengthened technical communication and presentation skills and demonstrated our ability to transform conceptual designs into a detailed, mission-ready proposal.</p>
             <div className="flex justify-center">
               <Dialog>
                 <DialogTrigger asChild>
