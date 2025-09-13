@@ -30,7 +30,7 @@ const projects = [
     description: "Team-based mechanical subsystem design for NASA's L'SPACE Academy Mars rover mission",
     image: "/attached_assets/image_1757737312259.png",
     technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
-    details: "Team-based Mars rover design for NASA's L'SPACE Academy to traverse Martian terrain and collect soil and ice samples for analysis to determine whether humans could live on Mars and fertilize the ground by 2050. I collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, which enabled the rover to collect subsurface ice samples and capture visual data for mission analysis.",
+    details: "Team-based Mars rover design for NASA's L'SPACE Academy to traverse Martian terrain and collect soil and ice samples for analysis. Collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment.",
     date: "January 2024 - April 2024"
   }
 ];
