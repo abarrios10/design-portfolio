@@ -43,8 +43,8 @@ const projects = [
     title: "Injection Quill Design and Installation",
     description: "Chemical injection system design and field installation for refinery maintenance operations",
     image: "/attached_assets/image_1757889526065.png",
-    technologies: ["Process Design", "CAD Modeling", "Field Installation", "Industrial Safety"],
-    details: "BP project focused on designing and installing chemical injection quill systems for refinery maintenance operations. Involved creating detailed engineering drawings, coordinating field installation procedures, and ensuring compliance with industrial safety standards.",
+    technologies: ["Industrial Equipment Design", "Piping and Instrumentation Diagrams", "Supplier Relationships", "Field Installation"],
+    details: "Project for my internship at BP at their Whiting refinery focused on the design and installation of a chemical injection quill to mitigate pipe impingment at a critical junction tee. Involved updating P&IDs, coordinating field installation procedures, creating documentation, and ensuring compliance with ASME piping standards.",
     date: "May 2024 - August 2024",
     company: "BP"
   },
@@ -288,6 +288,66 @@ export default function ProjectsSection() {
               • Performance analysis and validation<br />
               • Cross-functional team collaboration
             </p>
+          </div>
+        </>
+      );
+    } else if (project.id === 4) {
+      // Injection Quill Design and Installation - Custom sections
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add description of the pipe impingement problem and the need for chemical injection at the critical junction tee]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Vendor Contact</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add details about supplier relationships, vendor selection process, and coordination with external equipment providers]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Design Requirements</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add specifications for the injection quill design, ASME compliance requirements, and technical constraints]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Vibration Analysis</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add details about vibration considerations, structural analysis, and mounting requirements for the injection system]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Engineering Work Order</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add information about documentation creation, P&ID updates, work order procedures, and installation planning]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Results</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add outcomes of the installation, performance improvements, and lessons learned from the project]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
           </div>
         </>
       );
