@@ -351,9 +351,9 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Vendor Contact</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add details about supplier relationships, vendor selection process, and coordination with external equipment providers]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">I was responsible for coordinating with our preferred injection quill vendor and providing all the specifications required for manufacturing the quill. To ensure the quill was designed correctly, I gathered detailed process condition data, including flow rates as well as operational and maximum temperatures and pressures. Working closely with the process engineers, I spent a week in the field measuring operating temperatures on both process lines and tracing P&IDs to confirm the maximum design pressure each line was rated for.
+
+            I also worked with the onsite materials engineer to determine the optimal quill material and design type. Together, we analyzed process conditions and mixing temperatures to select a material resistant to corrosion and thermal fatigue. Throughout the design process, I completed and regularly updated a specification sheet to meet vendor requirements, ensuring that the quill could be manufactured precisely to the needed specifications.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
