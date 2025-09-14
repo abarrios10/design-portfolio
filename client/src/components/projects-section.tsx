@@ -702,10 +702,10 @@ export default function ProjectsSection() {
                 />
                 
                 {/* Logo - Amazon for projects 1-3, BP for projects 4-5, UT for projects 6-7, NASA for project 8 */}
-                <div className="absolute bottom-2 right-4">
-                  {project.id === 1 || project.id === 2 || project.id === 3 ? (
-                    // Amazon Robotics Logo
-                    (<>
+                {project.id === 1 || project.id === 2 || project.id === 3 ? (
+                  // Amazon Robotics Logo - positioned lower
+                  <div className="absolute bottom-2 right-4">
+                    <>
                       <img 
                         src="/images/amazon-robotics-logo.webp" 
                         alt="Amazon Robotics" 
@@ -717,10 +717,12 @@ export default function ProjectsSection() {
                         className="h-16 w-auto object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
                       />
-                    </>)
-                  ) : project.id === 4 || project.id === 5 ? (
-                    // BP Logo
-                    (<>
+                    </>
+                  </div>
+                ) : project.id === 4 || project.id === 5 ? (
+                  // BP Logo - original position
+                  <div className="absolute bottom-4 right-4">
+                    <>
                       <img 
                         src="/images/bp-logo-official.png" 
                         alt="BP" 
@@ -732,10 +734,12 @@ export default function ProjectsSection() {
                         className="h-16 w-auto object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
                       />
-                    </>)
-                  ) : project.id === 8 ? (
-                    // NASA Logo
-                    (<>
+                    </>
+                  </div>
+                ) : project.id === 8 ? (
+                  // NASA Logo - original position
+                  <div className="absolute bottom-4 right-4">
+                    <>
                       <img 
                         src="/attached_assets/image_1757732632620.png" 
                         alt="NASA" 
@@ -749,10 +753,12 @@ export default function ProjectsSection() {
                         alt="NASA" 
                         className="h-16 w-16 object-contain hidden dark:block" 
                       />
-                    </>)
-                  ) : (
-                    // UT Austin Logo
-                    (<>
+                    </>
+                  </div>
+                ) : (
+                  // UT Austin Logo - positioned lower
+                  <div className="absolute bottom-2 right-4">
+                    <>
                       <img 
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin" 
@@ -767,9 +773,9 @@ export default function ProjectsSection() {
                           mixBlendMode: 'screen'
                         }}
                       />
-                    </>)
-                  )}
-                </div>
+                    </>
+                  </div>
+                )}
                 
                 {/* Date Badge */}
                 <div className="flex justify-center mb-4">
