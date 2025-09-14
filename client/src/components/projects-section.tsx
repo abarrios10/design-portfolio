@@ -376,9 +376,7 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Requirements</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add specifications for the injection quill design, ASME compliance requirements, and technical constraints]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">As mentioned earlier, the quill needed to be made from a material resistant to corrosion and thermal fatigue because of the temperature differences between the two mixing fluids. In addition to material selection, I also had to determine the quill length using calculations guided by ASME B31.3, the standard for process piping design. Because the quill would be connected to the system through a flanged connection, I accounted for every layer in the assembly: the flange thickness, the appropriate flange type, the pipe tee wall thickness, and the gasket thickness required to create a secure, leak-free joint. An image of my calculations and the finalized system drawing is shown below.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
