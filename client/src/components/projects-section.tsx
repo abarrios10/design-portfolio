@@ -154,34 +154,14 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Finalized Design</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              I developed the complete BUD design in SolidWorks, creating detailed models for all components, supporting hardware, and mounting brackets. The CAD assembly allowed me to verify component clearances and optimize the layout before fabrication.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">I developed the complete BUD design in SolidWorks, creating models for the mounting brackets and assembling all of the components onto the plate. The CAD assembly allowed me to verify component clearances and optimize the layout before fabrication.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757873010685.png"
-                    alt="SolidWorks BUD Assembly - Isometric View"
-                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">SolidWorks BUD Assembly - Isometric View - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757873010685.png"
-                    alt="SolidWorks BUD Assembly - Isometric View"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-              
               <Dialog>
                 <DialogTrigger asChild>
                   <img
                     src="/attached_assets/image_1757873036902.png"
                     alt="SolidWorks Component Drawings"
-                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -193,6 +173,26 @@ export default function ProjectsSection() {
                   />
                 </DialogContent>
               </Dialog>
+              
+              <div className="flex items-center">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <img
+                      src="/attached_assets/image_1757873010685.png"
+                      alt="SolidWorks BUD Assembly - Isometric View"
+                      className="w-full h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    />
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl max-h-[95vh]">
+                    <DialogTitle className="sr-only">SolidWorks BUD Assembly - Isometric View - Full Size</DialogTitle>
+                    <img
+                      src="/attached_assets/image_1757873010685.png"
+                      alt="SolidWorks BUD Assembly - Isometric View"
+                      className="w-full h-auto max-h-[90vh] object-contain"
+                    />
+                  </DialogContent>
+                </Dialog>
+              </div>
             </div>
           </div>
           <div>
