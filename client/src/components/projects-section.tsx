@@ -145,7 +145,7 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">When planning the bring-up drive, I focused on three key goals that shaped the final design:</p>
             <ul className="text-sm text-muted-foreground mb-4 space-y-3 ml-4">
               <li><strong>Configurability:</strong> I wanted to ensure the fixture could accommodate any combination of hardware components. Some firmware teams might only need sensors or motors, while others might require every subsystem connected at once. I designed the layout so that any component set could be installed and integrated as needed.</li>
-              <li><strong>Portability:</strong> [Add description of portability considerations and material choices]</li>
+              <li><strong>Portability:</strong> I aimed to make the fixture as light as possible while strong enough to support all components simultaneously. I selected a UHMW polyethylene base for its strength-to-weight balance and ensured the plate's width fit within the storage shelves to avoid overhang and tipping. This required reorienting components from the layout of the actual drive unit to fit the tighter frame while maintaining easy access.</li>
               <li><strong>Space-Efficiency:</strong> [Add description of space optimization and cable routing considerations]</li>
             </ul>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
