@@ -143,7 +143,7 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Concept</h4>
             <p className="text-sm text-muted-foreground mb-4">When planning the bring-up drive, I focused on three key goals that shaped the final design:</p>
-            <ul className="text-sm text-muted-foreground mb-4 space-y-3 ml-4">
+            <ul className="text-sm text-muted-foreground mb-2 space-y-3 ml-4">
               <li><strong>Configurability:</strong> I wanted to ensure the fixture could accommodate any combination of hardware components. Some firmware teams might only need sensors or motors, while others might require every subsystem connected at once. I designed the layout so that any component set could be installed and integrated as needed.</li>
               <li><strong>Portability:</strong> I aimed to make the fixture as light as possible while strong enough to support all components simultaneously. I selected a UHMW polyethylene base for its strength-to-weight balance and ensured the plate's width fit within the storage shelves to avoid overhang and tipping. This required reorienting components from the layout of the actual drive unit to fit the tighter frame while maintaining easy access.</li>
               <li><strong>Space-Efficiency:</strong> I worked to maximize the use of the fixture's limited area, carefully orienting parts so that shorter cables could still be routed to the motherboard and all ports could be reached regardless of component configuration.</li>
@@ -155,10 +155,44 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Finalized Design</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              [Content to be added - Finalized design details]
+              I developed the complete BUD design in SolidWorks, creating detailed models for all components, supporting hardware, and mounting brackets. The CAD assembly allowed me to verify component clearances and optimize the layout before fabrication.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757873010685.png"
+                    alt="SolidWorks BUD Assembly - Isometric View"
+                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">SolidWorks BUD Assembly - Isometric View - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757873010685.png"
+                    alt="SolidWorks BUD Assembly - Isometric View"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+              
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757873036902.png"
+                    alt="SolidWorks Component Drawings"
+                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">SolidWorks Component Drawings - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757873036902.png"
+                    alt="SolidWorks Component Drawings"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
