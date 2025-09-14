@@ -243,9 +243,7 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">
               The bring-up drive project was a big success! The feedback from the firmware teams was overwhelmingly positive. They particularly appreciated the stability of the components on the plate, which provided a reliable testing platform. Additionally, the fixture's portability made it easy to move between workspaces, allowing teams to test in their preferred locations.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
-              Most importantly, during BUD testing we discovered a critical bug in the estop board that could have caused significant issues in production. This early detection through the fixture testing potentially saved the project considerable time and resources by catching the problem before it reached the manufacturing floor.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">Most importantly, during BUD testing, one of the firmware engineers discovered a critical bug in one of the boards that could have caused significant issues in production. This early detection through the fixture testing potentially saved the project considerable time and resources by catching the problem before it reached the next stage in the robot's development.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
