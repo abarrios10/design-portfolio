@@ -330,7 +330,7 @@ export default function ProjectsSection() {
                     <img
                       src="/attached_assets/image_1757890970687.png"
                       alt="Junction Tee Location"
-                      className="block w-full h-48 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      className="block w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                     />
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl max-h-[95vh]">
