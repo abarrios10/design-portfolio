@@ -702,7 +702,7 @@ export default function ProjectsSection() {
                 />
                 
                 {/* Logo - Amazon for projects 1-3, BP for projects 4-5, UT for projects 6-7, NASA for project 8 */}
-                <div className="absolute bottom-4 right-4">
+                <div className="absolute bottom-2 right-4">
                   {project.id === 1 || project.id === 2 || project.id === 3 ? (
                     // Amazon Robotics Logo
                     (<>
