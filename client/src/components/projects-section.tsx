@@ -40,6 +40,26 @@ const projects = [
   },
   {
     id: 4,
+    title: "Injection Quill Design and Installation",
+    description: "Chemical injection system design and field installation for refinery maintenance operations",
+    image: "/attached_assets/image_1757889157460.png",
+    technologies: ["Process Design", "CAD Modeling", "Field Installation", "Industrial Safety"],
+    details: "BP project focused on designing and installing chemical injection quill systems for refinery maintenance operations. Involved creating detailed engineering drawings, coordinating field installation procedures, and ensuring compliance with industrial safety standards.",
+    date: "May 2024 - August 2024",
+    company: "BP"
+  },
+  {
+    id: 5,
+    title: "Steam Drainpipe Replacement",
+    description: "Steam system piping analysis and replacement design for enhanced operational efficiency",
+    image: "/attached_assets/image_1757889205453.png",
+    technologies: ["Piping Systems", "Thermal Analysis", "Installation Planning", "Process Optimization"],
+    details: "BP project involving the analysis and replacement of steam drainpipe systems to improve operational efficiency and reduce maintenance requirements. Focused on thermal analysis, system optimization, and coordinated installation procedures.",
+    date: "May 2024 - August 2024",
+    company: "BP"
+  },
+  {
+    id: 6,
     title: "Fidget Spinner Design & Manufacturing",
     description: "Complete engineering project from CAD design through prototype manufacturing",
     image: "/attached_assets/image_1757725873170.png",
@@ -48,7 +68,7 @@ const projects = [
     date: "August 2023 - December 2023"
   },
   {
-    id: 5,
+    id: 7,
     title: "Wind Turbine LED Circuit",
     description: "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
     image: "/attached_assets/image_1757727946979.png",
@@ -57,7 +77,7 @@ const projects = [
     date: "November 2024"
   },
   {
-    id: 6,
+    id: 8,
     title: "Mars Rover Mechanical Subsystem Design",
     description: "Team-based mechanical subsystem design for NASA's L'SPACE Mission Concept Academy Mars rover mission",
     image: "/attached_assets/image_1757737312259.png",
@@ -271,7 +291,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 4) {
+    } else if (project.id === 6) {
       // Fidget Spinner Project Details
       return (
         <>
@@ -465,7 +485,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 5) {
+    } else if (project.id === 7) {
       // Wind Turbine Project Details
       return (
         <>
@@ -570,7 +590,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 6) {
+    } else if (project.id === 8) {
       // Mars Rover Project Details
       return (
         <>
@@ -681,7 +701,7 @@ export default function ProjectsSection() {
                   data-testid={`img-project-${project.id}`}
                 />
                 
-                {/* Logo - Amazon for projects 1-3, UT for projects 4-5, NASA for project 6 */}
+                {/* Logo - Amazon for projects 1-3, BP for projects 4-5, UT for projects 6-7, NASA for project 8 */}
                 <div className="absolute bottom-4 right-4">
                   {project.id === 1 || project.id === 2 || project.id === 3 ? (
                     // Amazon Robotics Logo
@@ -698,7 +718,22 @@ export default function ProjectsSection() {
                         style={{ filter: 'invert(1)' }}
                       />
                     </>)
-                  ) : project.id === 6 ? (
+                  ) : project.id === 4 || project.id === 5 ? (
+                    // BP Logo
+                    (<>
+                      <img 
+                        src="/images/bp-logo-official.png" 
+                        alt="BP" 
+                        className="h-16 w-auto object-contain block dark:hidden" 
+                      />
+                      <img 
+                        src="/images/bp-logo-official.png" 
+                        alt="BP" 
+                        className="h-16 w-auto object-contain hidden dark:block" 
+                        style={{ filter: 'invert(1)' }}
+                      />
+                    </>)
+                  ) : project.id === 8 ? (
                     // NASA Logo
                     (<>
                       <img 
