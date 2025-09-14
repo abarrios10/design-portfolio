@@ -142,10 +142,12 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Concept</h4>
-            <p className="text-sm text-muted-foreground mb-4">I wanted to focus on three main aspects that I wanted this bring-up drive to possess
-            - Configurability: I wanted to make sure that all potential hardware components could be included, as one team may only need the sensors, or the motors, etc. but one team might need all of the components at once. I wanted to make sure that it was configurable to everything that could possibly be on the fixture. 
-            - Portability: I wanted to make the fixture as light as possible but strong enough to withstand the weight of all the components at once: I opted to use a UHMW Polyethylene base to satisfy these requirements. Additionally, if the BUDs wanted to be stored on shelves. I had to make sure that the width of the plate wouldn't surpass the width of the shelves that it would be placed on so that I wouldn't have any overhang causing the whole thing to tip over. Because of this, I would have to reorient the components on the fixture to make sure it all fit within the frame that was different from the frame of the actual drive-unit.
-            - Space-Efficiency: I wanted to maximize the space given to me on the fixture and make sure that parts were oriented properly to allow the smaller length cables to still be routed to the motherboard on their ports despite their different orientations locations. </p>
+            <p className="text-sm text-muted-foreground mb-4">I wanted to focus on three main aspects that I wanted this bring-up drive to possess:</p>
+            <ul className="text-sm text-muted-foreground mb-4 space-y-3 ml-4">
+              <li><strong>Configurability:</strong> I wanted to make sure that all potential hardware components could be included, as one team may only need the sensors, or the motors, etc. but one team might need all of the components at once. I wanted to make sure that it was configurable to everything that could possibly be on the fixture.</li>
+              <li><strong>Portability:</strong> I wanted to make the fixture as light as possible but strong enough to withstand the weight of all the components at once: I opted to use a UHMW Polyethylene base to satisfy these requirements. Additionally, if the BUDs wanted to be stored on shelves. I had to make sure that the width of the plate wouldn't surpass the width of the shelves that it would be placed on so that I wouldn't have any overhang causing the whole thing to tip over. Because of this, I would have to reorient the components on the fixture to make sure it all fit within the frame that was different from the frame of the actual drive-unit.</li>
+              <li><strong>Space-Efficiency:</strong> I wanted to maximize the space given to me on the fixture and make sure that parts were oriented properly to allow the smaller length cables to still be routed to the motherboard on their ports despite their different orientations locations.</li>
+            </ul>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
