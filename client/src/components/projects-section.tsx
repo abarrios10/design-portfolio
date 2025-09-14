@@ -13,7 +13,7 @@ const projects = [
     title: "Bring-up Drive Prototype",
     description: "Drive system prototype development and testing for Amazon's Proteus autonomous mobile robot platform",
     image: "/attached_assets/image_1757800703491.png",
-    technologies: ["Mechanical Design", "Prototype Development", "Testing & Validation", "Drive Systems"],
+    technologies: ["SolidWorks", "Prototype Development", "Testing & Validation", "Supporting Hardware"],
     details: "First project during my Amazon Robotics internship focused on designing and prototyping a \"bring-up\" drive for the next-generation Proteus autonomous drive unit. Combined the robot's electromechanical hardware on a specified fixture plate, routing cabling and integrating electrical components to create a platform that allowed firmware engineers to test and debug motor, sensor, and load cell functionality before full system integration.",
     date: "January 2025 - February 2025",
     company: "Amazon Robotics"
