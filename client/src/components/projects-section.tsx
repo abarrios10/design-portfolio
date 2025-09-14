@@ -377,8 +377,24 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Requirements</h4>
             <p className="text-sm text-muted-foreground mb-4">As mentioned earlier, the quill needed to be made from a material resistant to corrosion and thermal fatigue because of the temperature differences between the two mixing fluids. In addition to material selection, I also had to determine the quill length using calculations guided by ASME B31.3, the standard for process piping design. Because the quill would be connected to the system through a flanged connection, I accounted for every layer in the assembly: the flange thickness, the appropriate flange type, the pipe tee wall thickness, and the gasket thickness required to create a secure, leak-free joint. An image of my calculations and the finalized system drawing is shown below.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757893692234.png"
+                    alt="Injection Quill Technical Drawing and Calculations"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Injection Quill Technical Drawing and Calculations - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757893692234.png"
+                    alt="Injection Quill Technical Drawing and Calculations"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
