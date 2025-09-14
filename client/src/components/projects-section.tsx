@@ -79,6 +79,7 @@ export default function ProjectsSection() {
             <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
             <p className="text-sm text-muted-foreground mb-4">The firmware engineering teams needed every electromechanical component of the Proteus drive – motors, sensors, load cells, and motherboard – connected in a single, organized system with proper cabling and wiring so they could remotely interface with all hardware before moving to the next stage of development. At the time, their setup consisted of scattered hardware stored on shelves, which made testing inefficient and complicated hardware transport between engineers who needed to run diagnostics in different locations.</p>
             <p className="text-sm text-muted-foreground mb-4">To address this problem I was tasked with designing a dedicated “bring-up” drive: a single fixture that consolidated all Proteus hardware into one integrated platform with fully routed and managed cabling. This solution would provide a compact, mobile testbed that would enable streamlined firmware testing, ensure reliable electrical connections across subsystems, and allow faster, more organized integration for the next phase of product development.</p>
+            <h5 className="text-md font-semibold mb-4 mt-6">Current Setup: Scattered Hardware</h5>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Left column - Tall image */}
               <Dialog>
