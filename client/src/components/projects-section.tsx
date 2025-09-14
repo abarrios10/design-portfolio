@@ -297,9 +297,9 @@ export default function ProjectsSection() {
         <>
           <div>
             <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add description of the pipe impingement problem and the need for chemical injection at the critical junction tee]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">In one of the process units I worked on, a critical pipe tee junction combined process water from one line with a wet-gas stream used to dilute acid gases and prevent corrosion. Over time, the high-velocity water entered the tee and repeatedly struck the upper wall of the pipe carrying the gas. This impingement caused wall thinning, and measurements showed the pipe was approaching the minimum thickness required for safe operation.
+
+            To resolve this issue, I was tasked with designing and planning the installation of a new injection quill—a tubular device that introduces fluid parallel to the direction of flow. By redirecting the water so it entered the gas stream in-line instead of striking the pipe wall, the injection quill eliminated perpendicular impact, protected the pipe from further thinning, and extended the service life of the junction.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
@@ -764,7 +764,7 @@ export default function ProjectsSection() {
                 {/* Logo - Amazon for projects 1-3, BP for projects 4-5, UT for projects 6-7, NASA for project 8 */}
                 {project.id === 1 || project.id === 2 || project.id === 3 ? (
                   // Amazon Robotics Logo - positioned lower
-                  <div className="absolute bottom-2 right-4">
+                  (<div className="absolute bottom-2 right-4">
                     <>
                       <img 
                         src="/images/amazon-robotics-logo.webp" 
@@ -778,10 +778,10 @@ export default function ProjectsSection() {
                         style={{ filter: 'invert(1)' }}
                       />
                     </>
-                  </div>
+                  </div>)
                 ) : project.id === 4 || project.id === 5 ? (
                   // BP Logo - original position
-                  <div className="absolute bottom-4 right-4">
+                  (<div className="absolute bottom-4 right-4">
                     <>
                       <img 
                         src="/images/bp-logo-official.png" 
@@ -795,10 +795,10 @@ export default function ProjectsSection() {
                         style={{ filter: 'invert(1)' }}
                       />
                     </>
-                  </div>
+                  </div>)
                 ) : project.id === 8 ? (
                   // NASA Logo - original position
-                  <div className="absolute bottom-4 right-4">
+                  (<div className="absolute bottom-4 right-4">
                     <>
                       <img 
                         src="/attached_assets/image_1757732632620.png" 
@@ -814,10 +814,10 @@ export default function ProjectsSection() {
                         className="h-16 w-16 object-contain hidden dark:block" 
                       />
                     </>
-                  </div>
+                  </div>)
                 ) : (
                   // UT Austin Logo - positioned lower
-                  <div className="absolute bottom-2 right-4">
+                  (<div className="absolute bottom-2 right-4">
                     <>
                       <img 
                         src="/images/ut-longhorn-black.png" 
@@ -834,7 +834,7 @@ export default function ProjectsSection() {
                         }}
                       />
                     </>
-                  </div>
+                  </div>)
                 )}
                 
                 {/* Date Badge */}
