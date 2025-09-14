@@ -302,46 +302,50 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">To resolve this issue, operators recommended for an engineer to design and plan the installation of a new injection quill—a tubular device that introduces fluid parallel to the direction of flow. By redirecting the water so it entered the gas stream in-line instead of striking the pipe wall, the injection quill eliminated perpendicular impact, protected the pipe from further thinning, and extended the service life of the junction.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
+              <div className="flex flex-col">
                 <h5 className="text-md font-medium mb-3">How Injection Quills Work</h5>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img
-                      src="/attached_assets/image_1757890944902.png"
-                      alt="Injection Quill Operation"
-                      className="block w-full h-48 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-5xl max-h-[95vh]">
-                    <DialogTitle className="sr-only">Injection Quill Operation - Full Size</DialogTitle>
-                    <img
-                      src="/attached_assets/image_1757890944902.png"
-                      alt="Injection Quill Operation"
-                      className="w-full h-auto max-h-[90vh] object-contain"
-                    />
-                  </DialogContent>
-                </Dialog>
+                <div className="flex-1">
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <img
+                        src="/attached_assets/image_1757890944902.png"
+                        alt="Injection Quill Operation"
+                        className="block w-full h-full object-cover object-center rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      />
+                    </DialogTrigger>
+                    <DialogContent className="max-w-5xl max-h-[95vh]">
+                      <DialogTitle className="sr-only">Injection Quill Operation - Full Size</DialogTitle>
+                      <img
+                        src="/attached_assets/image_1757890944902.png"
+                        alt="Injection Quill Operation"
+                        className="w-full h-auto max-h-[90vh] object-contain"
+                      />
+                    </DialogContent>
+                  </Dialog>
+                </div>
               </div>
               
-              <div>
+              <div className="flex flex-col">
                 <h5 className="text-md font-medium mb-3">Critical Junction Tee</h5>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img
-                      src="/attached_assets/image_1757890970687.png"
-                      alt="Junction Tee Location"
-                      className="block w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-5xl max-h-[95vh]">
-                    <DialogTitle className="sr-only">Junction Tee Location - Full Size</DialogTitle>
-                    <img
-                      src="/attached_assets/image_1757890970687.png"
-                      alt="Junction Tee Location"
-                      className="w-full h-auto max-h-[90vh] object-contain"
-                    />
-                  </DialogContent>
-                </Dialog>
+                <div className="flex-1">
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <img
+                        src="/attached_assets/image_1757890970687.png"
+                        alt="Junction Tee Location"
+                        className="block w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      />
+                    </DialogTrigger>
+                    <DialogContent className="max-w-5xl max-h-[95vh]">
+                      <DialogTitle className="sr-only">Junction Tee Location - Full Size</DialogTitle>
+                      <img
+                        src="/attached_assets/image_1757890970687.png"
+                        alt="Junction Tee Location"
+                        className="w-full h-auto max-h-[90vh] object-contain"
+                      />
+                    </DialogContent>
+                  </Dialog>
+                </div>
               </div>
             </div>
           </div>
