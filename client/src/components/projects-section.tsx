@@ -201,13 +201,50 @@ export default function ProjectsSection() {
             
             <p className="text-sm text-muted-foreground mb-4">For the supporting hardware, I installed heat-set inserts in the UHMW polyethylene fixture plate to avoid threading directly into plastic and to provide durable fastening points. I also verified that all mounting brackets and spacers were functional and properly aligned before final assembly, ensuring a secure and reliable build for long-term use.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757873919744.png"
+                    alt="Completed BUD Assembly on Test Fixture"
+                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Completed BUD Assembly on Test Fixture - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757873919744.png"
+                    alt="Completed BUD Assembly on Test Fixture"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+              
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757873941867.png"
+                    alt="BUD Components and Testing Setup"
+                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">BUD Components and Testing Setup - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757873941867.png"
+                    alt="BUD Components and Testing Setup"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Results</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              [Content to be added - Results and outcomes]
+              The bring-up drive project was a big success! The feedback from the firmware teams was overwhelmingly positive. They particularly appreciated the stability of the components on the plate, which provided a reliable testing platform. Additionally, the fixture's portability made it easy to move between workspaces, allowing teams to test in their preferred locations.
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              Most importantly, during BUD testing we discovered a critical bug in the estop board that could have caused significant issues in production. This early detection through the fixture testing potentially saved the project considerable time and resources by catching the problem before it reached the manufacturing floor.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
