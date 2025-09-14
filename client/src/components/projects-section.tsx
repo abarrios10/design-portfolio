@@ -79,6 +79,65 @@ export default function ProjectsSection() {
             <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
             <p className="text-sm text-muted-foreground mb-4">The firmware engineering teams needed every electromechanical component of the Proteus drive – motors, sensors, load cells, and motherboard – connected in a single, organized system with proper cabling and wiring so they could remotely interface with all hardware before moving to the next stage of development. At the time, their setup consisted of scattered hardware stored on shelves, which made testing inefficient and complicated hardware transport between engineers who needed to run diagnostics in different locations.</p>
             <p className="text-sm text-muted-foreground mb-4">To address this problem I was tasked with designing a dedicated “bring-up” drive: a single fixture that consolidated all Proteus hardware into one integrated platform with fully routed and managed cabling. This solution would provide a compact, mobile testbed that would enable streamlined firmware testing, ensure reliable electrical connections across subsystems, and allow faster, more organized integration for the next phase of product development.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Left column - Tall image */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757870572777.png"
+                    alt="Scattered Hardware Setup"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Scattered Hardware Setup - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757870572777.png"
+                    alt="Scattered Hardware Setup"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+              
+              {/* Right column - Two stacked images */}
+              <div className="grid grid-rows-2 gap-3 h-full">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <img
+                      src="/attached_assets/image_1757870505307.png"
+                      alt="Disorganized Drive Components"
+                      className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    />
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl max-h-[95vh]">
+                    <DialogTitle className="sr-only">Disorganized Drive Components - Full Size</DialogTitle>
+                    <img
+                      src="/attached_assets/image_1757870505307.png"
+                      alt="Disorganized Drive Components"
+                      className="w-full h-auto max-h-[90vh] object-contain"
+                    />
+                  </DialogContent>
+                </Dialog>
+                
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <img
+                      src="/attached_assets/image_1757870524824.png"
+                      alt="Multiple Drive Units on Shelf"
+                      className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    />
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl max-h-[95vh]">
+                    <DialogTitle className="sr-only">Multiple Drive Units on Shelf - Full Size</DialogTitle>
+                    <img
+                      src="/attached_assets/image_1757870524824.png"
+                      alt="Multiple Drive Units on Shelf"
+                      className="w-full h-auto max-h-[90vh] object-contain"
+                    />
+                  </DialogContent>
+                </Dialog>
+              </div>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Concept</h4>
