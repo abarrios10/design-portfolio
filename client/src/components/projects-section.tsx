@@ -612,14 +612,7 @@ export default function ProjectsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button
-            className="btn-primary px-8 py-3 rounded-full text-sm font-medium"
-            data-testid="button-view-all-projects"
-          >
-            View All Projects
-          </Button>
-        </div>
+        
       </div>
     </section>
   );
