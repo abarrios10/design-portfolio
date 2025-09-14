@@ -71,8 +71,56 @@ export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const renderProjectDetails = (project: any) => {
-    if (project.id === 1 || project.id === 2 || project.id === 3) {
-      // Amazon Robotics Projects - Placeholder content
+    if (project.id === 1) {
+      // Bring-up Drive Prototype - Custom sections
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Content to be added - Problem statement details]
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Design Concept</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Content to be added - Design concept details]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Finalized Design</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Content to be added - Finalized design details]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Build and Assembly</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Content to be added - Build and assembly details]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Results</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Content to be added - Results and outcomes]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+        </>
+      );
+    } else if (project.id === 2 || project.id === 3) {
+      // Other Amazon Robotics Projects - Placeholder content
       return (
         <>
           <div>
