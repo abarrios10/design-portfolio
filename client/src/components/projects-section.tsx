@@ -399,9 +399,9 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Vibration Analysis</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add details about vibration considerations, structural analysis, and mounting requirements for the injection system]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">After finalizing the design requirements and process conditions, I needed to ensure that the quill would not vibrate at its resonant frequency and fail from vibrational fatigue. Because the quill is inserted into the center of the pipe tee, the wet gas stream exerts a continuous force on its body, which could induce vibration and potentially lead to failure. An illustration of how this occurs is shown in the Design Requirements section.
+
+            To confirm the design’s stability, I performed a vibration analysis using an in-house Excel tool built for refinery applications. I entered all relevant parameters, including process conditions, Reynolds numbers, selected material properties, quill dimensions, and other critical specifications. The analysis verified that the quill’s natural frequency would remain clear of excitation frequencies, meaning it was not at risk of resonance or vibrational fatigue. With these results, I was able to confidently move forward with the quill’s development.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
