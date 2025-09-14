@@ -355,7 +355,23 @@ export default function ProjectsSection() {
 
             <p className="text-sm text-muted-foreground mb-4">I also worked with the onsite materials engineer to determine the optimal quill material and design type. Together, we analyzed process conditions and mixing temperatures to select a material resistant to corrosion and thermal fatigue. Throughout the design process, I completed and regularly updated a specification sheet to meet vendor requirements, ensuring that the quill could be manufactured precisely to the needed specifications.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757893248961.png"
+                    alt="Stanmar Manufacturing Specification Sheet"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Stanmar Manufacturing Specification Sheet - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757893248961.png"
+                    alt="Stanmar Manufacturing Specification Sheet"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
