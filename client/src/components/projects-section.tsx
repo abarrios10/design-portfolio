@@ -199,7 +199,7 @@ export default function ProjectsSection() {
             <h4 className="text-lg font-semibold mb-4">Build and Assembly</h4>
             <p className="text-sm text-muted-foreground mb-4">For the build and assembly of the BUDs, I reviewed the engineering drawings for the motherboard and head modules to ensure proper thermal interface material usage and proper torques were applied on the fasteners. This build also gave me the opportunity to build up the head modules, sensor pods, and motherboard components in a fast-paced environment which I loved getting exposure to.</p>
             
-            <p className="text-sm text-muted-foreground mb-4">For the supporting hardware, I used heat-set inserts for the holes onto teh fixture plate since I did not want to thread into the plastic, and I made sure that all the mounting brackets and spacers were functional before use.</p>
+            <p className="text-sm text-muted-foreground mb-4">For the supporting hardware, I installed heat-set inserts in the UHMW polyethylene fixture plate to avoid threading directly into plastic and to provide durable fastening points. I also verified that all mounting brackets and spacers were functional and properly aligned before final assembly, ensuring a secure and reliable build for long-term use.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
