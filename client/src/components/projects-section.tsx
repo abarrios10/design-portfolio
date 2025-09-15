@@ -619,8 +619,24 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">My final task was to develop an engineering work order guidelining the replacement of the drainage line and drainpipe. Because sections of the steam header and condensate line contained asbestos insulation, I specified that a certified contractor, not BP employees, would remove it. To protect welders and meet safety standards, an extra three feet of asbestos insulation would be removed on each side of the planned field welds. I confirmed with inspection that the pipe thickness at each weld location met requirements by calculating minimum thickness from the pipe schedule and subtracting corrosion allowance.</p>
             
             <p className="text-sm text-muted-foreground mb-4">I also reviewed ASME piping standards and refinery welding procedures to define appropriate weld types for both shop and field work. With guidance from the unit superintendent, I incorporated proper sloping requirements, ensuring one inch of drop for every fifty inches of drainage piping, and dimensioned the drainpipe appropriately, applying the correct measurements for the branched connection in my design.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757910087712.png"
+                    alt="Mudleg Dimensional Drawing"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Mudleg Dimensional Drawing - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757910087712.png"
+                    alt="Mudleg Dimensional Drawing"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
