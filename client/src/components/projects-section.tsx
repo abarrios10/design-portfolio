@@ -300,15 +300,6 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
           </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Key Contributions</h4>
-            <p className="text-sm text-muted-foreground">
-              • Mechanical design and system optimization<br />
-              • Prototype development and testing<br />
-              • Performance analysis and validation<br />
-              • Cross-functional team collaboration
-            </p>
-          </div>
         </>
       );
     } else if (project.id === 4) {
