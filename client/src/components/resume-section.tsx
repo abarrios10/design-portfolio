@@ -14,13 +14,8 @@ const skills = [
 
 export default function ResumeSection() {
   const downloadResume = () => {
-    // Download the actual PDF resume
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Andres_Barrios_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open the PDF resume directly in a new tab
+    window.open('/resume.pdf', '_blank');
   };
 
   return (
