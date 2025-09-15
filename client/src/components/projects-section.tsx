@@ -446,45 +446,45 @@ export default function ProjectsSection() {
         <>
           <div>
             <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">Steam is used for heat tracing in the unit to keep pipelines warm and prevent freezing. In the colder Indiana climate, however, steam often condenses into a liquid–gas mixture known as steam condensate. Wet steam reduces heat-transfer efficiency and, if not removed, can cause water hammer and freezing. To remove condensate, drainpipes are installed to let the liquid fall by gravity into a drainage line, pass through a steam trap, and discharge into a process sewer.
+            <p className="text-sm text-muted-foreground mb-4">Steam is used for heat tracing in the unit to keep pipelines warm and prevent freezing. In the colder Indiana climate, however, steam often condenses into a liquid–gas mixture known as steam condensate. Wet steam reduces heat-transfer efficiency and, if not removed, can cause water hammer and freezing. To remove condensate, drainpipes are installed to let the liquid fall by gravity into a drainage line, pass through a steam trap, and discharge into a process sewer.</p>
 
-            An operator discovered that the condensate line in my assigned unit was plugged, noting that a valve upstream was open but no flow was observed. Based on these findings, the operator recommended developing a new drainpipe and drainage line to prevent wet steam from circulating through the unit and to restore proper heat-transfer performance.</p>
+            <p className="text-sm text-muted-foreground mb-4">An operator discovered that the condensate line in my assigned unit was plugged, noting that a valve upstream was open but no flow was observed. Based on these findings, the operator recommended developing a new drainpipe and drainage line to prevent wet steam from circulating through the unit and to restore proper heat-transfer performance.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Determining Root Cause</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add information about the investigation process, analysis methods used to identify the root cause, and findings that led to the replacement decision]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">[Add information about the investigation process and analysis methods used to identify the root cause. Include details about inspection procedures, data collection methods, and diagnostic techniques used to assess the drainpipe condition.]</p>
+            
+            <p className="text-sm text-muted-foreground mb-4">[Add findings that led to the replacement decision, including specific failure modes identified, performance degradation measurements, and engineering analysis results that confirmed the need for replacement.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Piping Support</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add details about piping support analysis, structural considerations, support design requirements, and installation planning]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">[Add details about piping support analysis and structural considerations. Include information about load calculations, support design requirements, and structural integrity assessments for the new drainpipe installation.]</p>
+            
+            <p className="text-sm text-muted-foreground mb-4">[Add installation planning details, including support placement strategies, anchoring methods, and coordination with existing piping systems. Describe how the support design ensures proper drainage and thermal expansion accommodation.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Engineering Work Order</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add information about engineering work order preparation, documentation requirements, installation procedures, and coordination with field personnel]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">[Add information about engineering work order preparation and documentation requirements. Include details about technical specifications, material requirements, installation procedures, and safety protocols needed for the replacement project.]</p>
+            
+            <p className="text-sm text-muted-foreground mb-4">[Add coordination details with field personnel, including scheduling considerations, permit requirements, and communication protocols. Describe how the work order ensured proper installation and compliance with engineering standards.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Results</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add outcomes of the drainpipe replacement, performance improvements achieved, lessons learned, and impact on steamline heat-transfer efficiency]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">[Add outcomes of the drainpipe replacement and performance improvements achieved. Include details about successful installation, operational improvements, and how the new system addressed the original problems with heat-transfer efficiency.]</p>
+            
+            <p className="text-sm text-muted-foreground mb-4">[Add lessons learned and impact on steamline heat-transfer efficiency. Describe the project's success metrics, any unexpected challenges overcome, and valuable engineering experience gained from managing this infrastructure replacement project.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
