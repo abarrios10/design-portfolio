@@ -552,11 +552,48 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Piping Support</h4>
-            <p className="text-sm text-muted-foreground mb-4">[Add details about piping support analysis and structural considerations. Include information about load calculations, support design requirements, and structural integrity assessments for the new drainpipe installation.]</p>
-            
             <p className="text-sm text-muted-foreground mb-4">Initially, I considered adding a structural steel column to provide direct support using a pipe shoe, but I decided against this because of higher cost and the potential to limit visibility and accessibility for future maintenance. Instead, I chose to use an existing reinforced concrete column located to the right and above the line. I designed a support system by attaching steel angles to the top and bottom of the column, connecting them with tie rods, and suspending the pipe with a clevis hanger attached to a tie rod from the upper angle. After discussing loading with the civil engineer, we confirmed that the small pipe size and low water weight meant the torque on the farthest tie rod was negligible and would not overstress the bolts or loosen the support over time.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+            
+            <div className="mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757907912938.png"
+                    alt="Support Detail #1 Engineering Drawing"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Support Detail #1 Engineering Drawing - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757907912938.png"
+                    alt="Support Detail #1 Engineering Drawing"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+            
+            <p className="text-sm text-muted-foreground mb-4">[Add paragraph about load calculations and stress analysis. Include details about the structural calculations performed to ensure the support system can handle both the weight of the pipe and condensate load, as well as thermal expansion forces during operation.]</p>
+            
+            <div className="mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757907958837.png"
+                    alt="Load Calculations and Stress Analysis"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Load Calculations and Stress Analysis - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757907958837.png"
+                    alt="Load Calculations and Stress Analysis"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
