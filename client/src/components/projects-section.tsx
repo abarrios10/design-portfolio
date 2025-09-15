@@ -445,8 +445,24 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Results</h4>
             <p className="text-sm text-muted-foreground mb-4">The vendor sent back the quill drawing near the end of my internship to confirm all requirements were met before continuing with its manufacturing. An image of the drawing is shown below. After the design and documentation were complete, I confirmed with my internship mentor a year after my departure that the quill was successfully installed with little to no issues during the procedure. This outcome validated that the engineering work order and the system layout I developed were thorough and reliable. Through this project I gained valuable experience in vendor coordination, conducting vibration analysis for components exposed to dynamic forces, and reading and analyzing P&IDs to track down operating conditions and design constraints. These skills strengthened both my technical expertise and my ability to manage complex, multi-step engineering projects from concept to installation.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/Injection Quill Drawing_1757956298420.pdf"
+                    alt="Injection Quill Technical Drawing"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Injection Quill Technical Drawing - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/Injection Quill Drawing_1757956298420.pdf"
+                    alt="Injection Quill Technical Drawing"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </>
