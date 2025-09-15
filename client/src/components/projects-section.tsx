@@ -43,7 +43,7 @@ const projects = [
     title: "Injection Quill Design and Installation",
     description: "Chemical injection system design and field installation for refinery maintenance operations",
     image: "/attached_assets/image_1757889526065.png",
-    technologies: ["Industrial Equipment Design", "Piping and Instrumentation Diagrams", "Supplier Relationships", "Field Installation"],
+    technologies: ["Industrial Equipment Design", "Piping and Instrumentation Diagrams", "Supplier Relationships", "Field Installation", "Engineering Work Orders"],
     details: "Project for my internship at BP at their Whiting refinery focused on the design and installation of a chemical injection quill to mitigate pipe impingment at a critical junction tee. Involved updating P&IDs, coordinating field installation procedures, creating documentation, and ensuring compliance with ASME piping standards.",
     date: "May 2024 - August 2024",
     company: "BP"
@@ -53,7 +53,7 @@ const projects = [
     title: "Steam Drainpipe Replacement",
     description: "Steam system piping analysis and replacement design for enhanced operational efficiency",
     image: "/attached_assets/image_1757889611754.png",
-    technologies: ["Piping Systems", "Thermal Analysis", "Installation Planning", "Process Optimization"],
+    technologies: ["Piping Systems", "Piping and Instrumentation Diagrams", "Installation Planning", "Engineering Work Orders"],
     details: "BP project involving the analysis and replacement of steam drainpipe systems to improve operational efficiency and reduce maintenance requirements. Focused on thermal analysis, system optimization, and coordinated installation procedures.",
     date: "May 2024 - August 2024",
     company: "BP"
