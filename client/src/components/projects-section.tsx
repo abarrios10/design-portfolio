@@ -357,11 +357,14 @@ export default function ProjectsSection() {
             <div className="flex justify-center mb-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757893248961.png"
-                    alt="Stanmar Manufacturing Specification Sheet"
-                    className="w-full max-w-md h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
+                  <div className="overflow-hidden rounded-lg border cursor-pointer hover:opacity-90 transition-opacity" style={{ maxWidth: 'calc(16rem - 20px)' }}>
+                    <img
+                      src="/attached_assets/image_1757893248961.png"
+                      alt="Stanmar Manufacturing Specification Sheet"
+                      className="w-full h-auto object-contain"
+                      style={{ margin: '-10px', width: 'calc(100% + 20px)' }}
+                    />
+                  </div>
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Stanmar Manufacturing Specification Sheet - Full Size</DialogTitle>
@@ -380,11 +383,14 @@ export default function ProjectsSection() {
             <div className="flex justify-center mb-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757893692234.png"
-                    alt="Injection Quill Technical Drawing and Calculations"
-                    className="w-full max-w-lg h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
+                  <div className="overflow-hidden rounded-lg border cursor-pointer hover:opacity-90 transition-opacity" style={{ maxWidth: 'calc(20rem - 20px)' }}>
+                    <img
+                      src="/attached_assets/image_1757893692234.png"
+                      alt="Injection Quill Technical Drawing and Calculations"
+                      className="w-full h-auto object-contain"
+                      style={{ margin: '-10px', width: 'calc(100% + 20px)' }}
+                    />
+                  </div>
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Injection Quill Technical Drawing and Calculations - Full Size</DialogTitle>
@@ -414,11 +420,14 @@ export default function ProjectsSection() {
             <div className="flex justify-center mb-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757895132647.png"
-                    alt="Field Installation Layout with Injection Quill"
-                    className="w-full max-w-lg h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
+                  <div className="overflow-hidden rounded-lg border cursor-pointer hover:opacity-90 transition-opacity" style={{ maxWidth: 'calc(20rem - 20px)' }}>
+                    <img
+                      src="/attached_assets/image_1757895132647.png"
+                      alt="Field Installation Layout with Injection Quill"
+                      className="w-full h-auto object-contain"
+                      style={{ margin: '-10px', width: 'calc(100% + 20px)' }}
+                    />
+                  </div>
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Field Installation Layout with Injection Quill - Full Size</DialogTitle>
