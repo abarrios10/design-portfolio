@@ -279,6 +279,28 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">This Amazon Robotics project involved mechanical engineering design and development work on the new generation autonomous robotic drive-unit. Detailed project information and technical specifications are proprietary and cannot be shared publicly.</p>
           </div>
           <div>
+            <h4 className="text-lg font-semibold mb-4">Proteus Gen 1</h4>
+            <div className="mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757912671532.png"
+                    alt="Proteus Gen 1 Autonomous Robots"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Proteus Gen 1 Autonomous Robots - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757912671532.png"
+                    alt="Proteus Gen 1 Autonomous Robots"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+          </div>
+          <div>
             <h4 className="text-lg font-semibold mb-4">Key Contributions</h4>
             <p className="text-sm text-muted-foreground">
               • Mechanical design and system optimization<br />
