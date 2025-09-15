@@ -598,7 +598,7 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <img
-                    src="/attached_assets/image_1757908644199.png"
+                    src="/attached_assets/image_1757908744224.png"
                     alt="Excel Deflection Analysis Tool"
                     className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
@@ -606,7 +606,7 @@ export default function ProjectsSection() {
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Excel Deflection Analysis Tool - Full Size</DialogTitle>
                   <img
-                    src="/attached_assets/image_1757908644199.png"
+                    src="/attached_assets/image_1757908744224.png"
                     alt="Excel Deflection Analysis Tool"
                     className="w-full h-auto max-h-[90vh] object-contain"
                   />
