@@ -555,8 +555,46 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">When designing supports for the new mudleg and condensate line, I first reviewed how the existing piping was supported since the new mudleg was a replacement-in-kind. The condensate line was currently supported by a dummy support with a pipe shoe and two U-bolt supports on the vertical section, which I confirmed were cost-efficient and suitable for reuse. However, I noticed that the long horizontal segment of pipe relied on adjacent piping for support, which the refinery’s civil and integrity engineers advised was no longer recommended.</p>
             
             <p className="text-sm text-muted-foreground mb-4">Initially, I considered adding a structural steel column to provide direct support using a pipe shoe, but I decided against this because of higher cost and the potential to limit visibility and accessibility for future maintenance. Instead, I chose to use an existing reinforced concrete column located to the right and above the line. I designed a support system by attaching steel angles to the top and bottom of the column, connecting them with tie rods, and suspending the pipe with a clevis hanger attached to a tie rod from the upper angle. After discussing loading with the civil engineer, we confirmed that the small pipe size and low water weight meant the torque on the farthest tie rod was negligible and would not overstress the bolts or loosen the support over time.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757908507652.png"
+                    alt="Support Detail Engineering Drawing"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Support Detail Engineering Drawing - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757908507652.png"
+                    alt="Support Detail Engineering Drawing"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+            
+            <p className="text-sm text-muted-foreground mb-4">To verify that my support design was structurally sound, I performed two key calculations. First, I checked the tensile stress on the hanger rod, accounting for the combined weight of the pipe, full condensate, and insulation. The calculated stress was only 0.171 ksi, far below the 36 ksi yield strength of the chosen rod material, confirming it could safely carry the load. Second, I used the refinery's pipe deflection guidelines and an Excel tool to determine optimal hanger spacing. With a maximum allowed deflection of 0.3 inches, I found that a support span of 13 feet would meet requirements. To satisfy the slope needed for drainage, I placed the hanger 7 feet from the start of the sloped section, ensuring both structural integrity and proper condensate flow.</p>
+            
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757908515811.png"
+                    alt="Structural Calculation Analysis"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Structural Calculation Analysis - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757908515811.png"
+                    alt="Structural Calculation Analysis"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
