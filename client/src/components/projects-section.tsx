@@ -34,7 +34,7 @@ const projects = [
     description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
     image: "/attached_assets/image_1757802322911.png",
     technologies: ["SolidWorks", "Prototype Development", "Hardware for Testing", "Supporting Hardware"],
-    details: "Amazon Robotics project involving the comprehensive redesign of the Proteus skateboard drive platform. Focused on improving performance characteristics, optimizing manufacturing processes, and enhancing integration capabilities for next-generation autonomous warehouse robots.",
+    details: "Project from my Amazon Robotics internship to design updated testing skateboards that contain all Proteus locomotor hardware for testing of sensor characterization, traction and stability, and environmental interference. Incorporated custom wheel mounts, improved handlebar locking, accurate wheel positioning, and a consistent hole pattern to simplify sensor bracket installation and ensure reliable in-facility testing.",
     date: "April 2025 - May 2025",
     company: "Amazon Robotics"
   },
