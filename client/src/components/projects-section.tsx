@@ -450,7 +450,40 @@ export default function ProjectsSection() {
 
             <p className="text-sm text-muted-foreground mb-4">An operator discovered that the condensate line in my assigned unit was plugged, noting that a valve upstream was open but no flow was observed. Based on these findings, the operator recommended developing a new drainpipe and drainage line to prevent wet steam from circulating through the unit and to restore proper heat-transfer performance.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757904152570.png"
+                    alt="Industrial Piping Infrastructure Overview"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Industrial Piping Infrastructure Overview - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757904152570.png"
+                    alt="Industrial Piping Infrastructure Overview"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757904156066.png"
+                    alt="Corroded Steam Drainpipe and Valve"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Corroded Steam Drainpipe and Valve - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757904156066.png"
+                    alt="Corroded Steam Drainpipe and Valve"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
