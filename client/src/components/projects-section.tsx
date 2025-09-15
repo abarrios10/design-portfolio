@@ -411,8 +411,24 @@ export default function ProjectsSection() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Engineering Work Order</h4>
             <p className="text-sm text-muted-foreground mb-4">My final task was to create a detailed engineering work order to guide operators through the removal of the old pipe section and the installation of the new quill. I specified the correct welding procedures and weld types, identified the piping sections to be removed, and documented the torque values for flange connections along with other key installation requirements to ensure proper assembly and long-term reliability. This work order was reviewed and confirmed for technical accuracy by a maintenance engineer and then approved by the unit superintendent for execution in December. I included an updated piping layout and overlay diagram below to show the new layout with the quill installed.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757895132647.png"
+                    alt="Field Installation Layout with Injection Quill"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Field Installation Layout with Injection Quill - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757895132647.png"
+                    alt="Field Installation Layout with Injection Quill"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
