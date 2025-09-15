@@ -327,13 +327,13 @@ export default function ProjectsSection() {
               
               <div className="flex flex-col">
                 <h5 className="text-md font-medium mb-3">Critical Junction Tee</h5>
-                <div className="flex-1 flex items-center justify-center">
+                <div className="flex-1">
                   <Dialog>
                     <DialogTrigger asChild>
                       <img
                         src="/attached_assets/image_1757890970687.png"
                         alt="Junction Tee Location"
-                        className="w-3/4 h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                        className="block w-full h-full object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                       />
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl max-h-[95vh]">
