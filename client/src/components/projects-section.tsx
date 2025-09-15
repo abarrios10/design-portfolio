@@ -499,7 +499,8 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Determining Root Cause</h4>
-            <p className="text-sm text-muted-foreground mb-4">To determine the root cause of the issue, I wanted to consult with the people who are out in the unit themselves observing the equipment and analyzing the issues: the operators. I wanted to know from their experience in the past if they had any idea as to what could be causing the plugging. The issue could lie anywhere along the span of the drainpipe and drainage line system. </p>
+            <p className="text-sm text-muted-foreground mb-4">To determine the cause of the plugging, I consulted directly with the operators who regularly monitor the unit and equipment. I wanted to draw on their experience to identify where along the drainpipe and drainage line system the problem might originate. Based on their observations, two potential causes emerged. The first was internal corrosion inside the piping. Corrosion could create rough or pitted areas in the horizontal sections where sediment or other solids might accumulate over time, eventually blocking flow where corrosion was most severe. The second possibility was inadequate slope in the horizontal spools of the condensate line. If the pressure differential was too low to push the condensate toward the drain, insufficient slope could prevent proper gravity flow toward the trap, causing liquid to remain stagnant and contribute to plugging.
+             </p>
             
             <p className="text-sm text-muted-foreground mb-4">[Add findings that led to the replacement decision, including specific failure modes identified, performance degradation measurements, and engineering analysis results that confirmed the need for replacement.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
