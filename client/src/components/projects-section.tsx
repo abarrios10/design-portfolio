@@ -304,13 +304,13 @@ export default function ProjectsSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="flex flex-col">
                 <h5 className="text-md font-medium mb-3">How Injection Quills Work</h5>
-                <div className="flex-1">
+                <div>
                   <Dialog>
                     <DialogTrigger asChild>
                       <img
                         src="/attached_assets/image_1757890944902.png"
                         alt="Injection Quill Operation"
-                        className="block w-full h-full object-cover object-center rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                        className="block w-full h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                       />
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -327,13 +327,13 @@ export default function ProjectsSection() {
               
               <div className="flex flex-col">
                 <h5 className="text-md font-medium mb-3">Critical Junction Tee</h5>
-                <div className="flex-1">
+                <div>
                   <Dialog>
                     <DialogTrigger asChild>
                       <img
                         src="/attached_assets/image_1757890970687.png"
                         alt="Junction Tee Location"
-                        className="block w-full h-full object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                        className="block w-full h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                       />
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl max-h-[95vh]">
