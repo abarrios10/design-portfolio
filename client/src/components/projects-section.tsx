@@ -310,7 +310,7 @@ export default function ProjectsSection() {
                       <img
                         src="/attached_assets/image_1757890944902.png"
                         alt="Injection Quill Operation"
-                        className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                        className="block w-full h-full object-cover object-center rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                       />
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -333,7 +333,7 @@ export default function ProjectsSection() {
                       <img
                         src="/attached_assets/image_1757890970687.png"
                         alt="Junction Tee Location"
-                        className="w-full h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                        className="block w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                       />
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -360,7 +360,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757893248961.png"
                     alt="Stanmar Manufacturing Specification Sheet"
-                    className="w-full max-w-md h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -383,7 +383,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757893692234.png"
                     alt="Injection Quill Technical Drawing and Calculations"
-                    className="w-full max-w-lg h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -417,7 +417,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757895132647.png"
                     alt="Field Installation Layout with Injection Quill"
-                    className="w-full max-w-lg h-64 object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
