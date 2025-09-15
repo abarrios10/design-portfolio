@@ -333,7 +333,7 @@ export default function ProjectsSection() {
                       <img
                         src="/attached_assets/image_1757904692724.png"
                         alt="Critical Junction Tee with Flow Annotations"
-                        className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                        className="block w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                       />
                     </DialogTrigger>
                     <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -360,7 +360,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757904721675.png"
                     alt="Stanmar Manufacturing Specification Sheet"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -383,7 +383,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757904755340.png"
                     alt="Injection Quill Technical Drawing and Calculations"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -417,7 +417,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757904782186.png"
                     alt="Field Installation Layout with Injection Quill"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
