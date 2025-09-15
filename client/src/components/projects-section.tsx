@@ -33,7 +33,7 @@ const projects = [
     title: "Proteus 'Skateboard' Drive Redesign",
     description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
     image: "/attached_assets/image_1757802322911.png",
-    technologies: ["System Redesign", "Performance Enhancement", "Manufacturing Optimization", "Platform Integration"],
+    technologies: ["SolidWorks", "Prototype Development", "Hardware for Testing", "Supporting Hardware"],
     details: "Amazon Robotics project involving the comprehensive redesign of the Proteus skateboard drive platform. Focused on improving performance characteristics, optimizing manufacturing processes, and enhancing integration capabilities for next-generation autonomous warehouse robots.",
     date: "April 2025 - May 2025",
     company: "Amazon Robotics"
