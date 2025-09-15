@@ -449,7 +449,7 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <img
-                    src="/attached_assets/Injection Quill Drawing_1757956298420.pdf"
+                    src="/attached_assets/injection_quill_drawing.png"
                     alt="Injection Quill Technical Drawing"
                     className="w-full max-w-lg h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
@@ -457,7 +457,7 @@ export default function ProjectsSection() {
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Injection Quill Technical Drawing - Full Size</DialogTitle>
                   <img
-                    src="/attached_assets/Injection Quill Drawing_1757956298420.pdf"
+                    src="/attached_assets/injection_quill_drawing.png"
                     alt="Injection Quill Technical Drawing"
                     className="w-full h-auto max-h-[90vh] object-contain"
                   />
