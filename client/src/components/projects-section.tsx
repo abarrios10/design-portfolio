@@ -24,7 +24,7 @@ const projects = [
     description: "Advanced wheel design and locomotion system development for autonomous drive units",
     image: "/attached_assets/image_1757801406789.png",
     technologies: ["SolidWorks", "Engineering Drawings", "Geometric Dimensioning and Tolerancing", "Tolerance Analysis", "Supplier Communication"],
-    details: "Amazon Robotics project focused on designing advanced wheel systems for autonomous drive units. Developed innovative locomotor designs to improve maneuverability, efficiency, and reliability of autonomous mobile robots operating in warehouse environments.",
+    details: "Project completed during my Amazon Robotics internship to redesign the Proteus locomotor wheel, transitioning it from a press-fit connection on the locomotor shaft to a bolted attachment for easier wheel removal during inspection and testing. Involved creating CAD models and detailed engineering drawings for the new wheel and attachment hardware, performing tolerance stack-up analyses to ensure proper fit and assembly, and coordinating with the supplier to manufacture and ship prototype wheels.",
     date: "March 2025 - May 2025",
     company: "Amazon Robotics"
   },
