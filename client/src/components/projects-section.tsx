@@ -450,40 +450,51 @@ export default function ProjectsSection() {
 
             <p className="text-sm text-muted-foreground mb-4">An operator discovered that the condensate line in my assigned unit was plugged, noting that a valve upstream was open but no flow was observed. Based on these findings, the operator recommended developing a new drainpipe and drainage line to prevent wet steam from circulating through the unit and to restore proper heat-transfer performance.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757904152570.png"
-                    alt="Industrial Piping Infrastructure Overview"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">Industrial Piping Infrastructure Overview - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757904152570.png"
-                    alt="Industrial Piping Infrastructure Overview"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757904156066.png"
-                    alt="Corroded Steam Drainpipe and Valve"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">Corroded Steam Drainpipe and Valve - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757904156066.png"
-                    alt="Corroded Steam Drainpipe and Valve"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
+              <div className="flex flex-col">
+                <h5 className="text-md font-medium mb-3">Current Drainage Line</h5>
+                <div>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <img
+                        src="/attached_assets/image_1757904483562.png"
+                        alt="Current Drainage Line Overview"
+                        className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      />
+                    </DialogTrigger>
+                    <DialogContent className="max-w-5xl max-h-[95vh]">
+                      <DialogTitle className="sr-only">Current Drainage Line Overview - Full Size</DialogTitle>
+                      <img
+                        src="/attached_assets/image_1757904483562.png"
+                        alt="Current Drainage Line Overview"
+                        className="w-full h-auto max-h-[90vh] object-contain"
+                      />
+                    </DialogContent>
+                  </Dialog>
+                </div>
+              </div>
+              
+              <div className="flex flex-col">
+                <h5 className="text-md font-medium mb-3">Current Drainpipe</h5>
+                <div>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <img
+                        src="/attached_assets/image_1757904487724.png"
+                        alt="Current Drainpipe with Corrosion"
+                        className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                      />
+                    </DialogTrigger>
+                    <DialogContent className="max-w-5xl max-h-[95vh]">
+                      <DialogTitle className="sr-only">Current Drainpipe with Corrosion - Full Size</DialogTitle>
+                      <img
+                        src="/attached_assets/image_1757904487724.png"
+                        alt="Current Drainpipe with Corrosion"
+                        className="w-full h-auto max-h-[90vh] object-contain"
+                      />
+                    </DialogContent>
+                  </Dialog>
+                </div>
+              </div>
             </div>
           </div>
           <div>
