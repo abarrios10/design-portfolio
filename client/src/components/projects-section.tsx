@@ -446,9 +446,9 @@ export default function ProjectsSection() {
         <>
           <div>
             <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add details about the steam drainpipe issues, heat-transfer efficiency problems, and operational challenges that led to the need for replacement]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">Steam is used for heat tracing in the unit to keep pipelines warm and prevent freezing. In the colder Indiana climate, however, steam often condenses into a liquid–gas mixture known as steam condensate. Wet steam reduces heat-transfer efficiency and, if not removed, can cause water hammer and freezing. To remove condensate, drainpipes are installed to let the liquid fall by gravity into a drainage line, pass through a steam trap, and discharge into a process sewer.
+
+            An operator discovered that the condensate line in my assigned unit was plugged, noting that a valve upstream was open but no flow was observed. Based on these findings, the operator recommended developing a new drainpipe and drainage line to prevent wet steam from circulating through the unit and to restore proper heat-transfer performance.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
