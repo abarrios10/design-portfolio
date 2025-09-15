@@ -554,7 +554,7 @@ export default function ProjectsSection() {
             <h4 className="text-lg font-semibold mb-4">Piping Support</h4>
             <p className="text-sm text-muted-foreground mb-4">[Add details about piping support analysis and structural considerations. Include information about load calculations, support design requirements, and structural integrity assessments for the new drainpipe installation.]</p>
             
-            <p className="text-sm text-muted-foreground mb-4">[Add installation planning details, including support placement strategies, anchoring methods, and coordination with existing piping systems. Describe how the support design ensures proper drainage and thermal expansion accommodation.]</p>
+            <p className="text-sm text-muted-foreground mb-4">Initially, I considered adding a structural steel column to provide direct support using a pipe shoe, but I decided against this because of higher cost and the potential to limit visibility and accessibility for future maintenance. Instead, I chose to use an existing reinforced concrete column located to the right and above the line. I designed a support system by attaching steel angles to the top and bottom of the column, connecting them with tie rods, and suspending the pipe with a clevis hanger attached to a tie rod from the upper angle. After discussing loading with the civil engineer, we confirmed that the small pipe size and low water weight meant the torque on the farthest tie rod was negligible and would not overstress the bolts or loosen the support over time.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
