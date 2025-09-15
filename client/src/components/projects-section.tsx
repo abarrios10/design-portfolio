@@ -440,6 +440,57 @@ export default function ProjectsSection() {
           </div>
         </>
       );
+    } else if (project.id === 5) {
+      // Steam Drainpipe Replacement - Custom sections
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add details about the steam drainpipe issues, heat-transfer efficiency problems, and operational challenges that led to the need for replacement]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Determining Root Cause</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add information about the investigation process, analysis methods used to identify the root cause, and findings that led to the replacement decision]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Piping Support</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add details about piping support analysis, structural considerations, support design requirements, and installation planning]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Engineering Work Order</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add information about engineering work order preparation, documentation requirements, installation procedures, and coordination with field personnel]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Results</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              [Add outcomes of the drainpipe replacement, performance improvements achieved, lessons learned, and impact on steamline heat-transfer efficiency]
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Space for images */}
+            </div>
+          </div>
+        </>
+      );
     } else if (project.id === 6) {
       // Fidget Spinner Project Details
       return (
