@@ -627,7 +627,7 @@ export default function ProjectsSection() {
             <h4 className="text-lg font-semibold mb-4">Results</h4>
             <p className="text-sm text-muted-foreground mb-4">The work order was reviewed and approved for technical accuracy by the Asset Owner, and a formal Management of Change was initiated. The job note was signed, authorizing construction with completion targeted for late 2024. These steps ensured the project complied with safety regulations and refinery standards while providing the installation team with clear, technically sound instructions.</p>
             
-            <p className="text-sm text-muted-foreground mb-4">[Add lessons learned and impact on steamline heat-transfer efficiency. Describe the project's success metrics, any unexpected challenges overcome, and valuable engineering experience gained from managing this infrastructure replacement project.]</p>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
