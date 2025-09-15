@@ -279,7 +279,7 @@ export default function ProjectsSection() {
             <p className="text-sm text-muted-foreground mb-4">This Amazon Robotics project involved mechanical engineering design and development work on the new generation autonomous robotic drive-unit. Detailed project information and technical specifications are proprietary and cannot be shared publicly.</p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Proteus Gen 1</h4>
+            <h5 className="text-md font-medium mb-3">Proteus Gen 1</h5>
             <div className="mb-6">
               <Dialog>
                 <DialogTrigger asChild>
