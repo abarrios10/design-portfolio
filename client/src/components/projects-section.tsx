@@ -575,7 +575,7 @@ export default function ProjectsSection() {
               </Dialog>
             </div>
             
-            <p className="text-sm text-muted-foreground mb-4">To verify that my support design was structurally sound, I performed two key calculations. First, I checked the tensile stress on the hanger rod, accounting for the combined weight of the pipe, full condensate, and insulation. The calculated stress was only 0.171 ksi, far below the 36 ksi yield strength of the chosen rod material, confirming it could safely carry the load. Second, I used a pipe deflection analysis with an Excel tool to determine optimal hanger spacing. With a maximum allowable deflection of 0.3 inches, I found that placing the support 7 feet from where the pipe segment began sloping met deflection requirements.</p>
+            <p className="text-sm text-muted-foreground mb-4">To verify that my support design was structurally sound, I performed two key calculations. First, I checked the tensile stress on the hanger rod, accounting for the combined weight of the pipe, full condensate, and Aerogel insulation. The calculated stress was only 0.171 ksi, far below the 36 ksi yield strength of the chosen rod material, confirming it could safely carry the load. Second, I used a pipe deflection analysis with an Excel tool to determine optimal hanger spacing. With a maximum allowable deflection of 0.3 inches, I found that placing the support 7 feet from where the pipe segment began sloping met deflection requirements.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <Dialog>
