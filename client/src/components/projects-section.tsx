@@ -276,9 +276,7 @@ export default function ProjectsSection() {
         <>
           <div>
             <h4 className="text-lg font-semibold mb-4">Project Overview</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              This Amazon Robotics project involved advanced mechanical engineering design and development work on autonomous robotic systems. Detailed project information and technical specifications are proprietary and cannot be shared publicly.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">This Amazon Robotics project involved mechanical engineering design and development work on the new generation autonomous drive-unit. Detailed project information and technical specifications are proprietary and cannot be shared publicly.</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Key Contributions</h4>
