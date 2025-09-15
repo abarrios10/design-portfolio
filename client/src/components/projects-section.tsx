@@ -616,7 +616,7 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Engineering Work Order</h4>
-            <p className="text-sm text-muted-foreground mb-4">[Add information about engineering work order preparation and documentation requirements. Include details about technical specifications, material requirements, installation procedures, and safety protocols needed for the replacement project.]</p>
+            <p className="text-sm text-muted-foreground mb-4">My final task was to develop an engineering work order guidelining the replacement of the drainage line and drainpipe. Because sections of the steam header and condensate line contained asbestos insulation, I specified that a certified contractor, not BP employees, would remove it. To protect welders and meet safety standards, an extra three feet of asbestos insulation would be removed on each side of the planned field welds. I confirmed with inspection that the pipe thickness at each weld location met requirements by calculating minimum thickness from the pipe schedule and subtracting corrosion allowance.</p>
             
             <p className="text-sm text-muted-foreground mb-4">[Add coordination details with field personnel, including scheduling considerations, permit requirements, and communication protocols. Describe how the work order ensured proper installation and compliance with engineering standards.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
