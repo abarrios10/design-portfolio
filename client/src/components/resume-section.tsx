@@ -40,9 +40,7 @@ export default function ResumeSection() {
               </h3>
               <div className="space-y-6">
                 <div className="border-l-2 border-primary pl-6">
-                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-education-degree">
-                    Bachelor of Science, Mechanical Engineering
-                  </h4>
+                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-education-degree">Bachelor of Science, Mechanical Engineering Honors</h4>
                   <p className="text-primary font-medium" data-testid="text-education-university">
                     The University of Texas at Austin
                   </p>
