@@ -577,13 +577,13 @@ export default function ProjectsSection() {
             
             <p className="text-sm text-muted-foreground mb-4">To verify that my support design was structurally sound, I performed two key calculations. First, I checked the tensile stress on the hanger rod, accounting for the combined weight of the pipe, full condensate, and insulation. The calculated stress was only 0.171 ksi, far below the 36 ksi yield strength of the chosen rod material, confirming it could safely carry the load. Second, I used the refinery's pipe deflection guidelines and an Excel tool to determine optimal hanger spacing. With a maximum allowed deflection of 0.3 inches, I found that a support span of 13 feet would meet requirements. To satisfy the slope needed for drainage, I placed the hanger 7 feet from the start of the sloped section, ensuring both structural integrity and proper condensate flow.</p>
             
-            <div className="flex justify-center mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <Dialog>
                 <DialogTrigger asChild>
                   <img
                     src="/attached_assets/image_1757908515811.png"
                     alt="Structural Calculation Analysis"
-                    className="w-full max-w-md h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -591,6 +591,23 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757908515811.png"
                     alt="Structural Calculation Analysis"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757908644199.png"
+                    alt="Excel Deflection Analysis Tool"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Excel Deflection Analysis Tool - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757908644199.png"
+                    alt="Excel Deflection Analysis Tool"
                     className="w-full h-auto max-h-[90vh] object-contain"
                   />
                 </DialogContent>
