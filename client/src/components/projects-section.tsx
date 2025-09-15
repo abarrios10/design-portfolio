@@ -54,7 +54,7 @@ const projects = [
     description: "Steam system piping analysis and replacement design for enhanced operational efficiency",
     image: "/attached_assets/image_1757889611754.png",
     technologies: ["Piping Systems", "Piping and Instrumentation Diagrams", "Installation Planning", "Engineering Work Orders"],
-    details: "BP project involving the analysis and replacement of steam drainpipe systems to improve operational efficiency and reduce maintenance requirements. Focused on thermal analysis, system optimization, and coordinated installation procedures.",
+    details: "Project for my internship at BP's Whiting Refinery focused on replacing a drainpipe and drainage line for steam condensate to improve steamline heat-transfer efficiency. Involved updating P&IDs, coordinating field installation procedures, preparing engineering documentation, and ensuring full compliance with ASME piping standards.",
     date: "May 2024 - August 2024",
     company: "BP"
   },
