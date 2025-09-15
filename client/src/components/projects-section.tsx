@@ -499,7 +499,7 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Determining Root Cause</h4>
-            <p className="text-sm text-muted-foreground mb-4">[Add information about the investigation process and analysis methods used to identify the root cause. Include details about inspection procedures, data collection methods, and diagnostic techniques used to assess the drainpipe condition.]</p>
+            <p className="text-sm text-muted-foreground mb-4">To determine the root cause of the issue, I wanted to consult with the people who are out in the unit themselves observing the equipment and analyzing the issues: the operators. I wanted to know from their experience in the past if they had any idea as to what could be causing the plugging. The issue could lie anywhere along the span of the drainpipe and drainage line system. </p>
             
             <p className="text-sm text-muted-foreground mb-4">[Add findings that led to the replacement decision, including specific failure modes identified, performance degradation measurements, and engineering analysis results that confirmed the need for replacement.]</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
