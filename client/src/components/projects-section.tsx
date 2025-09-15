@@ -410,9 +410,7 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Engineering Work Order</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              [Add information about documentation creation, P&ID updates, work order procedures, and installation planning]
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">My final task was to create a detailed engineering work order to guide operators through the removal of the old pipe section and the installation of the new quill. I specified the correct welding procedures and weld types, identified the piping sections to be removed, and documented the torque values for flange connections along with other key installation requirements to ensure proper assembly and long-term reliability. This work order was reviewed and confirmed for technical accuracy by a maintenance engineer and then approved by the unit superintendent for execution in December. I included an updated piping layout and overlay diagram below to show the new layout with the quill installed.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               {/* Space for images */}
             </div>
