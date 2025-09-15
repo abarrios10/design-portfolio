@@ -23,7 +23,7 @@ const projects = [
     title: "Drive Unit Robot Locomotor Wheel Design",
     description: "Advanced wheel design and locomotion system development for autonomous drive units",
     image: "/attached_assets/image_1757801406789.png",
-    technologies: ["CAD Design", "Locomotion Systems", "Performance Optimization", "Autonomous Systems"],
+    technologies: ["SolidWorks", "Engineering Drawings", "Geometric Dimensioning and Tolerancing", "Tolerance Analysis", "Supplier Communication"],
     details: "Amazon Robotics project focused on designing advanced wheel systems for autonomous drive units. Developed innovative locomotor designs to improve maneuverability, efficiency, and reliability of autonomous mobile robots operating in warehouse environments.",
     date: "March 2025 - May 2025",
     company: "Amazon Robotics"
