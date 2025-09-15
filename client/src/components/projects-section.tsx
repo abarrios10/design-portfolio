@@ -504,7 +504,40 @@ export default function ProjectsSection() {
             
             <p className="text-sm text-muted-foreground mb-4">Based on the investigation, the operator recommended installing a new drainage line and drainpipe with an updated steam trap system that had been successfully implemented in another unit of the refinery a few years earlier. While he wasn’t familiar with the exact name of the setup, seeing it in operation gave me a clear starting point for my design approach. I used this reference system as a model for my replacement plan, adapting it to the specific layout and requirements of my assigned unit. An image of the system I planned to incorporate into my design is shown below.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757906867281.png"
+                    alt="Steam Header and Valve System Analysis"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Steam Header and Valve System Analysis - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757906867281.png"
+                    alt="Steam Header and Valve System Analysis"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1757906905255.png"
+                    alt="Steam Trap and Drainage Connection"
+                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Steam Trap and Drainage Connection - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1757906905255.png"
+                    alt="Steam Trap and Drainage Connection"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
           <div>
