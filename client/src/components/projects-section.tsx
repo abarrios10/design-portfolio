@@ -560,7 +560,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757907912938.png"
                     alt="Support Detail #1 Engineering Drawing"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-3/4 h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
@@ -582,7 +582,7 @@ export default function ProjectsSection() {
                   <img
                     src="/attached_assets/image_1757907958837.png"
                     alt="Load Calculations and Stress Analysis"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-3/4 h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-5xl max-h-[95vh]">
