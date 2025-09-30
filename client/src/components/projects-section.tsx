@@ -99,66 +99,6 @@ export default function ProjectsSection() {
             <h4 className="text-lg font-semibold mb-4">Problem Statement</h4>
             <p className="text-sm text-muted-foreground mb-4">The firmware engineering teams needed every electromechanical component of the Proteus drive – motors, sensors, load cells, and motherboard – connected in a single, organized system with proper cabling and wiring so they could remotely interface with all hardware before moving to the next stage of development. At the time, their setup consisted of scattered hardware stored on shelves, which made testing inefficient and complicated hardware transport between engineers who needed to run diagnostics in different locations.</p>
             <p className="text-sm text-muted-foreground mb-4">To address this problem I was tasked with designing a dedicated “bring-up” drive, or BUD for short: a single fixture that consolidated all Proteus hardware into one integrated platform with fully routed and managed cabling. This solution would provide a compact, mobile testbed that would enable streamlined firmware testing, ensure reliable electrical connections across subsystems, and allow faster, more organized integration for the next phase of product development.</p>
-            <h5 className="text-md font-semibold mb-4 mt-6">Current Setup: Scattered Hardware</h5>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Left column - Tall image */}
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757870572777.png"
-                    alt="Scattered Hardware Setup"
-                    className="w-full h-auto object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">Scattered Hardware Setup - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757870572777.png"
-                    alt="Scattered Hardware Setup"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-              
-              {/* Right column - Two stacked images */}
-              <div className="grid grid-rows-2 gap-3 h-full">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img
-                      src="/attached_assets/image_1757870505307.png"
-                      alt="Disorganized Drive Components"
-                      className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-5xl max-h-[95vh]">
-                    <DialogTitle className="sr-only">Disorganized Drive Components - Full Size</DialogTitle>
-                    <img
-                      src="/attached_assets/image_1757870505307.png"
-                      alt="Disorganized Drive Components"
-                      className="w-full h-auto max-h-[90vh] object-contain"
-                    />
-                  </DialogContent>
-                </Dialog>
-                
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img
-                      src="/attached_assets/image_1757870524824.png"
-                      alt="Multiple Drive Units on Shelf"
-                      className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-5xl max-h-[95vh]">
-                    <DialogTitle className="sr-only">Multiple Drive Units on Shelf - Full Size</DialogTitle>
-                    <img
-                      src="/attached_assets/image_1757870524824.png"
-                      alt="Multiple Drive Units on Shelf"
-                      className="w-full h-auto max-h-[90vh] object-contain"
-                    />
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Concept</h4>
@@ -168,95 +108,16 @@ export default function ProjectsSection() {
               <li><strong>Portability:</strong> I aimed to make the fixture as light as possible while strong enough to support all components simultaneously. I selected a UHMW polyethylene base for its strength-to-weight balance and ensured the plate's width fit within the storage shelves to avoid overhang and tipping. This required reorienting components from the layout of the actual drive unit to fit the tighter frame while maintaining easy access.</li>
               <li><strong>Space-Efficiency:</strong> I worked to maximize the use of the fixture's limited area, carefully orienting parts so that shorter cables could still be routed to the motherboard and all ports could be reached regardless of component configuration.</li>
             </ul>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
-            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Finalized Design</h4>
             <p className="text-sm text-muted-foreground mb-4">I developed the complete BUD design in SolidWorks, creating models for the mounting brackets and assembling all of the components onto the plate. The CAD assembly allowed me to verify component clearances and optimize the layout before fabrication.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757873036902.png"
-                    alt="SolidWorks Component Drawings"
-                    className="w-full h-full object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">SolidWorks Component Drawings - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757873036902.png"
-                    alt="SolidWorks Component Drawings"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-              
-              <div className="flex items-center">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img
-                      src="/attached_assets/image_1757873010685.png"
-                      alt="SolidWorks BUD Assembly - Isometric View"
-                      className="w-full h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-5xl max-h-[95vh]">
-                    <DialogTitle className="sr-only">SolidWorks BUD Assembly - Isometric View - Full Size</DialogTitle>
-                    <img
-                      src="/attached_assets/image_1757873010685.png"
-                      alt="SolidWorks BUD Assembly - Isometric View"
-                      className="w-full h-auto max-h-[90vh] object-contain"
-                    />
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Build and Assembly</h4>
             <p className="text-sm text-muted-foreground mb-4">During the build and assembly of the bring-up drives, I reviewed the engineering drawings for the motherboard and head modules to ensure proper application of thermal interface materials and correct torque specifications on all fasteners. This process gave me valuable hands-on experience assembling head modules, sensor pods, and motherboard components in a fast-paced environment, which I really enjoyed and found highly rewarding.</p>
             
             <p className="text-sm text-muted-foreground mb-4">For the supporting hardware, I installed heat-set inserts in the UHMW polyethylene fixture plate to avoid threading directly into plastic and to provide durable fastening points. I also verified that all mounting brackets and spacers were functional and properly aligned before final assembly, ensuring a secure and reliable build for long-term use.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757873919744.png"
-                    alt="Completed BUD Assembly on Test Fixture"
-                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">Completed BUD Assembly on Test Fixture - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757873919744.png"
-                    alt="Completed BUD Assembly on Test Fixture"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-              
-              <Dialog>
-                <DialogTrigger asChild>
-                  <img
-                    src="/attached_assets/image_1757873941867.png"
-                    alt="BUD Components and Testing Setup"
-                    className="w-full h-full object-cover rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
-                  />
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl max-h-[95vh]">
-                  <DialogTitle className="sr-only">BUD Components and Testing Setup - Full Size</DialogTitle>
-                  <img
-                    src="/attached_assets/image_1757873941867.png"
-                    alt="BUD Components and Testing Setup"
-                    className="w-full h-auto max-h-[90vh] object-contain"
-                  />
-                </DialogContent>
-              </Dialog>
-            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Results</h4>
@@ -264,9 +125,6 @@ export default function ProjectsSection() {
               The bring-up drive project was a big success! The feedback from the firmware teams was overwhelmingly positive. They particularly appreciated the stability of the components on the plate, which provided a reliable testing platform. Additionally, the fixture's portability made it easy to move between workspaces, allowing teams to test in their preferred locations.
             </p>
             <p className="text-sm text-muted-foreground mb-4">Most importantly, during BUD testing, one of the firmware engineers discovered a critical bug in one of the boards that could have caused significant issues in production. This early detection through the fixture testing potentially saved the project considerable time and resources by catching the problem before it reached the next stage in the robot's development.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              {/* Space for images */}
-            </div>
           </div>
         </>
       );
