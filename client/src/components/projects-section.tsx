@@ -10,6 +10,15 @@ import Screenshot_2025_09_13_135237 from "@assets/Screenshot 2025-09-13 135237.p
 const projects = [
   {
     id: 1,
+    title: "RC Car Build",
+    description: "Competitive RC car design and manufacturing project for Machine Elements engineering course",
+    image: "/attached_assets/image_1759962850850.png",
+    technologies: ["SolidWorks", "CAD Design", "Team Collaboration", "3D Printing", "Budget Management"],
+    details: "Engineering Design Project (EDP) for Machine Elements class involving the collaborative design, build, test, and competition of a custom RC car. As the CAD designer on a 5-person team, I'm responsible for creating the complete vehicle design that must complete 5 laps around a track in under 20 seconds. Working within a $100 budget constraint for additional components beyond the provided kit (radio controller/receiver, drive and servo motors, speed controller, battery, and charger), optimizing the chassis design for performance while maintaining manufacturability.",
+    date: "September 2025 - Present"
+  },
+  {
+    id: 2,
     title: "Bring-up Drive Prototype",
     description: "Drive system prototype development and testing for Amazon's Proteus autonomous mobile robot platform",
     image: "/attached_assets/image_1759249851674.png",
@@ -19,7 +28,7 @@ const projects = [
     company: "Amazon Robotics"
   },
   {
-    id: 2,
+    id: 3,
     title: "Drive Unit Robot Locomotor Wheel Design",
     description: "Advanced wheel design and locomotion system development for autonomous drive units",
     image: "/attached_assets/image_1759249913190.png",
@@ -29,7 +38,7 @@ const projects = [
     company: "Amazon Robotics"
   },
   {
-    id: 3,
+    id: 4,
     title: "Proteus 'Skateboard' Drive Redesign",
     description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
     image: "/attached_assets/image_1759249955339.png",
@@ -39,7 +48,7 @@ const projects = [
     company: "Amazon Robotics"
   },
   {
-    id: 4,
+    id: 5,
     title: "Injection Quill Design and Installation",
     description: "Chemical injection system design and field installation for refinery maintenance operations",
     image: "/attached_assets/image_1757889526065.png",
@@ -49,7 +58,7 @@ const projects = [
     company: "BP"
   },
   {
-    id: 5,
+    id: 6,
     title: "Steam Drainpipe Replacement",
     description: "Steam system piping analysis and replacement design for enhanced operational efficiency",
     image: "/attached_assets/image_1757889611754.png",
@@ -59,7 +68,7 @@ const projects = [
     company: "BP"
   },
   {
-    id: 6,
+    id: 7,
     title: "Fidget Spinner Design & Manufacturing",
     description: "Complete engineering project from CAD design through prototype manufacturing",
     image: "/attached_assets/image_1757725873170.png",
@@ -68,7 +77,7 @@ const projects = [
     date: "August 2023 - December 2023"
   },
   {
-    id: 7,
+    id: 8,
     title: "Wind Turbine LED Circuit",
     description: "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
     image: "/attached_assets/image_1757727946979.png",
@@ -77,7 +86,7 @@ const projects = [
     date: "November 2024"
   },
   {
-    id: 8,
+    id: 9,
     title: "Mars Rover Mechanical Subsystem Design",
     description: "Team-based mechanical subsystem design for NASA's L'SPACE Mission Concept Academy Mars rover mission",
     image: "/attached_assets/image_1757737312259.png",
@@ -92,6 +101,27 @@ export default function ProjectsSection() {
 
   const renderProjectDetails = (project: any) => {
     if (project.id === 1) {
+      // RC Car Build - Custom sections
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Project Overview</h4>
+            <p className="text-sm text-muted-foreground mb-4">As a member of an Engineering Design Project (EDP) team, we are collectively designing, building, testing, and competing with our RC car for the Machine Elements class. Our team of 5 engineers is working together to create a competitive vehicle that meets specific performance requirements.</p>
+            <p className="text-sm text-muted-foreground mb-4">The primary objective is to design an RC car capable of completing 5 laps around a designated track in under 20 seconds. The team was provided with a basic RC car durable item kit including radio controller/receiver, drive and servo motors, speed controller, battery, and battery charger. We are limited to $100 total on personal purchases for additional RC car components.</p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">My Role</h4>
+            <p className="text-sm text-muted-foreground mb-4">As the CAD designer for the team, I am responsible for creating the complete 3D models and technical drawings for the RC car chassis and all custom components. This includes designing the chassis structure to optimize weight distribution, ground clearance, and wheelbase dimensions while ensuring the design is manufacturable within our budget constraints.</p>
+            <p className="text-sm text-muted-foreground mb-4">Working closely with the other team members, I translate our collective engineering requirements into precise CAD models that can be fabricated using available manufacturing methods such as 3D printing. The design must accommodate all provided kit components while allowing for future modifications and performance improvements.</p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Design Challenges</h4>
+            <p className="text-sm text-muted-foreground mb-4">The project presents several key engineering challenges: achieving the required speed performance within the 20-second lap time constraint, optimizing the chassis design for both stability and maneuverability around the track, and managing the $100 budget to maximize performance improvements.</p>
+            <p className="text-sm text-muted-foreground mb-4">Additional considerations include selecting appropriate materials for 3D-printed components, designing mounting systems for the powertrain and steering components, ensuring proper ground clearance for track obstacles, and creating a chassis that can withstand the stresses of competitive racing while remaining lightweight enough for optimal acceleration.</p>
+          </div>
+        </>
+      );
+    } else if (project.id === 2) {
       // Bring-up Drive Prototype - Custom sections
       return (
         <>
@@ -128,7 +158,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 2 || project.id === 3) {
+    } else if (project.id === 3 || project.id === 4) {
       // Other Amazon Robotics Projects - Placeholder content
       return (
         <>
@@ -160,7 +190,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 4) {
+    } else if (project.id === 5) {
       // Injection Quill Design and Installation - Custom sections
       return (
         <>
@@ -325,7 +355,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 5) {
+    } else if (project.id === 6) {
       // Steam Drainpipe Replacement - Custom sections
       return (
         <>
@@ -729,7 +759,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 7) {
+    } else if (project.id === 8) {
       // Wind Turbine Project Details
       return (
         <>
@@ -834,7 +864,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 8) {
+    } else if (project.id === 9) {
       // Mars Rover Project Details
       return (
         <>
@@ -945,8 +975,8 @@ export default function ProjectsSection() {
                   data-testid={`img-project-${project.id}`}
                 />
                 
-                {/* Logo - Amazon for projects 1-3, BP for projects 4-5, UT for projects 6-7, NASA for project 8 */}
-                {project.id === 1 || project.id === 2 || project.id === 3 ? (
+                {/* Logo - Amazon for projects 2-4, BP for projects 5-6, UT for projects 1, 7-8, NASA for project 9 */}
+                {project.id === 2 || project.id === 3 || project.id === 4 ? (
                   // Amazon Robotics Logo - positioned lower
                   (<div className="absolute bottom-2 right-4">
                     <>
@@ -963,7 +993,7 @@ export default function ProjectsSection() {
                       />
                     </>
                   </div>)
-                ) : project.id === 4 || project.id === 5 ? (
+                ) : project.id === 5 || project.id === 6 ? (
                   // BP Logo - original position
                   (<div className="absolute bottom-4 right-4">
                     <>
@@ -980,7 +1010,7 @@ export default function ProjectsSection() {
                       />
                     </>
                   </div>)
-                ) : project.id === 8 ? (
+                ) : project.id === 9 ? (
                   // NASA Logo - original position
                   (<div className="absolute bottom-4 right-4">
                     <>
@@ -1000,7 +1030,7 @@ export default function ProjectsSection() {
                     </>
                   </div>)
                 ) : (
-                  // UT Austin Logo - positioned lower
+                  // UT Austin Logo - positioned lower (projects 1, 7, 8)
                   (<div className="absolute bottom-2 right-4">
                     <>
                       <img 
