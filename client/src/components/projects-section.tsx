@@ -112,7 +112,7 @@ export default function ProjectsSection() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Initial Design Concept</h4>
-            <p className="text-sm text-muted-foreground mb-4">The preliminary design establishes the foundation for our RC car, showing both the basic rolling chassis configuration and the fully integrated vehicle with all subsystems. This initial concept guided our detailed CAD development and component selection.</p>
+            <p className="text-sm text-muted-foreground mb-4">The preliminary design establishes the foundation for our RC car, showing both the basic rolling chassis configuration and the fully integrated vehicle with all subsystems. </p>
             <div className="flex justify-center mb-6">
               <Dialog>
                 <DialogTrigger asChild>
