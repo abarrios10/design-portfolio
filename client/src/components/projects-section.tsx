@@ -105,19 +105,15 @@ export default function ProjectsSection() {
       return (
         <>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Project Overview</h4>
-            <p className="text-sm text-muted-foreground mb-4">As a member of an Engineering Design Project (EDP) team, we are collectively designing, building, testing, and competing with our RC car for the Machine Elements class. Our team of 5 engineers is working together to create a competitive vehicle that meets specific performance requirements.</p>
-            <p className="text-sm text-muted-foreground mb-4">The primary objective is to design an RC car capable of completing 5 laps around a designated track in under 20 seconds. The team was provided with a basic RC car durable item kit including radio controller/receiver, drive and servo motors, speed controller, battery, and battery charger. We are limited to $100 total on personal purchases for additional RC car components.</p>
-          </div>
-          <div>
             <h4 className="text-lg font-semibold mb-4">My Role</h4>
-            <p className="text-sm text-muted-foreground mb-4">As the CAD designer for the team, I am responsible for creating the complete 3D models and technical drawings for the RC car chassis and all custom components. This includes designing the chassis structure to optimize weight distribution, ground clearance, and wheelbase dimensions while ensuring the design is manufacturable within our budget constraints.</p>
-            <p className="text-sm text-muted-foreground mb-4">Working closely with the other team members, I translate our collective engineering requirements into precise CAD models that can be fabricated using available manufacturing methods such as 3D printing. The design must accommodate all provided kit components while allowing for future modifications and performance improvements.</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Challenges</h4>
-            <p className="text-sm text-muted-foreground mb-4">The project presents several key engineering challenges: achieving the required speed performance within the 20-second lap time constraint, optimizing the chassis design for both stability and maneuverability around the track, and managing the $100 budget to maximize performance improvements.</p>
-            <p className="text-sm text-muted-foreground mb-4">Additional considerations include selecting appropriate materials for 3D-printed components, designing mounting systems for the powertrain and steering components, ensuring proper ground clearance for track obstacles, and creating a chassis that can withstand the stresses of competitive racing while remaining lightweight enough for optimal acceleration.</p>
+          </div>
+          <div>
+            <p className="text-sm text-muted-foreground italic mt-6">
+              This project is currently a work in progress and will be completed at the end of the semester.
+            </p>
           </div>
         </>
       );
