@@ -105,11 +105,46 @@ export default function ProjectsSection() {
       return (
         <>
           <div>
-            <h4 className="text-lg font-semibold mb-4">My Role</h4>
-            <p className="text-sm text-muted-foreground mb-4">As the CAD designer on a 5-person team, I'm responsible for creating the complete vehicle design that must complete 5 laps around a track in under 20 seconds.</p>
+            <h4 className="text-lg font-semibold mb-4">Design Specifications</h4>
+            <p className="text-sm text-muted-foreground mb-4">Based on our Preliminary Design Review, the RC car features a 4-wheel configuration with a 250-260mm wheelbase and 180mm track width. The chassis will be 3D-printed from PETG with a target mass of approximately 300g, providing a lightweight yet durable platform.</p>
+            <p className="text-sm text-muted-foreground mb-4">The vehicle utilizes 65mm diameter wheels with a dish-style plastic rim and soft rubber tires mounted on 12mm hex hubs. The rear-wheel drive (RWD) powertrain features a spur-pinion gear transmission with a 9:1 gear ratio for efficient power delivery. An independent double-wishbone suspension system with slight Ackermann steering geometry provides up to 30° of steering angle for precise control.</p>
+            <p className="text-sm text-muted-foreground mb-4">Performance targets include accelerating from rest to 5 m/s within 3 seconds, achieving a top speed of 20-25 km/h, and decelerating from 5 m/s to rest in 1.2 m. The design maintains 15mm ground clearance with a turning radius under 1.0m, supporting 20 minutes of runtime and over 1km of continuous operation.</p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Design Challenges</h4>
+            <h4 className="text-lg font-semibold mb-4">Initial Design Concept</h4>
+            <p className="text-sm text-muted-foreground mb-4">The preliminary design establishes the foundation for our RC car, showing both the basic rolling chassis configuration and the fully integrated vehicle with all subsystems. This initial concept guided our detailed CAD development and component selection.</p>
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/attached_assets/image_1759964055981.png"
+                    alt="Initial RC Car Design Concept"
+                    className="w-full max-w-2xl h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">Initial RC Car Design Concept - Full Size</DialogTitle>
+                  <img
+                    src="/attached_assets/image_1759964055981.png"
+                    alt="Initial RC Car Design Concept"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">My Role</h4>
+            <p className="text-sm text-muted-foreground mb-4">As the CAD designer on a 5-person team, I'm responsible for creating the complete vehicle design that must complete 5 laps around a track in under 20 seconds. My work involves translating the preliminary design specifications into detailed 3D-printable CAD models for the chassis, steering linkages, and mounting systems for all subsystems.</p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Project Timeline</h4>
+            <p className="text-sm text-muted-foreground mb-4">The project follows a structured development schedule across the fall semester. The design phase (September 29 - October 17) focuses on CAD development to translate the preliminary design into 3D-printable components. The build phase (October 17 - November 17) involves fabrication and assembly of all subsystems.</p>
+            <p className="text-sm text-muted-foreground mb-4">Testing and validation (November 17 - December 3) will focus on prototyping and testing the servo motors, steering mechanisms, and overall vehicle performance. The final delivery phase runs through the end of the semester, culminating in competition and final documentation.</p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Next Steps</h4>
+            <p className="text-sm text-muted-foreground mb-4">In the coming months, we will continue with detailed CAD design of individual components, followed by prototyping and rigorous testing of the servo motors and steering mechanisms. This iterative process will refine the design to meet our performance targets while maintaining manufacturability and staying within our $100 budget constraint.</p>
           </div>
           <div>
             <p className="text-sm text-muted-foreground italic mt-6">
