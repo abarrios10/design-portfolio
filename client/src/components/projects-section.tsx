@@ -597,7 +597,7 @@ export default function ProjectsSection() {
           </div>
         </>
       );
-    } else if (project.id === 6) {
+    } else if (project.id === 7) {
       // Fidget Spinner Project Details
       return (
         <>
