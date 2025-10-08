@@ -117,7 +117,7 @@ export default function ProjectsSection() {
               <Dialog>
                 <DialogTrigger asChild>
                   <img
-                    src="/attached_assets/image_1759964055981.png"
+                    src="/attached_assets/image_1759964905255.png"
                     alt="Initial RC Car Design Concept"
                     className="w-full max-w-2xl h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
                   />
@@ -125,7 +125,7 @@ export default function ProjectsSection() {
                 <DialogContent className="max-w-5xl max-h-[95vh]">
                   <DialogTitle className="sr-only">Initial RC Car Design Concept - Full Size</DialogTitle>
                   <img
-                    src="/attached_assets/image_1759964055981.png"
+                    src="/attached_assets/image_1759964905255.png"
                     alt="Initial RC Car Design Concept"
                     className="w-full h-auto max-h-[90vh] object-contain"
                   />
