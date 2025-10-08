@@ -1,0 +1,76 @@
+1. Vehicle Design Specifications: In outline format depicted below, present the proposed design specifications for your RC racecar:
+
+
+Dimensions and Layout:
+Number of Wheels: 4
+Wheelbase: ~250-260mm
+Track Width: ~180mm
+Wheels:
+Size: 65mm outer diameter x 27mm width
+Style: Dish-style plastic rim with reinforced hub
+Mounting Type: 12mm hex hub
+Composition: Soft Rubber Tire x Plastic Hard Dish
+Chassis (material, manufacturing method, target mass)
+Material: PETG
+Manufacturing Method: 3D-Printed
+Target Mass: ~300g
+Powertrain:
+Drive Configuration: RWD
+Transmission Type: Spur-pinion Gear
+Gear Ratio: 9:1 overall
+Steering and suspension:
+Configuration: Slight Ackermann
+Type: Independent double-wishbone
+Steering Angle: 30°
+Performance:
+Acceleration: accelerate from rest to ~5 m/s within ~3 seconds
+Top Speed: ~20-25 km/h
+Deceleration: decelerate from ~5 m/s to rest in ~1.2 m
+Ground Clearance: 15mm
+Turning Radius: <1.0mm
+Range: ~20min
+Endurance: >1km continuous operation
+Towing Capacity: ~0.5kg
+
+2. Design Drawings: Provide a sketch of your vehicle design in preferred format (CAD, Drawing, etc). Include annotations on:
+
+
+
+3. Schedule: In outline format depicted below, describe the schedule of your RC racecar including details on the status of all major phases:
+Design Phase: (from - to)
+9/29 - 10/17 
+Currently in CAD phase to translate into a 3D printable design
+Build Phase: (from - to)
+10/17 - 11/17 
+Test Phase: (from - to) 
+11/17 - 12/3
+Deliver Phase: (from - to)
+12/3 - End of Semester
+
+4. Cost: In outline format depicted below, describe the proposed cost of your RC racecar including details on prices, identified source, availability, and order status of all major subsystems:
+Wheels
+$10.99
+4PCS 1:10 On Road RC Tires 12mm Hub Wheel Rims Concentric Hard Dish for Touring Racing Cars, Black
+Chassis
+3D printed @ TIW: $0
+Powertrain:
+Provided motor: $0 & Pinion Spur: $19.69
+https://www.ebay.com/itm/405867170126
+Steering:
+Provide servomotor & 3D Printed axles: $0
+Telemetry:
+Provided microcontroller: $0
+
+5. Summary: summarize your preliminary design with schedule goals for milestone events. This could include:
+Rolling Chassis:
+The rolling chassis will be designed by 10/17 in CAD to 3D-print using PETG. It will contain an independent double-wishbone suspension, and 12mm hex wheels. It provides a lightweight base for the RC car.
+Actuated Steering:
+A standard RC servomotor will control the front axle using a slight Ackermann steering geometry, providing up to 30° of steering angle. Custom 3D printed linkages connection to the wheels.
+Engaged Powertrain:
+The drivetrain is configured as rear-wheel drive (RWD) using a provided DC motor coupled with a spur-pinion gear set (9:! ratio). This transmits torque directly to the rear axle with efficient power delivery.
+Commanded Telemetry:
+The commanded telemetry system uses the RC transmitter and receiver to relay throttle and steering inputs to the motor controller and servo. This ensures real-time driver control and reliable signal response during testing and racing.
+Integrated Vehicle:
+All subsystems (chassis, steering, drivetrain, and telemetry) will be assembled into a fully functional RC car. The design emphasizes manufacturability (3D printing) and cost-effectiveness while meeting performance goals of ~20km/h top speed and 20 minutes of runtime to compete.
+
+Utilized Class Notes and ChatGPT for research and development of information provided on this report.
