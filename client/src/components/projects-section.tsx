@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "RC Car Build",
     description: "Competitive RC car design and manufacturing project for Machine Elements engineering course",
-    image: "/attached_assets/image_1759962850850.png",
+    image: "/attached_assets/image_1759963385846.png",
     technologies: ["SolidWorks", "CAD Design", "Team Collaboration", "3D Printing", "Budget Management"],
     details: "Engineering Design Project (EDP) for Machine Elements class involving the collaborative design, build, test, and competition of a custom RC car. As the CAD designer on a 5-person team, I'm responsible for creating the complete vehicle design that must complete 5 laps around a track in under 20 seconds. Working within a $100 budget constraint for additional components beyond the provided kit (radio controller/receiver, drive and servo motors, speed controller, battery, and charger), optimizing the chassis design for performance while maintaining manufacturability.",
     date: "September 2025 - Present"
