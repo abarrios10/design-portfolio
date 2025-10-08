@@ -106,6 +106,7 @@ export default function ProjectsSection() {
         <>
           <div>
             <h4 className="text-lg font-semibold mb-4">My Role</h4>
+            <p className="text-sm text-muted-foreground mb-4">As the CAD designer on a 5-person team, I'm responsible for creating the complete vehicle design that must complete 5 laps around a track in under 20 seconds.</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Design Challenges</h4>
