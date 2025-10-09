@@ -20,7 +20,7 @@ export default function HeroSection() {
               
               {/* Image container */}
               <div className="relative">
-                <div className="w-72 h-72 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
+                <div className="w-80 h-80 sm:w-96 sm:h-96 md:w-[480px] md:h-[480px] rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
                   <img
                     src={profileImage}
                     alt="Andres Barrios"
