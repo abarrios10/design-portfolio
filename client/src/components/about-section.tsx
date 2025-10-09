@@ -1,6 +1,51 @@
-import { MapPin, Heart, Coffee } from "lucide-react";
+import { MapPin, Award, Heart } from "lucide-react";
 
 export default function AboutSection() {
+  const awards = [
+    {
+      title: "Cockrell School of Engineering Distinguished College Scholar",
+      description: "Recognized for maintaining a GPA ranking in the top 4% of students in my class",
+      date: "2024, 2025"
+    },
+    {
+      title: "Hispanic Scholarship Fund Scholar",
+      description: "Merit-based scholarship recipient",
+      date: "2023, 2024"
+    },
+    {
+      title: "Richard Douglas and Judith Watson Perkins Endowed Presidential Scholarship",
+      description: "Endowed scholarship for academic excellence",
+      date: "2024"
+    },
+    {
+      title: "Engineering Honors Program",
+      description: "Top 10% of students in mechanical engineering department",
+      date: "2023"
+    },
+    {
+      title: "5x University Honors List",
+      description: "3.50+ GPA recognition for Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024",
+      date: "2022-2024"
+    },
+    {
+      title: "National Merit Commended Recognition Scholar",
+      description: "Scored 1420 on the PSAT",
+      date: "2021"
+    }
+  ];
+
+  const interests = [
+    "Consumer Electronics",
+    "Weightlifting",
+    "Music Festivals",
+    "Texas Football",
+    "Film",
+    "Padel",
+    "Spikeball",
+    "Reggaeton",
+    "Professional Mentorship"
+  ];
+
   return (
     <section id="about" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +55,7 @@ export default function AboutSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <img
               src="/images/profile.jpg"
@@ -34,6 +79,47 @@ export default function AboutSection() {
                 <MapPin className="text-primary h-5 w-5" />
                 <span className="text-muted-foreground">Austin, Texas</span>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Awards & Interests Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          {/* Awards */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Award className="h-6 w-6 text-primary" />
+              <h3 className="text-3xl font-thin text-foreground">Awards</h3>
+            </div>
+            <div className="space-y-6">
+              {awards.map((award, index) => (
+                <div key={index} className="border-l-2 border-primary/20 pl-4 py-2" data-testid={`award-${index}`}>
+                  <div className="flex justify-between items-start mb-1">
+                    <h4 className="font-medium text-foreground">{award.title}</h4>
+                    <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">{award.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Interests */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Heart className="h-6 w-6 text-primary" />
+              <h3 className="text-3xl font-thin text-foreground">Interests</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {interests.map((interest, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-primary/10 text-foreground rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
+                  data-testid={`interest-${index}`}
+                >
+                  {interest}
+                </span>
+              ))}
             </div>
           </div>
         </div>
