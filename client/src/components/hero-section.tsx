@@ -20,7 +20,7 @@ export default function HeroSection() {
               
               {/* Image container */}
               <div className="relative">
-                <div className="w-80 h-80 sm:w-96 sm:h-96 md:w-[450px] md:h-[450px] rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
+                <div className="w-72 h-72 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
                   <img
                     src={profileImage}
                     alt="Andres Barrios"
@@ -44,9 +44,11 @@ export default function HeroSection() {
               <p className="text-lg text-primary font-medium mb-6">
                 The University of Texas at Austin
               </p>
-              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed drop-shadow-sm whitespace-nowrap">
-                Mechanical Design | Product Design Enthusiast | Robotics
-              </p>
+              <div className="flex justify-center mb-10">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed drop-shadow-sm whitespace-nowrap">
+                  Mechanical Design | Product Design Enthusiast | Robotics
+                </p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <TransitionLink
                   href="/projects"
