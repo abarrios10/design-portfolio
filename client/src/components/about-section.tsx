@@ -1,7 +1,7 @@
 import { MapPin, Award, Heart } from "lucide-react";
 
 export default function AboutSection() {
-  const awards = [
+  const utAustinAwards = [
     {
       title: "Cockrell School of Engineering Distinguished College Scholar",
       description: "Recognized for maintaining a GPA ranking in the top 4% of students in my class",
@@ -26,7 +26,10 @@ export default function AboutSection() {
       title: "5x University Honors List",
       description: "3.50+ GPA recognition for Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024",
       date: "2022-2024"
-    },
+    }
+  ];
+
+  const highSchoolAwards = [
     {
       title: "National Merit Commended Recognition Scholar",
       description: "Scored 1420 on the PSAT",
@@ -34,17 +37,10 @@ export default function AboutSection() {
     }
   ];
 
-  const interests = [
-    "Consumer Electronics",
-    "Weightlifting",
-    "Music Festivals",
-    "Texas Football",
-    "Film",
-    "Padel",
-    "Spikeball",
-    "Reggaeton",
-    "Professional Mentorship"
-  ];
+  const interests = {
+    hobbies: ["Weightlifting", "Music Festivals", "Texas Football", "Film", "Padel", "Spikeball"],
+    passions: ["Consumer Electronics", "Reggaeton", "Professional Mentorship"]
+  };
 
   return (
     <section id="about" className="py-24 bg-background">
@@ -91,16 +87,37 @@ export default function AboutSection() {
               <Award className="h-6 w-6 text-primary" />
               <h3 className="text-3xl font-thin text-foreground">Awards</h3>
             </div>
-            <div className="space-y-6">
-              {awards.map((award, index) => (
-                <div key={index} className="border-l-2 border-primary/20 pl-4 py-2" data-testid={`award-${index}`}>
-                  <div className="flex justify-between items-start mb-1">
-                    <h4 className="font-medium text-foreground">{award.title}</h4>
-                    <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
+            
+            {/* UT Austin Awards */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-foreground mb-4">The University of Texas at Austin</h4>
+              <div className="space-y-4">
+                {utAustinAwards.map((award, index) => (
+                  <div key={index} className="border-l-2 border-primary/20 pl-4 py-2" data-testid={`award-ut-${index}`}>
+                    <div className="flex justify-between items-start mb-1">
+                      <h5 className="font-medium text-foreground text-sm">{award.title}</h5>
+                      <span className="text-xs text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground">{award.description}</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">{award.description}</p>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            {/* High School Awards */}
+            <div>
+              <h4 className="text-lg font-semibold text-foreground mb-4">Obra D. Tompkins High School</h4>
+              <div className="space-y-4">
+                {highSchoolAwards.map((award, index) => (
+                  <div key={index} className="border-l-2 border-primary/20 pl-4 py-2" data-testid={`award-hs-${index}`}>
+                    <div className="flex justify-between items-start mb-1">
+                      <h5 className="font-medium text-foreground text-sm">{award.title}</h5>
+                      <span className="text-xs text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground">{award.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -110,16 +127,39 @@ export default function AboutSection() {
               <Heart className="h-6 w-6 text-primary" />
               <h3 className="text-3xl font-thin text-foreground">Interests</h3>
             </div>
-            <div className="flex flex-wrap gap-3">
-              {interests.map((interest, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-primary/10 text-foreground rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
-                  data-testid={`interest-${index}`}
-                >
-                  {interest}
-                </span>
-              ))}
+            
+            <div className="space-y-6">
+              {/* Hobbies */}
+              <div>
+                <h4 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wider">Hobbies & Activities</h4>
+                <div className="flex flex-wrap gap-2">
+                  {interests.hobbies.map((interest, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1.5 bg-primary/10 text-foreground rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
+                      data-testid={`hobby-${index}`}
+                    >
+                      {interest}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Passions */}
+              <div>
+                <h4 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wider">Passions & Pursuits</h4>
+                <div className="flex flex-wrap gap-2">
+                  {interests.passions.map((interest, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1.5 bg-primary/10 text-foreground rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
+                      data-testid={`passion-${index}`}
+                    >
+                      {interest}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
