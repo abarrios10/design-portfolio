@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Wrench, Download } from "lucide-react";
+import { GraduationCap, Briefcase, Wrench } from "lucide-react";
 import { SiSamsung, SiAmazon } from "react-icons/si";
 
 const skills = [
@@ -13,10 +12,6 @@ const skills = [
 ];
 
 export default function ResumeSection() {
-  const downloadResume = () => {
-    // Open the PDF resume directly in a new tab
-    window.open('/resume.pdf', '_blank');
-  };
 
   return (
     <section id="resume" className="py-24 bg-secondary/30">
@@ -198,18 +193,6 @@ export default function ResumeSection() {
                   </Card>
                 ))}
               </div>
-            </div>
-
-            {/* Download Resume Button */}
-            <div className="text-center">
-              <Button
-                onClick={downloadResume}
-                className="btn-primary px-8 py-3 rounded-full text-sm font-medium"
-                data-testid="button-download-resume"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
             </div>
           </CardContent>
         </Card>
