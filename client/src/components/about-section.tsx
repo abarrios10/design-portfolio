@@ -38,8 +38,8 @@ export default function AboutSection() {
   ];
 
   const interests = {
-    hobbies: ["Weightlifting", "Music Festivals", "Texas Football", "Film", "Padel", "Spikeball"],
-    passions: ["Consumer Electronics", "Reggaeton", "Professional Mentorship"]
+    hobbies: ["Weightlifting", "Music Festivals", "Texas Football", "Padel", "Spikeball"],
+    passions: ["Consumer Electronics", "Film", "Reggaeton", "Professional Mentorship"]
   };
 
   return (
@@ -95,10 +95,10 @@ export default function AboutSection() {
                 {utAustinAwards.map((award, index) => (
                   <div key={index} className="border-l-2 border-primary/20 pl-4 py-2" data-testid={`award-ut-${index}`}>
                     <div className="flex justify-between items-start mb-1">
-                      <h5 className="font-medium text-foreground text-sm">{award.title}</h5>
-                      <span className="text-xs text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
+                      <h5 className="font-medium text-foreground text-base">{award.title}</h5>
+                      <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
                     </div>
-                    <p className="text-xs text-muted-foreground">{award.description}</p>
+                    <p className="text-sm text-muted-foreground">{award.description}</p>
                   </div>
                 ))}
               </div>
@@ -111,10 +111,10 @@ export default function AboutSection() {
                 {highSchoolAwards.map((award, index) => (
                   <div key={index} className="border-l-2 border-primary/20 pl-4 py-2" data-testid={`award-hs-${index}`}>
                     <div className="flex justify-between items-start mb-1">
-                      <h5 className="font-medium text-foreground text-sm">{award.title}</h5>
-                      <span className="text-xs text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
+                      <h5 className="font-medium text-foreground text-base">{award.title}</h5>
+                      <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
                     </div>
-                    <p className="text-xs text-muted-foreground">{award.description}</p>
+                    <p className="text-sm text-muted-foreground">{award.description}</p>
                   </div>
                 ))}
               </div>
@@ -136,7 +136,7 @@ export default function AboutSection() {
                   {interests.hobbies.map((interest, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1.5 bg-primary/10 text-foreground rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
+                      className="px-4 py-2 bg-primary/10 text-foreground rounded-full text-base font-medium hover:bg-primary/20 transition-colors"
                       data-testid={`hobby-${index}`}
                     >
                       {interest}
@@ -152,7 +152,7 @@ export default function AboutSection() {
                   {interests.passions.map((interest, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1.5 bg-primary/10 text-foreground rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
+                      className="px-4 py-2 bg-primary/10 text-foreground rounded-full text-base font-medium hover:bg-primary/20 transition-colors"
                       data-testid={`passion-${index}`}
                     >
                       {interest}

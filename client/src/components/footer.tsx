@@ -1,4 +1,5 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
@@ -11,6 +12,23 @@ export default function Footer() {
           <p className="text-muted-foreground mb-6" data-testid="text-footer-title">
             Mechanical Engineering Student at UT Austin
           </p>
+          
+          {/* Download Resume Button */}
+          <div className="mb-8">
+            <Button
+              asChild
+              variant="default"
+              size="lg"
+              className="group"
+              data-testid="button-download-resume"
+            >
+              <a href="/attached_assets/Andres_Barrios_Resume_Senior_2_1757973841738.pdf" download="Andres_Barrios_Resume.pdf">
+                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                Download Resume
+              </a>
+            </Button>
+          </div>
+
           <div className="flex justify-center space-x-6 mb-8">
             <a
               href="https://www.linkedin.com/in/andresbarrios10"
