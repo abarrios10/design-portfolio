@@ -33,21 +33,21 @@ export default function HeroSection() {
           </div>
 
           {/* Text Section */}
-          <div className="text-center md:text-left animate-slide-up w-full" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-background/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-border/20 shadow-xl mx-auto max-w-lg">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-4 tracking-tight drop-shadow-sm">
+          <div className="text-center animate-slide-up w-full" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-background/40 backdrop-blur-sm rounded-3xl p-10 md:p-14 border border-border/20 shadow-xl mx-auto max-w-2xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-6 tracking-tight drop-shadow-sm">
                 Andres Barrios
               </h1>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-muted-foreground mb-3 drop-shadow-sm">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-muted-foreground mb-4 drop-shadow-sm">
                 Mechanical Engineering Student
               </h2>
-              <p className="text-lg text-primary font-medium mb-4">
+              <p className="text-lg text-primary font-medium mb-6">
                 The University of Texas at Austin
               </p>
-              <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed drop-shadow-sm">
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed drop-shadow-sm">
                 Mechanical Design | Product Design Enthusiast | Robotics
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <TransitionLink
                   href="/projects"
                   className="btn-primary px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
