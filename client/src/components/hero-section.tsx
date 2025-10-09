@@ -34,7 +34,7 @@ export default function HeroSection() {
 
           {/* Text Section */}
           <div className="text-center animate-slide-up w-full flex items-center" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-background/40 backdrop-blur-sm rounded-3xl p-10 md:p-14 border border-border/20 shadow-xl mx-auto max-w-2xl">
+            <div className="bg-background/70 backdrop-blur-md rounded-3xl p-10 md:p-14 border border-border/30 shadow-xl mx-auto max-w-2xl">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-6 tracking-tight drop-shadow-sm whitespace-nowrap">
                 Andres Barrios
               </h1>
