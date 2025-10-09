@@ -8,12 +8,12 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center hero-bg-premium relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center hero-bg-premium relative overflow-hidden py-20"
     >
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
           {/* Image Section */}
-          <div className="flex justify-center md:justify-end animate-slide-up" data-testid="hero-image-container">
+          <div className="flex justify-center animate-slide-up" data-testid="hero-image-container">
             <div className="relative group">
               {/* Decorative background blur */}
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-500"></div>
@@ -33,8 +33,8 @@ export default function HeroSection() {
           </div>
 
           {/* Text Section */}
-          <div className="text-center md:text-left animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-background/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-border/20 shadow-xl">
+          <div className="text-center md:text-left animate-slide-up w-full" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-background/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-border/20 shadow-xl mx-auto max-w-lg">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-4 tracking-tight drop-shadow-sm">
                 Andres Barrios
               </h1>
