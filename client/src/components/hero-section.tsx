@@ -17,9 +17,7 @@ export default function HeroSection() {
           <h2 className="text-2xl md:text-3xl font-light text-muted-foreground mb-4 drop-shadow-sm">
             Mechanical Engineering Student at UT Austin
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
-            Passionate about product design engineering and robotics innovation
-          </p>
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">Mechanical Design | Product Design Enthusiast | Robotics</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TransitionLink
               href="/projects"
@@ -39,7 +37,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
     </section>
   );
 }
