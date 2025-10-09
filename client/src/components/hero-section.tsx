@@ -13,14 +13,14 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
           {/* Image Section */}
-          <div className="flex justify-center animate-slide-up" data-testid="hero-image-container">
+          <div className="flex justify-center animate-slide-up mt-8" data-testid="hero-image-container">
             <div className="relative group">
               {/* Decorative background blur */}
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-500"></div>
               
               {/* Image container */}
               <div className="relative">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
+                <div className="w-80 h-80 sm:w-96 sm:h-96 md:w-[450px] md:h-[450px] rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
                   <img
                     src={profileImage}
                     alt="Andres Barrios"
@@ -44,7 +44,7 @@ export default function HeroSection() {
               <p className="text-lg text-primary font-medium mb-6">
                 The University of Texas at Austin
               </p>
-              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed drop-shadow-sm">
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed drop-shadow-sm whitespace-nowrap">
                 Mechanical Design | Product Design Enthusiast | Robotics
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
