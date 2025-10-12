@@ -11,9 +11,9 @@ export default function HeroSection() {
       className="min-h-screen flex items-center justify-center hero-bg-premium relative overflow-hidden py-20"
     >
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center justify-items-center">
           {/* Image Section */}
-          <div className="flex justify-center items-center animate-slide-up" data-testid="hero-image-container">
+          <div className="flex justify-center items-center animate-slide-up w-full" data-testid="hero-image-container">
             <div className="relative group">
               {/* Decorative background blur */}
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-500"></div>
@@ -33,9 +33,9 @@ export default function HeroSection() {
           </div>
 
           {/* Text Section */}
-          <div className="text-center animate-slide-up w-full flex items-center" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-3xl p-10 md:p-14 border border-gray-200 dark:border-gray-700 shadow-xl mx-auto max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-6 tracking-tight drop-shadow-sm whitespace-nowrap">
+          <div className="text-center animate-slide-up w-full flex justify-center items-center" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-3xl p-8 md:p-14 border border-gray-200 dark:border-gray-700 shadow-xl mx-auto max-w-2xl w-full">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-6 tracking-tight drop-shadow-sm">
                 Andres Barrios
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-muted-foreground mb-4 drop-shadow-sm">
@@ -44,8 +44,8 @@ export default function HeroSection() {
               <p className="text-lg text-primary font-medium mb-6">
                 The University of Texas at Austin
               </p>
-              <div className="flex justify-center mb-10">
-                <p className="text-base md:text-lg text-muted-foreground leading-relaxed drop-shadow-sm whitespace-nowrap">
+              <div className="flex justify-center mb-10 overflow-x-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed drop-shadow-sm whitespace-nowrap">
                   Mechanical Design | Product Design Enthusiast | Robotics
                 </p>
               </div>
