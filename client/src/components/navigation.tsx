@@ -48,7 +48,7 @@ export default function Navigation() {
               <TransitionLink
                 key={item.path}
                 href={item.path}
-                className={`nav-link text-sm font-medium transition-colors ${
+                className={`nav-link text-base font-medium transition-colors ${
                   location === item.path
                     ? "text-primary"
                     : "text-muted-foreground hover:text-primary"
@@ -83,7 +83,7 @@ export default function Navigation() {
                     <SheetClose key={item.path} asChild>
                       <TransitionLink
                         href={item.path}
-                        className={`text-lg font-medium transition-colors py-2 px-1 ${
+                        className={`text-xl font-medium transition-colors py-2 px-1 ${
                           location === item.path
                             ? "text-primary"
                             : "text-muted-foreground hover:text-primary"
