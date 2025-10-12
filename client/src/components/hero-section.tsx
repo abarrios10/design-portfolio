@@ -44,7 +44,7 @@ export default function HeroSection() {
               <p className="text-lg text-primary font-medium mb-6">
                 The University of Texas at Austin
               </p>
-              <div className="flex justify-center mb-10 overflow-x-auto">
+              <div className="flex justify-center mb-10">
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed drop-shadow-sm whitespace-nowrap">
                   Mechanical Design | Product Design Enthusiast | Robotics
                 </p>
