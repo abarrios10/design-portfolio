@@ -39,11 +39,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "Proteus 'Skateboard' Drive Redesign",
-    description: "Complete redesign of the Proteus skateboard drive platform for enhanced performance and manufacturability",
+    title: "Robot 'Skateboard' Drive Redesign",
+    description: "Complete redesign of the robot skateboard drive platform for enhanced performance and manufacturability",
     image: "/attached_assets/image_1759249955339.png",
     technologies: ["SolidWorks", "Prototype Development", "Hardware for Testing", "Supporting Hardware"],
-    details: "Project from my Amazon Robotics internship to design updated testing skateboards that contain all Proteus locomotor hardware for testing of sensor characterization, traction and stability, and environmental interference. Incorporated custom wheel mounts, improved handlebar locking, accurate wheel positioning, and a consistent hole pattern to simplify sensor bracket installation and ensure reliable in-facility testing.",
+    details: "Project from my Amazon Robotics internship to design updated testing skateboards that contain all robot locomotor hardware for testing of sensor characterization, traction and stability, and environmental interference. Incorporated custom wheel mounts, improved handlebar locking, accurate wheel positioning, and a consistent hole pattern to simplify sensor bracket installation and ensure reliable in-facility testing.",
     date: "April 2025 - May 2025",
     company: "Amazon Robotics"
   },
