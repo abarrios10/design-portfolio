@@ -18,7 +18,7 @@ export default function ResumeSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             Professional Experience
-            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-green)] via-primary to-[var(--accent-cyan)] rounded-full opacity-60"></div>
+            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-amber)] via-[var(--accent-orange)] to-[var(--accent-coral)] rounded-full opacity-60"></div>
           </h2>
           <p className="text-lg text-muted-foreground mt-8">
             A comprehensive overview of my engineering journey and achievements
@@ -30,11 +30,11 @@ export default function ResumeSection() {
             {/* Education Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <GraduationCap className="mr-3 h-6 w-6" style={{color: 'var(--accent-green)'}} />
+                <GraduationCap className="mr-3 h-6 w-6" style={{color: 'var(--accent-lime)'}} />
                 Education
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 pl-6" style={{borderColor: 'var(--accent-green)'}}>
+                <div className="border-l-2 pl-6" style={{borderColor: 'var(--accent-lime)'}}>
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-education-degree">Bachelor of Science, Mechanical Engineering Honors</h4>
                   <p className="text-primary font-medium" data-testid="text-education-university">
                     The University of Texas at Austin
@@ -52,11 +52,11 @@ export default function ResumeSection() {
             {/* Experience Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Briefcase className="mr-3 h-6 w-6" style={{color: 'var(--accent-cyan)'}} />
+                <Briefcase className="mr-3 h-6 w-6" style={{color: 'var(--accent-indigo)'}} />
                 Experience
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 pl-6 flex items-start justify-between" style={{borderColor: 'var(--accent-cyan)'}}>
+                <div className="border-l-2 pl-6 flex items-start justify-between" style={{borderColor: 'var(--accent-indigo)'}}>
                   <div className="flex-1">
                     <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
                       Undergraduate Robotics Research Assistant

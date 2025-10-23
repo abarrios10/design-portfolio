@@ -58,6 +58,10 @@
   --accent-green: hsl(142 76% 36%);
   --accent-pink: hsl(330 81% 60%);
   --accent-cyan: hsl(190 95% 45%);
+  --accent-indigo: hsl(243 75% 59%);
+  --accent-amber: hsl(45 93% 47%);
+  --accent-lime: hsl(84 81% 44%);
+  --accent-coral: hsl(16 90% 63%);
 }
 
 .dark {
@@ -86,6 +90,10 @@
   --accent-green: hsl(142 76% 45%);
   --accent-pink: hsl(330 81% 65%);
   --accent-cyan: hsl(190 95% 50%);
+  --accent-indigo: hsl(243 75% 67%);
+  --accent-amber: hsl(45 93% 55%);
+  --accent-lime: hsl(84 81% 52%);
+  --accent-coral: hsl(16 90% 68%);
 }
 
 /* Logo filter styles - simple black and white */

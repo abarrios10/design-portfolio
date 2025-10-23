@@ -48,7 +48,7 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             About Me
-            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-[var(--accent-orange)] rounded-full opacity-60"></div>
+            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-lime)] via-[var(--accent-teal)] to-[var(--accent-purple)] rounded-full opacity-60"></div>
           </h2>
         </div>
 
@@ -73,7 +73,7 @@ export default function AboutSection() {
             
             <div className="flex flex-wrap gap-4 mt-8">
               <div className="flex items-center space-x-2" data-testid="info-location">
-                <MapPin className="h-5 w-5" style={{color: 'var(--accent-purple)'}} />
+                <MapPin className="h-5 w-5" style={{color: 'var(--accent-teal)'}} />
                 <span className="text-muted-foreground">Austin, Texas</span>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function AboutSection() {
           {/* Awards */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Award className="h-6 w-6" style={{color: 'var(--accent-orange)'}} />
+              <Award className="h-6 w-6" style={{color: 'var(--accent-amber)'}} />
               <h3 className="text-3xl font-thin text-foreground">Awards</h3>
             </div>
             
@@ -94,7 +94,7 @@ export default function AboutSection() {
               <h4 className="text-lg font-semibold text-foreground mb-4">The University of Texas at Austin</h4>
               <div className="space-y-4">
                 {utAustinAwards.map((award, index) => (
-                  <div key={index} className="border-l-2 pl-4 py-2" style={{borderColor: 'var(--accent-orange)'}} data-testid={`award-ut-${index}`}>
+                  <div key={index} className="border-l-2 pl-4 py-2" style={{borderColor: 'var(--accent-amber)'}} data-testid={`award-ut-${index}`}>
                     <div className="flex justify-between items-start mb-1">
                       <h5 className="font-medium text-foreground text-base">{award.title}</h5>
                       <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
@@ -110,7 +110,7 @@ export default function AboutSection() {
               <h4 className="text-lg font-semibold text-foreground mb-4">Obra D. Tompkins High School</h4>
               <div className="space-y-4">
                 {highSchoolAwards.map((award, index) => (
-                  <div key={index} className="border-l-2 pl-4 py-2" style={{borderColor: 'var(--accent-orange)'}} data-testid={`award-hs-${index}`}>
+                  <div key={index} className="border-l-2 pl-4 py-2" style={{borderColor: 'var(--accent-amber)'}} data-testid={`award-hs-${index}`}>
                     <div className="flex justify-between items-start mb-1">
                       <h5 className="font-medium text-foreground text-base">{award.title}</h5>
                       <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{award.date}</span>
@@ -125,7 +125,7 @@ export default function AboutSection() {
           {/* Interests */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <Heart className="h-6 w-6" style={{color: 'var(--accent-pink)'}} />
+              <Heart className="h-6 w-6" style={{color: 'var(--accent-coral)'}} />
               <h3 className="text-3xl font-thin text-foreground">Interests</h3>
             </div>
             
@@ -138,7 +138,7 @@ export default function AboutSection() {
                     <span
                       key={index}
                       className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
-                      style={{backgroundColor: 'rgba(174, 62, 201, 0.1)'}}
+                      style={{backgroundColor: 'rgba(132, 204, 22, 0.1)'}}
                       data-testid={`hobby-${index}`}
                     >
                       {interest}
@@ -155,7 +155,7 @@ export default function AboutSection() {
                     <span
                       key={index}
                       className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
-                      style={{backgroundColor: 'rgba(236, 72, 153, 0.1)'}}
+                      style={{backgroundColor: 'rgba(251, 146, 60, 0.1)'}}
                       data-testid={`passion-${index}`}
                     >
                       {interest}

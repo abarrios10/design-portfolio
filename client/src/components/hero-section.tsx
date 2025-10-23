@@ -61,7 +61,7 @@ export default function HeroSection() {
                   className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 border-2 bg-background text-foreground relative"
                   data-testid="button-get-in-touch"
                 >
-                  <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-primary opacity-20 blur-sm"></span>
+                  <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--accent-coral)] via-[var(--accent-pink)] to-[var(--accent-purple)] opacity-20 blur-sm"></span>
                   <span className="relative">Get In Touch</span>
                 </TransitionLink>
               </div>
