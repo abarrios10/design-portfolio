@@ -1086,10 +1086,10 @@ export default function ProjectsSection() {
                   </div>)
                 )}
                 
-                {/* Date Badge with gradient border */}
+                {/* Date Badge */}
                 <div className="flex justify-center mb-4">
-                  <div className="relative px-4 py-2 rounded-full border-2 bg-gradient-to-r from-primary/10 via-[var(--accent-teal)]/10 to-[var(--accent-purple)]/10 border-transparent" style={{borderImage: 'linear-gradient(135deg, var(--primary), var(--accent-teal), var(--accent-purple)) 1'}}>
-                    <span className="text-sm font-medium bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] bg-clip-text text-transparent">
+                  <div className="px-4 py-2 rounded-full bg-primary/10 dark:bg-primary/20">
+                    <span className="text-sm font-medium text-primary">
                       {project.date}
                     </span>
                   </div>
