@@ -989,7 +989,7 @@ export default function ProjectsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             Featured Projects
-            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] rounded-full opacity-60"></div>
+            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] rounded-full opacity-60"></div>
           </h2>
           <p className="text-lg text-muted-foreground mt-8">
             A selection of engineering projects I have worked on throughout my time at college

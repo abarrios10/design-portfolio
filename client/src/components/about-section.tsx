@@ -48,7 +48,7 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             About Me
-            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-[var(--accent-orange)] rounded-full opacity-60"></div>
+            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-[var(--accent-orange)] rounded-full opacity-60"></div>
           </h2>
         </div>
 

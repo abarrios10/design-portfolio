@@ -50,7 +50,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <TransitionLink
                   href="/projects"
-                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center text-white transition-all shadow-lg hover:shadow-xl hover:scale-105 bg-gradient-to-r from-primary via-[var(--accent-cyan)] to-[var(--accent-teal)]"
+                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center text-primary-foreground transition-all shadow-lg hover:shadow-xl hover:scale-105 bg-primary hover:bg-primary/90"
                   data-testid="button-view-work"
                 >
                   View My Work

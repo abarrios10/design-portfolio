@@ -18,7 +18,7 @@ export default function ResumeSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             Professional Experience
-            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-green)] via-primary to-[var(--accent-cyan)] rounded-full opacity-60"></div>
+            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-green)] via-primary to-[var(--accent-cyan)] rounded-full opacity-60"></div>
           </h2>
           <p className="text-lg text-muted-foreground mt-8">
             A comprehensive overview of my engineering journey and achievements
