@@ -1088,8 +1088,8 @@ export default function ProjectsSection() {
                 
                 {/* Date Badge */}
                 <div className="flex justify-center mb-4">
-                  <div className="px-4 py-2 rounded-full bg-primary/10 dark:bg-primary/20">
-                    <span className="text-sm font-medium text-primary">
+                  <div className="px-4 py-2 rounded-full bg-primary">
+                    <span className="text-sm font-medium text-white">
                       {project.date}
                     </span>
                   </div>
