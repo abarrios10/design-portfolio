@@ -987,8 +987,11 @@ export default function ProjectsSection() {
     <section className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
+            Featured Projects
+            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] rounded-full opacity-60"></div>
+          </h2>
+          <p className="text-lg text-muted-foreground mt-8">
             A selection of engineering projects I have worked on throughout my time at college
           </p>
         </div>
@@ -1083,10 +1086,10 @@ export default function ProjectsSection() {
                   </div>)
                 )}
                 
-                {/* Date Badge */}
+                {/* Date Badge with gradient border */}
                 <div className="flex justify-center mb-4">
-                  <div className="bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700">
-                    <span className="text-sm font-normal text-gray-800 dark:text-gray-200">
+                  <div className="relative px-4 py-2 rounded-full border-2 bg-gradient-to-r from-primary/10 via-[var(--accent-teal)]/10 to-[var(--accent-purple)]/10 border-transparent" style={{borderImage: 'linear-gradient(135deg, var(--primary), var(--accent-teal), var(--accent-purple)) 1'}}>
+                    <span className="text-sm font-medium bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] bg-clip-text text-transparent">
                       {project.date}
                     </span>
                   </div>

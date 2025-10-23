@@ -50,6 +50,14 @@
   --shadow-2xl: 0px 2px 0px 0px hsl(214 100% 50% / 0.00);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+  
+  /* Accent Colors for Fun & Creativity */
+  --accent-teal: hsl(174 62% 47%);
+  --accent-purple: hsl(271 76% 53%);
+  --accent-orange: hsl(24 95% 53%);
+  --accent-green: hsl(142 76% 36%);
+  --accent-pink: hsl(330 81% 60%);
+  --accent-cyan: hsl(190 95% 45%);
 }
 
 .dark {
@@ -71,10 +79,13 @@
   --sidebar-accent-foreground: hsl(0 0% 95%);
   --sidebar-border: hsl(240 4% 16%);
 
-  /* Premium accent colors for backgrounds */
-  --accent-cyan: 190 95% 45%;
-  --accent-teal: 168 85% 38%;
-  --ut-orange: 24 100% 38%;
+  /* Accent Colors for Fun & Creativity (Dark Mode) */
+  --accent-teal: hsl(174 62% 55%);
+  --accent-purple: hsl(271 76% 63%);
+  --accent-orange: hsl(24 95% 60%);
+  --accent-green: hsl(142 76% 45%);
+  --accent-pink: hsl(330 81% 65%);
+  --accent-cyan: hsl(190 95% 50%);
 }
 
 /* Logo filter styles - simple black and white */

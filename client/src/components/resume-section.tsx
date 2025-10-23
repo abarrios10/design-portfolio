@@ -16,10 +16,11 @@ export default function ResumeSection() {
     <section id="resume" className="py-24 bg-secondary/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             Professional Experience
+            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-green)] via-primary to-[var(--accent-cyan)] rounded-full opacity-60"></div>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground mt-8">
             A comprehensive overview of my engineering journey and achievements
           </p>
         </div>
@@ -29,11 +30,11 @@ export default function ResumeSection() {
             {/* Education Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <GraduationCap className="text-primary mr-3 h-6 w-6" />
+                <GraduationCap className="mr-3 h-6 w-6" style={{color: 'var(--accent-green)'}} />
                 Education
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 border-primary pl-6">
+                <div className="border-l-2 pl-6" style={{borderColor: 'var(--accent-green)'}}>
                   <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-education-degree">Bachelor of Science, Mechanical Engineering Honors</h4>
                   <p className="text-primary font-medium" data-testid="text-education-university">
                     The University of Texas at Austin
@@ -51,11 +52,11 @@ export default function ResumeSection() {
             {/* Experience Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Briefcase className="text-primary mr-3 h-6 w-6" />
+                <Briefcase className="mr-3 h-6 w-6" style={{color: 'var(--accent-cyan)'}} />
                 Experience
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 border-primary pl-6 flex items-start justify-between">
+                <div className="border-l-2 pl-6 flex items-start justify-between" style={{borderColor: 'var(--accent-cyan)'}}>
                   <div className="flex-1">
                     <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
                       Undergraduate Robotics Research Assistant
@@ -174,14 +175,14 @@ export default function ResumeSection() {
             {/* Skills Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Wrench className="text-primary mr-3 h-6 w-6" />
+                <Wrench className="mr-3 h-6 w-6" style={{color: 'var(--accent-teal)'}} />
                 Technical Skills
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {skills.map((skill, index) => (
                   <Card
                     key={index}
-                    className="bg-secondary rounded-lg p-4 text-center hover:bg-secondary/80 transition-colors"
+                    className="bg-secondary rounded-lg p-4 text-center transition-all hover:scale-105 border-2 border-transparent hover:border-[var(--accent-teal)]"
                   >
                     <CardContent className="p-0">
                       <div className="text-2xl mb-2">{skill.icon}</div>

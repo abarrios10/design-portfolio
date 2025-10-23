@@ -50,7 +50,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <TransitionLink
                   href="/projects"
-                  className="btn-primary px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
+                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center text-white transition-all shadow-lg hover:shadow-xl hover:scale-105 bg-gradient-to-r from-primary via-[var(--accent-cyan)] to-[var(--accent-teal)]"
                   data-testid="button-view-work"
                 >
                   View My Work
@@ -58,10 +58,11 @@ export default function HeroSection() {
                 </TransitionLink>
                 <TransitionLink
                   href="/contact"
-                  className="px-8 py-3 rounded-full text-sm font-medium border border-border bg-background text-foreground hover:bg-secondary transition-all inline-flex items-center justify-center shadow-lg hover:shadow-xl"
+                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 border-2 bg-background text-foreground relative"
                   data-testid="button-get-in-touch"
                 >
-                  Get In Touch
+                  <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-primary opacity-20 blur-sm"></span>
+                  <span className="relative">Get In Touch</span>
                 </TransitionLink>
               </div>
             </div>

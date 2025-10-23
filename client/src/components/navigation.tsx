@@ -29,13 +29,14 @@ export default function Navigation() {
   }, [location]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b-2 border-primary/20 shadow-sm" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-sm relative" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] opacity-40"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <TransitionLink
               href="/"
-              className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
+              className="text-xl font-semibold bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] bg-clip-text text-transparent hover:opacity-80 transition-opacity"
               data-testid="logo-home"
             >
               AB

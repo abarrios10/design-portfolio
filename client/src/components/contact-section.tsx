@@ -59,10 +59,11 @@ export default function ContactSection() {
     <section id="contact" className="py-24 bg-secondary/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
             Let's Connect
+            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-pink)] via-[var(--accent-purple)] to-primary rounded-full opacity-60"></div>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground mt-8">
             Have any questions or just want to reach out? I'd love to hear from you.
           </p>
         </div>
@@ -154,8 +155,8 @@ export default function ContactSection() {
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary transition-colors group"
                     data-testid="link-email"
                   >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Mail className="text-primary h-5 w-5" />
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center transition-all" style={{backgroundColor: 'rgba(236, 72, 153, 0.1)'}}>
+                      <Mail className="h-5 w-5" style={{color: 'var(--accent-pink)'}} />
                     </div>
                     <div>
                       <p className="font-medium text-card-foreground">Email</p>
@@ -170,8 +171,8 @@ export default function ContactSection() {
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary transition-colors group"
                     data-testid="link-linkedin"
                   >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Linkedin className="text-primary h-5 w-5" />
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center transition-all" style={{backgroundColor: 'rgba(174, 62, 201, 0.1)'}}>
+                      <Linkedin className="h-5 w-5" style={{color: 'var(--accent-purple)'}} />
                     </div>
                     <div>
                       <p className="font-medium text-card-foreground">LinkedIn</p>
