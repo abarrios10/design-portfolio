@@ -58,11 +58,10 @@ export default function HeroSection() {
                 </TransitionLink>
                 <TransitionLink
                   href="/contact"
-                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 border-2 bg-background text-foreground relative"
+                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 border-2 border-primary/20 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 text-foreground hover:border-primary/40"
                   data-testid="button-get-in-touch"
                 >
-                  <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--accent-coral)] via-[var(--accent-pink)] to-[var(--accent-purple)] opacity-20 blur-sm"></span>
-                  <span className="relative">Get In Touch</span>
+                  Get In Touch
                 </TransitionLink>
               </div>
             </div>
