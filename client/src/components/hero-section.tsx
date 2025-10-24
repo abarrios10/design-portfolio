@@ -58,7 +58,7 @@ export default function HeroSection() {
                 </TransitionLink>
                 <TransitionLink
                   href="/contact"
-                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 border-2 border-primary/20 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 text-foreground hover:border-primary/40"
+                  className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
                   data-testid="button-get-in-touch"
                 >
                   Get In Touch
