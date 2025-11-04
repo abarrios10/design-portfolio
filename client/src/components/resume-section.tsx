@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Wrench } from "lucide-react";
-import { SiSamsung, SiAmazon } from "react-icons/si";
+import { SiSamsung, SiAmazon, SiApple } from "react-icons/si";
 
 const skills = [
   { name: "SolidWorks", icon: "🔧" },
@@ -59,35 +59,20 @@ export default function ResumeSection() {
                 <div className="border-l-2 pl-6 flex items-start justify-between" style={{borderColor: 'var(--accent-indigo)'}}>
                   <div className="flex-1">
                     <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
-                      Undergraduate Robotics Research Assistant
+                      Incoming Product Design Engineer Intern
                     </h4>
                     <p className="text-primary font-medium" data-testid="text-experience-company-1">
-                      Oden Institute for Computational Engineering - Center of Autonomy
+                      Apple
                     </p>
                     <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">
-                      September 2025 - Present
+                      January 2026 - Present
                     </p>
                     <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">
-                      General-Purpose Robotics Development
+                      Cable and Charging Accessories PD
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <div className="relative h-16 w-16" data-testid="logo-ut-austin">
-                      <img 
-                        src="/images/ut-longhorn-black.png" 
-                        alt="UT Austin Longhorn Logo" 
-                        className="h-16 w-16 object-contain block dark:hidden" 
-                      />
-                      <img 
-                        src="/images/ut-longhorn-white.jpg" 
-                        alt="UT Austin Longhorn Logo" 
-                        className="h-16 w-16 object-contain hidden dark:block" 
-                        style={{ 
-                          filter: 'brightness(1.2) contrast(1.5)',
-                          mixBlendMode: 'screen'
-                        }}
-                      />
-                    </div>
+                    <SiApple className="h-16 w-16 text-foreground" data-testid="logo-apple" />
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
