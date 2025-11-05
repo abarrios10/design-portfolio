@@ -58,9 +58,7 @@ export default function ResumeSection() {
               <div className="space-y-6">
                 <div className="border-l-2 pl-6 flex items-start justify-between" style={{borderColor: 'var(--accent-indigo)'}}>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">
-                      Incoming Product Design Engineer Intern
-                    </h4>
+                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">Product Design Engineer Intern</h4>
                     <p className="text-primary font-medium" data-testid="text-experience-company-1">
                       Apple
                     </p>
