@@ -39,9 +39,7 @@ export default function ResumeSection() {
                   <p className="text-primary font-medium" data-testid="text-education-university">
                     The University of Texas at Austin
                   </p>
-                  <p className="text-sm text-muted-foreground" data-testid="text-education-timeline">
-                    December 2026
-                  </p>
+                  <p className="text-sm text-muted-foreground" data-testid="text-education-timeline">May 2027</p>
                   <p className="text-muted-foreground mt-2" data-testid="text-education-details">
                     Concentration: Robotics/Mechatronics | Certificate: Programming and Computation
                   </p>
