@@ -63,7 +63,7 @@ export default function ResumeSection() {
                       Apple
                     </p>
                     <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">January 2026</p>
-                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">Cable and Charging Accessories</p>
+                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">Cable Accessories PD</p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
                     <SiApple className="h-16 w-16 text-foreground" data-testid="logo-apple" />
