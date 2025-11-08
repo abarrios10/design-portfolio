@@ -88,7 +88,7 @@ export default function ResumeSection() {
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-3">Mechanical Design Engineer Intern</h4>
+                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-3">Hardware Development Engineer Intern</h4>
                     <p className="text-primary font-medium" data-testid="text-experience-company-3">
                       Amazon Robotics
                     </p>
