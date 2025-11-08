@@ -1,10 +1,20 @@
 # Overview
 
-This is a full-stack web application built as a personal portfolio website for a Mechanical Engineering student at UT Austin. The application showcases projects, resume information, and provides contact functionality through a modern, responsive interface. It features a React frontend with shadcn/ui components and an Express.js backend with PostgreSQL database integration using Drizzle ORM.
+This is a full-stack web application built as a personal portfolio website for Andres Barrios, a Mechanical Engineering student at UT Austin (Class of 2027). The application showcases engineering projects, resume information, and provides contact functionality through a modern, responsive interface with Apple-inspired minimalist design. It features a React frontend with shadcn/ui components and an Express.js backend with PostgreSQL database integration using Drizzle ORM.
+
+# Recent Changes
+
+## November 2025
+- **Contact Section Redesign**: Removed the non-functional contact form and redesigned the "Let's Connect" section with a centered, symmetrical layout featuring Email, LinkedIn, and Location cards with identical visual treatment for perfect balance
+- **Resume Updates**: Added incoming Apple Product Design Engineer Intern position (January 2026, Cable and Charging Accessories PD) with Apple logo icon
+- **Resume Updates**: Removed undergraduate research assistant position from Oden Institute
+- **UI Improvements**: Updated "Get in Touch" button to black background with white text for better visibility and appeal
+- **Resume Download**: Updated download resume button to use latest Fall 2025 resume PDF
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preference: Apple-inspired minimalist aesthetic with vibrant accents (blue, teal, purple, orange, pink, cyan, green).
 
 # System Architecture
 
