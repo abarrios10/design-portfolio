@@ -1116,7 +1116,10 @@ export default function ProjectsSection() {
                         <h4 className="text-lg font-semibold mb-3">Technologies Used</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech, index) => (
-                            <Badge key={index} variant="secondary">
+                            <Badge 
+                              key={index} 
+                              className="bg-gradient-to-r from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/30 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800 hover:from-purple-200 hover:to-violet-200 dark:hover:from-purple-900/50 dark:hover:to-violet-900/50"
+                            >
                               {tech}
                             </Badge>
                           ))}
