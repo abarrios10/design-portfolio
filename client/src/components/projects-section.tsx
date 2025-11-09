@@ -1119,7 +1119,7 @@ export default function ProjectsSection() {
                             <span
                               key={index}
                               className="px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
-                              style={{backgroundColor: 'rgba(139, 92, 246, 0.1)'}}
+                              style={{backgroundColor: 'rgba(139, 92, 246, 0.15)'}}
                             >
                               {tech}
                             </span>
