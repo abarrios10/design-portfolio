@@ -43,7 +43,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="pt-16 pb-24 bg-background">
+    <section id="about" className="pt-16 pb-24 bg-primary/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
