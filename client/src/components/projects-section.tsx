@@ -1072,13 +1072,15 @@ export default function ProjectsSection() {
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin" 
                         className="h-16 w-16 object-contain block dark:hidden" 
+                        style={{ 
+                          mixBlendMode: 'multiply'
+                        }}
                       />
                       <img 
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin" 
                         className="h-16 w-16 object-contain hidden dark:block" 
                         style={{ 
-                          filter: 'brightness(1.2) contrast(1.5)',
                           mixBlendMode: 'screen'
                         }}
                       />
