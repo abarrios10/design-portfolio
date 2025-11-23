@@ -30,18 +30,41 @@ export default function ResumeSection() {
             {/* Education Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <GraduationCap className="mr-3 h-6 w-6" style={{color: 'var(--accent-lime)'}} />
+                <GraduationCap
+                  className="mr-3 h-6 w-6"
+                  style={{ color: "var(--accent-lime)" }}
+                />
                 Education
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 pl-6" style={{borderColor: 'var(--accent-lime)'}}>
-                  <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-education-degree">Bachelor of Science, Mechanical Engineering Honors</h4>
-                  <p className="text-primary font-medium" data-testid="text-education-university">
+                <div
+                  className="border-l-2 pl-6"
+                  style={{ borderColor: "var(--accent-lime)" }}
+                >
+                  <h4
+                    className="text-lg font-semibold text-card-foreground"
+                    data-testid="text-education-degree"
+                  >
+                    Bachelor of Science, Mechanical Engineering Honors
+                  </h4>
+                  <p
+                    className="text-primary font-medium"
+                    data-testid="text-education-university"
+                  >
                     The University of Texas at Austin
                   </p>
-                  <p className="text-sm text-muted-foreground" data-testid="text-education-timeline">May 2027</p>
-                  <p className="text-muted-foreground mt-2" data-testid="text-education-details">
-                    Concentration: Robotics/Mechatronics | Certificate: Programming and Computation
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-testid="text-education-timeline"
+                  >
+                    May 2027
+                  </p>
+                  <p
+                    className="text-muted-foreground mt-2"
+                    data-testid="text-education-details"
+                  >
+                    Concentration: Robotics/Mechatronics | Certificate:
+                    Programming and Computation
                   </p>
                 </div>
               </div>
@@ -50,98 +73,169 @@ export default function ResumeSection() {
             {/* Experience Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Briefcase className="mr-3 h-6 w-6" style={{color: 'var(--accent-indigo)'}} />
+                <Briefcase
+                  className="mr-3 h-6 w-6"
+                  style={{ color: "var(--accent-indigo)" }}
+                />
                 Experience
               </h3>
               <div className="space-y-6">
-                <div className="border-l-2 pl-6 flex items-start justify-between" style={{borderColor: 'var(--accent-indigo)'}}>
+                <div
+                  className="border-l-2 pl-6 flex items-start justify-between"
+                  style={{ borderColor: "var(--accent-indigo)" }}
+                >
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-1">Product Design Engineer Intern</h4>
-                    <p className="text-primary font-medium" data-testid="text-experience-company-1">
+                    <h4
+                      className="text-lg font-semibold text-card-foreground"
+                      data-testid="text-experience-position-1"
+                    >
+                      Product Design Engineer Intern
+                    </h4>
+                    <p
+                      className="text-primary font-medium"
+                      data-testid="text-experience-company-1"
+                    >
                       Apple
                     </p>
-                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-1">January 2026</p>
-                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-1">Accessories Product Design</p>
+                    <p
+                      className="text-sm text-muted-foreground"
+                      data-testid="text-experience-timeline-1"
+                    >
+                      January 2026
+                    </p>
+                    <p
+                      className="text-muted-foreground mt-2"
+                      data-testid="text-experience-description-1"
+                    >
+                      Accessories Product Design
+                    </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <SiApple className="h-16 w-16 text-foreground" data-testid="logo-apple" />
+                    <SiApple
+                      className="h-16 w-16 text-foreground"
+                      data-testid="logo-apple"
+                    />
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-2">
+                    <h4
+                      className="text-lg font-semibold text-card-foreground"
+                      data-testid="text-experience-position-2"
+                    >
                       Mechanical Design Engineer Intern
                     </h4>
-                    <p className="text-primary font-medium" data-testid="text-experience-company-2">
+                    <p
+                      className="text-primary font-medium"
+                      data-testid="text-experience-company-2"
+                    >
                       Samsung
                     </p>
-                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-2">
+                    <p
+                      className="text-sm text-muted-foreground"
+                      data-testid="text-experience-timeline-2"
+                    >
                       May 2025 - August 2025
                     </p>
-                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-2">
+                    <p
+                      className="text-muted-foreground mt-2"
+                      data-testid="text-experience-description-2"
+                    >
                       Tooling Equipment Solutions
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
-                    <SiSamsung className="h-16 w-16 text-primary/30" data-testid="logo-samsung" />
+                    <SiSamsung
+                      className="h-16 w-16 text-primary/30"
+                      data-testid="logo-samsung"
+                    />
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-3">Hardware Development Engineer Intern</h4>
-                    <p className="text-primary font-medium" data-testid="text-experience-company-3">
+                    <h4
+                      className="text-lg font-semibold text-card-foreground"
+                      data-testid="text-experience-position-3"
+                    >
+                      Hardware Development Engineer Intern
+                    </h4>
+                    <p
+                      className="text-primary font-medium"
+                      data-testid="text-experience-company-3"
+                    >
                       Amazon Robotics
                     </p>
-                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-3">
+                    <p
+                      className="text-sm text-muted-foreground"
+                      data-testid="text-experience-timeline-3"
+                    >
                       January 2025 - May 2025
                     </p>
-                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-3">
+                    <p
+                      className="text-muted-foreground mt-2"
+                      data-testid="text-experience-description-3"
+                    >
                       Autonomous Drive-Unit Robots
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-8">
-                    <div className="relative h-28 w-40 flex items-center justify-center" data-testid="logo-amazon">
-                      <img 
-                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp" 
-                        alt="Amazon Robotics Logo" 
-                        className="h-24 w-auto object-contain block dark:hidden" 
+                    <div
+                      className="relative h-28 w-40 flex items-center justify-center"
+                      data-testid="logo-amazon"
+                    >
+                      <img
+                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
+                        alt="Amazon Robotics Logo"
+                        className="h-24 w-auto object-contain block dark:hidden"
                       />
-                      <img 
-                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp" 
-                        alt="Amazon Robotics Logo" 
-                        className="h-24 w-auto object-contain hidden dark:block" 
-                        style={{ filter: 'invert(1)' }}
+                      <img
+                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
+                        alt="Amazon Robotics Logo"
+                        className="h-24 w-auto object-contain hidden dark:block"
+                        style={{ filter: "invert(1)" }}
                       />
                     </div>
                   </div>
                 </div>
                 <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-card-foreground" data-testid="text-experience-position-4">
+                    <h4
+                      className="text-lg font-semibold text-card-foreground"
+                      data-testid="text-experience-position-4"
+                    >
                       Mechanical Reliability Engineer Intern
                     </h4>
-                    <p className="text-primary font-medium" data-testid="text-experience-company-4">
+                    <p
+                      className="text-primary font-medium"
+                      data-testid="text-experience-company-4"
+                    >
                       BP
                     </p>
-                    <p className="text-sm text-muted-foreground" data-testid="text-experience-timeline-4">
+                    <p
+                      className="text-sm text-muted-foreground"
+                      data-testid="text-experience-timeline-4"
+                    >
                       May 2024 - August 2024
                     </p>
-                    <p className="text-muted-foreground mt-2" data-testid="text-experience-description-4">
+                    <p
+                      className="text-muted-foreground mt-2"
+                      data-testid="text-experience-description-4"
+                    >
                       Maintenance Equipment Design
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
                     <div className="relative h-16 w-16" data-testid="logo-bp">
-                      <img 
-                        src="/design-portfolio/attached_assets/bp-logo-png-transparent_1757119587014.webp" 
-                        alt="BP Logo" 
-                        className="h-16 w-16 object-contain block dark:hidden" 
+                      <img
+                        src="/design-portfolio/attached_assets/image_1757122219450.png"
+                        alt="BP Logo"
+                        className="h-16 w-16 object-contain block dark:hidden"
                       />
-                      <img 
-                        src="/design-portfolio/attached_assets/bp-logo-png-transparent_1757119587014.webp" 
-                        alt="BP Logo" 
-                        className="h-16 w-16 object-contain hidden dark:block" 
-                        style={{ filter: 'invert(1)' }}
+                      <img
+                        src="/design-portfolio/attached_assets/image_1757122219450.png"
+                        alt="BP Logo"
+                        className="h-16 w-16 object-contain hidden dark:block"
+                        style={{ filter: "invert(1)" }}
                       />
                     </div>
                   </div>
@@ -152,7 +246,10 @@ export default function ResumeSection() {
             {/* Skills Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Wrench className="mr-3 h-6 w-6" style={{color: 'var(--accent-teal)'}} />
+                <Wrench
+                  className="mr-3 h-6 w-6"
+                  style={{ color: "var(--accent-teal)" }}
+                />
                 Technical Skills
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -163,7 +260,10 @@ export default function ResumeSection() {
                   >
                     <CardContent className="p-0">
                       <div className="text-2xl mb-2">{skill.icon}</div>
-                      <p className="font-medium text-secondary-foreground" data-testid={`text-skill-${index}`}>
+                      <p
+                        className="font-medium text-secondary-foreground"
+                        data-testid={`text-skill-${index}`}
+                      >
                         {skill.name}
                       </p>
                     </CardContent>

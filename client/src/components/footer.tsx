@@ -29,8 +29,8 @@ export default function Footer() {
               data-testid="button-download-resume"
             >
               <a
-                href="/attached_assets/Andres_Barrios_Resume_F2025_1762546203028.pdf"
-                download="/design-portfolio/attached_assets/Andres_Barrios_Resume_F2025_1762546203028.pdf"
+                href="/design-portfolio/attached_assets/Andres_Barrios_Resume_F2025_1762546203028.pdf"
+                download="Andres_Barrios_Resume_F2025.pdf"
               >
                 <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                 Download Resume
