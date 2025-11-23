@@ -4,7 +4,14 @@ import { useTheme } from "@/components/theme-provider";
 import { useLocation } from "wouter";
 import { TransitionLink } from "@/components/route-transition";
 import { useState, useEffect } from "react";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 export default function Navigation() {
   const { theme, setTheme } = useTheme();
@@ -16,11 +23,11 @@ export default function Navigation() {
   };
 
   const navigationItems = [
-    { path: "/", label: "Home" },
-    { path: "/projects", label: "Projects" },
-    { path: "/resume", label: "Resume" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/design-portfolio/", label: "Home" },
+    { path: "/design-portfolio/projects", label: "Projects" },
+    { path: "/design-portfolio/resume", label: "Resume" },
+    { path: "/design-portfolio/about", label: "About" },
+    { path: "/design-portfolio/contact", label: "Contact" },
   ];
 
   // Close mobile menu when location changes
@@ -29,13 +36,16 @@ export default function Navigation() {
   }, [location]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-sm relative" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+    <nav
+      className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-sm relative"
+      style={{ paddingTop: "env(safe-area-inset-top)" }}
+    >
       <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] opacity-40"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <TransitionLink
-              href="/"
+              href="/design-portfolio/"
               className="text-xl font-semibold bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] bg-clip-text text-transparent hover:opacity-80 transition-opacity"
               data-testid="logo-home"
             >
@@ -54,7 +64,7 @@ export default function Navigation() {
                     ? "text-primary"
                     : "text-muted-foreground hover:text-primary"
                 }`}
-                data-testid={`nav-${item.path.slice(1) || 'home'}`}
+                data-testid={`nav-${item.path.slice(1) || "home"}`}
               >
                 {item.label}
               </TransitionLink>
@@ -89,7 +99,7 @@ export default function Navigation() {
                             ? "text-primary"
                             : "text-muted-foreground hover:text-primary"
                         }`}
-                        data-testid={`mobile-nav-${item.path.slice(1) || 'home'}`}
+                        data-testid={`mobile-nav-${item.path.slice(1) || "home"}`}
                       >
                         {item.label}
                       </TransitionLink>
