@@ -15,7 +15,7 @@ const projects = [
     image: "/attached_assets/image_1759963543634.png",
     technologies: ["SolidWorks", "CAD Design", "Team Collaboration", "3D Printing", "Budget Management"],
     details: "Engineering Design Project (EDP) for Machine Elements class involving the collaborative design, build, test, and competition of a custom RC car. Working within a $100 budget constraint for additional components beyond the provided kit (radio controller/receiver, drive and servo motors, speed controller, battery, and charger), optimizing the chassis design for performance while maintaining manufacturability.",
-    date: "September 2025 - December 2025"
+    date: "September 2025 - Present"
   },
   {
     id: 2,
@@ -1072,15 +1072,13 @@ export default function ProjectsSection() {
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin" 
                         className="h-16 w-16 object-contain block dark:hidden" 
-                        style={{
-                          mixBlendMode: 'multiply'
-                        }}
                       />
                       <img 
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin" 
                         className="h-16 w-16 object-contain hidden dark:block" 
-                        style={{
+                        style={{ 
+                          filter: 'brightness(1.2) contrast(1.5)',
                           mixBlendMode: 'screen'
                         }}
                       />
