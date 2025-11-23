@@ -137,7 +137,7 @@ export default function AboutSection() {
                   {interests.hobbies.map((interest, index) => (
                     <span
                       key={index}
-                      className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
+                      className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105 border-2 border-purple-300 dark:border-purple-600"
                       style={{backgroundColor: 'rgba(174, 62, 201, 0.1)'}}
                       data-testid={`hobby-${index}`}
                     >
@@ -154,7 +154,7 @@ export default function AboutSection() {
                   {interests.passions.map((interest, index) => (
                     <span
                       key={index}
-                      className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
+                      className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105 border-2 border-pink-300 dark:border-pink-600"
                       style={{backgroundColor: 'rgba(236, 72, 153, 0.1)'}}
                       data-testid={`passion-${index}`}
                     >
