@@ -1698,7 +1698,7 @@ export default function ProjectsSection() {
                         className="h-16 w-16 object-contain block dark:hidden"
                       />
                       <img
-                        src="/design-portfolio/attached_assets/ut-logo_1757119587014.png"
+                        src="/design-portfolio/attached_assets/black-texas-longhorns-logo-png-6_1757121764487.png"
                         alt="UT Austin"
                         className="h-16 w-16 object-contain hidden dark:block"
                         style={{
