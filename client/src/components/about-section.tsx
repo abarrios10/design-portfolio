@@ -39,7 +39,7 @@ export default function AboutSection() {
 
   const interests = {
     hobbies: ["Weightlifting", "Music Festivals", "Texas Football", "Padel", "Spikeball"],
-    passions: ["Consumer Electronics", "Film", "Reggaeton", "Professional Mentorship"]
+    passions: ["Consumer Electronics", "Film", "Reggaeton", "Professional Mentorship", "Photography"]
   };
 
   return (
