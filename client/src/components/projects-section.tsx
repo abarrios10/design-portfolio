@@ -15,7 +15,7 @@ const projects = [
     image: "/attached_assets/image_1759963543634.png",
     technologies: ["SolidWorks", "CAD Design", "Team Collaboration", "3D Printing", "Budget Management"],
     details: "Engineering Design Project (EDP) for Machine Elements class involving the collaborative design, build, test, and competition of a custom RC car. Working within a $100 budget constraint for additional components beyond the provided kit (radio controller/receiver, drive and servo motors, speed controller, battery, and charger), optimizing the chassis design for performance while maintaining manufacturability.",
-    date: "September 2025 - Present"
+    date: "September 2025 - December 2025"
   },
   {
     id: 2,
