@@ -85,12 +85,13 @@ export function TransitionLink({ href, children, className = '', 'data-testid': 
   };
 
   return (
-    <button
+
+      href={href}
       onClick={handleClick}
       className={className}
       data-testid={testId}
     >
       {children}
-    </button>
+    </a>
   );
 }
