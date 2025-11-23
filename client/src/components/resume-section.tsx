@@ -102,12 +102,12 @@ export default function ResumeSection() {
                   <div className="flex-shrink-0 ml-8">
                     <div className="relative h-28 w-40 flex items-center justify-center" data-testid="logo-amazon">
                       <img 
-                        src="/images/amazon-robotics-logo.webp" 
+                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp" 
                         alt="Amazon Robotics Logo" 
                         className="h-24 w-auto object-contain block dark:hidden" 
                       />
                       <img 
-                        src="/images/amazon-robotics-logo.webp" 
+                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp" 
                         alt="Amazon Robotics Logo" 
                         className="h-24 w-auto object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
@@ -133,12 +133,12 @@ export default function ResumeSection() {
                   <div className="flex-shrink-0 ml-6">
                     <div className="relative h-16 w-16" data-testid="logo-bp">
                       <img 
-                        src="/images/bp-logo-official.png" 
+                        src="/design-portfolio/attached_assets/bp-logo-png-transparent_1757119587014.webp" 
                         alt="BP Logo" 
                         className="h-16 w-16 object-contain block dark:hidden" 
                       />
                       <img 
-                        src="/images/bp-logo-official.png" 
+                        src="/design-portfolio/attached_assets/bp-logo-png-transparent_1757119587014.webp" 
                         alt="BP Logo" 
                         className="h-16 w-16 object-contain hidden dark:block" 
                         style={{ filter: 'invert(1)' }}
