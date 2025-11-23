@@ -227,12 +227,12 @@ export default function ResumeSection() {
                   <div className="flex-shrink-0 ml-6">
                     <div className="relative h-16 w-16" data-testid="logo-bp">
                       <img
-                        src="/design-portfolio/attached_assets/image_1757122219450.png"
+                        src="/design-portfolio/attached_assets/image_1757126537871.png"
                         alt="BP Logo"
                         className="h-16 w-16 object-contain block dark:hidden"
                       />
                       <img
-                        src="/design-portfolio/attached_assets/image_1757122219450.png"
+                        src="/design-portfolio/attached_assets/image_1757126537871.png"
                         alt="BP Logo"
                         className="h-16 w-16 object-contain hidden dark:block"
                         style={{ filter: "invert(1)" }}
