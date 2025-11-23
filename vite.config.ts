@@ -29,6 +29,7 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
+  assetsInclude: ["**/*.jpeg", "**/*.jpg", "**/*.png", "**/*.svg"],
   server: {
     fs: {
       strict: true,

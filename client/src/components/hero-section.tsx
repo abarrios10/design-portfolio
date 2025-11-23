@@ -4,7 +4,6 @@ import { TransitionLink } from "@/components/route-transition";
 import profileImage from "@assets/IMG_2472_1760037765321.jpeg";
 
 export default function HeroSection() {
-
   return (
     <section
       id="home"
@@ -13,11 +12,14 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center justify-items-center">
           {/* Image Section */}
-          <div className="flex justify-center items-center animate-slide-up w-full" data-testid="hero-image-container">
+          <div
+            className="flex justify-center items-center animate-slide-up w-full"
+            data-testid="hero-image-container"
+          >
             <div className="relative group">
               {/* Decorative background blur */}
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-500"></div>
-              
+
               {/* Image container */}
               <div className="relative">
                 <div className="w-80 h-80 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-full overflow-hidden border-4 border-background shadow-2xl ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
@@ -33,7 +35,10 @@ export default function HeroSection() {
           </div>
 
           {/* Text Section */}
-          <div className="text-center animate-slide-up w-full flex justify-center items-center" style={{ animationDelay: '0.2s' }}>
+          <div
+            className="text-center animate-slide-up w-full flex justify-center items-center"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-3xl p-8 md:p-14 border border-gray-200 dark:border-gray-700 shadow-xl mx-auto max-w-2xl w-full">
               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-foreground mb-6 tracking-tight drop-shadow-sm whitespace-nowrap">
                 Andres Barrios
@@ -44,10 +49,12 @@ export default function HeroSection() {
               <p className="text-lg text-primary font-medium mb-6">
                 The University of Texas at Austin
               </p>
-              <p className="text-xs sm:text-base md:text-lg text-muted-foreground leading-relaxed drop-shadow-sm mb-10 text-center">Mechanical Engineer | Product Design Enthusiast</p>
+              <p className="text-xs sm:text-base md:text-lg text-muted-foreground leading-relaxed drop-shadow-sm mb-10 text-center">
+                Mechanical Engineer | Product Design Enthusiast
+              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <TransitionLink
-                  href="/projects"
+                  href="/design-portfolio/projects"
                   className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center text-primary-foreground transition-all shadow-lg hover:shadow-xl hover:scale-105 bg-primary hover:bg-primary/90"
                   data-testid="button-view-work"
                 >
@@ -55,7 +62,7 @@ export default function HeroSection() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </TransitionLink>
                 <TransitionLink
-                  href="/contact"
+                  href="/design-portfolio/contact"
                   className="px-8 py-3 rounded-full text-sm font-medium inline-flex items-center justify-center transition-all shadow-lg hover:shadow-xl hover:scale-105 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
                   data-testid="button-get-in-touch"
                 >
