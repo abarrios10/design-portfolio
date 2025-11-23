@@ -16,7 +16,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-lg p-12">
+        <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 rounded-2xl shadow-lg p-12">
           <CardContent className="p-0">
             {/* Two-column grid for Email and LinkedIn */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

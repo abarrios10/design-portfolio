@@ -25,7 +25,7 @@ export default function ResumeSection() {
           </p>
         </div>
 
-        <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-lg p-8 md:p-12">
+        <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 rounded-2xl shadow-lg p-8 md:p-12">
           <CardContent className="p-0">
             {/* Education Section */}
             <div className="mb-12">
