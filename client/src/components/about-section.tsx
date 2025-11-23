@@ -138,7 +138,7 @@ export default function AboutSection() {
                     <span
                       key={index}
                       className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
-                      style={{backgroundColor: 'rgba(174, 62, 201, 0.1)'}}
+                      style={{backgroundColor: 'rgba(174, 62, 201, 0.15)', border: '1px solid rgba(174, 62, 201, 0.3)'}}
                       data-testid={`hobby-${index}`}
                     >
                       {interest}
@@ -155,7 +155,7 @@ export default function AboutSection() {
                     <span
                       key={index}
                       className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
-                      style={{backgroundColor: 'rgba(236, 72, 153, 0.1)'}}
+                      style={{backgroundColor: 'rgba(236, 72, 153, 0.15)', border: '1px solid rgba(236, 72, 153, 0.3)'}}
                       data-testid={`passion-${index}`}
                     >
                       {interest}
