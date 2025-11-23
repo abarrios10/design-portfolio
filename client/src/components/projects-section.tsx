@@ -1657,12 +1657,12 @@ export default function ProjectsSection() {
                   <div className="absolute bottom-4 right-4">
                     <>
                       <img
-                        src="/design-portfolio/attached_assets/bp-logo-png-transparent_1757119587014.webp"
+                        src="/design-portfolio/attached_assets/image_1757122219450.png"
                         alt="BP"
                         className="h-16 w-auto object-contain block dark:hidden"
                       />
                       <img
-                        src="/design-portfolio/attached_assets/bp-logo-png-transparent_1757119587014.webp"
+                        src="/design-portfolio/attached_assets/image_1757122219450.png"
                         alt="BP"
                         className="h-16 w-auto object-contain hidden dark:block"
                         style={{ filter: "invert(1)" }}
@@ -1702,8 +1702,7 @@ export default function ProjectsSection() {
                         alt="UT Austin"
                         className="h-16 w-16 object-contain hidden dark:block"
                         style={{
-                          filter: "brightness(1.2) contrast(1.5)",
-                          mixBlendMode: "screen",
+                          filter: "invert(1)",
                         }}
                       />
                     </>
