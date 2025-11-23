@@ -1066,17 +1066,23 @@ export default function ProjectsSection() {
                   </div>)
                 ) : (
                   // UT Austin Logo - positioned lower (projects 1, 7, 8)
-                  (<div className="absolute bottom-2 right-4 bg-white/80 dark:bg-gray-800/80 rounded-lg p-2">
+                  (<div className="absolute bottom-2 right-4">
                     <>
                       <img 
                         src="/images/ut-longhorn-black.png" 
                         alt="UT Austin" 
-                        className="h-12 w-12 object-contain block dark:hidden" 
+                        className="h-16 w-16 object-contain block dark:hidden" 
+                        style={{
+                          mixBlendMode: 'multiply'
+                        }}
                       />
                       <img 
                         src="/images/ut-longhorn-white.jpg" 
                         alt="UT Austin" 
-                        className="h-12 w-12 object-contain hidden dark:block" 
+                        className="h-16 w-16 object-contain hidden dark:block" 
+                        style={{
+                          mixBlendMode: 'screen'
+                        }}
                       />
                     </>
                   </div>)
