@@ -998,7 +998,7 @@ export default function ProjectsSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="project-card group overflow-hidden relative" data-testid={`card-project-${project.id}`}>
+            <Card key={project.id} className="project-card group overflow-hidden relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50" data-testid={`card-project-${project.id}`}>
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-center">{project.title}</CardTitle>
               </CardHeader>
