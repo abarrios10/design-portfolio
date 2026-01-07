@@ -107,7 +107,7 @@ export default function ResumeSection() {
                       className="text-muted-foreground mt-2"
                       data-testid="text-experience-description-1"
                     >
-                      Accessories Product Design
+                      Cable Accessories
                     </p>
                   </div>
                   <div className="flex-shrink-0 ml-6">
