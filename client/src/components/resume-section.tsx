@@ -101,7 +101,7 @@ export default function ResumeSection() {
                       className="text-sm text-muted-foreground"
                       data-testid="text-experience-timeline-1"
                     >
-                      January 2026
+                      January 2026 - July 2026
                     </p>
                     <p
                       className="text-muted-foreground mt-2"
