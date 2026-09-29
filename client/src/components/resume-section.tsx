@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Wrench } from "lucide-react";
 import { SiSamsung, SiAmazon, SiApple } from "react-icons/si";
+import Reveal from "@/components/reveal";
 
 const skills = [
   { name: "SolidWorks", icon: "🔧" },
@@ -15,15 +16,15 @@ export default function ResumeSection() {
   return (
     <section id="resume" className="pt-16 pb-24 hero-bg-premium">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
+        <Reveal className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block tracking-tight">
             Professional Experience
             <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-amber)] via-[var(--accent-orange)] to-[var(--accent-coral)] rounded-full opacity-60"></div>
           </h2>
           <p className="text-lg text-muted-foreground mt-8">
             A comprehensive overview of my engineering journey and achievements
           </p>
-        </div>
+        </Reveal>
 
         <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 rounded-2xl shadow-lg p-8 md:p-12">
           <CardContent className="p-0">

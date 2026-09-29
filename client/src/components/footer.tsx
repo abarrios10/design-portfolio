@@ -1,13 +1,18 @@
 import { Mail, Linkedin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Reveal from "@/components/reveal";
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-border py-12">
+    <footer className="relative bg-card border-t border-border py-12 overflow-hidden">
+      <div
+        className="pointer-events-none absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent"
+        aria-hidden="true"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <Reveal className="text-center">
           <h3
-            className="text-2xl font-semibold text-card-foreground mb-4"
+            className="text-2xl font-semibold text-card-foreground mb-4 tracking-tight"
             data-testid="text-footer-name"
           >
             Andres Barrios
@@ -25,7 +30,7 @@ export default function Footer() {
               asChild
               variant="default"
               size="lg"
-              className="group"
+              className="group rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all"
               data-testid="button-download-resume"
             >
               <a
@@ -43,14 +48,14 @@ export default function Footer() {
               href="https://www.linkedin.com/in/andresbarrios10"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all"
               data-testid="link-footer-linkedin"
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a
               href="mailto:abarrios10@utexas.edu"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all"
               data-testid="link-footer-email"
             >
               <Mail className="h-6 w-6" />
@@ -64,7 +69,7 @@ export default function Footer() {
               © 2025 Andres Barrios. All rights reserved.
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
     </footer>
   );

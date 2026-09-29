@@ -1,4 +1,5 @@
 import { MapPin, Award, Heart } from "lucide-react";
+import Reveal from "@/components/reveal";
 
 export default function AboutSection() {
   const utAustinAwards = [
@@ -60,12 +61,12 @@ export default function AboutSection() {
   return (
     <section id="about" className="pt-16 pb-24 hero-bg-premium">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
+        <Reveal className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block tracking-tight">
             About Me
             <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-[var(--accent-orange)] rounded-full opacity-60"></div>
           </h2>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>

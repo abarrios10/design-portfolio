@@ -3,6 +3,7 @@ import { Moon, Sun, Menu } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 import { useLocation } from "wouter";
 import { TransitionLink } from "@/components/route-transition";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import {
   Sheet,
@@ -37,10 +38,9 @@ export default function Navigation() {
 
   return (
     <nav
-      className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-sm relative"
+      className="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-xl border-b border-border/50"
       style={{ paddingTop: "env(safe-area-inset-top)" }}
     >
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] opacity-40"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -54,21 +54,35 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navigationItems.map((item) => (
-              <TransitionLink
-                key={item.path}
-                href={item.path}
-                className={`nav-link text-base font-medium transition-colors ${
-                  location === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-primary"
-                }`}
-                data-testid={`nav-${item.path.slice(1) || "home"}`}
-              >
-                {item.label}
-              </TransitionLink>
-            ))}
+          <div className="hidden md:flex items-center space-x-1">
+            {navigationItems.map((item) => {
+              const isActive = location === item.path;
+              return (
+                <TransitionLink
+                  key={item.path}
+                  href={item.path}
+                  className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-full ${
+                    isActive
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  data-testid={`nav-${item.path.slice(1) || "home"}`}
+                >
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-active-pill"
+                      className="absolute inset-0 rounded-full bg-primary/10 dark:bg-primary/15"
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 32,
+                      }}
+                    />
+                  )}
+                  <span className="relative z-10">{item.label}</span>
+                </TransitionLink>
+              );
+            })}
           </div>
 
           <div className="flex items-center space-x-2">
@@ -114,7 +128,7 @@ export default function Navigation() {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="rounded-lg hover:bg-secondary"
+              className="rounded-full hover:bg-secondary"
               data-testid="theme-toggle"
             >
               {theme === "light" ? (

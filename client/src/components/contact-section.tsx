@@ -1,21 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Linkedin } from "lucide-react";
+import Reveal from "@/components/reveal";
 
 export default function ContactSection() {
 
   return (
     <section id="contact" className="pt-16 pb-24 hero-bg-premium">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
+        <Reveal className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block tracking-tight">
             Let's Connect
             <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-pink)] via-[var(--accent-coral)] to-[var(--accent-amber)] rounded-full opacity-60"></div>
           </h2>
           <p className="text-lg text-muted-foreground mt-8">
             I'd love to hear from you. Feel free to reach out through any of these channels.
           </p>
-        </div>
+        </Reveal>
 
+        <Reveal delay={0.1}>
         <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 rounded-2xl shadow-lg p-12">
           <CardContent className="p-0">
             {/* Two-column grid for Email and LinkedIn */}
@@ -50,6 +52,7 @@ export default function ContactSection() {
             </div>
           </CardContent>
         </Card>
+        </Reveal>
       </div>
     </section>
   );
