@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/card";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import Reveal from "@/components/reveal";
 import {
   Dialog,
   DialogContent,
@@ -168,6 +170,24 @@ const projects = [
     details:
       "Team-based Mars rover design for NASA's L'SPACE Mission Concept Academy to traverse Martian terrain and collect soil and ice samples for analysis. Collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, all designed in SolidWorks in collaboration with one other engineer on the team.",
     date: "January 2024 - April 2024",
+  },
+  {
+    id: 10,
+    title: "Aerial ATV",
+    description:
+      "Ground-hybrid ATV with parafoil lift for autonomous emergency response with ASCEND Texas",
+    image: "/design-portfolio/attached_assets/aerial_atv.png",
+    technologies: [
+      "SolidWorks",
+      "Mechanical Design",
+      "Prototyping",
+      "Systems Integration",
+      "Testing & Validation",
+    ],
+    details:
+      "As a member of ASCEND Texas (Aerial Solutions for Combating Emergencies & Natural Disasters), I'm helping build the Aerial ATV: a ground-hybrid vehicle that can navigate through air or rough terrain for autonomous emergency response. The vehicle pairs an all-terrain ATV platform with a parafoil for lift and computer-vision-based controls to enable safe, rapid deployment and delivery of equipment where it's needed most.",
+    date: "Current Project",
+    company: "ASCEND Texas",
   },
 ];
 
@@ -1597,14 +1617,135 @@ export default function ProjectsSection() {
           </div>
         </>
       );
+    } else if (project.id === 10) {
+      // Aerial ATV - ASCEND Texas - Custom sections
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">The Organization</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              ASCEND Texas — Aerial Solutions for Combating Emergencies &
+              Natural Disasters — is a 25+ member engineering team building an
+              innovative autonomous emergency-response aircraft. The team's
+              approach pairs parafoil lift with computer-vision-based controls
+              for ground/air hybrid operation. The organization is advised by
+              Dr. Christian Claudel and Dr. Krishna Kumar, with graduate and
+              undergraduate student staff developing the vehicle.
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              We are a competition-based organization, currently competing in
+              NASA's GoAERO and XPRIZE Wildfire — and we have already won an
+              Innovation Award. As a member, I contribute to a project with
+              real-world emergency-response applications, gaining hands-on
+              technical experience across the vehicle development cycle.
+            </p>
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/design-portfolio/attached_assets/aerial_atv_logo.png"
+                    alt="ASCEND Texas Logo"
+                    className="w-full max-w-sm h-auto object-contain rounded-lg border bg-white cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">
+                    ASCEND Texas Logo - Full Size
+                  </DialogTitle>
+                  <img
+                    src="/design-portfolio/attached_assets/aerial_atv_logo.png"
+                    alt="ASCEND Texas Logo"
+                    className="w-full h-auto max-h-[90vh] object-contain bg-white rounded-lg"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">The Vehicle</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              The Aerial ATV is a ground-hybrid vehicle for transportation that
+              can navigate through air or rough terrain, no matter the weather,
+              depending on the necessities. Inspired by paramotors but advanced
+              with multi-scenario piloting and software control developed by
+              our team, it combines an all-terrain ATV platform with a
+              propulsion cage and paraglider integration for true ground/air
+              transitions.
+            </p>
+            <div className="flex justify-center mb-6">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img
+                    src="/design-portfolio/attached_assets/aerial_atv.png"
+                    alt="Aerial ATV Prototype"
+                    className="w-full max-w-2xl h-auto object-contain rounded-lg border cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl max-h-[95vh]">
+                  <DialogTitle className="sr-only">
+                    Aerial ATV Prototype - Full Size
+                  </DialogTitle>
+                  <img
+                    src="/design-portfolio/attached_assets/aerial_atv.png"
+                    alt="Aerial ATV Prototype"
+                    className="w-full h-auto max-h-[90vh] object-contain"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Why It Matters</h4>
+            <ul className="text-sm text-muted-foreground mb-4 space-y-3 ml-4 list-disc">
+              <li>
+                <strong>Safe and quick deployment:</strong> rapid delivery of
+                equipment for emergency response when every minute counts.
+              </li>
+              <li>
+                <strong>Efficient and reliable:</strong> longer life per charge
+                than drones, keeping the vehicle in the field longer.
+              </li>
+              <li>
+                <strong>All-weather capable:</strong> adaptable to harsh
+                conditions where other platforms can't operate.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">
+              What We're Working Towards
+            </h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              ASCEND's mission is to empower its members by providing
+              opportunities to enhance their technical skills and create
+              impactful products that make a positive difference in people's
+              lives. This year, our goals include completing the CAD of the
+              hybrid ATV, developing the propulsion cage and paraglider
+              integration, building reliable autonomy software for ground/air
+              transitions, conducting system-level testing and safety
+              evaluations, securing funding and sponsorships — and staying on
+              track for GoAERO Stage 3.
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              The work spans every discipline: mechanical design (CAD,
+              machining, welding, and manufacturing within tight space, weight,
+              and spatial constraints), electrical (wiring, autonomous control
+              algorithms, machine vision, paraglider control), and test &
+              evaluation (validating flight- and drive-critical systems). Being
+              part of this team means hands-on opportunities across the full
+              vehicle — and helping make our ATV fly.
+            </p>
+          </div>
+        </>
+      );
     }
   };
 
   return (
-    <section className="pt-16 pb-24 hero-bg-premium">
+    <section className="pt-24 pb-24 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block">
+        <Reveal className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block tracking-tight">
             Featured Projects
             <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-indigo)] via-primary to-[var(--accent-cyan)] rounded-full opacity-60"></div>
           </h2>
@@ -1612,27 +1753,39 @@ export default function ProjectsSection() {
             A selection of engineering projects I have worked on throughout my
             time at college
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <Card
+          {projects.map((project, index) => (
+            <motion.div
               key={project.id}
-              className="project-card group overflow-hidden relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600"
+              initial={{ opacity: 0, y: 36 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-48px" }}
+              transition={{
+                duration: 0.7,
+                delay: (index % 2) * 0.12,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+            >
+            <Card
+              className="group overflow-hidden relative h-full bg-card/80 backdrop-blur-sm border border-border rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
               data-testid={`card-project-${project.id}`}
             >
               <CardHeader>
-                <CardTitle className="text-xl font-semibold text-center">
+                <CardTitle className="text-xl font-semibold text-center tracking-tight">
                   {project.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="relative">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-contain mb-4"
-                  data-testid={`img-project-${project.id}`}
-                />
+                <div className="overflow-hidden rounded-2xl mb-4">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-500"
+                    data-testid={`img-project-${project.id}`}
+                  />
+                </div>
 
                 {/* Logo - Amazon for projects 2-4, BP for projects 5-6, UT for projects 1, 7-8, NASA for project 9 */}
                 {project.id === 2 || project.id === 3 || project.id === 4 ? (
@@ -1685,6 +1838,25 @@ export default function ProjectsSection() {
                         src="/design-portfolio/attached_assets/image_1757732632620.png"
                         alt="NASA"
                         className="h-16 w-16 object-contain hidden dark:block"
+                      />
+                    </>
+                  </div>
+                ) : project.id === 10 ? (
+                  // ASCEND Texas Logo - Aerial ATV
+                  <div className="absolute bottom-4 right-4">
+                    <>
+                      <img
+                        src="/design-portfolio/attached_assets/aerial_atv_logo.png"
+                        alt="ASCEND Texas"
+                        className="h-16 w-16 object-contain block dark:hidden bg-white rounded-lg p-1"
+                      />
+                      <img
+                        src="/design-portfolio/attached_assets/aerial_atv_logo.png"
+                        alt="ASCEND Texas"
+                        className="h-16 w-16 object-contain hidden dark:block rounded-lg p-1"
+                        style={{
+                          filter: "invert(1)",
+                        }}
                       />
                     </>
                   </div>
@@ -1775,6 +1947,7 @@ export default function ProjectsSection() {
                 </Dialog>
               </CardContent>
             </Card>
+            </motion.div>
           ))}
         </div>
       </div>
