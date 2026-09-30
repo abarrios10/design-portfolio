@@ -92,24 +92,6 @@ export const projects = [
     company: "Amazon Robotics",
   },
   {
-    id: 4,
-    title: "Robot 'Skateboard' Drive Redesign",
-    slug: "robot-skateboard-drive-redesign",
-    description:
-      "Complete redesign of the robot skateboard drive platform for enhanced performance and manufacturability",
-    image: "/design-portfolio/attached_assets/image_1759249955339.png",
-    technologies: [
-      "SolidWorks",
-      "Prototype Development",
-      "Hardware for Testing",
-      "Supporting Hardware",
-    ],
-    details:
-      "Project from my Amazon Robotics internship to design updated testing skateboards that contain all of the drive unit's electromechanical hardware for testing of sensor characterization, traction and stability, and environmental interference. Incorporated custom wheel mounts, improved handlebar locking, accurate wheel positioning, and a consistent hole pattern to simplify sensor bracket installation and ensure reliable in-facility testing.",
-    date: "April 2025 - May 2025",
-    company: "Amazon Robotics",
-  },
-  {
     id: 5,
     title: "Injection Quill Design and Installation",
     slug: "injection-quill-design-and-installation",
@@ -193,6 +175,46 @@ export const projects = [
     details:
       "Team-based Mars rover design for NASA's L'SPACE Mission Concept Academy to traverse Martian terrain and collect soil and ice samples for analysis. Collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, all designed in SolidWorks in collaboration with one other engineer on the team.",
     date: "January 2024 - April 2024",
+  },
+  {
+    id: 11,
+    title: "Cable Crimping Optimization",
+    slug: "cable-crimping-optimization",
+    description:
+      "Cable crimping process optimization for Apple accessories — crimp die design and testing",
+    image: "/design-portfolio/attached_assets/apple_cable_crimping.png",
+    technologies: [
+      "Siemens NX",
+      "Teamcenter",
+      "Design for Manufacturability",
+      "Tooling Design",
+      "Process Optimization",
+      "Supplier Communication",
+    ],
+    details:
+      "Project from my Apple internship in Accessories - Cables. I ran iterative experiments evaluating swaging and specialized crimping strategies, working from first principles to redistribute crimp material and isolate viable paths to round, earless crimp cross-sections. I analyzed vendor crimping settings against in-house capabilities to identify the critical crimp die features, compression behavior, and process conditions needed for internal lab prototyping. I designed and prototyped custom crimp dies and an adjustable cable-holding fixture in NX for repeatable cable-to-die positioning and isolated study of die effects on ear formation, then synthesized the findings into design rules of thumb — crimp wall-thickness ratio and zero-gap die closure as the key drivers of earless crimping — presenting recommendations to guide adoption across the design team.",
+    date: "January 2026 - July 2026",
+    company: "Apple",
+  },
+  {
+    id: 12,
+    title: "Pipe Lifting Jig",
+    slug: "pipe-lifting-jig",
+    description:
+      "Pipe lifting jig design for safe handling of 200 lb piping in a pump input subsystem",
+    image: "/design-portfolio/attached_assets/samsung_pipe_lifting.png",
+    technologies: [
+      "Autodesk Inventor",
+      "Confluence",
+      "GD&T",
+      "Hand Calculations",
+      "Finite Element Analysis",
+      "Engineering Drawings",
+    ],
+    details:
+      "Project from my Samsung internship. I designed a mechanical assembly in Autodesk Inventor using electric actuators and a custom-built pipe collar to safely lift 200 lb piping within a pump input subsystem, eliminating operator handling risks. I created detailed GD&T drawings for the machined pipe collar and adjustable claw clamps, applying manufacturer DFM feedback to optimize the parts for machining while upholding existing design constraints. I also analyzed failure modes of the lifting system, confirming with hand calculations that clamping-induced hoop stress stayed below pipe yield strength and that frictional torque resisted actuator-induced rotation.",
+    date: "May 2025 - August 2025",
+    company: "Samsung",
   },
 ];
 
@@ -401,8 +423,8 @@ export function renderProjectDetails(project: any) {
           </div>
         </>
       );
-    } else if (project.id === 3 || project.id === 4) {
-      // Other Amazon Robotics Projects - Placeholder content
+    } else if (project.id === 3) {
+      // Amazon Robotics wheel project - Placeholder content
       return (
         <>
           <div>

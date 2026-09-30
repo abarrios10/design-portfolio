@@ -8,7 +8,7 @@ export default function ProjectsSection() {
     <section className="pt-32 pb-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <Reveal className="mb-14 md:mb-20">
-          <p className="eyebrow mb-6">Index — 10 Projects</p>
+          <p className="eyebrow mb-6">Index — 11 Projects</p>
           <h2 className="text-5xl md:text-7xl font-display font-medium tracking-[-0.02em] leading-[0.95] text-foreground">
             Selected
             <br />

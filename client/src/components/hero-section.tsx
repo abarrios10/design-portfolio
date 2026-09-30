@@ -103,7 +103,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap gap-x-10 gap-y-2 border-t border-border pt-6">
             <span className="eyebrow">Austin, Texas</span>
             <span className="eyebrow">B.S. May 2027</span>
-            <span className="eyebrow">10 Projects</span>
+            <span className="eyebrow">11 Projects</span>
           </div>
         </Stagger>
       </div>

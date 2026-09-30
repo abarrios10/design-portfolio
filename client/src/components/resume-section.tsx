@@ -16,7 +16,7 @@ const experience = [
     position: "Product Design Engineer Intern",
     company: "Apple",
     timeline: "January 2026 - July 2026",
-    description: "Cable Accessories",
+    description: "Accessories - Cables",
     logo: <SiApple className="h-20 w-20 text-foreground" data-testid="logo-apple" />,
   },
   {
@@ -48,12 +48,12 @@ const experience = [
     position: "Mechanical Reliability Engineer Intern",
     company: "BP",
     timeline: "May 2024 - August 2024",
-    description: "Maintenance Equipment Design",
+    description: "Industrial Equipment Design",
     logo: (
       <img
         src="/design-portfolio/attached_assets/bp_logo_transparent.png"
         alt="BP Logo"
-        className="h-20 w-auto object-contain"
+        className="h-20 w-auto object-contain grayscale brightness-0 dark:invert"
         data-testid="logo-bp"
       />
     ),
@@ -109,15 +109,14 @@ export default function ResumeSection() {
                 className="text-muted-foreground mt-4 leading-relaxed"
                 data-testid="text-education-details"
               >
-                Concentration: Robotics/Mechatronics | Certificate: Programming
-                and Computation
+                Certificate: Programming and Computation
               </p>
             </div>
             <div className="shrink-0 hidden sm:block">
               <img
                 src="/design-portfolio/attached_assets/black-texas-longhorns-logo-png-6_1757121764487.png"
                 alt="UT Austin"
-                className="h-16 w-16 object-contain block dark:invert"
+                className="h-24 w-24 object-contain block dark:invert"
                 data-testid="img-education-logo"
               />
             </div>
@@ -167,7 +166,7 @@ export default function ResumeSection() {
                       {job.description}
                     </p>
                   </div>
-                  <div className="shrink-0 pt-1">{job.logo}</div>
+                  <div className="shrink-0 self-center">{job.logo}</div>
                 </div>
               </Reveal>
             ))}

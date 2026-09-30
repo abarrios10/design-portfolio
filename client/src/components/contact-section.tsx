@@ -21,14 +21,14 @@ export default function ContactSection() {
         <div className="border-t border-border">
           <Reveal y={20} className="border-b border-border">
             <a
-              href="mailto:abarrios10@utexas.edu"
+              href="mailto:aabarriosc10@gmail.com"
               data-testid="link-email"
               className="group grid grid-cols-[1fr_auto] items-center gap-6 py-8 md:py-10"
             >
               <div>
                 <p className="eyebrow mb-3">Email</p>
                 <p className="text-2xl md:text-4xl font-display font-medium tracking-tight text-foreground break-all transition-transform duration-300 ease-out group-hover:translate-x-2">
-                  abarrios10@utexas.edu
+                  aabarriosc10@gmail.com
                 </p>
               </div>
               <span className="flex h-12 w-12 items-center justify-center rounded-full border border-border text-muted-foreground transition-all duration-300 group-hover:border-primary group-hover:text-primary">
