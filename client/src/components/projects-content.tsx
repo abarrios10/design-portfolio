@@ -37,6 +37,26 @@ export const projects = [
     company: "ASCEND Texas",
   },
   {
+    id: 11,
+    title: "Cable Crimping Optimization",
+    slug: "cable-crimping-optimization",
+    description:
+      "Cable crimping process optimization for Apple accessories — crimp die design and testing",
+    image: "/design-portfolio/attached_assets/apple_cable_crimping.png",
+    technologies: [
+      "Siemens NX",
+      "Teamcenter",
+      "Design for Manufacturability",
+      "Tooling Design",
+      "Process Optimization",
+      "Supplier Communication",
+    ],
+    details:
+      "Project from my Apple internship in Accessories - Cables. I ran iterative experiments evaluating swaging and specialized crimping strategies, working from first principles to redistribute crimp material and isolate viable paths to round, earless crimp cross-sections. I analyzed vendor crimping settings against in-house capabilities to identify the critical crimp die features, compression behavior, and process conditions needed for internal lab prototyping. I designed and prototyped custom crimp dies and an adjustable cable-holding fixture in NX for repeatable cable-to-die positioning and isolated study of die effects on ear formation, then synthesized the findings into design rules of thumb — crimp wall-thickness ratio and zero-gap die closure as the key drivers of earless crimping — presenting recommendations to guide adoption across the design team.",
+    date: "January 2026 - July 2026",
+    company: "Apple",
+  },
+  {
     id: 1,
     title: "RC Car Build",
     slug: "rc-car-build",
@@ -53,6 +73,45 @@ export const projects = [
     details:
       "Engineering Design Project (EDP) for Machine Elements class involving the collaborative design, build, test, and competition of a custom RC car. Working within a $100 budget constraint for additional components beyond the provided kit (radio controller/receiver, drive and servo motors, speed controller, battery, and charger), optimizing the chassis design for performance while maintaining manufacturability.",
     date: "September 2025 - December 2025",
+  },
+  {
+    id: 12,
+    title: "Pipe Lifting Jig",
+    slug: "pipe-lifting-jig",
+    description:
+      "Pipe lifting jig design for safe handling of 200 lb piping in a pump input subsystem",
+    image: "/design-portfolio/attached_assets/samsung_pipe_lifting.png",
+    technologies: [
+      "Autodesk Inventor",
+      "Confluence",
+      "GD&T",
+      "Hand Calculations",
+      "Finite Element Analysis",
+      "Engineering Drawings",
+    ],
+    details:
+      "Project from my Samsung internship. I designed a mechanical assembly in Autodesk Inventor using electric actuators and a custom-built pipe collar to safely lift 200 lb piping within a pump input subsystem, eliminating operator handling risks. I created detailed GD&T drawings for the machined pipe collar and adjustable claw clamps, applying manufacturer DFM feedback to optimize the parts for machining while upholding existing design constraints. I also analyzed failure modes of the lifting system, confirming with hand calculations that clamping-induced hoop stress stayed below pipe yield strength and that frictional torque resisted actuator-induced rotation.",
+    date: "May 2025 - August 2025",
+    company: "Samsung",
+  },
+  {
+    id: 3,
+    title: "Drive Unit Robot Locomotor Wheel Design",
+    slug: "drive-unit-robot-locomotor-wheel-design",
+    description:
+      "Advanced wheel design and locomotion system development for autonomous drive units",
+    image: "/design-portfolio/attached_assets/image_1759249913190.png",
+    technologies: [
+      "SolidWorks",
+      "Engineering Drawings",
+      "Geometric Dimensioning and Tolerancing",
+      "Tolerance Analysis",
+      "Supplier Communication",
+    ],
+    details:
+      "Project completed during my Amazon Robotics internship to redesign the Proteus locomotor wheel, transitioning it from a press-fit connection on the locomotor shaft to a bolted attachment for easier wheel removal during inspection and testing. Involved creating CAD models and detailed engineering drawings for the new wheel and attachment hardware, performing tolerance stack-up analyses to ensure proper fit and assembly, and coordinating with the supplier to manufacture and ship prototype wheels.",
+    date: "March 2025 - May 2025",
+    company: "Amazon Robotics",
   },
   {
     id: 2,
@@ -73,23 +132,22 @@ export const projects = [
     company: "Amazon Robotics",
   },
   {
-    id: 3,
-    title: "Drive Unit Robot Locomotor Wheel Design",
-    slug: "drive-unit-robot-locomotor-wheel-design",
+    id: 8,
+    title: "Wind Turbine LED Circuit",
+    slug: "wind-turbine-led-circuit",
     description:
-      "Advanced wheel design and locomotion system development for autonomous drive units",
-    image: "/design-portfolio/attached_assets/image_1759249913190.png",
+      "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
+    image: "/design-portfolio/attached_assets/image_1757727946979.png",
     technologies: [
-      "SolidWorks",
-      "Engineering Drawings",
-      "Geometric Dimensioning and Tolerancing",
-      "Tolerance Analysis",
-      "Supplier Communication",
+      "Circuit Design",
+      "Half-Wave Rectifier",
+      "Comparators",
+      "Transistors",
+      "Breadboard Prototyping",
     ],
     details:
-      "Project completed during my Amazon Robotics internship to redesign the Proteus locomotor wheel, transitioning it from a press-fit connection on the locomotor shaft to a bolted attachment for easier wheel removal during inspection and testing. Involved creating CAD models and detailed engineering drawings for the new wheel and attachment hardware, performing tolerance stack-up analyses to ensure proper fit and assembly, and coordinating with the supplier to manufacture and ship prototype wheels.",
-    date: "March 2025 - May 2025",
-    company: "Amazon Robotics",
+      "Final Project for Mechatronics Lab class focusing on power conversion and circuit design. Built a wind turbine monitoring system with LED visual feedback that responds to turbine speed variations.",
+    date: "November 2024",
   },
   {
     id: 5,
@@ -129,6 +187,18 @@ export const projects = [
     company: "BP",
   },
   {
+    id: 9,
+    title: "Mars Rover Mechanical Subsystem Design",
+    slug: "mars-rover-mechanical-subsystem-design",
+    description:
+      "Team-based mechanical subsystem design for NASA's L'SPACE Mission Concept Academy Mars rover mission",
+    image: "/design-portfolio/attached_assets/image_1757737312259.png",
+    technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
+    details:
+      "Team-based Mars rover design for NASA's L'SPACE Mission Concept Academy to traverse Martian terrain and collect soil and ice samples for analysis. Collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, all designed in SolidWorks in collaboration with one other engineer on the team.",
+    date: "January 2024 - April 2024",
+  },
+  {
     id: 7,
     title: "Fidget Spinner Design & Manufacturing",
     slug: "fidget-spinner-design-and-manufacturing",
@@ -145,76 +215,6 @@ export const projects = [
     details:
       "School project for Introduction to Engineering Design and Graphics course focusing on complete product development cycle from initial concept through manufacturing. Designed and manufactured functional fidget spinners using multiple engineering approaches including CAD modeling, finite element analysis, and various manufacturing methods including 3D printing, laser cutting, and injection molding.",
     date: "August 2023 - December 2023",
-  },
-  {
-    id: 8,
-    title: "Wind Turbine LED Circuit",
-    slug: "wind-turbine-led-circuit",
-    description:
-      "AC to DC power conversion circuit with LED indicators for wind turbine monitoring",
-    image: "/design-portfolio/attached_assets/image_1757727946979.png",
-    technologies: [
-      "Circuit Design",
-      "Half-Wave Rectifier",
-      "Comparators",
-      "Transistors",
-      "Breadboard Prototyping",
-    ],
-    details:
-      "Final Project for Mechatronics Lab class focusing on power conversion and circuit design. Built a wind turbine monitoring system with LED visual feedback that responds to turbine speed variations.",
-    date: "November 2024",
-  },
-  {
-    id: 9,
-    title: "Mars Rover Mechanical Subsystem Design",
-    slug: "mars-rover-mechanical-subsystem-design",
-    description:
-      "Team-based mechanical subsystem design for NASA's L'SPACE Mission Concept Academy Mars rover mission",
-    image: "/design-portfolio/attached_assets/image_1757737312259.png",
-    technologies: ["SolidWorks", "Project Coordination", "Systems Engineering"],
-    details:
-      "Team-based Mars rover design for NASA's L'SPACE Mission Concept Academy to traverse Martian terrain and collect soil and ice samples for analysis. Collaborated with other student engineers to coordinate the design review, verify subsystem constraints, and ensure the design met strict mass, volume, and cost limits. My main contributions were the robotic arm and camera attachment, all designed in SolidWorks in collaboration with one other engineer on the team.",
-    date: "January 2024 - April 2024",
-  },
-  {
-    id: 11,
-    title: "Cable Crimping Optimization",
-    slug: "cable-crimping-optimization",
-    description:
-      "Cable crimping process optimization for Apple accessories — crimp die design and testing",
-    image: "/design-portfolio/attached_assets/apple_cable_crimping.png",
-    technologies: [
-      "Siemens NX",
-      "Teamcenter",
-      "Design for Manufacturability",
-      "Tooling Design",
-      "Process Optimization",
-      "Supplier Communication",
-    ],
-    details:
-      "Project from my Apple internship in Accessories - Cables. I ran iterative experiments evaluating swaging and specialized crimping strategies, working from first principles to redistribute crimp material and isolate viable paths to round, earless crimp cross-sections. I analyzed vendor crimping settings against in-house capabilities to identify the critical crimp die features, compression behavior, and process conditions needed for internal lab prototyping. I designed and prototyped custom crimp dies and an adjustable cable-holding fixture in NX for repeatable cable-to-die positioning and isolated study of die effects on ear formation, then synthesized the findings into design rules of thumb — crimp wall-thickness ratio and zero-gap die closure as the key drivers of earless crimping — presenting recommendations to guide adoption across the design team.",
-    date: "January 2026 - July 2026",
-    company: "Apple",
-  },
-  {
-    id: 12,
-    title: "Pipe Lifting Jig",
-    slug: "pipe-lifting-jig",
-    description:
-      "Pipe lifting jig design for safe handling of 200 lb piping in a pump input subsystem",
-    image: "/design-portfolio/attached_assets/samsung_pipe_lifting.png",
-    technologies: [
-      "Autodesk Inventor",
-      "Confluence",
-      "GD&T",
-      "Hand Calculations",
-      "Finite Element Analysis",
-      "Engineering Drawings",
-    ],
-    details:
-      "Project from my Samsung internship. I designed a mechanical assembly in Autodesk Inventor using electric actuators and a custom-built pipe collar to safely lift 200 lb piping within a pump input subsystem, eliminating operator handling risks. I created detailed GD&T drawings for the machined pipe collar and adjustable claw clamps, applying manufacturer DFM feedback to optimize the parts for machining while upholding existing design constraints. I also analyzed failure modes of the lifting system, confirming with hand calculations that clamping-induced hoop stress stayed below pipe yield strength and that frictional torque resisted actuator-induced rotation.",
-    date: "May 2025 - August 2025",
-    company: "Samsung",
   },
 ];
 
