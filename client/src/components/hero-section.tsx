@@ -90,8 +90,8 @@ export default function HeroSection() {
         <Stagger delay={0.35} className="lg:col-span-5">
           <figure className="mx-auto w-full max-w-[260px] sm:max-w-xs lg:max-w-none">
             <img
-              src="/design-portfolio/attached_assets/Professional Head Shot_1757025526514.JPG"
-              alt="Portrait of Andres Barrios"
+              src="/design-portfolio/attached_assets/IMG_2472_1760037765321.jpeg"
+              alt="Andres Barrios with the Houston skyline"
               className="aspect-[4/5] w-full rounded-xl border border-border object-cover"
               data-testid="img-hero-portrait"
             />
