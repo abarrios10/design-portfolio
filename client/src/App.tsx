@@ -8,6 +8,7 @@ import { PageTransitionProvider } from "@/components/route-transition";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Projects from "@/pages/projects";
+import ProjectDetail from "@/pages/project-detail";
 import Resume from "@/pages/resume";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
@@ -17,6 +18,7 @@ function RouterComponent() {
     <Router base="/design-portfolio">
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/projects/:slug" component={ProjectDetail} />
         <Route path="/projects" component={Projects} />
         <Route path="/resume" component={Resume} />
         <Route path="/about" component={About} />
