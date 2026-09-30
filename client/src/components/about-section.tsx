@@ -7,7 +7,7 @@ export default function AboutSection() {
       title: "Cockrell School of Engineering Distinguished College Scholar",
       description:
         "Recognized for maintaining a GPA ranking in the top 4% of students in my class",
-      date: "2024, 2025",
+      date: "2024, 2025, 2026",
     },
     {
       title: "Hispanic Scholarship Fund Scholar",
@@ -28,8 +28,8 @@ export default function AboutSection() {
     {
       title: "6x University Honors List",
       description:
-        "3.50+ GPA recognition for Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024, Fall 2025, Fall 2025",
-      date: "2022-2025",
+        "3.50+ GPA recognition for Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024, Fall 2025, Fall 2026",
+      date: "2022-2026",
     },
   ];
 
