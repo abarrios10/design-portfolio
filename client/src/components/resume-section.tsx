@@ -1,6 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Wrench } from "lucide-react";
-import { SiSamsung, SiAmazon, SiApple } from "react-icons/si";
+import { SiSamsung, SiApple } from "react-icons/si";
 import Reveal from "@/components/reveal";
 
 const skills = [
@@ -12,268 +11,206 @@ const skills = [
   { name: "Python", icon: "🐍" },
 ];
 
+const experience = [
+  {
+    position: "Product Design Engineer Intern",
+    company: "Apple",
+    timeline: "January 2026 - July 2026",
+    description: "Cable Accessories",
+    logo: <SiApple className="h-14 w-14 text-foreground" data-testid="logo-apple" />,
+  },
+  {
+    position: "Mechanical Design Engineer Intern",
+    company: "Samsung",
+    timeline: "May 2025 - August 2025",
+    description: "Tooling Equipment Solutions",
+    logo: <SiSamsung className="h-14 w-14 text-foreground" data-testid="logo-samsung" />,
+  },
+  {
+    position: "Hardware Development Engineer Intern",
+    company: "Amazon Robotics",
+    timeline: "January 2025 - May 2025",
+    description: "Autonomous Drive-Unit Robots",
+    logo: (
+      <div data-testid="logo-amazon">
+        <img
+          src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
+          alt="Amazon Robotics Logo"
+          className="h-16 w-auto object-contain block dark:hidden"
+        />
+        <img
+          src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
+          alt="Amazon Robotics Logo"
+          className="h-16 w-auto object-contain hidden dark:block"
+          style={{ filter: "invert(1)" }}
+        />
+      </div>
+    ),
+  },
+  {
+    position: "Mechanical Reliability Engineer Intern",
+    company: "BP",
+    timeline: "May 2024 - August 2024",
+    description: "Maintenance Equipment Design",
+    logo: (
+      <div data-testid="logo-bp">
+        <img
+          src="/design-portfolio/attached_assets/image_1757126537871.png"
+          alt="BP Logo"
+          className="h-14 w-14 object-contain block dark:hidden"
+        />
+        <img
+          src="/design-portfolio/attached_assets/image_1757126537871.png"
+          alt="BP Logo"
+          className="h-14 w-14 object-contain hidden dark:block"
+          style={{ filter: "invert(1)" }}
+        />
+      </div>
+    ),
+  },
+];
+
 export default function ResumeSection() {
   return (
-    <section id="resume" className="pt-16 pb-24 hero-bg-premium">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block tracking-tight">
-            Professional Experience
-            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-amber)] via-[var(--accent-orange)] to-[var(--accent-coral)] rounded-full opacity-60"></div>
+    <section id="resume" className="pt-32 pb-24">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <Reveal className="mb-14 md:mb-20">
+          <p className="eyebrow mb-6">Résumé</p>
+          <h2 className="text-5xl md:text-7xl font-display font-medium tracking-[-0.02em] leading-[0.95] text-foreground">
+            Professional
+            <br />
+            Experience
           </h2>
-          <p className="text-lg text-muted-foreground mt-8">
+          <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
             A comprehensive overview of my engineering journey and achievements
           </p>
         </Reveal>
 
-        <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 rounded-2xl shadow-lg p-8 md:p-12">
-          <CardContent className="p-0">
-            {/* Education Section */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <GraduationCap
-                  className="mr-3 h-6 w-6"
-                  style={{ color: "var(--accent-lime)" }}
-                />
-                Education
-              </h3>
-              <div className="space-y-6">
-                <div
-                  className="border-l-2 pl-6"
-                  style={{ borderColor: "var(--accent-lime)" }}
-                >
-                  <h4
-                    className="text-lg font-semibold text-card-foreground"
-                    data-testid="text-education-degree"
-                  >
-                    Bachelor of Science, Mechanical Engineering Honors
-                  </h4>
-                  <p
-                    className="text-primary font-medium"
-                    data-testid="text-education-university"
-                  >
-                    The University of Texas at Austin
-                  </p>
-                  <p
-                    className="text-sm text-muted-foreground"
-                    data-testid="text-education-timeline"
-                  >
-                    May 2027
-                  </p>
-                  <p
-                    className="text-muted-foreground mt-2"
-                    data-testid="text-education-details"
-                  >
-                    Concentration: Robotics/Mechatronics | Certificate:
-                    Programming and Computation
-                  </p>
-                </div>
-              </div>
+        {/* Education */}
+        <Reveal className="mb-16">
+          <h3 className="flex items-center gap-3 text-2xl font-display font-medium tracking-tight text-foreground mb-8">
+            <GraduationCap className="h-5 w-5 text-primary" />
+            Education
+          </h3>
+          <div
+            className="border-t border-border pt-8 flex items-start justify-between gap-6"
+            data-testid="card-education"
+          >
+            <div>
+              <h4
+                className="text-xl md:text-2xl font-display font-medium tracking-tight text-foreground"
+                data-testid="text-education-degree"
+              >
+                Bachelor of Science, Mechanical Engineering Honors
+              </h4>
+              <p
+                className="text-primary font-medium mt-2"
+                data-testid="text-education-university"
+              >
+                The University of Texas at Austin
+              </p>
+              <p
+                className="font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground mt-2"
+                data-testid="text-education-timeline"
+              >
+                May 2027
+              </p>
+              <p
+                className="text-muted-foreground mt-4 leading-relaxed"
+                data-testid="text-education-details"
+              >
+                Concentration: Robotics/Mechatronics | Certificate: Programming
+                and Computation
+              </p>
             </div>
+            <div className="shrink-0 hidden sm:block">
+              <img
+                src="/design-portfolio/attached_assets/black-texas-longhorns-logo-png-6_1757121764487.png"
+                alt="UT Austin"
+                className="h-16 w-16 object-contain block dark:invert"
+                data-testid="img-education-logo"
+              />
+            </div>
+          </div>
+        </Reveal>
 
-            {/* Experience Section */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Briefcase
-                  className="mr-3 h-6 w-6"
-                  style={{ color: "var(--accent-indigo)" }}
-                />
-                Experience
-              </h3>
-              <div className="space-y-6">
-                <div
-                  className="border-l-2 pl-6 flex items-start justify-between"
-                  style={{ borderColor: "var(--accent-indigo)" }}
-                >
-                  <div className="flex-1">
+        {/* Experience */}
+        <div className="mb-16">
+          <Reveal>
+            <h3 className="flex items-center gap-3 text-2xl font-display font-medium tracking-tight text-foreground mb-8">
+              <Briefcase className="h-5 w-5 text-primary" />
+              Experience
+            </h3>
+          </Reveal>
+          <div className="border-t border-border">
+            {experience.map((job, index) => (
+              <Reveal
+                key={index}
+                y={20}
+                className="border-b border-border"
+                data-testid={`exp-entry-${index}`}
+              >
+                <div className="flex items-start justify-between gap-6 py-8">
+                  <div>
                     <h4
-                      className="text-lg font-semibold text-card-foreground"
-                      data-testid="text-experience-position-1"
+                      className="text-xl md:text-2xl font-display font-medium tracking-tight text-foreground"
+                      data-testid={`text-experience-position-${index + 1}`}
                     >
-                      Product Design Engineer Intern
+                      {job.position}
                     </h4>
                     <p
-                      className="text-primary font-medium"
-                      data-testid="text-experience-company-1"
+                      className="text-primary font-medium mt-2"
+                      data-testid={`text-experience-company-${index + 1}`}
                     >
-                      Apple
+                      {job.company}
                     </p>
                     <p
-                      className="text-sm text-muted-foreground"
-                      data-testid="text-experience-timeline-1"
+                      className="font-mono text-xs uppercase tracking-[0.14em] text-muted-foreground mt-2"
+                      data-testid={`text-experience-timeline-${index + 1}`}
                     >
-                      January 2026 - July 2026
+                      {job.timeline}
                     </p>
                     <p
-                      className="text-muted-foreground mt-2"
-                      data-testid="text-experience-description-1"
+                      className="text-muted-foreground mt-4 leading-relaxed"
+                      data-testid={`text-experience-description-${index + 1}`}
                     >
-                      Cable Accessories
+                      {job.description}
                     </p>
                   </div>
-                  <div className="flex-shrink-0 ml-6">
-                    <SiApple
-                      className="h-16 w-16 text-foreground"
-                      data-testid="logo-apple"
-                    />
-                  </div>
+                  <div className="shrink-0 pt-1">{job.logo}</div>
                 </div>
-                <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
-                  <div className="flex-1">
-                    <h4
-                      className="text-lg font-semibold text-card-foreground"
-                      data-testid="text-experience-position-2"
-                    >
-                      Mechanical Design Engineer Intern
-                    </h4>
-                    <p
-                      className="text-primary font-medium"
-                      data-testid="text-experience-company-2"
-                    >
-                      Samsung
-                    </p>
-                    <p
-                      className="text-sm text-muted-foreground"
-                      data-testid="text-experience-timeline-2"
-                    >
-                      May 2025 - August 2025
-                    </p>
-                    <p
-                      className="text-muted-foreground mt-2"
-                      data-testid="text-experience-description-2"
-                    >
-                      Tooling Equipment Solutions
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 ml-6">
-                    <SiSamsung
-                      className="h-16 w-16 text-primary/30"
-                      data-testid="logo-samsung"
-                    />
-                  </div>
-                </div>
-                <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
-                  <div className="flex-1">
-                    <h4
-                      className="text-lg font-semibold text-card-foreground"
-                      data-testid="text-experience-position-3"
-                    >
-                      Hardware Development Engineer Intern
-                    </h4>
-                    <p
-                      className="text-primary font-medium"
-                      data-testid="text-experience-company-3"
-                    >
-                      Amazon Robotics
-                    </p>
-                    <p
-                      className="text-sm text-muted-foreground"
-                      data-testid="text-experience-timeline-3"
-                    >
-                      January 2025 - May 2025
-                    </p>
-                    <p
-                      className="text-muted-foreground mt-2"
-                      data-testid="text-experience-description-3"
-                    >
-                      Autonomous Drive-Unit Robots
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 ml-8">
-                    <div
-                      className="relative h-28 w-40 flex items-center justify-center"
-                      data-testid="logo-amazon"
-                    >
-                      <img
-                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
-                        alt="Amazon Robotics Logo"
-                        className="h-24 w-auto object-contain block dark:hidden"
-                      />
-                      <img
-                        src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
-                        alt="Amazon Robotics Logo"
-                        className="h-24 w-auto object-contain hidden dark:block"
-                        style={{ filter: "invert(1)" }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="border-l-2 border-muted-foreground pl-6 flex items-start justify-between">
-                  <div className="flex-1">
-                    <h4
-                      className="text-lg font-semibold text-card-foreground"
-                      data-testid="text-experience-position-4"
-                    >
-                      Mechanical Reliability Engineer Intern
-                    </h4>
-                    <p
-                      className="text-primary font-medium"
-                      data-testid="text-experience-company-4"
-                    >
-                      BP
-                    </p>
-                    <p
-                      className="text-sm text-muted-foreground"
-                      data-testid="text-experience-timeline-4"
-                    >
-                      May 2024 - August 2024
-                    </p>
-                    <p
-                      className="text-muted-foreground mt-2"
-                      data-testid="text-experience-description-4"
-                    >
-                      Maintenance Equipment Design
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 ml-6">
-                    <div className="relative h-16 w-16" data-testid="logo-bp">
-                      <img
-                        src="/design-portfolio/attached_assets/image_1757126537871.png"
-                        alt="BP Logo"
-                        className="h-16 w-16 object-contain block dark:hidden"
-                      />
-                      <img
-                        src="/design-portfolio/attached_assets/image_1757126537871.png"
-                        alt="BP Logo"
-                        className="h-16 w-16 object-contain hidden dark:block"
-                        style={{ filter: "invert(1)" }}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
 
-            {/* Skills Section */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-semibold text-card-foreground mb-6 flex items-center">
-                <Wrench
-                  className="mr-3 h-6 w-6"
-                  style={{ color: "var(--accent-teal)" }}
-                />
-                Technical Skills
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {skills.map((skill, index) => (
-                  <Card
-                    key={index}
-                    className="bg-secondary rounded-lg p-4 text-center transition-all hover:scale-105 border-2 border-transparent hover:border-[var(--accent-teal)]"
-                  >
-                    <CardContent className="p-0">
-                      <div className="text-2xl mb-2">{skill.icon}</div>
-                      <p
-                        className="font-medium text-secondary-foreground"
-                        data-testid={`text-skill-${index}`}
-                      >
-                        {skill.name}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
+        {/* Skills */}
+        <Reveal>
+          <h3 className="flex items-center gap-3 text-2xl font-display font-medium tracking-tight text-foreground mb-8">
+            <Wrench className="h-5 w-5 text-primary" />
+            Technical Skills
+          </h3>
+        </Reveal>
+        <Reveal className="border-t border-border">
+          <div className="grid grid-cols-2 md:grid-cols-3" data-testid="card-skills">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-4 border-b border-r border-border px-5 py-5 [&:nth-child(2n)]:border-r-0 md:[&:nth-child(2n)]:border-r md:[&:nth-child(3n)]:border-r-0"
+              >
+                <span className="text-2xl" aria-hidden="true">
+                  {skill.icon}
+                </span>
+                <p
+                  className="font-medium text-foreground"
+                  data-testid={`text-skill-${index}`}
+                >
+                  {skill.name}
+                </p>
               </div>
-            </div>
-          </CardContent>
-        </Card>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

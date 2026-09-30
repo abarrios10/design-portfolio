@@ -1,4 +1,4 @@
-import { MapPin, Award, Heart } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Reveal from "@/components/reveal";
 
 export default function AboutSection() {
@@ -59,186 +59,161 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="pt-16 pb-24 hero-bg-premium">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 relative inline-block tracking-tight">
+    <section id="about" className="pt-32 pb-24">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <Reveal className="mb-14 md:mb-20">
+          <p className="eyebrow mb-6">About</p>
+          <h2 className="text-5xl md:text-7xl font-display font-medium tracking-[-0.02em] leading-[0.95] text-foreground">
             About Me
-            <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-[var(--accent-purple)] via-[var(--accent-pink)] to-[var(--accent-orange)] rounded-full opacity-60"></div>
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-24">
+          <Reveal className="lg:col-span-5" y={24}>
             <img
               src="/design-portfolio/attached_assets/Professional Head Shot_1757025526514.JPG"
               alt="Andres Barrios Professional Headshot"
-              className="rounded-2xl shadow-lg w-full h-auto"
+              className="w-full h-auto rounded-lg border border-border"
               data-testid="img-about-profile"
             />
-          </div>
-          <div className="space-y-6">
-            <h3
-              className="text-2xl font-semibold text-foreground"
-              data-testid="text-about-title"
-            >
-              Hey There!
-            </h3>
-            <p
-              className="text-lg text-muted-foreground leading-relaxed"
-              data-testid="text-about-paragraph"
-            >
-              Born in Venezuela and now living in Austin, I love designing
-              things. I'm a person who gets excited about turning cool ideas
-              into real, functional designs that work.
-              <br />
-              <br />
-              When I'm not working, you'll probably find me on the padel court,
-              dancing at music festivals, or cheering way too loudly at Texas
-              football games (Hook 'em! 🤘).
-            </p>
-
-            <div className="flex flex-wrap gap-4 mt-8">
+          </Reveal>
+          <div className="lg:col-span-7">
+            <Reveal y={24}>
+              <h3
+                className="text-3xl md:text-4xl font-display font-medium tracking-tight text-foreground mb-8"
+                data-testid="text-about-title"
+              >
+                Hey There!
+              </h3>
+            </Reveal>
+            <Reveal y={24} delay={0.08}>
+              <p
+                className="text-lg text-muted-foreground leading-relaxed max-w-xl"
+                data-testid="text-about-paragraph"
+              >
+                Born in Venezuela and now living in Austin, I love designing
+                things. I'm a person who gets excited about turning cool ideas
+                into real, functional designs that work.
+                <br />
+                <br />
+                When I'm not working, you'll probably find me on the padel court,
+                dancing at music festivals, or cheering way too loudly at Texas
+                football games (Hook 'em! 🤘).
+              </p>
+            </Reveal>
+            <Reveal y={24} delay={0.14}>
               <div
-                className="flex items-center space-x-2"
+                className="flex items-center gap-2 mt-10"
                 data-testid="info-location"
               >
-                <MapPin
-                  className="h-5 w-5"
-                  style={{ color: "var(--accent-purple)" }}
-                />
-                <span className="text-muted-foreground">Austin, Texas</span>
+                <MapPin className="h-4 w-4 text-primary" />
+                <span className="eyebrow">Austin, Texas</span>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
 
-        {/* Awards & Interests Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
           {/* Awards */}
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <Award
-                className="h-6 w-6"
-                style={{ color: "var(--accent-orange)" }}
-              />
-              <h3 className="text-3xl font-thin text-foreground">Awards</h3>
-            </div>
+            <Reveal className="mb-10">
+              <p className="eyebrow mb-4">Recognition</p>
+              <h3 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-foreground">
+                Awards
+              </h3>
+            </Reveal>
 
-            {/* UT Austin Awards */}
-            <div className="mb-8">
-              <h4 className="text-lg font-semibold text-foreground mb-4">
+            <Reveal className="mb-10">
+              <h4 className="eyebrow mb-2">
                 The University of Texas at Austin
               </h4>
-              <div className="space-y-4">
+              <div className="border-t border-border">
                 {utAustinAwards.map((award, index) => (
                   <div
                     key={index}
-                    className="border-l-2 pl-4 py-2"
-                    style={{ borderColor: "var(--accent-orange)" }}
+                    className="border-b border-border py-5"
                     data-testid={`award-ut-${index}`}
                   >
-                    <div className="flex justify-between items-start mb-1">
-                      <h5 className="font-medium text-foreground text-base">
+                    <div className="flex justify-between items-baseline gap-4 mb-1.5">
+                      <h5 className="font-medium text-foreground text-base leading-snug">
                         {award.title}
                       </h5>
-                      <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">
+                      <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
                         {award.date}
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {award.description}
                     </p>
                   </div>
                 ))}
               </div>
-            </div>
+            </Reveal>
 
-            {/* High School Awards */}
-            <div>
-              <h4 className="text-lg font-semibold text-foreground mb-4">
-                Obra D. Tompkins High School
-              </h4>
-              <div className="space-y-4">
+            <Reveal>
+              <h4 className="eyebrow mb-2">Obra D. Tompkins High School</h4>
+              <div className="border-t border-border">
                 {highSchoolAwards.map((award, index) => (
                   <div
                     key={index}
-                    className="border-l-2 pl-4 py-2"
-                    style={{ borderColor: "var(--accent-orange)" }}
+                    className="border-b border-border py-5"
                     data-testid={`award-hs-${index}`}
                   >
-                    <div className="flex justify-between items-start mb-1">
-                      <h5 className="font-medium text-foreground text-base">
+                    <div className="flex justify-between items-baseline gap-4 mb-1.5">
+                      <h5 className="font-medium text-foreground text-base leading-snug">
                         {award.title}
                       </h5>
-                      <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">
+                      <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
                         {award.date}
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {award.description}
                     </p>
                   </div>
                 ))}
               </div>
-            </div>
+            </Reveal>
           </div>
 
           {/* Interests */}
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <Heart
-                className="h-6 w-6"
-                style={{ color: "var(--accent-pink)" }}
-              />
-              <h3 className="text-3xl font-thin text-foreground">Interests</h3>
-            </div>
+            <Reveal className="mb-10">
+              <p className="eyebrow mb-4">Off the clock</p>
+              <h3 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-foreground">
+                Interests
+              </h3>
+            </Reveal>
 
-            <div className="space-y-6">
-              {/* Hobbies */}
-              <div>
-                <h4 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
-                  Hobbies & Activities
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {interests.hobbies.map((interest, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
-                      style={{
-                        backgroundColor: "rgba(174, 62, 201, 0.15)",
-                        border: "1px solid rgba(174, 62, 201, 0.3)",
-                      }}
-                      data-testid={`hobby-${index}`}
-                    >
-                      {interest}
-                    </span>
-                  ))}
-                </div>
+            <Reveal className="mb-10">
+              <h4 className="eyebrow mb-4">Hobbies & Activities</h4>
+              <div className="flex flex-wrap gap-2">
+                {interests.hobbies.map((interest, index) => (
+                  <span
+                    key={index}
+                    className="font-mono text-[0.7rem] uppercase tracking-[0.12em] border border-border rounded-full px-3.5 py-1.5 text-muted-foreground"
+                    data-testid={`hobby-${index}`}
+                  >
+                    {interest}
+                  </span>
+                ))}
               </div>
+            </Reveal>
 
-              {/* Passions */}
-              <div>
-                <h4 className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
-                  Passions & Pursuits
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {interests.passions.map((interest, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 text-foreground rounded-full text-base font-medium transition-all hover:scale-105"
-                      style={{
-                        backgroundColor: "rgba(236, 72, 153, 0.15)",
-                        border: "1px solid rgba(236, 72, 153, 0.3)",
-                      }}
-                      data-testid={`passion-${index}`}
-                    >
-                      {interest}
-                    </span>
-                  ))}
-                </div>
+            <Reveal>
+              <h4 className="eyebrow mb-4">Passions & Pursuits</h4>
+              <div className="flex flex-wrap gap-2">
+                {interests.passions.map((interest, index) => (
+                  <span
+                    key={index}
+                    className="font-mono text-[0.7rem] uppercase tracking-[0.12em] border border-border rounded-full px-3.5 py-1.5 text-muted-foreground"
+                    data-testid={`passion-${index}`}
+                  >
+                    {interest}
+                  </span>
+                ))}
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>

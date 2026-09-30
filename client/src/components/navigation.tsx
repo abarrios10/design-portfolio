@@ -3,7 +3,6 @@ import { Moon, Sun, Menu } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 import { useLocation } from "wouter";
 import { TransitionLink } from "@/components/route-transition";
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import {
   Sheet,
@@ -14,106 +13,121 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 
+const navigationItems = [
+  { path: "/design-portfolio/", label: "Home" },
+  { path: "/design-portfolio/projects", label: "Projects" },
+  { path: "/design-portfolio/resume", label: "Resume" },
+  { path: "/design-portfolio/about", label: "About" },
+  { path: "/design-portfolio/contact", label: "Contact" },
+];
+
+function NavLink({
+  item,
+  isActive,
+  testId,
+}: {
+  item: { path: string; label: string };
+  isActive: boolean;
+  testId: string;
+}) {
+  return (
+    <TransitionLink
+      href={item.path}
+      data-testid={testId}
+      className={`group relative py-1 text-[0.72rem] font-medium uppercase tracking-[0.16em] transition-colors duration-200 ${
+        isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+      }`}
+    >
+      {item.label}
+      <span
+        aria-hidden="true"
+        className={`absolute -bottom-0.5 left-0 h-px w-full origin-left transition-transform duration-300 ease-out ${
+          isActive
+            ? "scale-x-100 bg-primary"
+            : "scale-x-0 bg-foreground group-hover:scale-x-100"
+        }`}
+      />
+    </TransitionLink>
+  );
+}
+
 export default function Navigation() {
   const { theme, setTheme } = useTheme();
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    // Resolve "system" to the effective theme so the first click always flips modes.
+    const effective =
+      theme === "system"
+        ? window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light"
+        : theme;
+    setTheme(effective === "dark" ? "light" : "dark");
   };
 
-  const navigationItems = [
-    { path: "/design-portfolio/", label: "Home" },
-    { path: "/design-portfolio/projects", label: "Projects" },
-    { path: "/design-portfolio/resume", label: "Resume" },
-    { path: "/design-portfolio/about", label: "About" },
-    { path: "/design-portfolio/contact", label: "Contact" },
-  ];
-
-  // Close mobile menu when location changes
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location]);
 
   return (
     <nav
-      className="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-xl border-b border-border/50"
+      className="fixed top-0 w-full z-50 bg-background/85 backdrop-blur-md border-b border-border"
       style={{ paddingTop: "env(safe-area-inset-top)" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <TransitionLink
-              href="/design-portfolio/"
-              className="text-xl font-semibold bg-gradient-to-r from-primary via-[var(--accent-teal)] to-[var(--accent-purple)] bg-clip-text text-transparent hover:opacity-80 transition-opacity"
-              data-testid="logo-home"
-            >
-              AB
-            </TransitionLink>
-          </div>
+          <TransitionLink
+            href="/design-portfolio/"
+            data-testid="logo-home"
+            className="text-sm font-medium tracking-[0.22em] uppercase text-foreground hover:text-primary transition-colors duration-200"
+          >
+            AB
+          </TransitionLink>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navigationItems.map((item) => {
-              const isActive = location === item.path;
-              return (
-                <TransitionLink
-                  key={item.path}
-                  href={item.path}
-                  className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-full ${
-                    isActive
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                  data-testid={`nav-${item.path.slice(1) || "home"}`}
-                >
-                  {isActive && (
-                    <motion.span
-                      layoutId="nav-active-pill"
-                      className="absolute inset-0 rounded-full bg-primary/10 dark:bg-primary/15"
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 32,
-                      }}
-                    />
-                  )}
-                  <span className="relative z-10">{item.label}</span>
-                </TransitionLink>
-              );
-            })}
+          <div className="hidden md:flex items-center gap-8">
+            {navigationItems.map((item) => (
+              <NavLink
+                key={item.path}
+                item={item}
+                isActive={location === item.path}
+                testId={`nav-${item.path.replace("/design-portfolio/", "") || "home"}`}
+              />
+            ))}
           </div>
 
-          <div className="flex items-center space-x-2">
-            {/* Mobile Menu */}
+          <div className="flex items-center gap-1">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="md:hidden rounded-lg hover:bg-secondary"
+                  className="md:hidden rounded-md hover:bg-secondary"
                   data-testid="mobile-menu-trigger"
                 >
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Open mobile menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="right" className="w-[280px] border-l border-border">
                 <SheetHeader>
-                  <SheetTitle>Navigation Menu</SheetTitle>
+                  <SheetTitle className="text-left text-sm font-medium tracking-[0.22em] uppercase">
+                    AB
+                  </SheetTitle>
                 </SheetHeader>
-                <div className="flex flex-col space-y-4 mt-8">
+                <div className="flex flex-col gap-6 mt-10">
                   {navigationItems.map((item) => (
                     <SheetClose key={item.path} asChild>
                       <TransitionLink
                         href={item.path}
-                        className={`text-xl font-medium transition-colors py-2 px-1 ${
+                        data-testid={`mobile-nav-${item.path.replace("/design-portfolio/", "") || "home"}`}
+                        className={`text-2xl font-display font-medium tracking-tight transition-colors ${
                           location === item.path
                             ? "text-primary"
-                            : "text-muted-foreground hover:text-primary"
+                            : "text-foreground hover:text-primary"
                         }`}
-                        data-testid={`mobile-nav-${item.path.slice(1) || "home"}`}
                       >
                         {item.label}
                       </TransitionLink>
@@ -123,18 +137,21 @@ export default function Navigation() {
               </SheetContent>
             </Sheet>
 
-            {/* Theme Toggle */}
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="rounded-full hover:bg-secondary"
+              className="rounded-md hover:bg-secondary text-muted-foreground hover:text-foreground"
               data-testid="theme-toggle"
+              aria-label="Toggle color theme"
             >
-              {theme === "light" ? (
-                <Moon className="h-5 w-5" />
+              {theme === "dark" ||
+              (theme === "system" &&
+                typeof window !== "undefined" &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches) ? (
+                <Sun className="h-[1.1rem] w-[1.1rem]" />
               ) : (
-                <Sun className="h-5 w-5" />
+                <Moon className="h-[1.1rem] w-[1.1rem]" />
               )}
             </Button>
           </div>
