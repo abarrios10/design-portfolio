@@ -33,7 +33,8 @@ export default function HeroSection() {
       className="relative flex min-h-screen items-center overflow-hidden"
     >
       <div className="mx-auto w-full max-w-6xl px-6 pt-32 pb-24 lg:px-8">
-        <div className="max-w-4xl">
+        <div className="grid items-center gap-14 lg:grid-cols-12">
+          <div className="lg:col-span-7">
           <Stagger delay={0.05}>
             <p className="eyebrow mb-8">UT Austin · Mechanical Engineering</p>
           </Stagger>
@@ -84,6 +85,21 @@ export default function HeroSection() {
               </TransitionLink>
             </div>
           </Stagger>
+        </div>
+
+        <Stagger delay={0.35} className="lg:col-span-5">
+          <figure className="mx-auto w-full max-w-[260px] sm:max-w-xs lg:max-w-none">
+            <img
+              src="/design-portfolio/attached_assets/Professional Head Shot_1757025526514.JPG"
+              alt="Portrait of Andres Barrios"
+              className="aspect-[4/5] w-full rounded-xl border border-border object-cover"
+              data-testid="img-hero-portrait"
+            />
+            <figcaption className="eyebrow mt-4 text-center">
+              Andres Barrios — Mechanical Engineer
+            </figcaption>
+          </figure>
+        </Stagger>
         </div>
 
         <Stagger delay={0.8} className="mt-24 md:mt-32">
