@@ -15,7 +15,7 @@ function SelectedWork() {
         <Reveal className="mb-10 md:mb-14">
           <div className="flex items-end justify-between gap-6">
             <div>
-              <p className="eyebrow mb-6">Index — 10 Projects</p>
+              <p className="eyebrow mb-6">Index — 11 Projects</p>
               <h2 className="text-4xl md:text-6xl font-display font-medium tracking-[-0.02em] leading-[0.95] text-foreground">
                 Selected Work
               </h2>
