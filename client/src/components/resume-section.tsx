@@ -17,14 +17,14 @@ const experience = [
     company: "Apple",
     timeline: "January 2026 - July 2026",
     description: "Cable Accessories",
-    logo: <SiApple className="h-14 w-14 text-foreground" data-testid="logo-apple" />,
+    logo: <SiApple className="h-20 w-20 text-foreground" data-testid="logo-apple" />,
   },
   {
     position: "Mechanical Design Engineer Intern",
     company: "Samsung",
     timeline: "May 2025 - August 2025",
     description: "Tooling Equipment Solutions",
-    logo: <SiSamsung className="h-14 w-14 text-foreground" data-testid="logo-samsung" />,
+    logo: <SiSamsung className="h-20 w-20 text-foreground" data-testid="logo-samsung" />,
   },
   {
     position: "Hardware Development Engineer Intern",
@@ -32,19 +32,12 @@ const experience = [
     timeline: "January 2025 - May 2025",
     description: "Autonomous Drive-Unit Robots",
     logo: (
-      <div data-testid="logo-amazon">
-        <img
-          src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
-          alt="Amazon Robotics Logo"
-          className="h-16 w-auto object-contain block dark:hidden"
-        />
-        <img
-          src="/design-portfolio/attached_assets/Robotics_Amazon_1757126546766.webp"
-          alt="Amazon Robotics Logo"
-          className="h-16 w-auto object-contain hidden dark:block"
-          style={{ filter: "invert(1)" }}
-        />
-      </div>
+      <img
+        src="/design-portfolio/attached_assets/amazon_robotics_transparent.png"
+        alt="Amazon Robotics Logo"
+        className="h-20 w-auto object-contain dark:invert"
+        data-testid="logo-amazon"
+      />
     ),
   },
   {
@@ -53,19 +46,12 @@ const experience = [
     timeline: "May 2024 - August 2024",
     description: "Maintenance Equipment Design",
     logo: (
-      <div data-testid="logo-bp">
-        <img
-          src="/design-portfolio/attached_assets/image_1757126537871.png"
-          alt="BP Logo"
-          className="h-14 w-14 object-contain block dark:hidden"
-        />
-        <img
-          src="/design-portfolio/attached_assets/image_1757126537871.png"
-          alt="BP Logo"
-          className="h-14 w-14 object-contain hidden dark:block"
-          style={{ filter: "invert(1)" }}
-        />
-      </div>
+      <img
+        src="/design-portfolio/attached_assets/bp_logo_transparent.png"
+        alt="BP Logo"
+        className="h-20 w-auto object-contain"
+        data-testid="logo-bp"
+      />
     ),
   },
 ];
