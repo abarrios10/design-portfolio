@@ -95,9 +95,6 @@ export default function HeroSection() {
               className="aspect-[4/5] w-full rounded-xl border border-border object-cover"
               data-testid="img-hero-portrait"
             />
-            <figcaption className="eyebrow mt-4 text-center">
-              Andres Barrios — Mechanical Engineer
-            </figcaption>
           </figure>
         </Stagger>
         </div>
