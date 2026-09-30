@@ -24,8 +24,8 @@ export default function Footer() {
 
             <div className="flex items-center gap-6">
               <a
-                href="/design-portfolio/attached_assets/Barrios Andres - Resume July 2025.pdf"
-                download="Barrios Andres - Resume July 2025.pdf"
+                href="/design-portfolio/attached_assets/Andres_Barrios_Resume_F_2026.pdf"
+                download="Andres_Barrios_Resume_F_2026.pdf"
                 data-testid="button-download-resume"
                 className="link-underline inline-flex items-center gap-2 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
