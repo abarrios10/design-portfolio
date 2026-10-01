@@ -3,12 +3,15 @@ import { SiApple } from "react-icons/si";
 import Reveal from "@/components/reveal";
 
 const skills = [
+  { name: "Siemens NX", icon: "🔩" },
   { name: "SolidWorks", icon: "🔧" },
   { name: "Autodesk Inventor", icon: "📐" },
   { name: "GD&T", icon: "📏" },
   { name: "DFMA", icon: "⚙️" },
-  { name: "3D Printing", icon: "🖨️" },
+  { name: "Tolerance Analysis", icon: "🎯" },
   { name: "Python", icon: "🐍" },
+  { name: "3D Printing", icon: "🖨️" },
+  { name: "CNC Machining", icon: "🏭" },
 ];
 
 const experience = [
