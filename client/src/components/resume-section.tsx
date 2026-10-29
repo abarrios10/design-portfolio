@@ -112,7 +112,7 @@ export default function ResumeSection() {
                 className="text-muted-foreground mt-4 leading-relaxed"
                 data-testid="text-education-details"
               >
-                Certificate: Programming and Computation
+                Concentration: Design and Manufacturing
               </p>
             </div>
             <div className="shrink-0 hidden sm:block">
