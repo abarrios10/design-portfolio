@@ -6,7 +6,6 @@ import { projects, renderProjectDetails } from "@/components/projects-content";
 export type Project = (typeof projects)[number];
 
 const FALLBACK_ORG: Record<number, string> = {
-  1: "UT Austin",
   7: "UT Austin",
   8: "UT Austin",
   9: "NASA L'SPACE",
