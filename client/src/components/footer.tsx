@@ -18,7 +18,7 @@ export default function Footer() {
                 className="eyebrow mt-2"
                 data-testid="text-footer-title"
               >
-                Mechanical Engineering Student
+                UT Austin
               </p>
             </div>
 

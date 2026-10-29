@@ -36,7 +36,7 @@ export default function HeroSection() {
         <div className="grid items-center gap-14 lg:grid-cols-12">
           <div className="lg:col-span-7">
           <Stagger delay={0.05}>
-            <p className="eyebrow mb-8">UT Austin · Mechanical Engineering</p>
+            <p className="eyebrow mb-8">UT Austin</p>
           </Stagger>
 
           <Stagger delay={0.15}>
@@ -47,14 +47,8 @@ export default function HeroSection() {
             </h1>
           </Stagger>
 
-          <Stagger delay={0.3}>
-            <p className="mt-8 text-xl md:text-2xl text-foreground/80 font-normal">
-              Mechanical Engineering Student
-            </p>
-          </Stagger>
-
           <Stagger delay={0.4}>
-            <p className="mt-3 text-lg text-primary font-medium">
+            <p className="mt-8 text-lg text-primary font-medium">
               The University of Texas at Austin
             </p>
           </Stagger>
