@@ -225,7 +225,7 @@ export function renderProjectDetails(project: any) {
         <>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The firmware engineering teams needed every electromechanical
               component of the drive – motors, sensors, load cells, and
               motherboard – connected in a single, organized system with proper
@@ -236,7 +236,7 @@ export function renderProjectDetails(project: any) {
               transport between engineers who needed to run diagnostics in
               different locations.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               To address this problem I was tasked with designing a dedicated
               “bring-up” drive, or BUD for short: a single fixture that
               consolidated all of the robotic hardware into one integrated
@@ -249,11 +249,11 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Design Concept</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               When planning the bring-up drive, I focused on three key goals
               that shaped the final design:
             </p>
-            <ul className="text-sm text-muted-foreground mb-2 space-y-3 ml-4">
+            <ul className="text-base text-muted-foreground mb-2 space-y-3 ml-4">
               <li>
                 <strong>Configurability:</strong> I wanted to ensure the fixture
                 could accommodate any combination of hardware components. Some
@@ -282,7 +282,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Finalized Design</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I developed the complete BUD design in SolidWorks, creating models
               for the mounting brackets and assembling all of the components
               onto the plate. The CAD assembly allowed me to verify component
@@ -291,7 +291,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Build and Assembly</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               During the build and assembly of the bring-up drives, I reviewed
               the engineering drawings for the motherboard and head modules to
               ensure proper application of thermal interface materials and
@@ -301,7 +301,7 @@ export function renderProjectDetails(project: any) {
               which I really enjoyed and found highly rewarding.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               For the supporting hardware, I installed heat-set inserts in the
               UHMW polyethylene fixture plate to avoid threading directly into
               plastic and to provide durable fastening points. I also verified
@@ -312,7 +312,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Results</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The bring-up drive project was a big success! The feedback from
               the firmware teams was overwhelmingly positive. They particularly
               appreciated the stability of the components on the plate, which
@@ -320,7 +320,7 @@ export function renderProjectDetails(project: any) {
               portability made it easy to move between workspaces, allowing
               teams to test in their preferred locations.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Most importantly, during BUD testing, one of the firmware
               engineers discovered a critical bug in one of the boards that
               could have caused significant issues in production. This early
@@ -337,7 +337,7 @@ export function renderProjectDetails(project: any) {
         <>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The Proteus Gen 2 drive unit&apos;s wheel was pressed onto a tapered
               motor shaft, which made it slow and difficult to remove during
               testing and inspection.
@@ -345,14 +345,14 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Design</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               A cast aluminum wheel that bolts onto a new adapter, which takes
               over the press fit on the shaft. The wheel uses an ADC12 or A380
               aluminum core hub with M6x1 counter-bore clearance holes, and the
               adapter is cast and machined aluminum with a tapered bore for the
               press-fit attachment to the locomotor and M6x1 tapped holes.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The design was updated with the supplier&apos;s manufacturing
               feedback, including wider tolerances, datum changes, and radii
               changes.
@@ -381,14 +381,14 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Analysis</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Tolerance stack-ups through the wheel, adapter, and motor
               confirmed clearance, including 1.39 mm of clearance in the worst
               case between the locomotor surface and the outer wheel surface.
               Gaps that could have interfered were widened to prevent
               interference in the worst case.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               A bolted joint analysis using motor torque and robot weight set
               the bolt torque at 6 N·m.
             </p>
@@ -398,15 +398,36 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Results</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Targeted cut of over 50% in wheel-removal downtime, 1.39 mm
-              worst-case clearance confirmed, and bolt torque set at 6 N·m by
-              analysis.
-            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+              <div>
+                <p className="text-3xl font-display font-semibold mb-1">
+                  &gt;50%
+                </p>
+                <p className="text-base text-muted-foreground">
+                  targeted cut in wheel-removal downtime
+                </p>
+              </div>
+              <div>
+                <p className="text-3xl font-display font-semibold mb-1">
+                  1.39 mm
+                </p>
+                <p className="text-base text-muted-foreground">
+                  worst-case clearance confirmed
+                </p>
+              </div>
+              <div>
+                <p className="text-3xl font-display font-semibold mb-1">
+                  6 N·m
+                </p>
+                <p className="text-base text-muted-foreground">
+                  bolt torque set by analysis
+                </p>
+              </div>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Handoff</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The wheel and adapter assembly was prepared for release, with
               wheel load and eccentricity analyses scoped for the next build.
             </p>
@@ -419,7 +440,7 @@ export function renderProjectDetails(project: any) {
         <>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               In one of the process units I worked on, a critical pipe tee
               junction combined process water from one line with a wet-gas
               stream used to dilute acid gases and prevent corrosion. Over time,
@@ -429,7 +450,7 @@ export function renderProjectDetails(project: any) {
               the minimum thickness required for safe operation.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               To resolve this issue, operators recommended for an engineer to
               design and plan the installation of a new injection quill: a
               tubular device that introduces fluid parallel to the direction of
@@ -467,7 +488,7 @@ export function renderProjectDetails(project: any) {
               align="right"
               imgClassName="h-auto object-cover"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I was responsible for coordinating with our preferred injection
               quill vendor and providing all the specifications required for
               manufacturing the quill. To ensure the quill was designed
@@ -479,7 +500,7 @@ export function renderProjectDetails(project: any) {
               each line was rated for.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I also worked with the onsite materials engineer to determine the
               optimal quill material and design type. Together, we analyzed
               process conditions and mixing temperatures to select a material
@@ -491,7 +512,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Design Requirements</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The quill material had to resist corrosion and thermal fatigue from the temperature
               differences between the two mixing fluids. I sized the quill length with ASME B31.3
               calculations for process piping design, accounting for every layer of the flanged
@@ -510,7 +531,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Vibration Analysis</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               After finalizing the design requirements and process conditions, I
               needed to ensure that the quill would not vibrate at its resonant
               frequency and fail from vibrational fatigue. Because the quill is
@@ -520,7 +541,7 @@ export function renderProjectDetails(project: any) {
               this occurs is shown in the Design Requirements section.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               To confirm the design’s stability, I performed a vibration
               analysis using an in-house Excel tool built for refinery
               applications. I entered all relevant parameters, including process
@@ -539,7 +560,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               Engineering Work Order
             </h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               My final task was a detailed engineering work order guiding operators through removing
               the old pipe section and installing the new quill. I specified welding procedures and
               weld types, identified the piping sections to remove, and documented flange torque
@@ -558,7 +579,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Results</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Near the end of my internship, the vendor returned the quill drawing to confirm all
               requirements were met before manufacturing (shown below). A year after my departure, my
               internship mentor confirmed the quill had been installed successfully with little to no
@@ -585,7 +606,7 @@ export function renderProjectDetails(project: any) {
         <>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Problem Statement</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Steam is used for heat tracing in the unit to keep pipelines warm
               and prevent freezing. In the colder Indiana climate, however,
               steam often condenses into a liquid–gas mixture known as steam
@@ -596,7 +617,7 @@ export function renderProjectDetails(project: any) {
               discharge into a process sewer.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               An operator discovered that the condensate line in my assigned
               unit was plugged, noting that a valve upstream was open but no
               flow was observed. Based on these findings, the operator
@@ -626,7 +647,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               Determining Root Cause
             </h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I consulted the operators who monitor the unit daily to pinpoint the plugging. Two
               likely causes emerged: internal corrosion creating rough spots where solids could
               collect and block flow, and inadequate slope in the horizontal condensate spools, which
@@ -636,7 +657,7 @@ export function renderProjectDetails(project: any) {
               requirements.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The final design reconfigured the mudleg with a capped bottom and bleeder valve,
               routing the condensate line through a valved side branch instead of the bottom. Solids
               settle at the base for periodic blowdown, while set distances between the branch,
@@ -668,7 +689,7 @@ export function renderProjectDetails(project: any) {
               align="right"
               imgClassName="h-auto object-cover"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               When designing supports for the new mudleg and condensate line, I
               first reviewed how the existing piping was supported since the new
               mudleg was a replacement-in-kind. The condensate line was
@@ -680,7 +701,7 @@ export function renderProjectDetails(project: any) {
               advised was no longer recommended.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I first considered a structural steel column with a pipe shoe for direct support, but
               rejected it on cost and because it would limit visibility and access for future
               maintenance. Instead, I used an existing reinforced concrete column beside and above
@@ -690,7 +711,7 @@ export function renderProjectDetails(project: any) {
               negligible — no risk of overstressed bolts or loosening over time.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I ran two key calculations to verify the support. First, tensile stress on the hanger
               rod — accounting for the pipe, full condensate, and Aerogel insulation — came to
               0.171 ksi, far below the rod’s 36 ksi yield strength. Second, a pipe deflection analysis
@@ -713,7 +734,7 @@ export function renderProjectDetails(project: any) {
               align="left"
               imgClassName="h-auto object-cover"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               My final task was to develop an engineering work order guidelining
               the replacement of the drainage line and drainpipe. Because
               sections of the steam header and condensate line contained
@@ -726,7 +747,7 @@ export function renderProjectDetails(project: any) {
               schedule and subtracting corrosion allowance.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I also reviewed ASME piping standards and refinery welding
               procedures to define appropriate weld types for both shop and
               field work. With guidance from the unit superintendent, I
@@ -738,7 +759,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Results</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The work order was reviewed and approved for technical accuracy by
               the Asset Owner, and a formal Management of Change was initiated.
               The job note was signed, authorizing construction with completion
@@ -762,7 +783,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               CAD Design and Modeling
             </h4>
-            <p className="text-sm text-muted-foreground mb-4 font-normal">
+            <p className="text-base text-muted-foreground mb-4 font-normal">
               I built detailed SolidWorks models of the spinner geometry, assembly, and injection
               mold design. Testing the initial laser-cut prototype revealed the spacing between the
               spinner arms and weight holes was too small — pennies could crack the arms on
@@ -788,7 +809,7 @@ export function renderProjectDetails(project: any) {
               align="right"
               imgClassName="h-auto object-cover"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I manufactured multiple prototypes via 3D printing and laser cutting, using real
               pennies as weights to test functionality and structural integrity. Machining a custom
               injection mold would have exceeded the course timeline, so I used a previously
@@ -817,7 +838,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               Finite Element Analysis
             </h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I ran a complete structural FEA in SolidWorks on the full assembly — polypropylene
               body, alloy steel bearing, and penny weights — under penny insertion forces. Every
               critical region showed a factor of safety well above 1, validating the material choices
@@ -851,7 +872,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               Circuit Design and Implementation
             </h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The turbine generates three-phase AC that varies with wind speed, so the circuit
               conditions it for reliable LED operation. A diode half-wave rectifier converts AC to
               pulsating DC, and a large capacitor smooths the ripple into a stable LED supply.
@@ -867,7 +888,7 @@ export function renderProjectDetails(project: any) {
           {/* LED Control System */}
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">LED Control System</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The circuit uses transistors and comparators to control LED
               brightness based on voltage levels, creating a visual indicator
               system where different LEDs activate depending on the turbine's
@@ -942,7 +963,7 @@ export function renderProjectDetails(project: any) {
           {/* Lessons Learned */}
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Lessons Learned</h4>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Using higher capacitance values improves voltage smoothing and
               reduces LED flickering. Adjusting circuit resistance allows
               fine-tuning of LED sensitivity for different fan speeds.
@@ -965,7 +986,7 @@ export function renderProjectDetails(project: any) {
               align="right"
               imgClassName="h-auto object-cover"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I designed the rover’s robotic arm as its primary Martian sample-collection
               mechanism, integrating a drill for ice extraction and a CacheCam for real-time visual
               monitoring. Working within strict space and weight constraints, I selected the arm’s
@@ -984,7 +1005,7 @@ export function renderProjectDetails(project: any) {
               align="left"
               imgClassName="h-auto object-cover"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               I designed the MasterCam attachment — modeled after the NASA Perseverance Rover —
               to capture high-resolution images of samples and surroundings during collection.
               Positioned to detect obstacles ahead and feed the sensor suite for navigation, it
@@ -1000,7 +1021,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               Preliminary Design Review
             </h4>
-            <p className="text-sm text-muted-foreground mb-4 text-left">
+            <p className="text-base text-muted-foreground mb-4 text-left">
               With 15 other student engineers, I co-authored the 199-page Preliminary Design Review
               — the final deliverable for NASA’s L’SPACE Academy — detailing the full integration of
               the rover’s mechanical, GNC, electrical, and thermal subsystems against NASA’s budget,
@@ -1027,7 +1048,7 @@ export function renderProjectDetails(project: any) {
               align="right"
               imgClassName="h-auto object-contain bg-white"
             />
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               ASCEND Texas — Aerial Solutions for Combating Emergencies &
               Natural Disasters — is a 25+ member engineering team building an
               innovative autonomous emergency-response aircraft. The team's
@@ -1036,7 +1057,7 @@ export function renderProjectDetails(project: any) {
               Dr. Christian Claudel and Dr. Krishna Kumar, with graduate and
               undergraduate student staff developing the vehicle.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               We are a competition-based organization, currently competing in
               NASA's GoAERO and XPRIZE Wildfire — and we have already won an
               Innovation Award. As a member, I contribute to a project with
@@ -1046,7 +1067,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">The Vehicle</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The Aerial ATV is a ground-hybrid vehicle for transportation that
               can navigate through air or rough terrain, no matter the weather,
               depending on the necessities. Inspired by paramotors but advanced
@@ -1064,7 +1085,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Why It Matters</h4>
-            <ul className="text-sm text-muted-foreground mb-4 space-y-3 ml-4 list-disc">
+            <ul className="text-base text-muted-foreground mb-4 space-y-3 ml-4 list-disc">
               <li>
                 <strong>Safe and quick deployment:</strong> rapid delivery of
                 equipment for emergency response when every minute counts.
@@ -1083,7 +1104,7 @@ export function renderProjectDetails(project: any) {
             <h4 className="text-lg font-display font-semibold mb-4">
               What We're Working Towards
             </h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               ASCEND's mission is to empower its members by providing
               opportunities to enhance their technical skills and create
               impactful products that make a positive difference in people's
@@ -1094,7 +1115,7 @@ export function renderProjectDetails(project: any) {
               evaluations, securing funding and sponsorships — and staying on
               track for GoAERO Stage 3.
             </p>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The work spans every discipline: mechanical design (CAD,
               machining, welding, and manufacturing within tight space, weight,
               and spatial constraints), electrical (wiring, autonomous control
@@ -1112,7 +1133,7 @@ export function renderProjectDetails(project: any) {
         <>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Function</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Enable testing of critical modules prior to releasing the full
               Alpha drive unit, including all electromechanical components
               necessary for sensor characterization and environmental
@@ -1124,7 +1145,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Design</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               The platform is configurable for locomotors or caster wheels,
               with wheel positions matching the Alpha drive unit. A machined
               aluminum plate with a consistent hole pattern facilitates bracket
@@ -1162,7 +1183,7 @@ export function renderProjectDetails(project: any) {
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Status</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Design and BOM complete, with the build planned for May 2025.
               Next steps are procuring all supporting hardware and fasteners
               from the BOM, machining or printing brackets and spacers for
