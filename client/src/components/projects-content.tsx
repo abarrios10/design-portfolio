@@ -101,7 +101,7 @@ export const projects = [
     slug: "modular-test-skateboard",
     description:
       "Push-cart test platform carrying the robot's sensors and electronics, so they could be tested before the full robot was ready",
-    image: "/design-portfolio/attached_assets/modular_test_skateboard.jpg",
+    image: "/design-portfolio/attached_assets/image_1759249955339.png",
     technologies: [
       "SolidWorks",
       "Mechanism Design",
@@ -357,6 +357,27 @@ export function renderProjectDetails(project: any) {
               feedback, including wider tolerances, datum changes, and radii
               changes.
             </p>
+            <div className="flex justify-center mb-6">
+              <Figure src="/design-portfolio/attached_assets/locomotor_exploded_assembly.jpg" alt="Exploded assembly: wheel, adapter, bolts, and drive motor" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="flex flex-col">
+                <h5 className="text-md font-medium mb-3">
+                  New Wheel
+                </h5>
+                <div>
+                  <Figure src="/design-portfolio/attached_assets/locomotor_new_wheel.jpg" alt="New wheel with bolt holes" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <h5 className="text-md font-medium mb-3">
+                  Adapter Bracket
+                </h5>
+                <div>
+                  <Figure src="/design-portfolio/attached_assets/locomotor_adapter_bracket.jpg" alt="Adapter bracket" />
+                </div>
+              </div>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Analysis</h4>
@@ -371,6 +392,9 @@ export function renderProjectDetails(project: any) {
               A bolted joint analysis using motor torque and robot weight set
               the bolt torque at 6 N·m.
             </p>
+            <div className="flex justify-center mb-6">
+              <Figure src="/design-portfolio/attached_assets/locomotor_stackup_chains.jpg" alt="Tolerance stack-up chains" />
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Results</h4>
@@ -1094,6 +1118,9 @@ export function renderProjectDetails(project: any) {
               necessary for sensor characterization and environmental
               interference tests.
             </p>
+            <div className="flex justify-center mb-6">
+              <Figure src="/design-portfolio/attached_assets/skateboard_current_platform.jpg" alt="Current skateboard platform in the facility" className="max-w-sm" />
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Design</h4>
@@ -1105,6 +1132,33 @@ export function renderProjectDetails(project: any) {
               back chassis pair with a quick-release pin locking mechanism that
               keeps the handle upright.
             </p>
+            <div className="flex justify-center mb-6">
+              <Figure src="/design-portfolio/attached_assets/skateboard_design_layout.jpg" alt="New skateboard design layout" className="max-w-sm" />
+            </div>
+            <div className="flex justify-center mb-6">
+              <Figure src="/design-portfolio/attached_assets/skateboard_quick_release_pin.jpg" alt="Quick-release pin locking mechanism" className="max-w-md" />
+            </div>
+            <h5 className="text-md font-medium mb-3">
+              Wheel Configurations
+            </h5>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="flex flex-col">
+                <h5 className="text-md font-medium mb-3">
+                  Drive Wheel Setup
+                </h5>
+                <div>
+                  <Figure src="/design-portfolio/attached_assets/skateboard_drive_wheel.jpg" alt="Drive wheel setup" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <h5 className="text-md font-medium mb-3">
+                  Caster Setup
+                </h5>
+                <div>
+                  <Figure src="/design-portfolio/attached_assets/skateboard_caster.jpg" alt="Caster setup" />
+                </div>
+              </div>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Status</h4>
