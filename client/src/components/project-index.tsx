@@ -27,7 +27,7 @@ function pad(n: number) {
 /** Organization mark shown in the project detail header. */
 export function OrgMark({ id }: { id: number }) {
   const common = "h-12 w-auto object-contain";
-  if (id === 2 || id === 3 || id === 4) {
+  if (id === 2 || id === 3 || id === 4 || id === 13) {
     return (
       <>
         <img

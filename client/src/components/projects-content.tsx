@@ -81,18 +81,36 @@ export const projects = [
     title: "Drive Unit Robot Locomotor Wheel Design",
     slug: "drive-unit-robot-locomotor-wheel-design",
     description:
-      "Advanced wheel design and locomotion system development for autonomous drive units",
+      "Turned a press-fit robot wheel into a bolt-on wheel, so it can be removed quickly for testing and inspection",
     image: "/design-portfolio/attached_assets/image_1759249913190.png",
     technologies: [
       "SolidWorks",
-      "Engineering Drawings",
-      "Geometric Dimensioning and Tolerancing",
-      "Tolerance Analysis",
-      "Supplier Communication",
+      "GD&T",
+      "Tolerance Stack-Up",
+      "Bolted Joint Analysis",
+      "Supplier DFM",
     ],
     details:
-      "Project completed during my Amazon Robotics internship to redesign the Proteus locomotor wheel, transitioning it from a press-fit connection on the locomotor shaft to a bolted attachment for easier wheel removal during inspection and testing. Involved creating CAD models and detailed engineering drawings for the new wheel and attachment hardware, performing tolerance stack-up analyses to ensure proper fit and assembly, and coordinating with the supplier to manufacture and ship prototype wheels.",
+      "Amazon Robotics internship project redesigning the Proteus Gen 2 locomotor wheel, transitioning it from a press-fit connection on the tapered motor shaft to a bolted attachment for faster wheel removal during testing and inspection. Designed a cast aluminum wheel and adapter in SolidWorks, verified fit with tolerance stack-ups, set bolt torque with a bolted joint analysis, and incorporated supplier manufacturing feedback.",
     date: "March 2025 - May 2025",
+    company: "Amazon Robotics",
+  },
+  {
+    id: 13,
+    title: "Modular Test Skateboard",
+    slug: "modular-test-skateboard",
+    description:
+      "Push-cart test platform carrying the robot's sensors and electronics, so they could be tested before the full robot was ready",
+    image: "/design-portfolio/attached_assets/modular_test_skateboard.jpg",
+    technologies: [
+      "SolidWorks",
+      "Mechanism Design",
+      "Plate Design",
+      "BOM",
+    ],
+    details:
+      "A push-cart test platform for the Proteus Gen 2 drive unit that carries the robot's sensors and electronics so they can be tested before the full robot is ready. The platform swaps between drive wheels or casters placed where the real robot's wheels sit, uses a machined aluminum plate with a standard hole grid so any sensor bracket fits, and has hinged front and back chassis with a quick-release pin that locks the handle upright.",
+    date: "Spring 2025",
     company: "Amazon Robotics",
   },
   {
@@ -314,30 +332,60 @@ export function renderProjectDetails(project: any) {
         </>
       );
     } else if (project.id === 3) {
-      // Amazon Robotics wheel project - Placeholder content
+      // Drive Unit Robot Locomotor Wheel Design - Custom sections
       return (
         <>
           <div>
-            <h4 className="text-lg font-display font-semibold mb-4">Clarification</h4>
+            <h4 className="text-lg font-display font-semibold mb-4">Problem Statement</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              This Amazon Robotics project involved mechanical engineering
-              design and development work on the new generation autonomous
-              robotic drive-unit. Detailed project information and technical
-              specifications are proprietary and cannot be shared publicly. An
-              image of the previous generation drive is provided below for
-              context.
+              The Proteus Gen 2 drive unit&apos;s wheel was pressed onto a tapered
+              motor shaft, which made it slow and difficult to remove during
+              testing and inspection.
             </p>
           </div>
           <div>
-            <h5 className="text-md font-medium mb-3">Proteus Gen 1</h5>
-            <div className="mb-6">
-              <Figure
-                src="/design-portfolio/attached_assets/image_1757912671532.png"
-                alt="Proteus Gen 1 Autonomous Robots"
-                className="max-w-xl"
-                imgClassName="h-auto object-cover"
-              />
-            </div>
+            <h4 className="text-lg font-display font-semibold mb-4">Design</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              A cast aluminum wheel that bolts onto a new adapter, which takes
+              over the press fit on the shaft. The wheel uses an ADC12 or A380
+              aluminum core hub with M6x1 counter-bore clearance holes, and the
+              adapter is cast and machined aluminum with a tapered bore for the
+              press-fit attachment to the locomotor and M6x1 tapped holes.
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              The design was updated with the supplier&apos;s manufacturing
+              feedback, including wider tolerances, datum changes, and radii
+              changes.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-display font-semibold mb-4">Analysis</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Tolerance stack-ups through the wheel, adapter, and motor
+              confirmed clearance, including 1.39 mm of clearance in the worst
+              case between the locomotor surface and the outer wheel surface.
+              Gaps that could have interfered were widened to prevent
+              interference in the worst case.
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              A bolted joint analysis using motor torque and robot weight set
+              the bolt torque at 6 N·m.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-display font-semibold mb-4">Results</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Targeted cut of over 50% in wheel-removal downtime, 1.39 mm
+              worst-case clearance confirmed, and bolt torque set at 6 N·m by
+              analysis.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-display font-semibold mb-4">Handoff</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              The wheel and adapter assembly was prepared for release, with
+              wheel load and eccentricity analyses scoped for the next build.
+            </p>
           </div>
         </>
       );
@@ -1030,6 +1078,42 @@ export function renderProjectDetails(project: any) {
               evaluation (validating flight- and drive-critical systems). Being
               part of this team means hands-on opportunities across the full
               vehicle — and helping make our ATV fly.
+            </p>
+          </div>
+        </>
+      );
+    } else if (project.id === 13) {
+      // Modular Test Skateboard - Custom sections
+      return (
+        <>
+          <div>
+            <h4 className="text-lg font-display font-semibold mb-4">Function</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Enable testing of critical modules prior to releasing the full
+              Alpha drive unit, including all electromechanical components
+              necessary for sensor characterization and environmental
+              interference tests.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-display font-semibold mb-4">Design</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              The platform is configurable for locomotors or caster wheels,
+              with wheel positions matching the Alpha drive unit. A machined
+              aluminum plate with a consistent hole pattern facilitates bracket
+              and standoff design for sensors, and hinges between the front and
+              back chassis pair with a quick-release pin locking mechanism that
+              keeps the handle upright.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-lg font-display font-semibold mb-4">Status</h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Design and BOM complete, with the build planned for May 2025.
+              Next steps are procuring all supporting hardware and fasteners
+              from the BOM, machining or printing brackets and spacers for
+              mounting components, and machining the aluminum plate with all
+              holes and cutouts incorporated.
             </p>
           </div>
         </>
